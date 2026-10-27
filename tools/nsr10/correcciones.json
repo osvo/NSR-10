@@ -1,0 +1,286 @@
+[
+  {
+    "archivo": "titulo-a/A.04.md",
+    "pagina": "FORK-DOC-006 p. 78",
+    "buscar": "$V_{s}=S_{a}⋅g$(m/s²)$⋅M$(kg)$=S_{a}⋅⋅g M$(kg $⋅$m/s²)$=S_{a}⋅⋅g M$(N) Pero",
+    "reemplazar": "$$ V_s = S_a \\cdot g\\ (\\mathrm{m/s^2}) \\cdot M\\ (\\mathrm{kg}) = S_a \\cdot g \\cdot M\\ (\\mathrm{kg \\cdot m/s^2}) = S_a \\cdot g \\cdot M\\ (\\mathrm{N}) $$\n\nPero"
+  },
+  {
+    "archivo": "titulo-a/A.04.md",
+    "pagina": "FORK-DOC-006 p. 78",
+    "buscar": "1 Mg = 1 000 kg = 106 g)",
+    "reemplazar": "1 Mg = 1 000 kg = 10⁶ g)"
+  },
+  {
+    "archivo": "titulo-a/A.04.md",
+    "pagina": "FORK-DOC-006 p. 78",
+    "buscar": "$V_{s}=S_{a}⋅g$(m/s²)$⋅M$(Mg$)=S_{a}⋅⋅g M$(Mg $⋅$m/s²)$=S_{a}⋅⋅g M$(1000 $⋅$kg$⋅$m/s²)$=S_{a}⋅⋅g M$(1000 $⋅$N)$=S_{a}⋅⋅g M$(kN) A modo",
+    "reemplazar": "$$ V_s = S_a \\cdot g\\ (\\mathrm{m/s^2}) \\cdot M\\ (\\mathrm{Mg}) = S_a \\cdot g \\cdot M\\ (\\mathrm{Mg \\cdot m/s^2}) = S_a \\cdot g \\cdot M\\ (1000 \\cdot \\mathrm{kg \\cdot m/s^2}) = S_a \\cdot g \\cdot M\\ (1000 \\cdot \\mathrm{N}) = S_a \\cdot g \\cdot M\\ (\\mathrm{kN}) $$\n\nA modo"
+  },
+  {
+    "archivo": "titulo-a/A.04.md",
+    "pagina": "FORK-DOC-006 p. 78",
+    "buscar": "$≅$",
+    "reemplazar": "≅",
+    "todas": true
+  },
+  {
+    "archivo": "titulo-b/B.06.md",
+    "pagina": "FORK-DOC-008, ecuaciones B.6.5-16 y B.6.5-17",
+    "buscar": "$⎦$ en (N/m2) Donde:",
+    "reemplazar": "Donde:",
+    "todas": true
+  },
+  {
+    "archivo": "titulo-c/C.07.md",
+    "pagina": "FORK-DOC-014 p. 60",
+    "buscar": "(c) En losas donde se utilice refuerzo de una resistencia a la fluencia mayor $0.0018x420$ que 420 MPa, medida a una deformación unitaria de 0.35 por ciento .............................................\n\n$f_{y}$",
+    "reemplazar": "(c) En losas donde se utilice refuerzo de una resistencia a la fluencia mayor que 420 MPa, medida a una deformación unitaria de 0.35 por ciento ............................................. $\\dfrac{0.0018 \\times 420}{f_y}$"
+  },
+  {
+    "archivo": "titulo-c/C.09.md",
+    "pagina": "FORK-DOC-014 p. 72, Tabla C.9.5(b)",
+    "buscar": "$ℓ_{180}/$*",
+    "reemplazar": "$\\ell/180$*"
+  },
+  {
+    "archivo": "titulo-c/C.09.md",
+    "pagina": "FORK-DOC-014 p. 72, Tabla C.9.5(b)",
+    "buscar": "$ℓ/240^{§}$",
+    "reemplazar": "$\\ell/240$§"
+  },
+  {
+    "archivo": "titulo-c/C.11.md",
+    "pagina": "FORK-DOC-014 p. 99",
+    "buscar": "**C.11.8.3** — La sección en la cara del apoyo debe diseñarse para resistir simultáneamente $V$ , un momento mayorado\n\n![Ecuación](img/ec-p99-538.png)\n\n$⎦$ y una fuerza mayorada de tracción horizontal, .",
+    "reemplazar": "**C.11.8.3** — La sección en la cara del apoyo debe diseñarse para resistir simultáneamente $V_u$, un momento mayorado $\\left[V_u a_v + N_{uc}\\,(h - d)\\right]$ y una fuerza mayorada de tracción horizontal, $N_{uc}$."
+  },
+  {
+    "archivo": "titulo-c/C.11.md",
+    "pagina": "FORK-DOC-014 p. 100",
+    "buscar": "El refuerzo $A$ para resistir el momento mayorado $⎦$ debe calcularse",
+    "reemplazar": "El refuerzo $A_f$ para resistir el momento mayorado $\\left[V_u a_v + N_{uc}\\,(h - d)\\right]$ debe calcularse"
+  },
+  {
+    "archivo": "titulo-c/C.11.md",
+    "pagina": "FORK-DOC-014 p. 104",
+    "buscar": "$⎡⎣ℓ_{v}−(c_{1}/2)⎤⎦$",
+    "reemplazar": "$\\left[\\ell_v - (c_1/2)\\right]$"
+  },
+  {
+    "archivo": "titulo-c/C.12.md",
+    "pagina": "FORK-DOC-014 p. 111",
+    "buscar": "$(f_{y}−240)$ $f_{y}$ o $⎛5d_{b}⎞$ $⎜⎟$ $⎝s_{w}⎠$ pero",
+    "reemplazar": "$$ \\frac{(f_y - 240)}{f_y} $$\n\no\n\n$$ \\left(\\frac{5d_b}{s_w}\\right) $$\n\npero"
+  },
+  {
+    "archivo": "titulo-c/C.13.md",
+    "pagina": "FORK-DOC-014, Figura C.13.3.8",
+    "buscar": "$Fig. C.13.3.8 — Extensiones \\text{mínimas} del refuerzo en losas sin viga. (\\text{Véase} C.12.11.1$ $para las extensiones dentro de los apoyos)$",
+    "reemplazar": "Fig. C.13.3.8 — Extensiones mínimas del refuerzo en losas sin viga. (Véase C.12.11.1 para las extensiones dentro de los apoyos)"
+  },
+  {
+    "archivo": "titulo-c/C.21.md",
+    "pagina": "FORK-DOC-014 p. 200",
+    "buscar": "entre 0.005 y $⎦$ .",
+    "reemplazar": "entre 0.005 y $\\left[0.35 - 0.05\\,(V_u/\\phi V_c)\\right]$."
+  },
+  {
+    "archivo": "titulo-c/C-B.md",
+    "pagina": "FORK-DOC-014 p. 229",
+    "buscar": "debe ser tal que $ω$ ,$⎦$ , ó $⎦$ no sea mayor de $0.36β$ ,",
+    "reemplazar": "debe ser tal que $\\omega_p$, $\\left[\\omega_p + (d/d_p)(\\omega - \\omega')\\right]$, ó $\\left[\\omega_{pw} + (d/d_p)(\\omega_w - \\omega'_w)\\right]$ no sea mayor de $0.36\\beta_1$,"
+  },
+  {
+    "archivo": "titulo-c/C-B.md",
+    "pagina": "FORK-DOC-014 p. 230",
+    "buscar": "de manera que $ω$ ,$⎦$ , o $⎦ ,$ la que se aplicable, no sea mayor de $0.24β_{1}$ .",
+    "reemplazar": "de manera que $\\omega_p$, $\\left[\\omega_p + (d/d_p)(\\omega - \\omega')\\right]$, o $\\left[\\omega_{pw} + (d/d_p)(\\omega_w - \\omega'_w)\\right]$, la que se aplicable, no sea mayor de $0.24\\beta_1$."
+  },
+  {
+    "archivo": "titulo-c/C.12.md",
+    "pagina": "FORK-DOC-014 p. 108, Tabla C.12.2.2",
+    "buscar": "| Espaciamiento libre entre barras o alambres que están siendo empalmados o desarrolladas no menor que $d_{b}$ , recubrimiento libre no menor que $d$ , y estribos a lo largo de $ℓ$ no menos que el mínimo del Título C del Reglamento NSR-10 o espaciamiento libre entre barras o alambres que están siendo desarrolladas o empalmadas no menor a $2d_{b}$ y recubrimiento libre no menor a $d_{b}$ |  |  |\n| Otros casos |  |  |",
+    "reemplazar": "| Espaciamiento libre entre barras o alambres que están siendo empalmados o desarrolladas no menor que $d_{b}$ , recubrimiento libre no menor que $d_{b}$ , y estribos a lo largo de $ℓ_{d}$ no menos que el mínimo del Título C del Reglamento NSR-10 o espaciamiento libre entre barras o alambres que están siendo desarrolladas o empalmadas no menor a $2d_{b}$ y recubrimiento libre no menor a $d_{b}$ | $\\left(\\dfrac{f_y\\psi_t\\psi_e}{2.1\\lambda\\sqrt{f'_c}}\\right)d_b$ | $\\left(\\dfrac{f_y\\psi_t\\psi_e}{1.7\\lambda\\sqrt{f'_c}}\\right)d_b$ |\n| Otros casos | $\\left(\\dfrac{f_y\\psi_t\\psi_e}{1.4\\lambda\\sqrt{f'_c}}\\right)d_b$ | $\\left(\\dfrac{f_y\\psi_t\\psi_e\\lambda}{1.1\\lambda\\sqrt{f'_c}}\\right)d_b$ |"
+  },
+  {
+    "archivo": "titulo-c/C.11.md",
+    "pagina": "FORK-DOC-014 p. 99",
+    "buscar": "$(3.3_{+}0.08f'_{c})b_{w} d$",
+    "reemplazar": "$(3.3 + 0.08f'_{c})b_{w} d$"
+  },
+  {
+    "archivo": "titulo-c/C.11.md",
+    "pagina": "FORK-DOC-014 p. 103",
+    "buscar": "$0.083(α_{s,d b}/+1.5)$",
+    "reemplazar": "$0.083\\left(\\alpha_{s} d/b_{o} + 1.5\\right)$"
+  },
+  {
+    "archivo": "titulo-c/C.20.md",
+    "pagina": "FORK-DOC-014 p. 173",
+    "buscar": "(L_{r} \\text{ó} G \\text{ó} L_{e})",
+    "reemplazar": "(L_{r} \\text{ ó } G \\text{ ó } L_{e})",
+    "todas": true
+  },
+  {
+    "archivo": "titulo-c/C.10.md",
+    "pagina": "FORK-DOC-014 p. 76",
+    "buscar": "$a=β_{1,c}$",
+    "reemplazar": "$a = \\beta_{1} c$"
+  },
+  {
+    "archivo": "titulo-c/C.10.md",
+    "pagina": "FORK-DOC-014, C.10.5.4 y C.10.7.3",
+    "buscar": "$A_{s,}$ min",
+    "reemplazar": "$A_{s,min}$",
+    "todas": true
+  },
+  {
+    "archivo": "titulo-c/C.02.md",
+    "pagina": "FORK-DOC-014, C.2.1",
+    "buscar": "$A_{,min}ℓ$=",
+    "reemplazar": "$A_{\\ell,min}$ ="
+  },
+  {
+    "archivo": "titulo-b/B.06.md",
+    "pagina": "FORK-DOC-008 p. B-81, Tabla B.6.5-3 nota 2",
+    "buscar": "$4.0 m≤Z≤Z_{g}$Para Z < 4.0 m\n\n$K_{z}=2.01 (Z /Z_{g})2/αK_{z}=2.01 (4.0 /Z_{g})2/α$ $Z$ no debe tomarse menos que 9.0 m para el caso 1 en exposición B",
+    "reemplazar": "$$ K_z = 2.01 \\left(\\dfrac{Z}{Z_g}\\right)^{2/\\alpha} \\quad \\text{para } 4.0\\text{ m} \\le Z \\le Z_g $$\n\n$$ K_z = 2.01 \\left(\\dfrac{4.0}{Z_g}\\right)^{2/\\alpha} \\quad \\text{para } Z < 4.0\\text{ m} $$\n\n$Z$ no debe tomarse menos que 9.0 m para el caso 1 en exposición B"
+  },
+  {
+    "archivo": "titulo-b/B.06.md",
+    "pagina": "FORK-DOC-008 p. B-51, Figura B.6.5-3 (continuación)",
+    "buscar": "| Coeficientes de Presión en Muros, $C_{p}$ Superficie L/B $C_{p}$ Usar con Muro en barlovento Todos los valores 0.8 $q_{2}$ Muro en sotavento 0-1 -0.5 2 -0.3 $q_{h}$ >4 -0.2 Muros laterales Todos los valores -0.7 $q_{h}$ Coeficientes de Presión en Cubiertas, $C_{p}$ , para usar con $q_{h}$ Dirección del Viento $h /L$ 10 15 Ángulo 20 Barlovento $θ$25 en grados 30 35 45 >60# 10 Angulo 15 Sotavento $θ$ en grados >20 -0.70 -0.50 -0.30 -0.20 -0.20 0.0* 0.01 Normal a la cumbrera θ >10º para <0.25 >1.0 0.50 -1.3** -0.18 -0.90 -0.18 -1.00 -0.70 -0.18 0.0* -0.70 -0.40 0.20 0.0* -0.50 -0.30 0.30 0.20 -0.30 -0.30 -0.20 0.20 -0.20 -0.20 0.30 0.40 0.40 0.40 0.0* 0.0* 0.01 0.01 θ θ -0.70 -0.30 -0.50 -0.60 -0.50 -0.50 -0.60 -0.60 -0.60 -0.18 -0.18 -0.18 0.0* 0.20 0.20 0.30 θ -0.70 -0.60 -0.60 Normal a la cumbrera para θ <10º y paralela a la cumbrera θ para todo <0.5 >1.0 Distancia horizontal desde el borde de barlovento h a 2h h/2 a h 0 a h/2 0 a h/2 > 2h >h/2 -1.3**, -0.18 -0.7, -0.18 -0.3, -0.18 -0.9, -0.18 -0.9, -0.18 -0.5, -0.18 $C_{p}$ Área (m**Valor que puede reducirse linealmente con el área >100 <10 20 *Valor dado para fines de interpolación sobre la cual es aplicable como sigue: 2) )Factor de Reducción 0.8 0.9 1 Notas: 1. Los signos positivos y negativos significan presiones y succiones actuando sobre las superficies, respectivamente. 2. Se permite interpolación lineal para valores de $L /B$ , $h /L$ y $θ$ distintos a los indicados. La interpolación sólo se llevará cabo entre valores del M mismo signo. Donde no se dan valores del mismo signo, se tomará 0.0 para propósitos de interpolación. 3. Donde aparezcan dos valores de $C_{p}$indica que la pendiente de la cubierta a barlovento está sujeta a presiones o succiones y la estructura de la cubierta deberá diseñarse para ambas condiciones. En este caso para valores intermedios de $h /L$ , la interpolación solo podrá realizarse entre valores de $C_{p}$ que tengan el mismo signo. 4. Para cubiertas con una sola pendiente, su superficie total será de barlovento o de sotavento. 5. Para edificios flexibles se debe usar un valor de $G_{f}$ apropiado, según lo indique la sección B.6.5.8. 6. Para domos (superficies abovedadas) debe usarse la figura B.6.5-4 y para cubiertas en arco debe usarse la figura B.6.5-5. 7. Notación: $B$ : dimensión horizontal del edificio, en m, medidas en dirección normal al viento. $L$ : dimensión horizontal del edificio, en m, medida en dirección paralela al viento. $h$ : altura media de la cubierta en m, excepto que para $θ ≤10^{D}$ , se usará la altura del alero. $z$ : altura sobre el terreno, en m. $G$ : factor del efecto ráfaga. $q_{z}$, $q_{h}$: Presión de velocidad del viento, en N/m2, evaluada a la altura respectiva. $θ$ : ángulo del plano de la cubierta con respecto a la horizontal, en grados. 8. Para cubiertas en mansarda, la superficie superior horizontal y la superficie inclinada a sotavento se consideraran para efectos de uso de la tabla, como superficie a sotavento. 9. A excepción del sistema principal (SPRFV) en la cubierta que consiste en pórticos resistentes a momento, el cortante horizontal toral no deberá ser menor que el determinado despreciando las fuerzas del viento sobre las superficies de la cubierta. # Para cubiertas con ángulo $θ ≤80^{D}$ usar $C_{p}=0.8$ |  |  |\n\n| Superficie | L/B | $C_{p}$ | Usar con |\n|---|---|---|---|\n| Muro en barlovento | Todos los valores | 0.8 | $q_{2}$ |\n| Muro en sotavento | 0-1 | -0.5 | $q_{h}$ |\n|  | 2 | -0.3 |  |\n| Muros laterales | >4 | -0.2 |  |\n|  | Todos los valores | -0.7 | $q_{h}$ |",
+    "reemplazar": "**Coeficientes de presión en muros, $C_{p}$**\n\n| Superficie | L/B | $C_{p}$ | Usar con |\n|---|---|---|---|\n| Muro en barlovento | Todos los valores | 0.8 | $q_{z}$ |\n| Muro en sotavento | 0-1 | -0.5 | $q_{h}$ |\n|  | 2 | -0.3 |  |\n|  | ≥4 | -0.2 |  |\n| Muros laterales | Todos los valores | -0.7 | $q_{h}$ |\n\n**Coeficientes de presión en cubiertas, $C_{p}$, para usar con $q_{h}$**\n\nDirección del viento normal a la cumbrera para $\\theta \\ge 10^{\\circ}$:\n\n| $h/L$ | Barlovento 10° | 15° | 20° | 25° | 30° | 35° | 45° | ≥60° # | Sotavento 10° | 15° | ≥20° |\n|---|---|---|---|---|---|---|---|---|---|---|---|\n| ≤0.25 | -0.70 | -0.50 | -0.30 | -0.20 | -0.20 | 0.0* | 0.40 | 0.01θ | -0.30 | -0.50 | -0.60 |\n|  | -0.18 | 0.0* | 0.20 | 0.30 | -0.30 | 0.40 |  |  |  |  |  |\n| 0.50 | -0.90 | -0.70 | -0.40 | -0.30 | -0.20 | -0.20 | 0.0* | 0.01θ | -0.50 | -0.50 | -0.60 |\n|  | -0.18 | -0.18 | 0.0* | 0.20 | 0.20 | 0.30 | 0.40 |  |  |  |  |\n| ≥1.0 | -1.3** | -1.00 | -0.70 | -0.50 | -0.30 | -0.20 | 0.0* | 0.01θ | -0.70 | -0.60 | -0.60 |\n|  | -0.18 | -0.18 | -0.18 | 0.0* | 0.20 | 0.20 | 0.30 |  | -0.70 | -0.60 | -0.60 |\n\nDirección del viento normal a la cumbrera para $\\theta < 10^{\\circ}$ y paralela a la cumbrera para todo $\\theta$:\n\n| $h/L$ | Distancia horizontal desde el borde de barlovento | $C_{p}$ |\n|---|---|---|\n| ≤0.5 | 0 a h/2 | -0.9, -0.18 |\n|  | h/2 a h | -0.9, -0.18 |\n|  | h a 2h | -0.5, -0.18 |\n|  | > 2h | -0.3, -0.18 |\n| ≥1.0 | 0 a h/2 | -1.3**, -0.18 |\n|  | > h/2 | -0.7, -0.18 |\n\n\\* Valor dado para fines de interpolación.\n\n\\*\\* Valor que puede reducirse linealmente con el área sobre la cual es aplicable, como sigue:\n\n| Área (m²) | Factor de reducción |\n|---|---|\n| <10 | 1 |\n| 20 | 0.9 |\n| >100 | 0.8 |\n\n\\# Para cubiertas con ángulo $\\theta \\le 80^{\\circ}$ usar $C_{p} = 0.8$."
+  },
+  {
+    "archivo": "titulo-a/A.06.md",
+    "pagina": "FORK-DOC-006, A.6.3.1",
+    "buscar": "$i_{−}1$",
+    "reemplazar": "$i-1$",
+    "todas": true
+  },
+  {
+    "archivo": "titulo-a/A.13.md",
+    "pagina": "FORK-DOC-006, A.13",
+    "buscar": "$i_{−}1$",
+    "reemplazar": "$i-1$",
+    "todas": true
+  },
+  {
+    "archivo": "titulo-b/B.06.md",
+    "pagina": "FORK-DOC-008, B.6.3 (nomenclatura)",
+    "buscar": "$l_{z}$ = intensidad",
+    "reemplazar": "$I_{z}$ = intensidad"
+  },
+  {
+    "archivo": "titulo-c/C.02.md",
+    "pagina": "FORK-DOC-014, C.2.1",
+    "buscar": "$l_{b}$ = momento",
+    "reemplazar": "$I_{b}$ = momento"
+  },
+  {
+    "archivo": "titulo-c/C.02.md",
+    "pagina": "FORK-DOC-014, C.2.1",
+    "buscar": "$l_{cr}$= momento",
+    "reemplazar": "$I_{cr}$ = momento"
+  },
+  {
+    "archivo": "titulo-c/C.09.md",
+    "pagina": "FORK-DOC-014 p. 71, C.9.5.2.3 (cotejado con el PDF)",
+    "buscar": "mayor que $l_{g}$",
+    "reemplazar": "mayor que $I_{g}$"
+  },
+  {
+    "archivo": "titulo-b/B.06.md",
+    "pagina": "FORK-DOC-008, Figura B.6.5-4 nota 1",
+    "buscar": "$q_{hD f}(+)$",
+    "reemplazar": "$q_{(h_{D}+f)}$"
+  },
+  {
+    "archivo": "titulo-c/C.02.md",
+    "pagina": "FORK-DOC-014, C.2.1",
+    "buscar": "$α_{f 2}$",
+    "reemplazar": "$α_{f2}$"
+  },
+  {
+    "archivo": "titulo-c/C.13.md",
+    "pagina": "FORK-DOC-014, C.13",
+    "buscar": "$α_{f 2}$",
+    "reemplazar": "$α_{f2}$"
+  },
+  {
+    "archivo": "titulo-c/C.10.md",
+    "pagina": "FORK-DOC-014, C.10.12",
+    "buscar": "$(=f_{c e}')$",
+    "reemplazar": "$(=f'_{ce})$"
+  },
+  {
+    "archivo": "titulo-c/C.10.md",
+    "pagina": "FORK-DOC-014, C.10.12",
+    "buscar": "$(=f_{c c}')$",
+    "reemplazar": "$(=f'_{cc})$"
+  },
+  {
+    "archivo": "titulo-c/C.10.md",
+    "pagina": "FORK-DOC-014, C.10.12",
+    "buscar": "$(=f_{c s}')$",
+    "reemplazar": "$(=f'_{cs})$"
+  },
+  {
+    "archivo": "titulo-c/C.12.md",
+    "pagina": "FORK-DOC-014, C.12.12.3",
+    "buscar": "$ℓ_{n 16}$",
+    "reemplazar": "$ℓ_{n}/16$"
+  },
+  {
+    "archivo": "titulo-c/C.21.md",
+    "pagina": "FORK-DOC-014 p. 193, C.21.9.7 (cotejado con el PDF)",
+    "buscar": "$(ℓ_{n h}/)",
+    "reemplazar": "$(ℓ_{n}/h)",
+    "todas": true
+  },
+  {
+    "archivo": "titulo-c/C-D.md",
+    "pagina": "FORK-DOC-014, ecuación (C-D-8)",
+    "buscar": "h_{ef}^{5 3}/$(C-D-8)",
+    "reemplazar": "h_{ef}^{5/3}$(C-D-8)"
+  },
+  {
+    "archivo": "titulo-c/C.09.md",
+    "pagina": "FORK-DOC-014 p. 71 (C-70), Tabla C.9.5(a)",
+    "buscar": "| Espesor mínimo, $h$ |  |  |\n|---|---|---|\n| Simplemente apoyados | Con un extremo continuo | Ambos extremos continuos |\n| Elementos que NO soporten o estén ligados a divisiones u otro tipo de elementos susceptibles de dañarse debido a deflexiones grandes. |  |  |\n| $ℓ$ $20$ | $ℓ$ $24$ | $ℓ$ $28$ |\n| $ℓ$ $16$ | $ℓ$ $18.5$ | $ℓ$ $21$ |\n\nElementos Losas macizas en una dirección Vigas o losas nervadas en una dirección NOTAS: Los valores dados en esta tabla se deben usar directamente en elementos de concreto de peso normal y refuerzo grado 420 MPa. Para otras condiciones, los valores deben modificarse como sigue:",
+    "reemplazar": "| Elementos | Simplemente apoyados | Con un extremo continuo | Ambos extremos continuos | En voladizo |\n|---|---|---|---|---|\n| | Elementos que **NO** soporten o estén ligados a divisiones u otro tipo de elementos susceptibles de dañarse debido a deflexiones grandes. | | | |\n| Losas macizas en una dirección | $\\ell/20$ | $\\ell/24$ | $\\ell/28$ | $\\ell/10$ |\n| Vigas o losas nervadas en una dirección | $\\ell/16$ | $\\ell/18.5$ | $\\ell/21$ | $\\ell/8$ |\n\nEspesor mínimo, $h$. NOTAS: Los valores dados en esta tabla se deben usar directamente en elementos de concreto de peso normal y refuerzo grado 420 MPa. Para otras condiciones, los valores deben modificarse como sigue:"
+  },
+  {
+    "archivo": "titulo-c/C.12.md",
+    "pagina": "FORK-DOC-014 p. 110 (cotejado con el PDF)",
+    "buscar": "^_. ",
+    "reemplazar": "No. ",
+    "todas": true
+  },
+  {
+    "archivo": "titulo-c/C.11.md",
+    "pagina": "FORK-DOC-014 p. 196 (resto del subíndice de A_v,min tras la ecuación)",
+    "buscar": "\\tag{C.11-14} $$\n\n,min\n\n",
+    "reemplazar": "\\tag{C.11-14} $$\n\n"
+  },
+  {
+    "archivo": "titulo-c/C.11.md",
+    "pagina": "FORK-DOC-014 p. 196 (resto del subíndice de A_v,min tras la ecuación C.11-13)",
+    "buscar": ",min Pero no debe ser menor a",
+    "reemplazar": "Pero no debe ser menor a"
+  },
+  {
+    "archivo": "titulo-a/A.05.md",
+    "pagina": "FORK-DOC-006 p. 83 (texto repetido de la ecuación A.5.4-4)",
+    "buscar": "\\tag{A.5.4-4} $$\n\npara estructuras regulares\n\n",
+    "reemplazar": "\\tag{A.5.4-4} $$\n\n"
+  },
+  {
+    "archivo": "titulo-a/A.05.md",
+    "pagina": "FORK-DOC-006 p. 83 (texto repetido de la ecuación A.5.4-5)",
+    "buscar": "\\tag{A.5.4-5} $$\n\n$0.90 V_{tj}$ para estructuras irregulares\n\n",
+    "reemplazar": "\\tag{A.5.4-5} $$\n\n"
+  }
+]
