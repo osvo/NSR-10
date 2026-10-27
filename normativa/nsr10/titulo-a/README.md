@@ -19,3 +19,5 @@ Texto del reglamento sin paginación, organizado por capítulo y artículo.
 - [A-2 — Recomendaciones para el cálculo de los efectos de interacción dinámica suelo-estructura](A-2.md)
 - [A-3 — Procedimiento no lineal estático de plastificación progresiva “push-over”](A-3.md)
 - [A-4 — VALORES DE $A_{a}$, $A_{v}$, $A_{e}$ Y $A_{d}$ Y DEFINICIÓN DE LA ZONA DE AMENAZA SÍSMICA DE LOS MUNICIPIOS COLOMBIANOS](A-4.md)
+- [A-5 — CALIDADES, EXPERIENCIA, IDONEIDAD Y ACREDITACIÓN DE PROFESIONALES](A-5.md)
+- [A-6 — DE LA REVISIÓN INDEPENDIENTE DE LOS DISEÑOS ESTRUCTURALES](A-6.md)

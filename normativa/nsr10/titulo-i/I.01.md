@@ -1,0 +1,36 @@
+# I.1 — GENERALIDADES
+
+<!-- mod:3-decreto-945-2017-78 -->
+> *Texto vigente según el Decreto 945 de 2017 (anexo, p. 36).*
+
+<!-- capítulo I.1 consolidado con el Decreto 945 de 2017: I.1.1.1, I.1.2 e I.1.4.1 modificados; I.1.5 suprimido -->
+
+### I.1.1 — DEFINICIONES
+
+**I.1.1.1** — Deben consultarse las definiciones contenidas en el Capítulo A.13 “Definiciones Generales del Reglamento Colombiano de Construcción Sismo Resistente NSR-10 y Nomenclatura del Título A” donde están definidos los términos utilizados en el presente Título I y en especial los siguientes términos que fueron ajustados a lo requerido por la Ley 1796 de 2016: Certificado técnico de ocupación, Constructor, Diseñador arquitectónico, Diseñador de los elementos no estructurales, Diseñador estructural, Ingeniero geotecnista, Interventor, Planos finales de cimentación y estructura de la obra (Planos record), Propietario, Revisor de los diseños, Supervisión técnica independiente, Supervisor técnico independiente y Titular de la licencia.
+
+### I.1.2 — OBLIGATORIEDAD DE LA SUPERVISIÓN TÉCNICA INDEPENDIENTE
+
+**I.1.2.1** — Edificaciones con un área superior a 2000 m² — De acuerdo con lo requerido por la Ley 400 de 1997 en su artículo 18, modificado por el artículo 4 de la Ley 1796 de 2016, la construcción de edificaciones que tengan un área construida igual o superior a dos mil metros cuadrados (2000 m²), deberán someterse a una supervisión técnica independiente, realizada de acuerdo con los requisitos del Título I del presente Reglamento.
+
+Adicionalmente, cuando la edificación tenga menos de dos mil metros cuadrados (2000 m²) de área construida, y se tramiten ampliaciones que sumadas al área de construcción del proyecto inicial alcancen los dos mil metros cuadrados (2 000 m²), estas ampliaciones deberán someterse a una supervisión técnica independiente, realizada de acuerdo con los requisitos del Título I del presente Reglamento.
+
+**I.1.2.1.1** — Edificaciones diseñadas y construidas de acuerdo con el Título E del Reglamento NSR-10 — Según lo establecido en el Parágrafo 2 del Artículo 18 de la Ley 400 de 1997, modificado por el artículo 4 de la Ley 1796 de 2016, se excluyen de la obligatoriedad de la supervisión técnica las estructuras que se diseñen y construyan siguiendo las recomendaciones del Título E del presente Reglamento, salvo aquellas que formen parte de programas de cinco o más unidades de vivienda o tengan o superen los dos mil metros cuadrados (2000 m²) de área construida en conjunto.
+
+**I.1.2.1.2** — Supervisión técnica independiente exigida por los diseñadores estructurales o ingenieros geotecnistas — De acuerdo con lo requerido por la Ley 400 de 1997 en su artículo 18, modificado por el artículo 4 de la Ley 1796 de 2016, en todo caso el diseñador estructural o ingeniero geotecnista podrá exigir la supervisión técnica a las edificaciones cuya complejidad, procedimientos constructivos especiales o materiales empleados la hagan necesaria, consignando este requisito de la manera prevista en el Formulario Único Nacional para la Solicitud de Licencias Urbanísticas y Reconocimiento de Edificaciones y mediante memorial que se anexará al proyecto estructural y/o al estudio geotécnico correspondiente.
+
+**I.1.2.1.3** — Edificaciones de los Grupos de Uso III y IV — De acuerdo con el Artículo 20 de la Ley 400 de 1997, las edificaciones indispensables y de atención a la comunidad, independientemente de su área, deben someterse a una supervisión técnica independiente.
+
+**I.1.2.1.4** — Obligaciones del constructor — Según lo establecido en el parágrafo 3 del Artículo 18 de la Ley 400 de 1997, modificado por el artículo 4 de la Ley 1796 de 2016, la supervisión técnica independiente se exigirá sin perjuicio de la obligación que tiene el constructor de realizar todos los ensayos de comprobación técnica de calidad de los materiales y demás controles de calidad que la ley y sus reglamentos exigen para garantizar que la edificación se ejecute de conformidad con los planos, diseños y especificaciones técnicas aprobados en la respectiva licencia. Para ello, el constructor, durante el desarrollo de la obra, deberá contar con la participación del diseñador estructural del proyecto y del ingeniero geotecnista responsables de los planos y estudios aprobados, quienes deberán atender las consultas y aclaraciones que solicite el constructor y/o el supervisor técnico independiente. Tales consultas y aclaraciones deberán quedar registradas y documentadas en las actas del proceso de supervisión de la obra.
+
+**I.1.2.2** — Edificaciones con un área inferior a 2000 m² — De acuerdo con lo requerido por la Ley 400 de 1997 en su artículo 18, modificado por el artículo 4 de la Ley 1796 de 2016, las edificaciones con un área construida inferior a dos mil metros cuadrados (2000 m²), independientemente de su uso, deberán ejecutarse conforme a lo aprobado en la licencia de construcción recayendo la responsabilidad sobre el constructor, diseñador estructural, y quienes hayan ostentado la titularidad del predio y de la licencia de construcción. En los casos de patrimonios autónomos en los que el fiduciario ostente la titularidad del predio y/o de la licencia de construcción, se deberá prever en el correspondiente contrato fiduciario quien es el responsable de esta obligación.
+
+**I.1.2.3** — Edificaciones que no requieren supervisión técnica independiente — De acuerdo con el artículo 19 de la Ley 400 de 1997, modificado por el artículo 5 de la Ley 1796 de 2016, en aquellas edificaciones que están exentas de supervisión técnica independiente, el constructor tiene la obligación de realizar los controles mínimos de calidad y los ensayos de comprobación técnica de materiales que esta ley y sus reglamentos exigen para garantizar que la edificación se ejecute de conformidad con los planos, diseños y especificaciones técnicas aprobadas en la respectiva licencia. Para ello, el constructor, durante el desarrollo de la obra, deberá contar con la participación del diseñador estructural del proyecto y del ingeniero geotecnista responsables de los planos y estudios aprobados, quienes deberán atender las consultas y aclaraciones que solicite el constructor. Tales consultas y aclaraciones deberán quedar registradas y documentadas en las actas del proceso de ejecución de la obra.
+
+### I.1.3 — ALCANCE DE LA SUPERVISION TECNICA
+
+**I.1.3.1** — El alcance mínimo que debe cubrir la supervisión técnica, así como los controles mínimos exigidos, están definidos en el Capítulo I.2.
+
+### I.1.4 — CUALIDADES QUE DEBE TENER EL SUPERVISOR TECNICO
+
+**I.1.4.1** — El supervisor técnico independiente es el profesional con matricula profesional vigente y facultado para este fin, bajo cuya responsabilidad se realiza la supervisión técnica independiente. Parte de las labores de supervisión pueden ser delegadas por el supervisor técnico independiente en personal técnico auxiliar, el cual trabajará bajo su dirección y responsabilidad. Cuando una persona jurídica realiza simultáneamente las labores de interventoría y supervisión técnica independiente, deberá asignar distintos profesionales en cada labor con el fin de no incurrir en una, o más, de las causales de incompatibilidad prescritas en el artículo 14 de la Ley 1796 de 2016. (Véase la sección I.2.1.2 del presente Reglamento NSR-10)

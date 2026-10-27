@@ -226,7 +226,18 @@ def consolidar(raiz, fuentes=None):
                 continue
             if e["modo"] == "apendice":
                 ruta = os.path.join(raiz, f"titulo-{letra}", e["arg"])
-                md[ruta] = [f"<!-- mod:{e['id']} -->", f"> *Apéndice incorporado por el {decreto['nombre']} (anexo, p. {e['pagina']}).*", ""] + cuerpo.split("\n") + [""]
+                # Un archivo de capítulo (I.05.md, Capítulo I.5 del Decreto 945) no es un apéndice.
+                clase = "Capítulo" if re.match(r"^[A-K]\.\d+\.md$", e["arg"]) else "Apéndice"
+                md[ruta] = [f"<!-- mod:{e['id']} -->", f"> *{clase} incorporado por el {decreto['nombre']} (anexo, p. {e['pagina']}).*", ""] + cuerpo.split("\n") + [""]
+                # Apéndice nuevo: se enlaza en el índice del título, tras su capítulo (F.4-A tras F.4) o al final.
+                indice = md.get(os.path.join(raiz, f"titulo-{letra}", "README.md"))
+                titulo = re.match(r"# (.+)", cuerpo)
+                if indice is not None and titulo and not any(f"]({e['arg']})" in l for l in indice):
+                    enlaces = [k for k, l in enumerate(indice) if l.startswith("- [")]
+                    padre = e["objetivo"].split("-")[0]
+                    hijos = [k for k in enlaces if re.match(r"- \[" + re.escape(padre) + r"[ -]", indice[k])]
+                    k = (hijos or enlaces)[-1] + 1
+                    indice.insert(k, f"- [{titulo.group(1)}]({e['arg']})")
                 aplicadas += 1
                 continue
             if e["modo"] == "municipios":

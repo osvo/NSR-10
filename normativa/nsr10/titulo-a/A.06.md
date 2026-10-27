@@ -243,7 +243,7 @@ Notas:
 
 Cubierta
 
-![Recuadro de la página original](img/recuadro-p91-363.png)
+![Figura A.6.5-1 — Medición de la separación sísmica (vista en elevación)](img/figA.6.5-1.png)
 
 Figura A.6.5-1 — Medición de la separación sísmica (vista en elevación) █ Notas:
 
@@ -253,6 +253,7 @@ Figura A.6.5-1 — Medición de la separación sísmica (vista en elevación) �
 > El literal c) de la sección A.6.5.2.3  debe quedar así:
 >
 > (c) Las edificaciones con uno o dos pisos aéreos en la colindancia no requieren separación sísmica (véase también la Tabla A.6.5-1). Esto aplica para el caso de edificaciones de plataforma y torre, donde la plataforma en la colindancia no tiene más de dos o tres pisos y la fachada de la torre a partir del tercer piso, o el cuarto piso cuando lo permita la Tabla A.6.5-1, está separada de la colindancia en una distancia mayor o igual a la exigida por esta sección A.6.5.2.3. Véase la Figura A.6.5-1.
+
 
 <!-- mod:2-decreto-340-2012-4 -->
 > **Modificación — Decreto 340 de 2012** · anexo, p. 4

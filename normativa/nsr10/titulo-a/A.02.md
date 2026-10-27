@@ -167,7 +167,17 @@ Valor de $A_{a}$ y de $A_{v}$ para las ciudades capitales de departamento
 | Villavicencio | 0.35 | 0.30 | Alta |
 | Yopal | 0.30 | 0.20 | Alta |
 
-Figura A.2.3-1 — Zonas de Amenaza Sísmica aplicable a edificaciones para la NSR-10 en función de $A_{a}$ y $A_{v}$ Figura A.2.3-2 — Mapa de valores de $A_{a}$ Figura A.2.3-3 - Mapa de valores de $Av$
+![Figura A.2.3-1 — Zonas de Amenaza Sísmica aplicable a edificaciones para la NSR-10 en función de](img/figA.2.3-1.png)
+
+Figura A.2.3-1 — Zonas de Amenaza Sísmica aplicable a edificaciones para la NSR-10 en función de $A_{a}$ y $A_{v}$
+
+![Figura A.2.3-2 — Mapa de valores de](img/figA.2.3-2.png)
+
+Figura A.2.3-2 — Mapa de valores de $A_{a}$
+
+![Figura A.2.3-3 - Mapa de valores de Av](img/figA.2.3-3-MapadevaloresdeAv.png)
+
+Figura A.2.3-3 - Mapa de valores de $Av$
 
 <!-- mod:1-decreto-092-2011-5 -->
 > **Modificación — Decreto 092 de 2011** · anexo, p. 1
@@ -326,13 +336,13 @@ Nota: Para el perfil tipo $F$ debe realizarse una investigación geotécnica par
 
 3.5
 
-![Recuadro de la página original](img/recuadro-p36-254.png)
+![Figura A.2.4-1 - Coeficiente de amplificación a](img/figA.2.4-1-Coeficientedeamplificacina.png)
 
-3.0 2.5 2.0 $F_{a}$ 1.5 1.0 0.5 0.0 0.000.050.100.150.200.250.300.350.400.450.50 $A_{a}$ Figura A.2.4-1 - Coeficiente de amplificación $F_{a}$ del suelo para la zona de períodos cortos del espectro 3.5
+Figura A.2.4-1 - Coeficiente de amplificación $F_{a}$ del suelo para la zona de períodos cortos del espectro 3.5
 
-![Recuadro de la página original](img/recuadro-p37-50.png)
+![Figura A.2.4-2 — Coeficiente de amplificación v](img/figA.2.4-2.png)
 
-3.0 2.5 2.0 $F_{v}$ 1.5 1.0 0.5 0.0 0.000.050.100.150.200.250.300.350.400.450.50 $A_{v}$ Figura A.2.4-2 — Coeficiente de amplificación $F_{v}$ del suelo para la zona de períodos intermedios del espectro
+Figura A.2.4-2 — Coeficiente de amplificación $F_{v}$ del suelo para la zona de períodos intermedios del espectro
 
 <!-- mod:1-decreto-092-2011-6 -->
 > **Modificación — Decreto 092 de 2011** · anexo, p. 2

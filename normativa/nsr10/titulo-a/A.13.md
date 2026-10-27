@@ -508,7 +508,7 @@ $j$ = índice de una de las direcciones ortogonales principales en planta, puede
 
 $k$ = exponente relacionado con el período fundamental de la edificación dado en A.4.3.2.
 
-$A_{wi}$= longitud medida horizontalmente, en metros, de un muro estructural $i$ en el primer nivel de la estructura y en la dirección en estudio. Véase A.4.2.
+$ℓ_{wi}$= longitud medida horizontalmente, en metros, de un muro estructural $i$ en el primer nivel de la estructura y en la dirección en estudio. Véase A.4.2.
 
 $m_{i}$ = parte de $M$ que está colocada en el nivel $i$ , en kg. Véase A.4.3.2.
 

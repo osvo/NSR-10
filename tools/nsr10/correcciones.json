@@ -150,7 +150,7 @@
   {
     "archivo": "titulo-b/B.06.md",
     "pagina": "FORK-DOC-008 p. B-51, Figura B.6.5-3 (continuación)",
-    "buscar": "| Coeficientes de Presión en Muros, $C_{p}$ Superficie L/B $C_{p}$ Usar con Muro en barlovento Todos los valores 0.8 $q_{2}$ Muro en sotavento 0-1 -0.5 2 -0.3 $q_{h}$ >4 -0.2 Muros laterales Todos los valores -0.7 $q_{h}$ Coeficientes de Presión en Cubiertas, $C_{p}$ , para usar con $q_{h}$ Dirección del Viento $h /L$ 10 15 Ángulo 20 Barlovento $θ$25 en grados 30 35 45 >60# 10 Angulo 15 Sotavento $θ$ en grados >20 -0.70 -0.50 -0.30 -0.20 -0.20 0.0* 0.01 Normal a la cumbrera θ >10º para <0.25 >1.0 0.50 -1.3** -0.18 -0.90 -0.18 -1.00 -0.70 -0.18 0.0* -0.70 -0.40 0.20 0.0* -0.50 -0.30 0.30 0.20 -0.30 -0.30 -0.20 0.20 -0.20 -0.20 0.30 0.40 0.40 0.40 0.0* 0.0* 0.01 0.01 θ θ -0.70 -0.30 -0.50 -0.60 -0.50 -0.50 -0.60 -0.60 -0.60 -0.18 -0.18 -0.18 0.0* 0.20 0.20 0.30 θ -0.70 -0.60 -0.60 Normal a la cumbrera para θ <10º y paralela a la cumbrera θ para todo <0.5 >1.0 Distancia horizontal desde el borde de barlovento h a 2h h/2 a h 0 a h/2 0 a h/2 > 2h >h/2 -1.3**, -0.18 -0.7, -0.18 -0.3, -0.18 -0.9, -0.18 -0.9, -0.18 -0.5, -0.18 $C_{p}$ Área (m**Valor que puede reducirse linealmente con el área >100 <10 20 *Valor dado para fines de interpolación sobre la cual es aplicable como sigue: 2) )Factor de Reducción 0.8 0.9 1 Notas: 1. Los signos positivos y negativos significan presiones y succiones actuando sobre las superficies, respectivamente. 2. Se permite interpolación lineal para valores de $L /B$ , $h /L$ y $θ$ distintos a los indicados. La interpolación sólo se llevará cabo entre valores del M mismo signo. Donde no se dan valores del mismo signo, se tomará 0.0 para propósitos de interpolación. 3. Donde aparezcan dos valores de $C_{p}$indica que la pendiente de la cubierta a barlovento está sujeta a presiones o succiones y la estructura de la cubierta deberá diseñarse para ambas condiciones. En este caso para valores intermedios de $h /L$ , la interpolación solo podrá realizarse entre valores de $C_{p}$ que tengan el mismo signo. 4. Para cubiertas con una sola pendiente, su superficie total será de barlovento o de sotavento. 5. Para edificios flexibles se debe usar un valor de $G_{f}$ apropiado, según lo indique la sección B.6.5.8. 6. Para domos (superficies abovedadas) debe usarse la figura B.6.5-4 y para cubiertas en arco debe usarse la figura B.6.5-5. 7. Notación: $B$ : dimensión horizontal del edificio, en m, medidas en dirección normal al viento. $L$ : dimensión horizontal del edificio, en m, medida en dirección paralela al viento. $h$ : altura media de la cubierta en m, excepto que para $θ ≤10^{D}$ , se usará la altura del alero. $z$ : altura sobre el terreno, en m. $G$ : factor del efecto ráfaga. $q_{z}$, $q_{h}$: Presión de velocidad del viento, en N/m2, evaluada a la altura respectiva. $θ$ : ángulo del plano de la cubierta con respecto a la horizontal, en grados. 8. Para cubiertas en mansarda, la superficie superior horizontal y la superficie inclinada a sotavento se consideraran para efectos de uso de la tabla, como superficie a sotavento. 9. A excepción del sistema principal (SPRFV) en la cubierta que consiste en pórticos resistentes a momento, el cortante horizontal toral no deberá ser menor que el determinado despreciando las fuerzas del viento sobre las superficies de la cubierta. # Para cubiertas con ángulo $θ ≤80^{D}$ usar $C_{p}=0.8$ |  |  |\n\n| Superficie | L/B | $C_{p}$ | Usar con |\n|---|---|---|---|\n| Muro en barlovento | Todos los valores | 0.8 | $q_{2}$ |\n| Muro en sotavento | 0-1 | -0.5 | $q_{h}$ |\n|  | 2 | -0.3 |  |\n| Muros laterales | >4 | -0.2 |  |\n|  | Todos los valores | -0.7 | $q_{h}$ |",
+    "buscar": "| Coeficientes de Presión en Muros, $C_{p}$ Superficie L/B $C_{p}$ Usar con Muro en barlovento Todos los valores 0.8 $q_{2}$ Muro en sotavento 0-1 -0.5 2 -0.3 $q_{h}$ >4 -0.2 Muros laterales Todos los valores -0.7 $q_{h}$ Coeficientes de Presión en Cubiertas, $C_{p}$ , para usar con $q_{h}$ Dirección del Viento $h /L$ 10 15 Ángulo 20 Barlovento $θ$25 en grados 30 35 45 >60# 10 Angulo 15 Sotavento $θ$ en grados >20 -0.70 -0.50 -0.30 -0.20 -0.20 0.0* 0.01 Normal a la cumbrera θ >10º para <0.25 >1.0 0.50 -1.3** -0.18 -0.90 -0.18 -1.00 -0.70 -0.18 0.0* -0.70 -0.40 0.20 0.0* -0.50 -0.30 0.30 0.20 -0.30 -0.30 -0.20 0.20 -0.20 -0.20 0.30 0.40 0.40 0.40 0.0* 0.0* 0.01 0.01 θ θ -0.70 -0.30 -0.50 -0.60 -0.50 -0.50 -0.60 -0.60 -0.60 -0.18 -0.18 -0.18 0.0* 0.20 0.20 0.30 θ -0.70 -0.60 -0.60 Normal a la cumbrera para θ <10º y paralela a la cumbrera θ para todo <0.5 >1.0 Distancia horizontal desde el borde de barlovento h a 2h h/2 a h 0 a h/2 0 a h/2 > 2h >h/2 -1.3**, -0.18 -0.7, -0.18 -0.3, -0.18 -0.9, -0.18 -0.9, -0.18 -0.5, -0.18 $C_{p}$ Área (m**Valor que puede reducirse linealmente con el área >100 <10 20 *Valor dado para fines de interpolación sobre la cual es aplicable como sigue: 2) )Factor de Reducción 0.8 0.9 1 Notas: 1. Los signos positivos y negativos significan presiones y succiones actuando sobre las superficies, respectivamente. 2. Se permite interpolación lineal para valores de $L /B$ , $h /L$ y $θ$ distintos a los indicados. La interpolación sólo se llevará cabo entre valores del M mismo signo. Donde no se dan valores del mismo signo, se tomará 0.0 para propósitos de interpolación. 3. Donde aparezcan dos valores de $C_{p}$indica que la pendiente de la cubierta a barlovento está sujeta a presiones o succiones y la estructura de la cubierta deberá diseñarse para ambas condiciones. En este caso para valores intermedios de $h /L$ , la interpolación solo podrá realizarse entre valores de $C_{p}$ que tengan el mismo signo. 4. Para cubiertas con una sola pendiente, su superficie total será de barlovento o de sotavento. 5. Para edificios flexibles se debe usar un valor de $G_{f}$ apropiado, según lo indique la sección B.6.5.8. 6. Para domos (superficies abovedadas) debe usarse la figura B.6.5-4 y para cubiertas en arco debe usarse la figura B.6.5-5. 7. Notación: $B$ : dimensión horizontal del edificio, en m, medidas en dirección normal al viento. $L$ : dimensión horizontal del edificio, en m, medida en dirección paralela al viento. $h$ : altura media de la cubierta en m, excepto que para $θ ≤10^{\\circ}$ , se usará la altura del alero. $z$ : altura sobre el terreno, en m. $G$ : factor del efecto ráfaga. $q_{z}$, $q_{h}$: Presión de velocidad del viento, en N/m2, evaluada a la altura respectiva. $θ$ : ángulo del plano de la cubierta con respecto a la horizontal, en grados. 8. Para cubiertas en mansarda, la superficie superior horizontal y la superficie inclinada a sotavento se consideraran para efectos de uso de la tabla, como superficie a sotavento. 9. A excepción del sistema principal (SPRFV) en la cubierta que consiste en pórticos resistentes a momento, el cortante horizontal toral no deberá ser menor que el determinado despreciando las fuerzas del viento sobre las superficies de la cubierta. # Para cubiertas con ángulo $θ ≤80^{\\circ}$ usar $C_{p}=0.8$ |  |  |\n\n| Superficie | L/B | $C_{p}$ | Usar con |\n|---|---|---|---|\n| Muro en barlovento | Todos los valores | 0.8 | $q_{2}$ |\n| Muro en sotavento | 0-1 | -0.5 | $q_{h}$ |\n|  | 2 | -0.3 |  |\n| Muros laterales | >4 | -0.2 |  |\n|  | Todos los valores | -0.7 | $q_{h}$ |",
     "reemplazar": "**Coeficientes de presión en muros, $C_{p}$**\n\n| Superficie | L/B | $C_{p}$ | Usar con |\n|---|---|---|---|\n| Muro en barlovento | Todos los valores | 0.8 | $q_{z}$ |\n| Muro en sotavento | 0-1 | -0.5 | $q_{h}$ |\n|  | 2 | -0.3 |  |\n|  | ≥4 | -0.2 |  |\n| Muros laterales | Todos los valores | -0.7 | $q_{h}$ |\n\n**Coeficientes de presión en cubiertas, $C_{p}$, para usar con $q_{h}$**\n\nDirección del viento normal a la cumbrera para $\\theta \\ge 10^{\\circ}$:\n\n| $h/L$ | Barlovento 10° | 15° | 20° | 25° | 30° | 35° | 45° | ≥60° # | Sotavento 10° | 15° | ≥20° |\n|---|---|---|---|---|---|---|---|---|---|---|---|\n| ≤0.25 | -0.70 | -0.50 | -0.30 | -0.20 | -0.20 | 0.0* | 0.40 | 0.01θ | -0.30 | -0.50 | -0.60 |\n|  | -0.18 | 0.0* | 0.20 | 0.30 | -0.30 | 0.40 |  |  |  |  |  |\n| 0.50 | -0.90 | -0.70 | -0.40 | -0.30 | -0.20 | -0.20 | 0.0* | 0.01θ | -0.50 | -0.50 | -0.60 |\n|  | -0.18 | -0.18 | 0.0* | 0.20 | 0.20 | 0.30 | 0.40 |  |  |  |  |\n| ≥1.0 | -1.3** | -1.00 | -0.70 | -0.50 | -0.30 | -0.20 | 0.0* | 0.01θ | -0.70 | -0.60 | -0.60 |\n|  | -0.18 | -0.18 | -0.18 | 0.0* | 0.20 | 0.20 | 0.30 |  | -0.70 | -0.60 | -0.60 |\n\nDirección del viento normal a la cumbrera para $\\theta < 10^{\\circ}$ y paralela a la cumbrera para todo $\\theta$:\n\n| $h/L$ | Distancia horizontal desde el borde de barlovento | $C_{p}$ |\n|---|---|---|\n| ≤0.5 | 0 a h/2 | -0.9, -0.18 |\n|  | h/2 a h | -0.9, -0.18 |\n|  | h a 2h | -0.5, -0.18 |\n|  | > 2h | -0.3, -0.18 |\n| ≥1.0 | 0 a h/2 | -1.3**, -0.18 |\n|  | > h/2 | -0.7, -0.18 |\n\n\\* Valor dado para fines de interpolación.\n\n\\*\\* Valor que puede reducirse linealmente con el área sobre la cual es aplicable, como sigue:\n\n| Área (m²) | Factor de reducción |\n|---|---|\n| <10 | 1 |\n| 20 | 0.9 |\n| >100 | 0.8 |\n\n\\# Para cubiertas con ángulo $\\theta \\le 80^{\\circ}$ usar $C_{p} = 0.8$."
   },
   {
@@ -282,5 +282,115 @@
     "pagina": "FORK-DOC-006 p. 83 (texto repetido de la ecuación A.5.4-5)",
     "buscar": "\\tag{A.5.4-5} $$\n\n$0.90 V_{tj}$ para estructuras irregulares\n\n",
     "reemplazar": "\\tag{A.5.4-5} $$\n\n"
+  },
+  {
+    "archivo": "titulo-d/D-1.md",
+    "pagina": "FORK-DOC-017 p. 81",
+    "buscar": "![Ecuación D-1.5-4](img/ec-D-1.5-4.png)\n\n$2$\n\n![Ecuación D-1.5-5](img/ec-D-1.5-5.png)\n\n$R_{e}=1−⎢⎥$ para $h '/t≤30$\n\n![Ecuación](img/ec-p81-228.png)\n\npara $h t$\n\n",
+    "reemplazar": "![Ecuación D-1.5-4](img/ec-D-1.5-4.png)\n\n$$ R_e = 1-\\left[\\dfrac{h'}{42t}\\right]^2 \\quad \\text{para } h'/t \\le 30 \\qquad R_e = \\left[\\dfrac{21t}{h'}\\right]^2 \\quad \\text{para } h'/t > 30 \\tag{D-1.5-5} $$\n\n"
+  },
+  {
+    "archivo": "titulo-d/D.05.md",
+    "pagina": "FORK-DOC-017 p. 47",
+    "buscar": "![Ecuación D.5.5-2](img/ec-D.5.5-2.png)\n\npara $h t$\n\n![Ecuación](img/ec-p47-531.png)\n\npara $h t$\n\n",
+    "reemplazar": "![Ecuación D.5.5-2](img/ec-D.5.5-2.png)\n\n![Ecuación](img/ec-p47-531.png)\n\n"
+  },
+  {
+    "archivo": "titulo-d/D.10.md",
+    "pagina": "FORK-DOC-017 p. 68",
+    "buscar": "![Ecuación D.10.7-4](img/ec-D.10.7-4.png)\n\npara $h t$\n\n![Ecuación](img/ec-p68-328.png)\n\npara $h t$\n\n",
+    "reemplazar": "![Ecuación D.10.7-4](img/ec-D.10.7-4.png)\n\n![Ecuación](img/ec-p68-328.png)\n\n"
+  },
+  {
+    "archivo": "titulo-f/F.02.md",
+    "pagina": "FORK-DOC-019 p. 77",
+    "buscar": "sumándole $4⎡⎢⎣(b_{l}/b_{s})2−1⎤⎦⎥$",
+    "reemplazar": "sumándole $4\\left[(b_l/b_s)^2-1\\right]$"
+  },
+  {
+    "archivo": "titulo-f/F.02.md",
+    "pagina": "FORK-DOC-019 p. 77",
+    "buscar": "sumándole $6⎡⎢⎣(b_{l}/b_{s})2−1⎤⎦⎥$",
+    "reemplazar": "sumándole $6\\left[(b_l/b_s)^2-1\\right]$"
+  },
+  {
+    "archivo": "titulo-f/F.02.md",
+    "pagina": "FORK-DOC-019 p. 153",
+    "buscar": "factor igual a $⎦$",
+    "reemplazar": "factor igual a $\\left[1-0.0154(t-6)\\right]$"
+  },
+  {
+    "archivo": "titulo-f/F.02.md",
+    "pagina": "FORK-DOC-019 p. 136",
+    "buscar": "Numeral F.2.10.1.6 en lugar de AWS D1.1 — Sección 5.17.1 Numeral F.2.10.2.2.1 en lugar de AWS D1.1 — Sección 2.3.2\n\n**Tabla F.2.10.2-2** — en lugar de AWS D1.1 — Tabla 2.1\n\n**Tabla F.2.10.2-5** — en lugar de AWS D1.1 — Tabla 2.3\n\n**Tabla F.2.17-1** — en lugar de AWS D1.1 — Tabla 2.4\n\nNumerales F.2.2.3.10 y F.2.17 en lugar de AWS D1.1 — Sección 2, Parte C Numeral F.2.13.2.2 en lugar de AWS D1.1 — Secciones 5.15.4.3 y 5.15.4.4",
+    "reemplazar": "- Numeral F.2.10.1.6 en lugar de AWS D1.1 — Sección 5.17.1\n- Numeral F.2.10.2.2.1 en lugar de AWS D1.1 — Sección 2.3.2\n- Tabla F.2.10.2-2 en lugar de AWS D1.1 — Tabla 2.1\n- Tabla F.2.10.2-5 en lugar de AWS D1.1 — Tabla 2.3\n- Tabla F.2.17-1 en lugar de AWS D1.1 — Tabla 2.4\n- Numerales F.2.2.3.10 y F.2.17 en lugar de AWS D1.1 — Sección 2, Parte C\n- Numeral F.2.13.2.2 en lugar de AWS D1.1 — Secciones 5.15.4.3 y 5.15.4.4"
+  },
+  {
+    "archivo": "titulo-f/F.04.md",
+    "pagina": "FORK-DOC-019 p. 333",
+    "buscar": "$≤120_{°}$",
+    "reemplazar": "$≤120^{\\circ}$"
+  },
+  {
+    "archivo": "titulo-f/F.04.md",
+    "pagina": "FORK-DOC-019 p. 365",
+    "buscar": "$k˜φfg$",
+    "reemplazar": "$\\tilde{k}_{φfg}$"
+  },
+  {
+    "archivo": "titulo-f/F.04.md",
+    "pagina": "FORK-DOC-019 p. 365 y 381",
+    "buscar": "$\\tilde{k}φwg$",
+    "reemplazar": "$\\tilde{k}_{φwg}$",
+    "todas": true
+  },
+  {
+    "archivo": "titulo-f/F.04.md",
+    "pagina": "FORK-DOC-019 p. 381",
+    "buscar": "$\\tilde{k}φfg$",
+    "reemplazar": "$\\tilde{k}_{φfg}$",
+    "todas": true
+  },
+  {
+    "archivo": "titulo-f/F.05.md",
+    "pagina": "FORK-DOC-019 p. 479",
+    "buscar": "Filetes a 45$° ρ =1.6F /t$",
+    "reemplazar": "Filetes a 45° $ρ =1.6F/t$"
+  },
+  {
+    "archivo": "titulo-f/F.05.md",
+    "pagina": "FORK-DOC-019 p. 514",
+    "buscar": "$___ _ ___ _$",
+    "reemplazar": "\\_\\_\\_ \\_ \\_\\_\\_ \\_"
+  },
+  {
+    "archivo": "titulo-f/F.05.md",
+    "pagina": "FORK-DOC-019 p. 497",
+    "buscar": "![Ecuación](img/ec-p497-523.png)\n\ncon platina o platinas de enchape $⎦$(F.5.5.4-4) Donde:",
+    "reemplazar": "con platina o platinas de enchape\n\n$$ V_{RS} = \\phi\\left[(v_1+v_{tf})\\,p_{vw}\\,d\\,t + p_{vt}A_{te}\\right] \\tag{F.5.5.4-4} $$\n\nDonde:"
+  },
+  {
+    "archivo": "titulo-f/F.5-F.md",
+    "pagina": "FORK-DOC-019 p. 560",
+    "buscar": "$J= ∫S0t^{3} 3ds$",
+    "reemplazar": "$J = \\int_0^S \\dfrac{t^3\\,ds}{3}$"
+  },
+  {
+    "archivo": "titulo-g/G.06.md",
+    "pagina": "FORK-DOC-022 p. 84",
+    "buscar": "**Tabla G.6.13-6**\n\nDistanciamiento mínimo en uniones pernadas Distanciamiento mínimo en uniones pernadas 4d 4d 4d 5d4d4d 2d 2d 2d 2d 2d 2d Perno Compresión PernoTracción O cm 4d 4d 2d2dOcm5d4d 2d 2d 38 \" 0.95 3.80 3.80 1.901.9038\"0.954.753.80 1.90 1.90 21 \" 1.27 5.08 5.08 2.542.5421\"1.276.365.08 2.54 2.54 58 \" 1.59 6.36 6.36 3.183.1858 \"1.597.956.36 3.18 3.18 34 \"1.90 7.60 7.60 3.803.8034 \"1.909.507.60 3.80 3.80",
+    "reemplazar": "**Tabla G.6.13-6** — Distanciamiento mínimo en uniones pernadas\n\n| Perno Ø | cm | Compresión 4d | Compresión 4d | Compresión 2d | Compresión 2d |\n|---|---|---|---|---|---|\n| 3/8\" | 0.95 | 3.80 | 3.80 | 1.90 | 1.90 |\n| 1/2\" | 1.27 | 5.08 | 5.08 | 2.54 | 2.54 |\n| 5/8\" | 1.59 | 6.36 | 6.36 | 3.18 | 3.18 |\n| 3/4\" | 1.90 | 7.60 | 7.60 | 3.80 | 3.80 |\n\n| Perno Ø | cm | Tracción 5d | Tracción 4d | Tracción 2d | Tracción 2d |\n|---|---|---|---|---|---|\n| 3/8\" | 0.95 | 4.75 | 3.80 | 1.90 | 1.90 |\n| 1/2\" | 1.27 | 6.36 | 5.08 | 2.54 | 2.54 |\n| 5/8\" | 1.59 | 7.95 | 6.36 | 3.18 | 3.18 |\n| 3/4\" | 1.90 | 9.50 | 7.60 | 3.80 | 3.80 |"
+  },
+  {
+    "archivo": "titulo-h/H.01.md",
+    "pagina": "FORK-DOC-023 p. 1",
+    "buscar": "# H.1 — Introducción h.1.1 — requisitos generales\n",
+    "reemplazar": "# H.1 — Introducción\n\n### H.1.1 — REQUISITOS GENERALES\n"
+  },
+  {
+    "archivo": "titulo-h/README.md",
+    "pagina": "FORK-DOC-023 p. 1",
+    "buscar": "- [H.1 — Introducción h.1.1 — requisitos generales](H.01.md)",
+    "reemplazar": "- [H.1 — Introducción](H.01.md)"
   }
 ]

@@ -14,7 +14,7 @@ import unicodedata
 
 RE_TITULO_TABLA = re.compile(r"^(?:\*\*)?Tabla\s+([A-K][.-][\dA-Z.]+-?\d*[a-z]?(?:\([a-z]\))?)", re.I)
 RE_MATE = re.compile(r"(?<!\$)\$([^$\n]+)\$(?!\$)")
-PERMITIDOS = set(" _{}^\\.,()=+-/<>'[]:;|%·×′−≤≥αβγδεζηθικλμνξπρστυφχψωΓΔΘΛΞΠΣΦΨΩℓ∑√∞≈≠±∂")
+PERMITIDOS = set(" _{}^\\.,()=+-/<>'[]:;|%·×′−≤≥αβγδεζηθικλμνξπρστυφχψωΓΔΘΛΞΠΣΦΨΩℓ∑√∞≈≠±∂*")  # * de F_b^{*} y M^{*}_{pc}
 
 
 def auditar(raiz):

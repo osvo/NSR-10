@@ -73,5 +73,10 @@
   "A-2-15": "\\bar{\\delta}_{1x} = \\dfrac{\\bar{V}_1}{V_1}\\left(\\delta_{1x} + \\dfrac{M_{1o}\\,h_x}{K_\\theta}\\right)",
   "img:ec-p162-586": "\\delta_T = C_0 C_1 S_a\\left(\\dfrac{T_e}{2\\pi}\\right)^2 g",
   "img:ec-p163-226": "C_1 = \\dfrac{1}{R_d}\\left(1 + \\dfrac{\\left(R_d - 1\\right)T_C}{T_e}\\right)",
-  "img:ec-p73-88": "\\text{1aP: } 1.4\\left(\\dfrac{\\Delta_1 + \\Delta_2}{2}\\right) \\ge \\Delta_1 > 1.2\\left(\\dfrac{\\Delta_1 + \\Delta_2}{2}\\right) \\qquad \\text{1bP: } \\Delta_1 > 1.4\\left(\\dfrac{\\Delta_1 + \\Delta_2}{2}\\right)"
+  "img:ec-p73-88": "\\text{1aP: } 1.4\\left(\\dfrac{\\Delta_1 + \\Delta_2}{2}\\right) \\ge \\Delta_1 > 1.2\\left(\\dfrac{\\Delta_1 + \\Delta_2}{2}\\right) \\qquad \\text{1bP: } \\Delta_1 > 1.4\\left(\\dfrac{\\Delta_1 + \\Delta_2}{2}\\right)",
+  "A-3.2-1": "T_e = T_l\\sqrt{\\dfrac{V_l/\\delta_l}{V_y/\\delta_y}}",
+  "A-3.2-2": "\\delta_T = C_0 C_1 S_a\\left(\\dfrac{T_e}{2\\pi}\\right)^2 g",
+  "A-3.2-3": "C_0 = \\dfrac{\\sum_{i=1}^{n} m_i\\phi_i}{\\sum_{i=1}^{n} m_i\\phi_i^2}",
+  "A-3.2-4": "C_1 = \\dfrac{1}{R_d}\\left(1 + \\dfrac{\\left(R_d - 1\\right)T_C}{T_e}\\right)",
+  "A-3.2-5": "R_d = \\dfrac{S_a M g}{V_y}"
 }

@@ -201,7 +201,11 @@ Valor de $A_{e}$ para las ciudades capitales de departamento
 | Mocoa | 0.20 | Villavicencio | 0.20 |
 | Montería | 0.07 | Yopal | 0.15 |
 
-antes de la vigencia de la presente versión del Reglamento Figura A.10.3-1 — Mapa de valores de $A_{e}$ Nota: Las regiones representan rangos de valores. Debe consultarse el Apéndice A-4 para determinar el valor de $A_{e}$ en cada municipio.
+antes de la vigencia de la presente versión del Reglamento
+
+![Figura A.10.3-1 — Mapa de valores de](img/figA.10.3-1.png)
+
+Figura A.10.3-1 — Mapa de valores de $A_{e}$ Nota: Las regiones representan rangos de valores. Debe consultarse el Apéndice A-4 para determinar el valor de $A_{e}$ en cada municipio.
 
 antes de la vigencia de la presente versión del Reglamento
 

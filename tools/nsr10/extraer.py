@@ -18,8 +18,8 @@ import sys
 import pymupdf
 
 FUENTES_MATE = ("Times", "Symbol", "MTExtra", "Euclid", "CambriaMath")
-RE_TAG = re.compile(r"^\(([A-K](?:-[A-Z])?\.\d+(?:\.\d+)*-\d+[a-z]?|[A-K]-\d+-\d+[a-z]?)\)$")
-RE_ART = re.compile(r"^([A-K](?:-[A-Z]|\.[A-Z](?=\.))?\.\d+(?:\.\d+)*)\s*[—–-]\s*(.*)$")
+RE_TAG = re.compile(r"^\(([A-K](?:-[A-Z])?\.\d+(?:\.\d+)*-\d+[a-z]?|[A-K]-\d+(?:\.\d+)*-\d+[a-z]?)\)$")
+RE_ART = re.compile(r"^([A-K](?:-[A-Z]|\.[A-Z](?=\.))?\.\d+(?:\.\d+)*|[A-K]-\d+(?:\.\d+)+)\s*[—–-]\s*(.*)$")
 LLAVES = set("⎛⎜⎝⎞⎟⎠⎡⎢⎣⎤⎥⎦⎧⎨⎩⎫⎬⎭")
 RE_ENCAB = re.compile(r"^(NSR-10\s*[—–-]|REGLAMENTO\s*$|COMENTARIO|[A-K]-\d+\s*$)")
 TITULOS_CONOCIDOS = {"C.17": "Elementos compuestos de concreto sometidos a flexión"}
@@ -33,6 +33,9 @@ RE_CAP = re.compile(r"^(CAP[ÍI]TULO|AP[ÉE]NDICE)\s+([A-K][.-](?:\d+|[A-Z])(?:[
 SYMBOL = dict(zip(range(0x20, 0x7F), " !∀#∃%&∋()∗+,−./0123456789:;<=>?≅ΑΒΧΔΕΦΓΗΙϑΚΛΜΝΟΠΘΡΣΤΥςΩΞΨΖ[∴]⊥_‾αβχδεφγηιϕκλμνοπθρστυϖωξψζ{|}∼"))
 SYMBOL.update(zip(range(0xA1, 0xFF), "ϒ′≤⁄∞ƒ♣♦♥♠↔←↑→↓°±″≥×∝∂•÷≠≡≈…⏐⎯↵ℵℑℜ℘⊗⊕∅∩∪⊃⊇⊄⊂⊆∈∉∠∇®©™∏√⋅¬∧∨⇔⇐⇑⇒⇓◊〈®©™∑⎛⎜⎝⎡⎢⎣⎧⎨⎩⎪ 〉∫⌠⎮⌡⎞⎟⎠⎤⎥⎦⎫⎬⎭"))
 MTEXTRA = {65: "ℓ"}
+# MTExtra como fuente Type0 (Identity-H, sin subconjunto que decodificar): el texto llega con los
+# códigos de la fuente. «A» es ℓ (Tablas H.4 y G.6), «D» el grado (θ ≤ 45°) y 0x04 la tilde de k̃.
+MTEXTRA_TYPE0 = {"A": "ℓ", "D": "°", "\x04": "˜"}
 FAMILIAS_CODIFICADAS = ("SymbolMT", "MTExtra")
 _FUENTES = {}
 
@@ -87,9 +90,12 @@ def normalizar_glifos(pagina, pagina_dict):
             if clave not in _FUENTES:
                 _FUENTES[clave] = decodificar_fuente(doc, f[0], familia)
             subconj.setdefault(familia, []).append(_FUENTES[clave])
+    tipo0 = any(f[2] == "Type0" and f[3].split("+")[-1] == "MTExtra" for f in pagina.get_fonts())
     for b in pagina_dict["blocks"]:
         for l in b.get("lines", []):
             for s in l["spans"]:
+                if tipo0 and s["font"] == "MTExtra":
+                    s["text"] = "".join(MTEXTRA_TYPE0.get(c, c) for c in s["text"])
                 if s["font"].startswith("ArialUnicodeMS"):
                     s["text"] = s["text"].replace("\x0e", "†")  # daga de nota al pie (Tabla C.4.4.1)
     if not subconj:
@@ -153,9 +159,14 @@ def solo_mate(linea):
 TRAZOS = {"radicales": 0, "barras": 0, "cortes": 0, "descartados": 0}
 # Bandas de ecuación recortadas: (página, bbox, archivo). transcribir.py las convierte a LaTeX.
 REGISTRO_BANDAS = []
+# Fracciones en línea reconstruidas (página, caja, LaTeX), para cotejarlas contra el PDF.
+REGISTRO_FRACCIONES = []
 # Títulos cuyas ecuaciones salen de transcribir.py: el texto de la fila del número va con la ecuación.
 TITULOS_FILA_DEL_NUMERO = {"F"}
 FILA_DEL_NUMERO = False
+# Títulos sin correcciones manuales de fracciones en línea: se reconstruyen desde la barra dibujada.
+TITULOS_FRACCIONES_EN_LINEA = set("DEFGHIJK")
+FRACCIONES_EN_LINEA = False
 
 
 def trazos_mate(pagina, alto_max=40):
@@ -181,12 +192,16 @@ def trazos_mate(pagina, alto_max=40):
                 if not any(abs(rad[0] - o[0]) < 1.5 and abs(rad[1] - o[1]) < 1.5 for o in radicales):
                     radicales.append(rad)
                 continue
-        if g.get("type") == "s" and len(segs) == 1:
-            a, b = segs[0]
-            dx, dy = abs(a.x - b.x), abs(a.y - b.y)
-            bajo, alto = (a, b) if a.y > b.y else (b, a)
-            if 5 <= dy <= 18 and 0.12 * dy <= dx <= 0.6 * dy and alto.x > bajo.x:
-                barras.append((r.x0, r.y0, r.x1, r.y1))
+        # Barra «/» de un segmento; en D a K un mismo trazo puede traer varias (h/t_w sobre L_b/b_f).
+        if g.get("type") == "s" and (len(segs) == 1 or FRACCIONES_EN_LINEA):
+            candidatas = []
+            for a, b in segs:
+                dx, dy = abs(a.x - b.x), abs(a.y - b.y)
+                bajo, alto = (a, b) if a.y > b.y else (b, a)
+                if 5 <= dy <= 18 and 0.12 * dy <= dx <= 0.6 * dy and alto.x > bajo.x:
+                    candidatas.append((min(a.x, b.x), min(a.y, b.y), max(a.x, b.x), max(a.y, b.y)))
+            if len(candidatas) == len(segs):
+                barras.extend(candidatas)
     return radicales, barras
 
 
@@ -207,7 +222,7 @@ def inyectar_trazos(pagina, pagina_dict):
     las posiciones de cada carácter (rawdict tiene la misma estructura que dict).
     """
     radicales, barras = trazos_mate(pagina)
-    if not radicales and not barras:
+    if not radicales and not barras and not FRACCIONES_EN_LINEA:
         return pagina_dict
     ubic = {}
     for bi, b in enumerate(pagina_dict["blocks"]):
@@ -281,7 +296,146 @@ def inyectar_trazos(pagina, pagina_dict):
         tam = max((s["size"] for s in destino["spans"] if s["text"].strip()), default=10)
         destino["spans"].append(_span_sintetico("/", xm, y0, y1, tam))
         TRAZOS["barras"] += 1
+    if FRACCIONES_EN_LINEA:
+        fracciones_en_linea(pagina, lineas, radicales)
     return pagina_dict
+
+
+def _pieza(spans):
+    """Texto de un numerador o denominador: los glifos menores que la base van como subíndices
+    o superíndices, según queden por debajo o por encima de su centro."""
+    spans = sorted(spans, key=lambda s: s["bbox"][0])
+    # Negrita simulada: el mismo glifo dibujado dos veces casi en el mismo lugar («11/xx»).
+    unicos = []
+    for s in spans:
+        if unicos and s["text"] == unicos[-1]["text"] and abs(s["bbox"][0] - unicos[-1]["bbox"][0]) < 1.5:
+            continue
+        unicos.append(s)
+    spans = unicos
+    # Tamaño de referencia: el mayor glifo alfanumérico (los paréntesis grandes no cuentan).
+    alfa = [s for s in spans if re.search(r"\w", s["text"])] or spans
+    ref = max(alfa, key=lambda s: s["size"])
+    cref = (ref["bbox"][1] + ref["bbox"][3]) / 2
+    out = []
+    for s in spans:
+        t = s["text"].strip()
+        if s["size"] < 0.85 * ref["size"] and out and s["font"] != "MTExtra-trazo":
+            arriba = (s["bbox"][1] + s["bbox"][3]) / 2 < cref - 1
+            out.append(("^{" if arriba else "_{") + t + "}")
+        else:
+            out.append(t)
+    return re.sub(r"\s+", " ", "".join(out)).replace("′", "'")
+
+
+def fracciones_en_linea(pagina, lineas, radicales):
+    """Fracciones apiladas dentro del texto corrido (Título F: «L/r_x ≤ 80» escrito con barra
+    horizontal). Sin esto, numerador y denominador salían en orden de x («r_{x}L ≤80»).
+
+    Solo actúa si en la altura de la barra hay texto que no es matemático (prosa): las ecuaciones de
+    presentación se recortan aparte y no se tocan.
+    """
+    barras = []
+    for g in pagina.get_drawings():
+        for it in g["items"]:
+            if it[0] == "re" and it[1].height < 1.6 and 3 < it[1].width < 70:
+                barras.append((it[1].x0, (it[1].y0 + it[1].y1) / 2, it[1].x1))
+            elif it[0] == "l" and abs(it[1].y - it[2].y) < 0.5 and 3 < abs(it[2].x - it[1].x) < 70:
+                barras.append((min(it[1].x, it[2].x), it[1].y, max(it[1].x, it[2].x)))
+    verticales = []
+    for g in pagina.get_drawings():
+        for it in g["items"]:
+            if it[0] == "re" and it[1].width < 2.5 and it[1].height > 4:
+                verticales.append(it[1])
+            elif it[0] == "l" and abs(it[1].x - it[2].x) < 0.5 and abs(it[1].y - it[2].y) > 4:
+                verticales.append(pymupdf.Rect(it[1].x, min(it[1].y, it[2].y), it[1].x, max(it[1].y, it[2].y)))
+    for x0, yb, x1 in barras:
+        def es_prosa(s):
+            return (re.search(r"[A-Za-zÁÉÍÓÚáéíóúñ]{2}", s["text"]) and not RE_TAG.match(s["text"].strip())
+                    and not es_mate(s) and s["font"] not in ("MTExtra-trazo", "MTExtra-frac"))
+        fila = [s for l in lineas if l["bbox"][1] - 3 <= yb <= l["bbox"][3] + 3 for s in l["spans"] if es_prosa(s)]
+        # Prosa antes de la barra («Cuando L/r_x ≤ 80») o una frase de texto en la fila; una palabra suelta
+        # después («… para h′/t ≤ 30») es una ecuación de presentación partida y se deja a las bandas.
+        if not (any(s["bbox"][2] <= x0 + 1 for s in fila) or len("".join(s["text"] for s in fila).strip()) >= 25):
+            continue
+        prosa = [l for l in lineas if l["bbox"][1] - 3 <= yb <= l["bbox"][3] + 3
+                 and any(es_prosa(s) for s in l["spans"]) and l["bbox"][0] - 120 <= x0 and x1 <= l["bbox"][2] + 120]
+        # Un pie de figura o de tabla no recibe etiquetas del dibujo de encima («d/n» de la Figura G.3.4-3).
+        if any(re.match(r"^(Figura|Tabla|TABLA)\s", texto(l["spans"]).strip()) for l in prosa):
+            continue
+        if not prosa:
+            continue
+        # Una fila con número de ecuación es una ecuación de presentación («R_e = 1 − […]² para
+        # h′/t ≤ 30  (D-1.5-5)»): se recorta como banda y no se toca aquí.
+        if any(RE_TAG.match(s["text"].strip()) for l in lineas for s in l["spans"]
+               if abs((l["bbox"][1] + l["bbox"][3]) / 2 - yb) < 14):
+            continue
+        # La raya superior de un radical (√f′m) no es barra de fracción.
+        if any(abs(yb - ry0) < 2 and rx0 - 2 <= x0 and x1 <= rxf + 2 for rx0, ry0, rxf, _ in radicales):
+            continue
+        if any(s["text"].strip().endswith("√") and 0 <= x0 - s["bbox"][2] < 6 and abs(s["bbox"][1] - yb) < 6
+               for l in lineas for s in l["spans"]):
+            continue
+        num, den = [], []
+        for l in lineas:
+            for s in l["spans"]:
+                if not s["text"].strip() or not es_mate(s):
+                    continue
+                if s["font"] == "MTExtra-trazo" and s["text"] not in ("\\sqrt{", "}", "/"):
+                    continue
+                cx, cy = _centro(s), (s["bbox"][1] + s["bbox"][3]) / 2
+                if not (x0 - 1.5 <= cx <= x1 + 1.5) or s["bbox"][0] < x0 - 4 or s["bbox"][2] > x1 + 4:
+                    continue
+                if yb - 13 <= cy < yb - 0.5:
+                    num.append((l, s))
+                elif yb + 0.5 < cy <= yb + 13:
+                    den.append((l, s))
+        if not [1 for _, s in num if s["font"] != "MTExtra-trazo"] or not [1 for _, s in den if s["font"] != "MTExtra-trazo"]:
+            continue
+        # Numerales romanos apilados en celdas (Tablas J.3): son dos valores, no una fracción.
+        if all(re.fullmatch(r"[IVX]+", s["text"].strip()) for _, s in num + den if s["font"] != "MTExtra-trazo"):
+            continue
+        # Numerador y denominador pegados a la barra; si no, es una barra superior (x̄) o la raya de un
+        # radical sobre la fila siguiente.
+        glifos_n = [s for _, s in num if s["font"] != "MTExtra-trazo"]
+        glifos_d = [s for _, s in den if s["font"] != "MTExtra-trazo"]
+        if yb - max(s["bbox"][3] for s in glifos_n) > 3.5 or min(s["bbox"][1] for s in glifos_d) - yb > 3.5:
+            continue
+        # Filas de una lista de definiciones (x_i / x̄, P_n / M̄_x): cada fila sigue con «=» o texto.
+        propios = [x for _, x in num + den]
+        def alto_medio(g):
+            return sum((x["bbox"][1] + x["bbox"][3]) / 2 for x in g) / len(g)
+        filas_nd = (alto_medio(glifos_n), alto_medio(glifos_d))
+        if any(o["text"].strip().startswith("=") and o not in propios and x1 + 3 < o["bbox"][0] < x1 + 45
+               and any(abs((o["bbox"][1] + o["bbox"][3]) / 2 - c) < 3 for c in filas_nd)
+               for l in lineas for o in l["spans"]):
+            continue
+        # Valores apilados en una celda: la «barra» es un borde que toca las verticales de la tabla.
+        if any(abs(v.x0 - x0) < 2.5 or abs(v.x1 - x1) < 2.5 for v in verticales if v.y0 - 1 <= yb <= v.y1 + 1):
+            continue
+        texto_ = "\\frac{" + _pieza([s for _, s in num]) + "}{" + _pieza([s for _, s in den]) + "}"
+        if texto_.count("{") != texto_.count("}") or re.search("[⎛⎜⎝⎞⎟⎠⎡⎢⎣⎤⎥⎦]", texto_):
+            continue
+        for l, s in num + den:
+            if s in l["spans"]:
+                l["spans"].remove(s)
+        destino = min(prosa, key=lambda l: abs((l["bbox"][1] + l["bbox"][3]) / 2 - yb))
+        # Un radical que envuelve la fracción (4.71√(E/F_y)) quedó en la línea del numerador: sus
+        # trazos sintéticos pasan a la línea de destino para no perderse con ella.
+        for l in {id(l): l for l, _ in num + den}.values():
+            if l is destino:
+                continue
+            for s in [s for s in l["spans"] if s["font"] == "MTExtra-trazo"]:
+                l["spans"].remove(s)
+                destino["spans"].append(s)
+        tam = max((s["size"] for _, s in num + den), default=10)
+        sint = _span_sintetico(texto_, x0, yb - 6, yb + 6, tam)
+        sint["font"] = "MTExtra-frac"
+        destino["spans"].append(sint)
+        destino["spans"].sort(key=lambda s: s["bbox"][0])
+        TRAZOS["fracciones"] = TRAZOS.get("fracciones", 0) + 1
+        caja = [min(s["bbox"][0] for _, s in num + den), min(s["bbox"][1] for _, s in num),
+                max(s["bbox"][2] for _, s in num + den), max(s["bbox"][3] for _, s in den)]
+        REGISTRO_FRACCIONES.append({"pagina": pagina.number + 1, "bbox": [round(v, 1) for v in caja], "latex": texto_})
 
 
 def anotar_glifos(pagina, pagina_dict):
@@ -496,7 +650,27 @@ def inline(spans, subindices):
         # La prima va pegada a la base (f′c → f'_{c}) y KaTeX no acepta dos subíndices seguidos.
         t = re.sub(r"_\{([^{}]+)\}_\{′\}", r"'_{\1}", t)
         t = re.sub(r"_\{([^{}]+)\}_\{([^{}]+)\}", r"_{\1,\2}", t)
-        t = t.replace("′", "'")
+        t = t.replace("′", "'").replace("´", "'")
+        # Grados de MTExtra (45° como superíndice) y tilde de k̃ (Título F).
+        if re.search(r"\d\s*(\^\{)?°", t):
+            t = t.replace("^{°}", r"^{\circ}").replace("°", r"^{\circ}")
+        t = re.sub(r"(\w)\^\{˜\}", r"\\tilde{\1}", t)
+        t = re.sub(r"\s*[⊥┴]", r"\\perp ", t).strip()   # F_{c⊥} del Título G
+        if t == "█":
+            # Marca negra de fin de capítulo (Título D): no es contenido.
+            mate.clear()
+            return
+        if t in ("°", "º"):
+            # Grados sueltos en la fuente Symbol (45°, ángulos del Título D): es texto, no fórmula.
+            partes.append(t + (" " if crudo.endswith(" ") else ""))
+            mate.clear()
+            return
+        m = re.fullmatch(r'"(\w{1,3})"', t)
+        if m:
+            # Ejes y subíndices citados entre comillas («eje "y"» en el Título F).
+            partes.append(f'"${m.group(1)}$"' + (" " if crudo.endswith(" ") else ""))
+            mate.clear()
+            return
         # Acento circunflejo suelto (b̂ y α̂ de la Tabla B.6.5-2) y texto con tildes dentro de la fórmula.
         t = re.sub(r"\bca,\s*(m[áí][xn])", r"c_{a,\1}", t)   # c_{a,mín} y c_{a,máx} del Apéndice C-D
         t = re.sub(r"ˆ(\w)", r"\\hat{\1}", t)
@@ -625,7 +799,7 @@ def tabla_md_rica(tabla, lineas, subs, absorbidas, usados):
                 filas_md.append([" ".join(x) for x in sf])
         else:
             filas_md.append([" ".join(t for _, t in c) for c in celdas])
-    if len(filas_md) < 2 or max(len(f) for f in filas_md) < 2:
+    if len(filas_md) < 2 or max(len(f) for f in filas_md) < (1 if getattr(tabla, "una_columna", False) else 2):
         return None, 1.0
     n = max(len(f) for f in filas_md)
     filas_md = [f + [""] * (n - len(f)) for f in filas_md]
@@ -638,9 +812,59 @@ def tabla_md_rica(tabla, lineas, subs, absorbidas, usados):
     return "\n".join(md), vacias / max(total, 1)
 
 
+class _Fila:
+    def __init__(self, cells):
+        self.cells = cells
+
+
+class _TablaUnaColumna:
+    """Lista en recuadro de una sola columna (Tablas K.2.2-2 y similares), que find_tables no detecta."""
+    una_columna = True
+
+    def __init__(self, x0, ys, x1):
+        self.bbox = (x0, ys[0], x1, ys[-1])
+        self.rows = [_Fila([(x0, a, x1, b)]) for a, b in zip(ys, ys[1:])]
+
+
+def tablas_una_columna(pagina, existentes):
+    """Rejillas de una columna dibujadas con rectángulos finos: líneas horizontales del mismo ancho,
+    apiladas y cerradas por dos verticales en sus extremos."""
+    horiz, vert = {}, []
+    for d in pagina.get_drawings():
+        for it in d["items"]:
+            if it[0] != "re":
+                continue
+            r = it[1]
+            if r.height <= 2.5 and r.width > 40:
+                # Los bordes exteriores llegan con 1-2 pt más de ancho que las divisiones interiores.
+                clave = next((k for k in horiz if abs(k[0] - r.x0) < 3 and abs(k[1] - r.x1) < 3),
+                             (round(r.x0), round(r.x1)))
+                horiz.setdefault(clave, []).append((r.y0 + r.y1) / 2)
+            elif r.width <= 2.5 and r.height > 4:
+                vert.append(r)
+    tablas = []
+    for (x0, x1), ys in horiz.items():
+        ys = sorted(set(round(y, 1) for y in ys))
+        grupo = [ys[0]]
+        for y in ys[1:] + [None]:
+            if y is not None and y - grupo[-1] < 40:
+                grupo.append(y)
+                continue
+            cerrada = all(any(abs(v.x0 - x) < 3 and v.y0 <= a + 2 and v.y1 >= b - 2 for v in vert)
+                          for x in (x0, x1) for a, b in zip(grupo, grupo[1:]))
+            solapa = any(t.bbox[0] - 3 <= x0 and x1 <= t.bbox[2] + 3 and t.bbox[1] - 3 <= grupo[0]
+                         and grupo[-1] <= t.bbox[3] + 3 for t in existentes)
+            if len(grupo) >= 3 and cerrada and not solapa:
+                tablas.append(_TablaUnaColumna(x0, grupo, x1))
+            if y is not None:
+                grupo = [y]
+    return tablas
+
+
 def procesar(pdf, letra, salida):
-    global FILA_DEL_NUMERO
+    global FILA_DEL_NUMERO, FRACCIONES_EN_LINEA
     FILA_DEL_NUMERO = letra in TITULOS_FILA_DEL_NUMERO
+    FRACCIONES_EN_LINEA = letra in TITULOS_FRACCIONES_EN_LINEA
     doc = pymupdf.open(pdf)
     ruta_json = os.path.join(os.path.dirname(os.path.abspath(__file__)), "ecuaciones", f"{letra}.json")
     latex = json.load(open(ruta_json, encoding="utf-8")) if os.path.exists(ruta_json) else {}
@@ -665,19 +889,63 @@ def procesar(pdf, letra, salida):
     for np_, pagina in enumerate(doc):
         if np_ < inicio:
             continue
+        if pagina.rotation:
+            # Página apaisada (tablas de coeficientes de G.2 y G.4): el texto viene girado y no se puede
+            # leer como filas; va completa como imagen, con el rótulo de su tabla como pie.
+            girado = sum(len(s["text"]) for b in pagina.get_text("dict")["blocks"] for l in b.get("lines", [])
+                         for s in l["spans"] if abs(l["dir"][0]) < 0.9)
+            if girado > 200:
+                rotulo = re.search(r"Tabla\s+[A-K]\.[\d.]+-\d+[a-z]?", pagina.get_text())
+                pie = rotulo.group(0) if rotulo else "Página apaisada del original"
+                archivo = f"pagina-p{np_ + 1}.png"
+                pagina.get_pixmap(dpi=130).save(os.path.join(salida, "img", archivo))
+                eventos.append((np_, 0, "fig", (pie, archivo)))
+                continue
         lineas = lineas_pagina(pagina)
         bandas, usados = bandas_ecuacion(lineas)
         # 1) Figuras: pie "Figura X" con bloques de simbolos encima -> una sola imagen.
         figuras, en_figura = [], set()
         for j, l in enumerate(lineas):
             t = texto(l["spans"]).strip()
-            if not re.match(r"^Figura\s+[A-K][.-]", t):
+            # «Figura G 4.3-3 — …» va sin punto; con espacio se exige la raya tras el número.
+            if not re.match(r"^Figura\s+[A-K](?:[.-]|\s\d[\d.]*-\d+\s*[—–])", t):
                 continue
             cy = l["bbox"][1]
-            arriba = [b for b in bandas if b["tag"] is None and cy - 400 < b["bbox"][1] < cy]
-            if not arriba:
-                continue
-            y0 = min(b["bbox"][1] for b in arriba)
+            # En D a K la figura no sube más allá de la última línea de prosa ni de una tabla que haya
+            # encima: las definiciones con símbolos (bandas sin número) no son parte de ella (F.2.9.8-1).
+            # También frenan el pie de otra figura y una ecuación numerada (F.5.5.1-2, F.5.6.9-2).
+            # Prosa y notas (≥ 7.5 pt): los rótulos dentro del dibujo van en letra menor (≈ 6 pt).
+            limite = [o["bbox"][3] for o in lineas if o["bbox"][3] < cy - 2
+                      and max(s["size"] for s in o["spans"]) >= 7.5
+                      and (len(texto(o["spans"]).strip()) >= 50 or texto(o["spans"]).strip().startswith("Figura"))]
+            limite += [b["bbox"][3] for b in bandas if b["tag"] and b["bbox"][3] < cy - 2]
+            try:
+                # Solo tablas con texto en la mayoría de sus celdas: el marco de una figura también se
+                # detecta como «tabla» (Figura G.3.4-3).
+                for tb in pagina.find_tables().tables:
+                    celdas = [c for fila in tb.extract() for c in fila]
+                    if tb.bbox[3] < cy - 15 and celdas and sum(1 for c in celdas if c and c.strip()) >= 0.5 * len(celdas):
+                        limite.append(tb.bbox[3])
+            except Exception:
+                pass
+            tope = max(limite, default=0)
+            arriba = [b for b in bandas if b["tag"] is None and cy - 400 < b["bbox"][1] < cy
+                      and (b["bbox"][1] >= tope - 1 or not FRACCIONES_EN_LINEA)]
+            if arriba:
+                y0 = min(b["bbox"][1] for b in arriba)
+            else:
+                # Figura vectorial sin bandas de símbolos (Figura G 4.3-3): el recorte empieza en el primer
+                # trazo de los que hay sobre el pie, bajo el encabezado de la página.
+                trazos = [d["rect"] for d in pagina.get_drawings()
+                          if cy - 450 < d["rect"].y0 and d["rect"].y1 <= cy and d["rect"].y0 > 70
+                          and d["rect"].y0 >= tope - 1]
+                # Las figuras raster (G.3.4-3, F.2.9.8-1) cuentan aunque no tengan trazos.
+                fotos = [pymupdf.Rect(im["bbox"]) for im in pagina.get_image_info()
+                         if tope - 1 <= im["bbox"][1] and im["bbox"][3] <= cy + 2 and im["bbox"][1] > 70]
+                if len(trazos) < 3 and not fotos:
+                    continue
+                trazos += fotos
+                y0 = min(r.y0 for r in trazos)
             for b in arriba:
                 bandas.remove(b)
             for k, o in enumerate(lineas):
@@ -705,12 +973,26 @@ def procesar(pdf, letra, salida):
                        for l in lineas)
         encontradas = [t for t in encontradas
                        if not (marco_de_tabla(t) and any(contiene(t, o) for o in encontradas))]
+        encontradas += tablas_una_columna(pagina, encontradas)
+        imagenes = pagina.get_image_info()
         for t in encontradas:
             x0, y0, x1, y1 = t.bbox
             if any(fy0 - 6 <= y0 and y1 <= fcy + 6 for fy0, fcy, _ in figuras):
                 continue
             con_titulo = any(re.match(r"^(Tabla|TABLA)\s+[A-K][.-]", texto(l["spans"]).strip())
                              and y0 - 80 <= l["bbox"][1] <= y0 + 2 for l in lineas)
+            dentro = [b for b in bandas if b["tag"] and x0 - 2 <= b["bbox"][0] and b["bbox"][2] <= x1 + 2
+                      and y0 - 2 <= b["bbox"][1] and b["bbox"][3] <= y1 + 2]
+            fotos = sum(1 for im in imagenes if x0 - 2 <= im["bbox"][0] and im["bbox"][2] <= x1 + 2
+                        and y0 - 2 <= im["bbox"][1] and im["bbox"][3] <= y1 + 2)
+            if dentro and fotos:
+                # Tabla con ecuaciones numeradas e imágenes en las celdas (Tablas F.2.11.1-1 a F.2.11.3-2):
+                # no cabe en Markdown celda por celda; va completa como recorte del PDF.
+                recortes.append(t.bbox)
+                for b in [b for b in bandas if x0 - 2 <= b["bbox"][0] and b["bbox"][2] <= x1 + 2
+                          and y0 - 2 <= b["bbox"][1] and b["bbox"][3] <= y1 + 2]:
+                    bandas.remove(b)
+                continue
             md, vacias = tabla_md_rica(t, lineas, subs, absorbidas, usados)
             if md is None:
                 continue
@@ -718,6 +1000,38 @@ def procesar(pdf, letra, salida):
                 recortes.append(t.bbox)
             else:
                 tablas.append((t.bbox, md))
+        # Rótulo «Tabla X» sin tabla debajo: recuadros que find_tables no reconoce (bloque FUNCIONES y
+        # límites de aplicación de las Tablas F.2.11, ejemplos ilustrativos de la Tabla F.2.17-1).
+        # Se recorta el marco dibujado que empieza justo bajo el rótulo y se extiende sin cortes.
+        ocupadas = [bb for bb, _ in tablas] + recortes + [(0, fy0, 9999, fcy) for fy0, fcy, _ in figuras]
+        rects = [d["rect"] for d in pagina.get_drawings() if d["rect"].width > 0.5 or d["rect"].height > 0.5]
+        for j, l in enumerate(lineas):
+            rotulo = texto(l["spans"]).strip()
+            if not (re.match(r"^(Tabla|TABLA)\s+[A-K][.-]", rotulo) or rotulo == "FUNCIONES"):
+                continue
+            # El encabezado FUNCIONES va dentro del marco: el recorte empieza en su borde superior.
+            cy = l["bbox"][3] if rotulo != "FUNCIONES" else l["bbox"][1] - 4
+            if any(cy - 2 <= bb[1] <= cy + 80 or bb[1] - 2 <= l["bbox"][1] <= bb[3] for bb in ocupadas):
+                continue
+            marco = [r for r in rects if cy - 2 <= r.y0 <= cy + 40 and r.width > 150]
+            if not marco:
+                continue
+            caja = pymupdf.Rect(marco[0])
+            for r in marco[1:]:
+                caja |= r
+            creciendo = True
+            while creciendo:
+                creciendo = False
+                for r in rects:
+                    if r.y0 <= caja.y1 + 1.5 and r.y1 > caja.y1 + 0.5 and r.x1 > caja.x0 and r.x0 < caja.x1:
+                        caja |= r
+                        creciendo = True
+            if caja.height < 15:
+                continue
+            recortes.append(tuple(caja))
+            ocupadas.append(tuple(caja))
+            for b in [b for b in bandas if caja.y0 - 2 <= b["bbox"][1] and b["bbox"][3] <= caja.y1 + 2]:
+                bandas.remove(b)
         en_tabla = set()
         for j, l in enumerate(lineas):
             cx, cy = (l["bbox"][0] + l["bbox"][2]) / 2, (l["bbox"][1] + l["bbox"][3]) / 2
@@ -893,6 +1207,8 @@ def escribir(eventos, letra, salida, latex, indice=None):
             titulo = re.sub(r"(nsr-10|dmo|des|dmi|aci)", lambda m: m.group(1).upper(), titulo)
         nombre = (cid.replace(".", ".0") if re.match(r"^[A-K]\.\d$", cid) else cid) + ".md"
         cuerpo = [f"# {cid} — {titulo}", ""] + lineas
+        # Viñetas cuadradas de Wingdings (0x83, informe de supervisión del Título I) -> lista Markdown.
+        cuerpo = [re.sub(r"^\x83\s*", "- ", x) for x in cuerpo]
         open(os.path.join(salida, nombre), "w", encoding="utf-8").write("\n".join(cuerpo).rstrip() + "\n")
         indice.append(f"- [{cid} — {titulo}]({nombre})")
     open(os.path.join(salida, "README.md"), "w", encoding="utf-8").write("\n".join(indice) + "\n")

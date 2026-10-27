@@ -3,7 +3,8 @@
 Uso:
     uv run --with pymupdf --with fonttools python tools/nsr10/generar.py <carpeta_fuentes>
 
-<carpeta_fuentes> contiene los PDF del fork de la NSR-10 (FORK-DOC-006 = Título A, 008 = B, 014 = C)
+<carpeta_fuentes> contiene los PDF del fork de la NSR-10 (FORK-DOC-006 = Título A, 008 = B, 014 = C,
+017 = D, 018 = E, 019 = F, 022 = G, 023 = H, 025 = I, 026 = J, 027 = K)
 y los anexos de los decretos citados en tools/nsr10/modificaciones/.
 
 Pasos:
@@ -25,7 +26,10 @@ import apendice_a4  # noqa: E402
 import consolidar  # noqa: E402
 import extraer  # noqa: E402
 
-TITULOS = {"A": "FORK-DOC-006.pdf", "B": "FORK-DOC-008.pdf", "C": "FORK-DOC-014.pdf"}
+TITULOS = {"A": "FORK-DOC-006.pdf", "B": "FORK-DOC-008.pdf", "C": "FORK-DOC-014.pdf",
+           "D": "FORK-DOC-017.pdf", "E": "FORK-DOC-018.pdf", "F": "FORK-DOC-019.pdf",
+           "G": "FORK-DOC-022.pdf", "H": "FORK-DOC-023.pdf", "I": "FORK-DOC-025.pdf",
+           "J": "FORK-DOC-026.pdf", "K": "FORK-DOC-027.pdf"}
 
 
 def aplicar_correcciones(destino):
