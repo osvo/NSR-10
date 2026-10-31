@@ -287,19 +287,19 @@
     "archivo": "titulo-d/D-1.md",
     "pagina": "FORK-DOC-017 p. 81",
     "buscar": "![Ecuación D-1.5-4](img/ec-D-1.5-4.png)\n\n$2$\n\n![Ecuación D-1.5-5](img/ec-D-1.5-5.png)\n\n$R_{e}=1−⎢⎥$ para $h '/t≤30$\n\n![Ecuación](img/ec-p81-228.png)\n\npara $h t$\n\n",
-    "reemplazar": "![Ecuación D-1.5-4](img/ec-D-1.5-4.png)\n\n$$ R_e = 1-\\left[\\dfrac{h'}{42t}\\right]^2 \\quad \\text{para } h'/t \\le 30 \\qquad R_e = \\left[\\dfrac{21t}{h'}\\right]^2 \\quad \\text{para } h'/t > 30 \\tag{D-1.5-5} $$\n\n"
+    "reemplazar": "$$ P_a = \\left(0.20\\,f'_m\\left(A_e - A_{st}\\right) + 0.65\\,A_{st}F_s\\right)R_e \\tag{D-1.5-4} $$\n\n$$ R_e = 1-\\left[\\dfrac{h'}{42t}\\right]^2 \\quad \\text{para } h'/t \\le 30 \\qquad R_e = \\left[\\dfrac{21t}{h'}\\right]^2 \\quad \\text{para } h'/t > 30 \\tag{D-1.5-5} $$\n\n"
   },
   {
     "archivo": "titulo-d/D.05.md",
     "pagina": "FORK-DOC-017 p. 47",
     "buscar": "![Ecuación D.5.5-2](img/ec-D.5.5-2.png)\n\npara $h t$\n\n![Ecuación](img/ec-p47-531.png)\n\npara $h t$\n\n",
-    "reemplazar": "![Ecuación D.5.5-2](img/ec-D.5.5-2.png)\n\n![Ecuación](img/ec-p47-531.png)\n\n"
+    "reemplazar": "$$ R_e = 1-\\left[\\dfrac{h'}{42t}\\right]^2 \\quad \\text{para } h'/t \\le 30 \\tag{D.5.5-2} $$\n\n$$ R_e = \\left[\\dfrac{21t}{h'}\\right]^2 \\quad \\text{para } h'/t > 30 $$\n\n"
   },
   {
     "archivo": "titulo-d/D.10.md",
     "pagina": "FORK-DOC-017 p. 68",
     "buscar": "![Ecuación D.10.7-4](img/ec-D.10.7-4.png)\n\npara $h t$\n\n![Ecuación](img/ec-p68-328.png)\n\npara $h t$\n\n",
-    "reemplazar": "![Ecuación D.10.7-4](img/ec-D.10.7-4.png)\n\n![Ecuación](img/ec-p68-328.png)\n\n"
+    "reemplazar": "$$ R_e = 1-\\left[\\dfrac{h'}{42t}\\right]^2 \\quad \\text{para } h'/t \\le 30 \\tag{D.10.7-4} $$\n\n$$ R_e = \\left[\\dfrac{21t}{h'}\\right]^2 \\quad \\text{para } h'/t > 30 $$\n\n"
   },
   {
     "archivo": "titulo-f/F.02.md",
@@ -392,5 +392,29 @@
     "pagina": "FORK-DOC-023 p. 1",
     "buscar": "- [H.1 — Introducción h.1.1 — requisitos generales](H.01.md)",
     "reemplazar": "- [H.1 — Introducción](H.01.md)"
+  },
+  {
+    "archivo": "titulo-f/F.05.md",
+    "pagina": "FORK-DOC-019 p. 518",
+    "buscar": "$P_{RTB}= φp_{az} Lt$ (en el borde de la soldadura,\n\n![Ecuación F.5.6.9-9](img/ec-F.5.6.9-9.png)\n\nvéase la figura F.5.6.7-3) Donde:",
+    "reemplazar": "$$ P_{RTB}=\\phi p_{az}Lt\\quad \\text{(en el borde de la soldadura, véase la figura F.5.6.7-3)} \\tag{F.5.6.9-9} $$\n\nDonde:"
+  },
+  {
+    "archivo": "titulo-f/F.05.md",
+    "pagina": "FORK-DOC-019 p. 518",
+    "buscar": "$P_{RTF}= φp_{az} Lt$ (en el borde de la soldadura,\n\n![Ecuación F.5.6.9-11](img/ec-F.5.6.9-11.png)\n\nvéase la figura F.5.6.7-3 y F.5.6.9.3 (d)) Donde:",
+    "reemplazar": "$$ P_{RTF}=\\phi p_{az}Lt\\quad \\text{(en el borde de la soldadura, véase la figura F.5.6.7-3 y F.5.6.9.3 (d))} \\tag{F.5.6.9-11} $$\n\nDonde:"
+  },
+  {
+    "archivo": "titulo-f/F.05.md",
+    "pagina": "FORK-DOC-019 p. 518",
+    "buscar": "$V_{RTB}= φp_{vz}Lt$ (en el borde de la soldadura,\n\n![Ecuación F.5.6.9-13](img/ec-F.5.6.9-13.png)\n\nvéase la figura F.5.6.7-3) Donde:",
+    "reemplazar": "$$ V_{RTB}=\\phi p_{vz}Lt\\quad \\text{(en el borde de la soldadura, véase la figura F.5.6.7-3)} \\tag{F.5.6.9-13} $$\n\nDonde:"
+  },
+  {
+    "archivo": "titulo-f/F.05.md",
+    "pagina": "FORK-DOC-019 p. 518",
+    "buscar": "$V_{RTF}= φp_{vz}Lt$ (en el borde de la soldadura,\n\n![Ecuación F.5.6.9-15](img/ec-F.5.6.9-15.png)\n\nvéase la figura F.5.6.7-3 y F.5.6.9.3 (d)) Donde:",
+    "reemplazar": "$$ V_{RTF}=\\phi p_{vz}Lt\\quad \\text{(en el borde de la soldadura, véase la figura F.5.6.7-3 y F.5.6.9.3 (d))} \\tag{F.5.6.9-15} $$\n\nDonde:"
   }
 ]

@@ -82,7 +82,7 @@ La distancia de recubrimiento de las barras de refuerzo en mampostería de unida
 
 **D.4.2.5.2** — Longitud de desarrollo — La longitud de desarrollo, $ℓ_{d}$ , para barras corrugadas embebidas en mortero de relleno en tracción o en compresión, debe ser determinada por la ecuación D.4.2-1. Para barras lisas la longitud de desarrollo se debe tomar como el doble de la obtenida para barras corrugadas.
 
-![Ecuación D.4.2-1](img/ec-D.4.2-1.png)
+$$ \ell_d = \dfrac{1.5d_b^2 f_y}{K \sqrt{f'_m}} \ge 300\,\mathrm{mm} \tag{D.4.2-1} $$
 
 $K$ es el recubrimiento del refuerzo medido desde el extremo exterior de la unidad de mampostería, y no debe exceder del espaciamiento libre entre empalmes de refuerzo adyacentes, ni de $5d_{b}$ .
 

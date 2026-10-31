@@ -1,0 +1,6 @@
+{
+  "E.3.6-1": "L_{min} = \\dfrac{M_o A_p}{t}",
+  "E.3.6-2": "\\left| \\dfrac{\\left[ \\dfrac{\\sum (L_{mi}\\, b)}{\\sum L_{mi}} - \\dfrac{B}{2} \\right]}{B} \\right| \\le 0.15",
+  "E.7.8-1": "L_i \\ge C_B A_p",
+  "E.7.8-2": "\\left| \\dfrac{\\left[ \\dfrac{\\sum \\left( L_{mi} b \\right)}{\\sum L_{mi}} - \\dfrac{B}{2} \\right]}{B} \\right| \\le 0.15"
+}

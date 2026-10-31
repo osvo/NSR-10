@@ -4,9 +4,9 @@
 
 Los elementos sometidos simultáneamente a flexión y tensión axial, serán diseñados de modo que cumplan con las siguientes fórmulas:
 
-![Ecuación G.5.1-1](img/ec-G.5.1-1.png)
+$$ \dfrac{f_t}{F'_t} + \dfrac{f_b}{F_b^*} \le 1.0 \tag{G.5.1-1} $$
 
-![Ecuación G.5.1-2](img/ec-G.5.1-2.png)
+$$ \dfrac{f_b - f_t}{F_b^{**}} \le 1.0 \tag{G.5.1-2} $$
 
 en donde:
 
@@ -22,11 +22,11 @@ $F_{b}^{**}$= esfuerzo admisible de flexión $(F_{b})$, multiplicado por todos l
 
 $F_{b}^{**}$= $F_{b}'$ para madera aserrada, en MPa Si se llegare a presentar tensión y flexión biaxial, los elementos deben cumplir las siguientes fórmulas:
 
-![Ecuación G.5.1-3](img/ec-G.5.1-3.png)
+$$ \dfrac{f_t}{F'_t} + \dfrac{f_{b1}}{F_{b1}^*} + \dfrac{f_{b2}}{F_{b2}^*} \le 1.0 \tag{G.5.1-3} $$
 
-![Ecuación G.5.1-4](img/ec-G.5.1-4.png)
+$$ \dfrac{f_{b1-f_t}}{F_{b1}^{**}} \le 1.0 \tag{G.5.1-4} $$
 
-![Ecuación G.5.1-5](img/ec-G.5.1-5.png)
+$$ \dfrac{f_{b2-f_t}}{F_{b2}^{**}} \le 1.0 \tag{G.5.1-5} $$
 
 En donde los subíndices indican los ejes sobre los cuales se produce la flexión y en este caso el chequeo al pandeo se efectuará separadamente d2
 
@@ -48,7 +48,7 @@ $f_{c}<F_{CE1}=$ Para flexión axial con carga en la cara angosta o flexión bia
 
 $f_{c}<F_{CE2}=(ℓ_{e2}/d_{2})2$ Para flexión uniaxial con carga en la cara ancha o flexión biaxial (G.5.2-3)
 
-![Ecuación G.5.2-4](img/ec-G.5.2-4.png)
+$$ f_{b1} < F_{bE} = \dfrac{1.20\,E'_{min}}{R_B^2} \tag{G.5.2-4} $$
 
 Para flexión biaxial
 

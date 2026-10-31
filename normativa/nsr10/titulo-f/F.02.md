@@ -1583,7 +1583,7 @@ Se permite diseñar con base en un análisis elástico, inelástico o plástico.
 
 **F.2.2.3.3** — Diseño para Estados Límites de Resistencia — Se considera que el diseño satisface los requisitos de este Capítulo cuando la resistencia de diseño de cada componente estructural es mayor o igual que la resistencia requerida calculada de acuerdo con el numeral F.2.2.3.1. Esta condición se traduce en la ecuación F.2.2.3-1:
 
-![Ecuación F.2.2.3-1](img/ec-F.2.2.3-1.png)
+$$ R_{u}\le \phi R_{n} \tag{F.2.2.3-1} $$
 
 donde:
 
@@ -1849,7 +1849,7 @@ El concepto de carga ficticia es aplicable a todo tipo de estructuras, pero los 
 
 (1) Las cargas ficticias se aplicarán como cargas laterales en todos los niveles, en adición a otras cargas laterales cuando las haya. Estas cargas se aplicarán en todas las condiciones de carga, excepto como se indica en el punto (4) abajo. La magnitud de la carga ficticia será:
 
-![Ecuación F.2.3.2-1](img/ec-F.2.3.2-1.png)
+$$ N_{i}=0.002Y_{i} \tag{F.2.3.2-1} $$
 
 donde:
 
@@ -1907,11 +1907,11 @@ El aplicar la reducción de la rigidez a unos miembros y no aplicarla a otros pu
 
 (a) Cuando $P_{u}/P_{y}≤0.5$
 
-![Ecuación F.2.3.2-2a](img/ec-F.2.3.2-2a.png)
+$$ \tau _{b}=1.0 \tag{F.2.3.2-2a} $$
 
 (b) Cuando $P_{u}/P_{y}>0.5$
 
-![Ecuación F.2.3.2-2b](img/ec-F.2.3.2-2b.png)
+$$ \tau _{b}=4\left[P_{u}/P_{y}(1-P_{u}/P_{y})\right] \tag{F.2.3.2-2b} $$
 
 donde:
 
@@ -1984,11 +1984,11 @@ La resistencia de diseño para miembros solicitados por tensión, $φ_{t}P_{n}$,
 
 (a) Para fluencia por tensión sobre el área bruta:
 
-![Ecuación F.2.4.2-1](img/ec-F.2.4.2-1.png)
+$$ \begin{gathered}P_{n}=F_{y}A_{g} \\ \phi _{t}=0.90\end{gathered} \tag{F.2.4.2-1} $$
 
 (b) Para rotura por tensión sobre el área neta:
 
-![Ecuación F.2.4.2-2](img/ec-F.2.4.2-2.png)
+$$ \begin{gathered}P_{u}=F_{u}A_{e} \\ \phi _{t}=0.75\end{gathered} \tag{F.2.4.2-2} $$
 
 donde:
 
@@ -2006,7 +2006,7 @@ El área bruta, $A_{g}$ , y el área neta, $A_{n}$ , de un miembro a tensión se
 
 El área neta efectiva de un miembro a tensión se calcula como sigue:
 
-![Ecuación F.2.4.3-1](img/ec-F.2.4.3-1.png)
+$$ A_{e}=A_{n}U \tag{F.2.4.3-1} $$
 
 donde el factor de reducción por rezago de cortante, $U$ , se calcula como se muestra en la tabla F.2.4.3-1.
 
@@ -2063,11 +2063,11 @@ Se pueden utilizar tanto cubreplacas perforadas como presillas sin diagonales en
 
 (a) Para rotura por tensión sobre el área neta efectiva:
 
-![Ecuación F.2.4.5-1](img/ec-F.2.4.5-1.png)
+$$ \begin{gathered}P_{n}=2tb_{e}F_{u} \\ \phi _{t}=0.75\end{gathered} \tag{F.2.4.5-1} $$
 
 (b) Para rotura por cortante sobre el área efectiva:
 
-![Ecuación F.2.4.5-2](img/ec-F.2.4.5-2.png)
+$$ \begin{gathered}P_{n}=0.60F_{u}A_{sf} \\ \phi _{sf}=0.75\end{gathered} \tag{F.2.4.5-2} $$
 
 donde:
 
@@ -2175,23 +2175,23 @@ Cuando la longitud no arriostrada contra la torsión es mayor que la longitud no
 
 La resistencia nominal a compresión, $P_{n}$ , para el estado límite de pandeo por flexión, se tomará igual a:
 
-![Ecuación F.2.5.3-1](img/ec-F.2.5.3-1.png)
+$$ P_{n}=F_{cr}A_{g} \tag{F.2.5.3-1} $$
 
 donde el esfuerzo de pandeo por flexión, $F_{cr}$ , se calcula como sigue:
 
 (a) Cuando $\frac{KL}{r}≤4.71\sqrt{F_{y}E}$ ó $(F_{e}≥0.44F_{y})$
 
-![Ecuación F.2.5.3-2](img/ec-F.2.5.3-2.png)
+$$ F_{cr}=\left[0.658^{F_{y}/F_{e}}\right]F_{y} \tag{F.2.5.3-2} $$
 
 (b) Cuando $\frac{KL}{r}>4.71\sqrt{F_{y}E}$ ó $(F_{e}<0.44F_{y})$
 
-![Ecuación F.2.5.3-3](img/ec-F.2.5.3-3.png)
+$$ F_{cr}=0.877F_{e} \tag{F.2.5.3-3} $$
 
 donde:
 
 $F_{e}$ = esfuerzo crítico de pandeo elástico calculado según la fórmula F.2.5.3-4, el numeral F.2.21.2.3(b), o mediante un análisis de pandeo elástico, según sea aplicable, MPa.
 
-![Ecuación F.2.5.3-4](img/ec-F.2.5.3-4.png)
+$$ F_{e}=\dfrac{\pi ^{2}E}{(KL/r)^{2}} \tag{F.2.5.3-4} $$
 
 Las dos fórmulas para el cálculo de los límites de aplicabilidad de los casos F.2.5.3(a) y F.2.5.3(b), una basada en $KL /r$ y la otra basada en $F_{e}$ , producen el mismo resultado.
 
@@ -2201,31 +2201,31 @@ ESBELTOS — Este numeral se aplica a miembros de simetría simple y miembros no
 
 La resistencia nominal a compresión, $P_{n}$ , para los estados límites de pandeo por flexo-torsión y pandeo por torsión, se determinará como sigue:
 
-![Ecuación F.2.5.4-1](img/ec-F.2.5.4-1.png)
+$$ P_{n}=F_{cr}A_{g} \tag{F.2.5.4-1} $$
 
 con el esfuerzo crítico, $F_{cr}$ , calculado como sigue:
 
 (a) Para miembros a compresión en ángulos dobles dispuestos en $T$ con una separación tal que la constante de alabeo $C_{w}$ es despreciable, y secciones en $T$ :
 
-![Ecuación F.2.5.4-2](img/ec-F.2.5.4-2.png)
+$$ F_{cr}=\left(\dfrac{F_{cry}+F_{crz}}{2H}\right)\left[1-\sqrt{1-\dfrac{4F_{cry}F_{crz}H}{(F_{cry}+F_{crz})^{2}}}\right] \tag{F.2.5.4-2} $$
 
 donde $F_{cry}$ se toma como el $F_{cr}$ de la fórmula F.2.5.3-2 ó la F.2.5.3-3, para pandeo por flexión alrededor de eje de simetría “y”, con $KL /r=KL /r_{y}$para secciones en $T ,$ y con $KL /r=(KL /r)m$ según el numeral F.2.5.6 para ángulos dobles dispuestos en $T$ , y
 
-![Ecuación F.2.5.4-3](img/ec-F.2.5.4-3.png)
+$$ F_{crz}=\dfrac{GJ}{A_{g}\bar{r}_{o}^{2}} \tag{F.2.5.4-3} $$
 
 (b) Para todos los demás casos, $F_{cr}$ se determinará según la fórmula F.2.5.3-2 ó la F.2.5.3-3, usando el esfuerzo de pandeo elástico por torsión o por flexo-torsión, $F_{e}$ , calculado como sigue:
 
 (i) para miembros con simetría doble:
 
-![Ecuación F.2.5.4-4](img/ec-F.2.5.4-4.png)
+$$ F_{e}=\left[\dfrac{\pi ^{2}EC_{w}}{(K_{z}L)^{2}}+GJ\right]\dfrac{1}{I_{x}+I_{y}} \tag{F.2.5.4-4} $$
 
 (ii) Para miembros de simetría simple donde "$y$" es el eje de simetría, incluidos ángulos dobles distanciados de manera que la constante de alabeo $C_{w}$ no es despreciable:
 
-![Ecuación F.2.5.4-5](img/ec-F.2.5.4-5.png)
+$$ F_{e}=\left(\dfrac{F_{ey}+F_{ez}}{2H}\right)\left[1-\sqrt{1-\dfrac{4F_{ey}F_{ez}H}{(F_{ey}+F_{ez})^{2}}}\right] \tag{F.2.5.4-5} $$
 
 (iii) Para miembros no simétricos, $F_{e}$ , es la menor de las raíces de la siguiente ecuación cúbica:
 
-![Ecuación F.2.5.4-6](img/ec-F.2.5.4-6.png)
+$$ (F_{e}-F_{ex})(F_{e}-F_{ey})(F_{e}-F_{ez})-F_{e}^{2}(F_{e}-F_{ey})\left(\dfrac{x_{o}}{\bar{r}_{o}}\right)^{2}-F_{e}^{2}(F_{e}-F_{ex})\left(\dfrac{y_{o}}{\bar{r}_{o}}\right)^{2}=0 \tag{F.2.5.4-6} $$
 
 donde:
 
@@ -2233,15 +2233,15 @@ $A_{g}$ = area bruta del miembro, mm2
 
 $C_{w}$ = constante de alabeo, mm6
 
-![Ecuación F.2.5.4-7](img/ec-F.2.5.4-7.png)
+$$ F_{ex}=\dfrac{\pi ^{2}E}{(KL/r)_{x}^{2}} \tag{F.2.5.4-7} $$
 
-![Ecuación F.2.5.4-8](img/ec-F.2.5.4-8.png)
+$$ F_{ey}=\dfrac{\pi ^{2}E}{(KL/r)_{y}^{2}} \tag{F.2.5.4-8} $$
 
-![Ecuación F.2.5.4-9](img/ec-F.2.5.4-9.png)
+$$ F_{ez}=\left(\dfrac{\pi ^{2}EC_{w}}{(KL)_{z}^{2}}+GJ\right)\dfrac{1}{A_{g}\bar{r}_{o}^{2}} \tag{F.2.5.4-9} $$
 
 $G$ = módulo de elasticidad a cortante del acero = 77200 MPa
 
-![Ecuación F.2.5.4-10](img/ec-F.2.5.4-10.png)
+$$ H=1-\dfrac{x_{o}^{2}+y_{o}^{2}}{\bar{r}_{o}^{2}} \tag{F.2.5.4-10} $$
 
 $I_{x}$ , $I_{y}$ = momentos de inercia alrededor de los ejes principales, mm4
 
@@ -2257,7 +2257,7 @@ $x_{o}$ , $y_{o}$ = coordenadas del centro de cortante medidas desde el centroid
 
 $r_{o}$ = radio polar de giro alrededor del centro de corte, mm
 
-![Ecuación F.2.5.4-11](img/ec-F.2.5.4-11.png)
+$$ \bar{r}_{o}^{2}=x_{o}^{2}+y_{o}^{2}+\dfrac{I_{x}+I_{y}}{A_{g}} \tag{F.2.5.4-11} $$
 
 $r_{x}$ = rdio de giro alrededor del eje “x”, mm
 
@@ -2295,11 +2295,11 @@ y usando una relación de esbeltez efectiva, $Kl /r$ , calculada como se describ
 
 Cuando $\frac{L}{r_{x}} ≤80$:
 
-![Ecuación F.2.5.5-1](img/ec-F.2.5.5-1.png)
+$$ \dfrac{KL}{r}=72+0.75\dfrac{L}{r_{x}} \tag{F.2.5.5-1} $$
 
 Cuando $\frac{L}{r_{x}} >80$:
 
-![Ecuación F.2.5.5-2](img/ec-F.2.5.5-2.png)
+$$ \dfrac{KL}{r}=32+1.25\dfrac{L}{r_{x}} \tag{F.2.5.5-2} $$
 
 La fórmula F.2.5.5-2 es válida para $KL /r$ menor o igual que 200.
 
@@ -2309,11 +2309,11 @@ Para ángulos de aletas desiguales con una relación de anchos de aletas inferio
 
 Cuando $\frac{L}{r_{x}} ≤75$
 
-![Ecuación F.2.5.5-3](img/ec-F.2.5.5-3.png)
+$$ \dfrac{KL}{r}=60+0.8\dfrac{L}{r_{x}} \tag{F.2.5.5-3} $$
 
 Cuando $\frac{L}{r_{x}} >75$
 
-![Ecuación F.2.5.5-4](img/ec-F.2.5.5-4.png)
+$$ \dfrac{KL}{r}=45+\dfrac{L}{r_{x}} \tag{F.2.5.5-4} $$
 
 La fórmula F.2.5.5-4 es válida para $KL /r$ menor o igual que 200.
 
@@ -2344,15 +2344,15 @@ La resistencia nominal a compresión de miembros armados compuestos por dos o m�
 
 (a) Para conectores intermedios con pernos en condición de apriete ajustado:
 
-![Ecuación F.2.5.6-1](img/ec-F.2.5.6-1.png)
+$$ \left(\dfrac{KL}{r}\right)_{m}=\sqrt{\left(\dfrac{KL}{r}\right)_{0}^{2}+\left(\dfrac{a}{r_{i}}\right)^{2}} \tag{F.2.5.6-1} $$
 
 (b) Para conectores intermedios soldados o con pernos pretensionados, sin incluir ángulos dobles distanciados:
 
-![Ecuación F.2.5.6-2](img/ec-F.2.5.6-2.png)
+$$ \left(\dfrac{KL}{r}\right)_{m}=\sqrt{\left(\dfrac{KL}{r}\right)_{0}^{2}+0.82\dfrac{\alpha ^{2}}{(1+\alpha ^{2})}\left(\dfrac{a}{r_{ib}}\right)^{2}} \tag{F.2.5.6-2} $$
 
 (c) Para ángulos dobles distanciados con conectores soldados:
 
-![Ecuación F.2.5.6-3](img/ec-F.2.5.6-3.png)
+$$ \left(\dfrac{KL}{r}\right)_{m}=\sqrt{\left(\dfrac{KL}{r}\right)_{0}^{2}+\dfrac{\alpha ^{2}}{(1+\alpha ^{2})}\left[0.82\left(\dfrac{a}{r_{ib}}\right)^{2}+1.65\dfrac{A_{i}aL_{b}}{I_{b}}+51.32\dfrac{anA_{i}}{L_{b}A_{b}}\right]} \tag{F.2.5.6-3} $$
 
 donde:
 
@@ -2419,17 +2419,17 @@ Este numeral se aplica a miembros a compresión cuya sección incluye elementos 
 
 La resistencia nominal a compresión, $P_{n}$ , se determinará con base en los estados límites de pandeo por flexión, pandeo por torsión y pandeo por flexo-torsión, como el producto:
 
-![Ecuación F.2.5.7-1](img/ec-F.2.5.7-1.png)
+$$ P_{n}=F_{cr}A_{g} \tag{F.2.5.7-1} $$
 
 donde $F_{cr}$ se calcula como sigue:
 
 (a) Cuando $\frac{Kl}{r}≤4.71\sqrt{QF_{y}E}$ ó $(F_{e}≥0.44QF_{y})$
 
-![Ecuación F.2.5.7-2](img/ec-F.2.5.7-2.png)
+$$ F_{cr}=Q\left[0.658^{QF_{y}/F_{e}}\right]F_{y} \tag{F.2.5.7-2} $$
 
 (b) Cuando $\frac{KL}{r}>4.71E$ ó $(F_{e}<0.44QF_{y} )$ $\sqrt{QF_{y}}$
 
-![Ecuación F.2.5.7-3](img/ec-F.2.5.7-3.png)
+$$ F_{cr}=0.877F_{e} \tag{F.2.5.7-3} $$
 
 donde:
 
@@ -2449,29 +2449,29 @@ $Q=Q_{s}(Q_{a}=1.0)$. Para secciones transversales donde la condición de “esb
 
 (i) Cuando $\frac{b}{t}≤0.56E$ $\sqrt{F_{y}}$
 
-![Ecuación F.2.5.7-4](img/ec-F.2.5.7-4.png)
+$$ Q_{s}=1.0 \tag{F.2.5.7-4} $$
 
 (ii) Cuando $0.56 \sqrt{E /F_{y}}<\frac{b}{t}<1.03 \sqrt{E F_{y}}$
 
-![Ecuación F.2.5.7-5](img/ec-F.2.5.7-5.png)
+$$ Q_{s}=1.415-0.74\left(\dfrac{b}{t}\right)\sqrt{\dfrac{F_{y}}{E}} \tag{F.2.5.7-5} $$
 
 (iii) Cuando $\frac{b}{t} ≥1.03 \sqrt{E F_{y}}$
 
-![Ecuación F.2.5.7-6](img/ec-F.2.5.7-6.png)
+$$ Q_{s}=\dfrac{0.69E}{F_{y}(b/t)^{2}} \tag{F.2.5.7-6} $$
 
 (b) Para aletas, ángulos o platinas que sobresalen de columnas u otros miembros armados sometidos a compresión:
 
 $Ek_{c}$ Cuando $\frac{b}{t}≤0.64$ $\sqrt{F_{y}}$
 
-![Ecuación F.2.5.7-7](img/ec-F.2.5.7-7.png)
+$$ Q_{s}=1.0 \tag{F.2.5.7-7} $$
 
 $Ek_{c}Ek_{c}$ Cuando $0.64<\frac{b}{t}≤1.17$ $\sqrt{F_{y}}\sqrt{F_{y}}$
 
-![Ecuación F.2.5.7-8](img/ec-F.2.5.7-8.png)
+$$ Q_{s}=1.415-0.65\left(\dfrac{b}{t}\right)\sqrt{\dfrac{F_{y}}{Ek_{c}}} \tag{F.2.5.7-8} $$
 
 $Ek_{c}$ Cuando $\frac{b}{t}>1.17$ $\sqrt{F_{y}}$
 
-![Ecuación F.2.5.7-9](img/ec-F.2.5.7-9.png)
+$$ Q_{s}=\dfrac{0.90Ek_{c}}{F_{y}(b/t)^{2}} \tag{F.2.5.7-9} $$
 
 donde:
 
@@ -2485,15 +2485,15 @@ $k_{c}=4$, pero no se tomará menor que 0.35 ni mayor que 0.76 $\sqrt{h /t_{w}}$
 
 Cuando $\frac{b}{t}$
 
-![Ecuación F.2.5.7-10](img/ec-F.2.5.7-10.png)
+$$ Q_{s}=1.0 \tag{F.2.5.7-10} $$
 
 Cuando $0.45 \sqrt{E /F_{y}}<b /t≤0.91 \sqrt{E /F_{y}}$
 
-![Ecuación F.2.5.7-11](img/ec-F.2.5.7-11.png)
+$$ Q_{s}=1.34-0.76\left(\dfrac{b}{t}\sqrt{\dfrac{F_{y}}{E}}\right) \tag{F.2.5.7-11} $$
 
 Cuando $b /t>0.91 \sqrt{E /F_{y}}$
 
-![Ecuación F.2.5.7-12](img/ec-F.2.5.7-12.png)
+$$ Q_{s}=\dfrac{0.53E}{F_{y}(b/t)^{2}} \tag{F.2.5.7-12} $$
 
 donde:
 
@@ -2503,15 +2503,15 @@ $b$ = ancho total de la mayor aleta del ángulo, (mm)
 
 Cuando $\frac{d}{t}≤0.75E$ $\sqrt{F_{y}}$
 
-![Ecuación F.2.5.7-13](img/ec-F.2.5.7-13.png)
+$$ Q_{s}=1.0 \tag{F.2.5.7-13} $$
 
 Cuando $0.75E≤d t<1.03E$ $\sqrt{F_{y}}\sqrt{F_{y}}$
 
-![Ecuación F.2.5.7-14](img/ec-F.2.5.7-14.png)
+$$ Q_{s}=1.908-1.22\left(\dfrac{d}{t}\right)\sqrt{\dfrac{F_{y}}{E}} \tag{F.2.5.7-14} $$
 
 Cuando $d t>1.03 \sqrt{F_{y}E}$
 
-![Ecuación F.2.5.7-15](img/ec-F.2.5.7-15.png)
+$$ Q_{s}=\dfrac{0.69E}{F_{y}(d/t)^{2}} \tag{F.2.5.7-15} $$
 
 donde:
 
@@ -2523,7 +2523,7 @@ $t$ = espesor del elemento, mm
 
 **F.2.5.7.2** — Elementos atiesados esbeltos, $Q_{a}$ — El factor de reducción para una sección con elementos atiesados esbeltos, $Q_{a}$ , se define como sigue:
 
-![Ecuación F.2.5.7-16](img/ec-F.2.5.7-16.png)
+$$ Q_{a}=\dfrac{A_{e}}{A} \tag{F.2.5.7-16} $$
 
 donde:
 
@@ -2533,7 +2533,7 @@ $A_{e}$ = sumatoria de las áreas efectivas de los elementos de la sección tran
 
 (a) Para elementos esbeltos bajo esfuerzo de compresión uniforme, con $b /t_{≥}1.49 \sqrt{E /f}$, excepto aletas de secciones cuadradas o rectangulares de espesor uniforme:
 
-![Ecuación F.2.5.7-17](img/ec-F.2.5.7-17.png)
+$$ b_{e}=1.92t\sqrt{\dfrac{E}{f}}\left[1-\dfrac{0.34}{(b/t)}\sqrt{\dfrac{E}{f}}\right]\le b \tag{F.2.5.7-17} $$
 
 donde:
 
@@ -2541,7 +2541,7 @@ $f$ = $F_{cr}$ calculado con base en $Q=1.0$.
 
 (b) Para aletas de secciones cuadradas o rectangulares con elementos esbeltos de espesor uniforme donde $b /t_{≥}1.40 \sqrt{E /f}$:
 
-![Ecuación F.2.5.7-18](img/ec-F.2.5.7-18.png)
+$$ b_{e}=1.92t\sqrt{\dfrac{E}{f}}\left[1-\dfrac{0.38}{(b/t)}\sqrt{\dfrac{E}{f}}\right]\le b \tag{F.2.5.7-18} $$
 
 donde:
 
@@ -2549,7 +2549,7 @@ $f=P_{n}/A_{eff}$ En lugar de calcular $f=P_{n}/A_{eff}$, lo cual requiere un pr
 
 (c) Para secciones circulares cargadas axialmente, cuando $0.11\frac{E}{F_{y}}<\frac{D}{t}<0.45\frac{E}{F_{y}}$:
 
-![Ecuación F.2.5.7-19](img/ec-F.2.5.7-19.png)
+$$ Q=Q_{a}=\dfrac{0.038E}{F_{y}(D/t)}+\dfrac{2}{3} \tag{F.2.5.7-19} $$
 
 donde:
 
@@ -2653,7 +2653,7 @@ $φ_{b} =0.90$ y la resistencia nominal a la flexión, $M_{n}$ , se determinará
 
 $C_{b}$ = factor de modificación para pandeo lateral-torsional, aplicable cuando sobre el segmento de viga comprendido entre dos puntos arriostrados se tiene un diagrama de momentos no uniforme:
 
-![Ecuación F.2.6.1-1](img/ec-F.2.6.1-1.png)
+$$ C_{b}=\dfrac{12.5M_{\max }}{2.5M_{\max }+3M_{A}+4M_{B}+3M_{C}}R_{m}\le 3.00 \tag{F.2.6.1-1} $$
 
 donde:
 
@@ -2683,7 +2683,7 @@ La resistencia nominal a la flexión, $M_{n}$ , se tomará como el menor entre l
 
 **F.2.6.2.1** — Plastificación de la sección (momento plástico)
 
-![Ecuación F.2.6.2-1](img/ec-F.2.6.2-1.png)
+$$ M_{n}=M_{p}=F_{y}Z_{x} \tag{F.2.6.2-1} $$
 
 donde:
 
@@ -2697,17 +2697,17 @@ $Z_{x}$ = modulo plástico de la sección alrededor del eje x, mm3
 
 (b) Cuando $L_{p}<L_{b}≤L_{r}$
 
-![Ecuación F.2.6.2-2](img/ec-F.2.6.2-2.png)
+$$ M_{n}=C_{b}\left[M_{p}-(M_{p}-0.70F_{y}S_{x})\left(\dfrac{L_{b}-L_{p}}{L_{r}-L_{p}}\right)\right]\le M_{p} \tag{F.2.6.2-2} $$
 
 (c) Cuando $L_{b}>L_{r}$
 
-![Ecuación F.2.6.2-3](img/ec-F.2.6.2-3.png)
+$$ M_{n}=F_{cr}S_{x}\le M_{p} \tag{F.2.6.2-3} $$
 
 donde:
 
 $L_{b}$ = longitud comprendida entre dos puntos que están arriostrados ya sea contra el desplazamiento lateral de la aleta a compresión o contra la torsión de la sección transversal, mm
 
-![Ecuación F.2.6.2-4](img/ec-F.2.6.2-4.png)
+$$ F_{cr}=\dfrac{C_{b}\pi ^{2}E}{(L_{b}/r_{ts})^{2}}\sqrt{1+0.078\dfrac{Jc}{S_{x}h_{o}}\left(\dfrac{L_{b}}{r_{ts}}\right)^{2}} \tag{F.2.6.2-4} $$
 
 donde:
 
@@ -2721,23 +2721,23 @@ $h_{o}$= distancia entre centroides de aletas, mm El término radical de la fór
 
 Los límites de longitud $L_{p}$ y $L_{r}$ se calculan como sigue:
 
-![Ecuación F.2.6.2-5](img/ec-F.2.6.2-5.png)
+$$ L_{p}=1.76r_{y}\sqrt{\dfrac{E}{Fy}} \tag{F.2.6.2-5} $$
 
-![Ecuación F.2.6.2-6](img/ec-F.2.6.2-6.png)
+$$ L_{r}=1.95r_{ts}\dfrac{E}{0.7F_{y}}\sqrt{\dfrac{Jc}{S_{x}h_{o}}+\sqrt{\left(\dfrac{Jc}{S_{x}h_{o}}\right)^{2}+6.76\left(\dfrac{0.7F_{y}}{E}\right)^{2}}} \tag{F.2.6.2-6} $$
 
 donde:
 
-![Ecuación F.2.6.2-7](img/ec-F.2.6.2-7.png)
+$$ r_{ts}^{2}=\dfrac{\sqrt{I_{y}C_{w}}}{S_{x}} \tag{F.2.6.2-7} $$
 
 y el factor c se determina como sigue:
 
 (a) Para perfiles en $I$ de doble simetría:
 
-![Ecuación F.2.6.2-8a](img/ec-F.2.6.2-8a.png)
+$$ c=1 \tag{F.2.6.2-8a} $$
 
 (b) Para canales:
 
-![Ecuación F.2.6.2-8b](img/ec-F.2.6.2-8b.png)
+$$ c=\dfrac{h_{o}}{2}\sqrt{\dfrac{I_{y}}{C_{w}}} \tag{F.2.6.2-8b} $$
 
 Para secciones en $I$ de simetría doble, con aletas rectangulares, $C_{w}=\frac{I_{y}h_{o}^{2}}{4}$y así la fórmula F.2.6.2-7 se convierte en:
 
@@ -2745,7 +2745,7 @@ $I_{y} h_{o}$
 
 $r_{ts}^{2}=$ $2S_{x}$ $r_{ts}$ puede aproximarse de manera conservadora al radio de giro de la sección conformada por la aleta a compresión más un sexto del alma:
 
-![Ecuación](img/ec-p88-321.png)
+$$ r_{ts}=\dfrac{b_{f}}{\sqrt{12\left(1+\dfrac{ht_{w}}{6b_{f}t_{f}}\right)}} $$
 
 <!-- mod:1-decreto-092-2011-185 -->
 > **Modificación — Decreto 092 de 2011** · anexo, p. 41
@@ -2766,11 +2766,11 @@ La resistencia nominal a la flexión, $M_{n}$ , será el menor entre los valores
 
 (a) Para secciones con aletas no compactas
 
-![Ecuación F.2.6.3-1](img/ec-F.2.6.3-1.png)
+$$ M_{n}=\left[M_{p}-(M_{p}-0.7F_{y}S_{x})\left(\dfrac{\lambda -\lambda _{pf}}{\lambda _{rf}-\lambda _{pf}}\right)\right] \tag{F.2.6.3-1} $$
 
 (b) Para secciones con aletas esbeltas.
 
-![Ecuación F.2.6.3-2](img/ec-F.2.6.3-2.png)
+$$ M_{n}=\dfrac{0.9Ek_{c}S_{x}}{\lambda ^{2}} \tag{F.2.6.3-2} $$
 
 donde:
 
@@ -2796,7 +2796,7 @@ La resistencia nominal a la flexión, $M_{n}$ , se tomará como el menor valor e
 
 **F.2.6.4.1** — Fluencia en la aleta a compresión
 
-![Ecuación F.2.6.4-1](img/ec-F.2.6.4-1.png)
+$$ M_{n}=R_{pc}M_{yc}=R_{pc}F_{y}S_{xc} \tag{F.2.6.4-1} $$
 
 **F.2.6.4.2** — Pandeo lateral-torsional
 
@@ -2804,17 +2804,17 @@ La resistencia nominal a la flexión, $M_{n}$ , se tomará como el menor valor e
 
 (b) Cuando $L_{p}<L_{b}≤L_{r}$
 
-![Ecuación F.2.6.4-2](img/ec-F.2.6.4-2.png)
+$$ M_{n}=C_{b}\left[R_{pc}M_{yc}-(R_{pc}M_{yc}-F_{L}S_{xc})\left(\dfrac{L_{b}-L_{p}}{L_{r}-L_{p}}\right)\right]\le R_{pc}M_{yc} \tag{F.2.6.4-2} $$
 
 (c) Cuando $L_{b}>L_{r}$
 
-![Ecuación F.2.6.4-3](img/ec-F.2.6.4-3.png)
+$$ M_{n}=F_{cr}S_{xc}\le R_{pc}M_{yc} \tag{F.2.6.4-3} $$
 
 donde:
 
-![Ecuación F.2.6.4-4](img/ec-F.2.6.4-4.png)
+$$ M_{yc}=F_{y}S_{xc} \tag{F.2.6.4-4} $$
 
-![Ecuación F.2.6.4-5](img/ec-F.2.6.4-5.png)
+$$ F_{cr}=\dfrac{C_{b}\pi ^{2}E}{(L_{b}/r_{t})^{2}}\sqrt{1+0.078\dfrac{J}{S_{xc}h_{o}}\left(\dfrac{L_{b}}{r_{t}}\right)^{2}} \tag{F.2.6.4-5} $$
 
 Para $I_{yc}/I_{y}≤0.23$, $J$ se tomará igual a cero.
 
@@ -2824,19 +2824,19 @@ $I_{yc}$ = momento de inercia de la aleta a compresión con respecto al eje y, m
 
 Para $S_{xt}/S_{xc}≥0.7$
 
-![Ecuación F.2.6.4-6a](img/ec-F.2.6.4-6a.png)
+$$ F_{L}=0.7F_{y} \tag{F.2.6.4-6a} $$
 
 Para $S_{xt}/S_{xc}<0.7$
 
-![Ecuación F.2.6.4-6b](img/ec-F.2.6.4-6b.png)
+$$ F_{L}=F_{y}\dfrac{S_{xt}}{S_{xc}}\ge 0.5F_{y} \tag{F.2.6.4-6b} $$
 
 El límite de la longitud no arriostrada para el estado límite de fluencia en la aleta a compresión, $L_{p}$ , es:
 
-![Ecuación F.2.6.4-7](img/ec-F.2.6.4-7.png)
+$$ L_{p}=1.1r_{t}\sqrt{\dfrac{E}{F_{y}}} \tag{F.2.6.4-7} $$
 
 El límite de la longitud no arriostrada para el estado límite de pandeo lateral-torsional en el rango inelástico, $L_{r}$ , es:
 
-![Ecuación F.2.6.4-8](img/ec-F.2.6.4-8.png)
+$$ L_{r}=1.95r_{t}\dfrac{E}{F_{L}}\sqrt{\dfrac{J}{S_{xc}h_{o}}+\sqrt{\left(\dfrac{J}{S_{xc}h_{o}}\right)^{2}+6.76\left(\dfrac{F_{L}}{E}\right)^{2}}} \tag{F.2.6.4-8} $$
 
 El factor de plastificación del alma, $R_{pc}$, se calcula como sigue:
 
@@ -2844,11 +2844,11 @@ Cuando $I_{yc}/I_{y}>0.23$:
 
 Para $\frac{h_{c}}{t_{w}}≤λ_{pw}$
 
-![Ecuación F.2.6.4-9a](img/ec-F.2.6.4-9a.png)
+$$ R_{pc}=\dfrac{M_{p}}{M_{yc}} \tag{F.2.6.4-9a} $$
 
 Para $\frac{h_{c}}{t_{w}}> λ_{pw}$
 
-![Ecuación F.2.6.4-9b](img/ec-F.2.6.4-9b.png)
+$$ R_{pc}=\left[\dfrac{M_{p}}{M_{yc}}-\left(\dfrac{M_{p}}{M_{yc}}-1\right)\left(\dfrac{\lambda -\lambda _{pw}}{\lambda _{rw}-\lambda _{pw}}\right)\right]\le \dfrac{M_{p}}{M_{yc}} \tag{F.2.6.4-9b} $$
 
 Cuando $I_{yc}/I_{y}≤0.23$:
 
@@ -2870,11 +2870,11 @@ El radio de giro efectivo para pandeo lateral-torsional, $r_{t}$ , se calcula co
 
 (i) Para secciones en $I$ con su aleta a compresión de sección rectangular:
 
-![Ecuación F.2.6.4-10](img/ec-F.2.6.4-10.png)
+$$ r_{t}=\dfrac{b_{fc}}{\sqrt{12\left(\dfrac{h_{o}}{d}+\dfrac{1}{6}a_{w}\dfrac{h^{2}}{h_{o}d}\right)}} \tag{F.2.6.4-10} $$
 
 donde:
 
-![Ecuación F.2.6.4-11](img/ec-F.2.6.4-11.png)
+$$ a_{w}=\dfrac{h_{c}t_{w}}{b_{fc}t_{fc}} \tag{F.2.6.4-11} $$
 
 $b_{fc}$ = ancho de la aleta a compresión, mm
 
@@ -2886,7 +2886,7 @@ $a_{w}$ = relación entre el doble del área de la zona del alma que trabaja a c
 
 Para secciones en $I$ con la aleta a compresión rectangular, $r_{t}$ puede aproximarse de manera conservadora como el radio de giro de la sección conformada por la aleta a compresión más un tercio de la zona del alma a compresión, esto es:
 
-![Ecuación](img/ec-p91-455.png)
+$$ r_{t}=\dfrac{b_{fc}}{\sqrt{12\left(1+\dfrac{1}{6}a_{w}\right)}} $$
 
 <!-- mod:1-decreto-092-2011-186 -->
 > **Modificación — Decreto 092 de 2011** · anexo, p. 41
@@ -2899,11 +2899,11 @@ Para secciones en $I$ con la aleta a compresión rectangular, $r_{t}$ puede apro
 
 (b) Para secciones con aletas no compactas
 
-![Ecuación F.2.6.4-12](img/ec-F.2.6.4-12.png)
+$$ M_{n}=\left[R_{pc}M_{yc}-(R_{pc}M_{yc}-F_{L}S_{xc})\left(\dfrac{\lambda -\lambda _{pf}}{\lambda _{rf}-\lambda _{pf}}\right)\right] \tag{F.2.6.4-12} $$
 
 (c) Para secciones con aletas esbeltas
 
-![Ecuación F.2.6.4-13](img/ec-F.2.6.4-13.png)
+$$ M_{n}=\dfrac{0.90Ek_{c}S_{xc}}{\lambda ^{2}} \tag{F.2.6.4-13} $$
 
 donde:
 
@@ -2923,7 +2923,7 @@ $λ_{rf}= λ_{r}$ , límite de esbeltez para aletas no compactas, tabla B.4-1
 
 (b) Para $S_{xt}<S_{xc}$
 
-![Ecuación F.2.6.4-14](img/ec-F.2.6.4-14.png)
+$$ M_{n}=R_{pt}M_{yt} \tag{F.2.6.4-14} $$
 
 donde:
 
@@ -2931,11 +2931,11 @@ $M_{yt}=F_{y} S_{xt}$ El factor de plastificación del alma correspondiente al e
 
 (i) Para $h_{c}/t_{w}≤λ_{pw}$
 
-![Ecuación F.2.6.4-15a](img/ec-F.2.6.4-15a.png)
+$$ R_{pt}=\dfrac{M_{p}}{M_{yt}} \tag{F.2.6.4-15a} $$
 
 (ii) Para $h_{c}/t_{w}> λ_{pw}$
 
-![Ecuación F.2.6.4-15b](img/ec-F.2.6.4-15b.png)
+$$ R_{pt}=\left[\dfrac{M_{p}}{M_{yt}}-\left(\dfrac{M_{p}}{M_{yt}}-1\right)\left(\dfrac{\lambda -\lambda _{pw}}{\lambda _{rw}-\lambda _{pw}}\right)\right]\le \dfrac{M_{p}}{M_{yt}} \tag{F.2.6.4-15b} $$
 
 donde:
 
@@ -2953,45 +2953,45 @@ La resistencia nominal a la flexión, $M_{n}$ , se tomará como el menor valor e
 
 **F.2.6.5.1** — Fluencia de la aleta a compresión
 
-![Ecuación F.2.6.5-1](img/ec-F.2.6.5-1.png)
+$$ M_{n}=R_{pg}F_{y}S_{xc} \tag{F.2.6.5-1} $$
 
 **F.2.6.5.2** — Pandeo lateral-torsional
 
-![Ecuación F.2.6.5-2](img/ec-F.2.6.5-2.png)
+$$ M_{n}=R_{pg}F_{cr}S_{xc} \tag{F.2.6.5-2} $$
 
 (a) Para $L_{b}≤L_{p}$, no se aplica el estado límite de pandeo lateral-torsional.
 
 (b) Para $L_{p}<L_{b}≤L_{r}$
 
-![Ecuación F.2.6.5-3](img/ec-F.2.6.5-3.png)
+$$ F_{cr}=C_{b}\left[F_{y}-(0.3F_{y})\left(\dfrac{L_{b}-L_{p}}{L_{r}-L_{p}}\right)\right]\le F_{y} \tag{F.2.6.5-3} $$
 
 (c) Para $L_{b}>L_{r}$
 
-![Ecuación F.2.6.5-4](img/ec-F.2.6.5-4.png)
+$$ F_{cr}=\dfrac{C_{b}\pi ^{2}E}{(L_{b}/r_{t})^{2}}\le F_{y} \tag{F.2.6.5-4} $$
 
 donde:
 
 $L_{p}$ se calcula según la fórmula F.2.6.4-7
 
-![Ecuación F.2.6.5-5](img/ec-F.2.6.5-5.png)
+$$ L_{r}=\pi r_{t}\sqrt{\dfrac{E}{0.7F_{y}}} \tag{F.2.6.5-5} $$
 
-![Ecuación F.2.6.5-6](img/ec-F.2.6.5-6.png)
+$$ R_{pg}=1-\dfrac{a_{w}}{1200+300a_{w}}\left(\dfrac{h_{c}}{t_{w}}-5.7\sqrt{\dfrac{E}{F_{y}}}\right)\le 1.0 \tag{F.2.6.5-6} $$
 
 (factor de reducción de la resistencia a flexión) $a_{w}$ se define por la fórmula F.2.6.4-11 pero no debe exceder de 10, y $r_{t}$ es el radio de giro efectivo para pandeo lateral según se define en el numeral F.2.6.4.
 
 **F.2.6.5.3** — Pandeo local de la aleta a compresión
 
-![Ecuación F.2.6.5-7](img/ec-F.2.6.5-7.png)
+$$ M_{n}=R_{pg}F_{cr}S_{xc} \tag{F.2.6.5-7} $$
 
 (a) Para secciones con aletas compactas no se aplica el estado límite de pandeo local de la aleta a compresión
 
 (b) Para secciones con aletas no compactas
 
-![Ecuación F.2.6.5-8](img/ec-F.2.6.5-8.png)
+$$ F_{cr}=\left[F_{y}-(0.3F_{y})\left(\dfrac{\lambda -\lambda _{pf}}{\lambda _{rf}-\lambda _{pf}}\right)\right] \tag{F.2.6.5-8} $$
 
 (c) Para secciones con aletas esbeltas
 
-![Ecuación F.2.6.5-9](img/ec-F.2.6.5-9.png)
+$$ F_{cr}=\dfrac{0.9Ek_{c}}{(b_{f}/2t_{f})^{2}} \tag{F.2.6.5-9} $$
 
 donde:
 
@@ -3009,7 +3009,7 @@ $λ_{rf}= λ_{r}$ , límite de esbeltez para aletas no compactas, tabla F.2.2.4-
 
 (b) Para $S_{xt}<S_{xc}$,
 
-![Ecuación F.2.6.5-10](img/ec-F.2.6.5-10.png)
+$$ M_{n}=F_{y}S_{xt} \tag{F.2.6.5-10} $$
 
 #### F.2.6.6 — MIEMBROS DE SECCIÓN EN $I$ Y CANALES SOLICITADOS POR FLEXIÓN ALREDEDOR DE SU EJE
 
@@ -3019,7 +3019,7 @@ La resistencia nominal a la flexión, $M_{n}$ , se tomará como el menor valor e
 
 **F.2.6.6.1** — Plastificación de la sección (momento plástico)
 
-![Ecuación F.2.6.6-1](img/ec-F.2.6.6-1.png)
+$$ M_{n}=M_{p}=F_{y}Z_{y}\le 1.6F_{y}S_{y} \tag{F.2.6.6-1} $$
 
 **F.2.6.6.2** — Pandeo local de la aleta
 
@@ -3027,15 +3027,15 @@ La resistencia nominal a la flexión, $M_{n}$ , se tomará como el menor valor e
 
 (b) Para secciones con aletas no compactas
 
-![Ecuación F.2.6.6-2](img/ec-F.2.6.6-2.png)
+$$ M_{n}=\left[M_{p}-(M_{p}-0.7F_{y}S_{y})\left(\dfrac{\lambda -\lambda _{pf}}{\lambda _{rf}-\lambda _{pf}}\right)\right] \tag{F.2.6.6-2} $$
 
 (c) Para secciones con aletas esbeltas
 
-![Ecuación F.2.6.6-3](img/ec-F.2.6.6-3.png)
+$$ M_{n}=F_{cr}S_{y} \tag{F.2.6.6-3} $$
 
 donde:
 
-![Ecuación F.2.6.6-4](img/ec-F.2.6.6-4.png)
+$$ F_{cr}=\dfrac{0.69E}{(b_{f}/t_{f})^{2}} \tag{F.2.6.6-4} $$
 
 $λ =b /t_{f}$
 
@@ -3070,7 +3070,7 @@ Para PTE rectangulares de gran longitud, solicitados por flexión alrededor del 
 
 **F.2.6.7.1** — Plastificación de la sección (momento plástico)
 
-![Ecuación F.2.6.7-1](img/ec-F.2.6.7-1.png)
+$$ M_{n}=M_{p}=F_{y}Z \tag{F.2.6.7-1} $$
 
 donde:
 
@@ -3082,17 +3082,17 @@ $Z$ = Módulo de sección plástico sobre el eje de flexión, mm3
 
 (b) Para secciones con aletas no compactas
 
-![Ecuación F.2.6.7-2](img/ec-F.2.6.7-2.png)
+$$ M_{n}=M_{p}-(M_{p}-F_{y}S)\left(3.57\dfrac{b}{t}\sqrt{\dfrac{F_{y}}{E}}-4.0\right)\le M_{p} \tag{F.2.6.7-2} $$
 
 (c) Para secciones con aletas esbeltas
 
-![Ecuación F.2.6.7-3](img/ec-F.2.6.7-3.png)
+$$ M_{n}=F_{y}S_{e} \tag{F.2.6.7-3} $$
 
 donde:
 
 $S_{e}$ es el módulo de sección efectivo, calculado con el ancho efectivo de la aleta a compresión igual a:
 
-![Ecuación F.2.6.7-4](img/ec-F.2.6.7-4.png)
+$$ b_{e}=1.92t_{f}\sqrt{\dfrac{E}{F_{y}}}\left[1-\dfrac{0.38}{b/t_{f}}\sqrt{\dfrac{E}{F_{y}}}\right]\le b \tag{F.2.6.7-4} $$
 
 <!-- mod:1-decreto-092-2011-188 -->
 > **Modificación — Decreto 092 de 2011** · anexo, p. 41
@@ -3107,7 +3107,7 @@ $S_{e}$ es el módulo de sección efectivo, calculado con el ancho efectivo de l
 
 (b) Para secciones con almas no compactas
 
-![Ecuación F.2.6.7-5](img/ec-F.2.6.7-5.png)
+$$ M_{n}=M_{p}-(M_{p}-F_{y}S_{x})\left(0.305\dfrac{h}{t_{w}}\sqrt{\dfrac{F_{y}}{E}}-0.738\right)\le M_{p} \tag{F.2.6.7-5} $$
 
 #### F.2.6.8 — PERFILES TUBULARES ESTRUCTURALES CIRCULARES
 
@@ -3117,7 +3117,7 @@ La resistencia nominal a la flexión, $M_{n}$ , se tomará como el menor valor e
 
 **F.2.6.8.1** — Plastificación de la sección (momento plástico)
 
-![Ecuación F.2.6.8-1](img/ec-F.2.6.8-1.png)
+$$ M_{n}=M_{p}=F_{y}Z \tag{F.2.6.8-1} $$
 
 **F.2.6.8.2** — Pandeo local
 
@@ -3125,15 +3125,15 @@ La resistencia nominal a la flexión, $M_{n}$ , se tomará como el menor valor e
 
 (b) Para secciones no compactas:
 
-![Ecuación F.2.6.8-2](img/ec-F.2.6.8-2.png)
+$$ M_{n}=\left(\dfrac{0.021E}{D/t}+F_{y}\right)S \tag{F.2.6.8-2} $$
 
 (c) Para secciones con paredes esbeltas:
 
-![Ecuación F.2.6.8-3](img/ec-F.2.6.8-3.png)
+$$ M_{n}=F_{cr}S \tag{F.2.6.8-3} $$
 
 donde:
 
-![Ecuación F.2.6.8-4](img/ec-F.2.6.8-4.png)
+$$ F_{cr}=\dfrac{0.33E}{D/t} \tag{F.2.6.8-4} $$
 
 $S$ = módulo de sección elástico, mm3
 
@@ -3149,21 +3149,21 @@ La resistencia nominal a la flexión, $M_{n}$ , se tomará como el menor valor e
 
 **F.2.6.9.1** — Plastificación de la sección (momento plástico)
 
-![Ecuación F.2.6.9-1](img/ec-F.2.6.9-1.png)
+$$ M_{n}=M_{p} \tag{F.2.6.9-1} $$
 
 donde:
 
-![Ecuación F.2.6.9-2](img/ec-F.2.6.9-2.png)
+$$ M_{p}=F_{y}Z_{x}\le 1.6M_{y}\quad \text{cuando el alma está a tensión} \tag{F.2.6.9-2} $$
 
-![Ecuación F.2.6.9-3](img/ec-F.2.6.9-3.png)
+$$ M_{p}=F_{y}Z_{x}\le M_{y}\quad \text{cuando el alma está a compresión} \tag{F.2.6.9-3} $$
 
 **F.2.6.9.2** — Pandeo lateral-torsional
 
-![Ecuación F.2.6.9-4](img/ec-F.2.6.9-4.png)
+$$ M_{n}=M_{cr}=\dfrac{\pi \sqrt{EI_{y}GJ}}{L_{b}}\left[B+\sqrt{1+B^{2}}\right] \tag{F.2.6.9-4} $$
 
 donde:
 
-![Ecuación F.2.6.9-5](img/ec-F.2.6.9-5.png)
+$$ B=\pm 2.3\left(\dfrac{d}{L_{b}}\right)\sqrt{\dfrac{I_{y}}{J}} \tag{F.2.6.9-5} $$
 
 $B$ es positivo cuando el alma está a tensión y negativo cuando el alma está a compresión. Si la fibra extrema del alma está sometida a compresión en algún punto sobre la longitud no arriostrada, se usará el valor negativo de $B$ .
 
@@ -3173,11 +3173,11 @@ $B$ es positivo cuando el alma está a tensión y negativo cuando el alma está 
 
 (b) Para secciones con aletas no compactas solicitada a compresión por flexión,
 
-![Ecuación F.2.6.9-6](img/ec-F.2.6.9-6.png)
+$$ M_{n}=\left[M_{p}-(M_{p}-0.7F_{y}S_{xc})\left(\dfrac{\lambda -\lambda _{pf}}{\lambda _{rf}-\lambda _{pf}}\right)\right]\le 1.6M_{y} \tag{F.2.6.9-6} $$
 
 (c) Para secciones con aletas esbeltas solicitadas a compresión por flexión,
 
-![Ecuación F.2.6.9-7](img/ec-F.2.6.9-7.png)
+$$ M_{n}=\dfrac{0.7ES_{xc}}{(b_{f}/2t_{f})^{2}} \tag{F.2.6.9-7} $$
 
 donde:
 
@@ -3196,21 +3196,21 @@ $λ_{rf}= λ_{r}$ límite de esbeltez para almas no compactas, tabla F.2.2.4-1b 
 
 **F.2.6.9.4** — Pandeo local del alma de secciones en $T$ solicitadas a compresión por flexión
 
-![Ecuación F.2.6.9-8](img/ec-F.2.6.9-8.png)
+$$ M_{n}=F_{cr}S_{x} \tag{F.2.6.9-8} $$
 
 donde $S_{x}$ es el módulo de sección elástico y el esfuerzo crítico, $F_{cr}$ , se determina como sigue:
 
 Para $\frac{d}{t_{w}}≤0.84E$ $\sqrt{F_{y}}$
 
-![Ecuación F.2.6.9-9](img/ec-F.2.6.9-9.png)
+$$ F_{cr}=F_{y} \tag{F.2.6.9-9} $$
 
 Para $0.84E<\frac{d}{tw}≤1.03E$ $\sqrt{F_{y}}\sqrt{F_{y}}$
 
-![Ecuación F.2.6.9-10](img/ec-F.2.6.9-10.png)
+$$ F_{cr}=\left[2.55-1.84\dfrac{d}{t_{w}}\sqrt{\dfrac{F_{y}}{E}}\right]F_{y} \tag{F.2.6.9-10} $$
 
 Para $\frac{d}{t_{w}}>1.03E$ $\sqrt{F_{y}}$
 
-![Ecuación F.2.6.9-11](img/ec-F.2.6.9-11.png)
+$$ F_{cr}=\dfrac{0.69E}{(d/t_{w})^{2}} \tag{F.2.6.9-11} $$
 
 Para ángulos dobles en los que las aletas que conforman el alma están solicitadas por compresión, la resistencia nominal $M_{n}$ para pandeo local se debe determinar usando las provisiones del numeral F.2.6.10.3, con el $b /t$ de dichas aletas y tomando la fórmula F.2.6.10-1 como límite superior.
 
@@ -3237,7 +3237,7 @@ Para flexión sobre el eje menor, se aplican únicamente los estados límites de
 
 **F.2.6.10.1** — Plastificación de la sección (momento plástico)
 
-![Ecuación F.2.6.10-1](img/ec-F.2.6.10-1.png)
+$$ M_{n}=1.5M_{y} \tag{F.2.6.10-1} $$
 
 donde:
 
@@ -3247,11 +3247,11 @@ $M_{y}$ = momento de fluencia alrededor del eje de flexión, N·mm.
 
 (a) Para $M_{e}≤M_{y}$
 
-![Ecuación F.2.6.10-2](img/ec-F.2.6.10-2.png)
+$$ M_{n}=\left(0.92-\dfrac{0.17M_{e}}{M_{y}}\right)M_{e} \tag{F.2.6.10-2} $$
 
 (b) Para $M_{e}>M_{y}$
 
-![Ecuación F.2.6.10-3](img/ec-F.2.6.10-3.png)
+$$ M_{n}=\left(1.92-1.17\sqrt{\dfrac{M_{y}}{M_{e}}}\right)M_{y}\le 1.5M_{y} \tag{F.2.6.10-3} $$
 
 donde:
 
@@ -3259,11 +3259,11 @@ $M_{e}$ , el momento de pandeo lateral-torsional elástico, se calcula como sigu
 
 (i) Para flexión sobre el eje principal mayor de un perfil angular de aletas iguales:
 
-![Ecuación F.2.6.10-4](img/ec-F.2.6.10-4.png)
+$$ M_{e}=\dfrac{0.46Eb^{2}t^{2}C_{b}}{L} \tag{F.2.6.10-4} $$
 
 (ii) Para flexión alrededor del eje principal mayor de un perfil angular de aletas desiguales:
 
-![Ecuación F.2.6.10-5](img/ec-F.2.6.10-5.png)
+$$ M_{e}=\dfrac{4.9EI_{z}C_{b}}{L^{2}}\left(\sqrt{\beta _{w}^{2}+0.052\left(\dfrac{Lt}{r_{z}}\right)^{2}}+\beta _{w}\right) \tag{F.2.6.10-5} $$
 
 donde:
 
@@ -3287,15 +3287,15 @@ Sin restricción contra el pandeo lateral-torsional:
 
 (a) Con compresión máxima en el borde de la aleta
 
-![Ecuación F.2.6.10-6a](img/ec-F.2.6.10-6a.png)
+$$ M_{e}=\dfrac{0.66Eb^{4}tC_{b}}{L^{2}}\left(\sqrt{1+0.78\left(\dfrac{Lt}{b^{2}}\right)^{2}}-1\right) \tag{F.2.6.10-6a} $$
 
 (b) Con tensión máxima en el borde de la aleta
 
-![Ecuación F.2.6.10-6b](img/ec-F.2.6.10-6b.png)
+$$ M_{e}=\dfrac{0.66Eb^{4}tC_{b}}{L^{2}}\left(\sqrt{1+0.78\left(\dfrac{Lt}{b^{2}}\right)^{2}}+1\right) \tag{F.2.6.10-6b} $$
 
 $M_{y}$ se tomará igual a 0.80 veces el momento de fluencia calculado usando el módulo de sección elástico para el eje geométrico $M_{n}$ puede tomarse igual a $M_{y}$ para perfiles angulares sencillos que tengan el borde de su aleta vertical a compresión y una relación luz/aleta menor o igual que
 
-![Ecuación](img/ec-p99-458.png)
+$$ \dfrac{1.64E}{F_{y}}\sqrt{\left(\dfrac{t}{b}\right)^{2}-1.4\dfrac{F_{y}}{E}} $$
 
 .
 
@@ -3311,15 +3311,15 @@ $M_{y}$ se tomará igual al momento de fluencia calculado usando el módulo de s
 
 (b) Para secciones con aletas no compactas
 
-![Ecuación F.2.6.10-7](img/ec-F.2.6.10-7.png)
+$$ M_{n}=F_{y}S_{c}\left(2.43-1.72\left(\dfrac{b}{t}\right)\sqrt{\dfrac{E}{F_{y}}}\right) \tag{F.2.6.10-7} $$
 
 (c) Para secciones con aletas esbeltas
 
-![Ecuación F.2.6.10-8](img/ec-F.2.6.10-8.png)
+$$ M_{n}=F_{cr}S_{c} \tag{F.2.6.10-8} $$
 
 donde:
 
-![Ecuación F.2.6.10-9](img/ec-F.2.6.10-9.png)
+$$ F_{cr}=\dfrac{0.71E}{(b/t)^{2}} \tag{F.2.6.10-9} $$
 
 $b$ = ancho de la aleta a compresión, mm
 
@@ -3335,21 +3335,21 @@ La resistencia nominal a la flexión, $M_{n}$ , será el menor valor entre los o
 
 **F.2.6.11.1** — Plastificación de la sección (momento plástico) — Para barras rectangulares con $L_{b} d /t^{2}≤0.08E /F_{y}$, solicitadas por flexión alrededor de su eje mayor, barras rectangulares solicitadas por flexión alrededor de su eje menor y barras circulares:
 
-![Ecuación F.2.6.11-1](img/ec-F.2.6.11-1.png)
+$$ M_{n}=M_{p}=F_{y}Z\le 1.60M_{y} \tag{F.2.6.11-1} $$
 
 **F.2.6.11.2** — Pandeo lateral-torsional
 
 (a) Para barras rectangulares con $\frac{0.08E}{F_{y}}<\frac{L_{b}d}{t^{2}}≤\frac{1.9E}{F_{y}}$ solicitadas por flexión alrededor de su eje mayor:
 
-![Ecuación F.2.6.11-2](img/ec-F.2.6.11-2.png)
+$$ M_{n}=C_{b}\left[1.52-0.274\left(\dfrac{L_{b}d}{t^{2}}\right)\dfrac{F_{y}}{E}\right]M_{y}\le M_{p} \tag{F.2.6.11-2} $$
 
 (b) Para barras rectangulares con $\frac{L_{b}d}{t^{2}}>\frac{1.9E}{F_{y}}$ solicitadas por flexión alrededor de su eje mayor:
 
-![Ecuación F.2.6.11-3](img/ec-F.2.6.11-3.png)
+$$ M_{n}=F_{cr}S_{x}\le M_{p} \tag{F.2.6.11-3} $$
 
 donde:
 
-![Ecuación F.2.6.11-4](img/ec-F.2.6.11-4.png)
+$$ F_{cr}=\dfrac{1.9EC_{b}}{\dfrac{L_{b}d}{t^{2}}} \tag{F.2.6.11-4} $$
 
 $t$ = ancho de la barra rectangular (dimensión paralela al eje de flexión), mm
 
@@ -3365,7 +3365,7 @@ Este numeral se aplica a todos los perfiles no simétricos, excepto los ángulos
 
 La resistencia nominal a la flexión, $M_{n}$ , será el menor valor entre los obtenidos para los estados límites de fluencia (momento de fluencia), pandeo lateral-torsional y pandeo local, siendo:
 
-![Ecuación F.2.6.12-1](img/ec-F.2.6.12-1.png)
+$$ M_{n}=F_{n}S_{\min } \tag{F.2.6.12-1} $$
 
 donde:
 
@@ -3373,11 +3373,11 @@ $S_{min}$= mínimo módulo de sección elástico para el eje de flexión conside
 
 **F.2.6.12.1** — Fluencia (momento de fluencia)
 
-![Ecuación F.2.6.12-2](img/ec-F.2.6.12-2.png)
+$$ F_{n}=F_{y} \tag{F.2.6.12-2} $$
 
 **F.2.6.12.2** — Pandeo lateral-torsional
 
-![Ecuación F.2.6.12-3](img/ec-F.2.6.12-3.png)
+$$ F_{n}=F_{cr}\le F_{y} \tag{F.2.6.12-3} $$
 
 donde:
 
@@ -3385,7 +3385,7 @@ $F_{cr}$ = esfuerzo de pandeo lateral-torsional determinado analíticamente, MPa
 
 **F.2.6.12.3** — Pandeo local
 
-![Ecuación F.2.6.12-4](img/ec-F.2.6.12-4.png)
+$$ F_{n}=F_{cr}\le F_{y} \tag{F.2.6.12-4} $$
 
 donde:
 
@@ -3401,7 +3401,7 @@ Además de los estados límites especificados en otras secciones de este numeral
 
 (b) Para $F_{u} A_{fn}<Y_{t} F_{y} A_{fg}$, la resistencia nominal a la flexión, $M_{n}$ , en una sección que contenga agujeros en la aleta a tensión, no se tomará mayor que:
 
-![Ecuación F.2.6.13-1](img/ec-F.2.6.13-1.png)
+$$ M_{n}=\dfrac{F_{u}A_{fn}}{A_{fg}}S_{x} \tag{F.2.6.13-1} $$
 
 donde:
 
@@ -3413,17 +3413,17 @@ $Y_{t}$ = 1,0 para $F_{y}/F_{u}≤0.8$ = 1.1 en caso contrario
 
 **F.2.6.13.2** — Límites para el dimensionamiento de miembros de sección en $I$ — Los miembros de sección en $I$ de simetría simple deberán satisfacer el siguiente límite:
 
-![Ecuación F.2.6.13-2](img/ec-F.2.6.13-2.png)
+$$ 0.10\le \dfrac{I_{yc}}{I_{y}}\le 0.90 \tag{F.2.6.13-2} $$
 
 Los miembros de sección en $I$ con almas esbeltas deberán satisfacer además los siguientes límites:
 
 (a) Para $a /h≤1.5$
 
-![Ecuación F.2.6.13-3](img/ec-F.2.6.13-3.png)
+$$ \left(\dfrac{h}{t_{w}}\right)_{\max }=12.0\sqrt{\dfrac{E}{F_{y}}} \tag{F.2.6.13-3} $$
 
 (b) Para $a /h>1.5$
 
-![Ecuación F.2.6.13-4](img/ec-F.2.6.13-4.png)
+$$ \left(\dfrac{h}{t_{w}}\right)_{\max }=\dfrac{0.40E}{F_{y}} \tag{F.2.6.13-4} $$
 
 donde:
 
@@ -3441,7 +3441,7 @@ En cubreplacas soldadas, las soldaduras que conectan el tramo final de la cubrep
 
 (a) Cuando se tiene una soldadura continua a través del extremo de la placa, de tamaño mayor o igual que ¾ de su espesor:
 
-![Ecuación F.2.6.13-5](img/ec-F.2.6.13-5.png)
+$$ a'=w \tag{F.2.6.13-5} $$
 
 donde:
 
@@ -3449,11 +3449,11 @@ $w$ = ancho de la cubreplaca, mm
 
 (b) Cuando se tiene una soldadura continua a través del extremo de la placa, de tamaño menor que ¾ de su espesor:
 
-![Ecuación F.2.6.13-6](img/ec-F.2.6.13-6.png)
+$$ a'=1.5w \tag{F.2.6.13-6} $$
 
 (c) Cuando no hay soldadura transversal en el extremo de la placa:
 
-![Ecuación F.2.6.13-7](img/ec-F.2.6.13-7.png)
+$$ a'=2w \tag{F.2.6.13-7} $$
 
 **F.2.6.13.4** — Vigas armadas — Siempre que dos o más vigas o canales se usen una al lado de la otra para formar un miembro a flexión, ellas se deben conectar entre sí de acuerdo con el numeral F.2.5.6.2. En presencia de cargas concentradas que se transfieran de una viga a la otra, o se distribuyan entre ellas, se usarán diafragmas soldados o conectados con pernos a dichas vigas y con rigidez suficiente para distribuir la carga.
 
@@ -3461,7 +3461,7 @@ $w$ = ancho de la cubreplaca, mm
 
 (a) Para miembros de sección en $I$ , de simetría simple o doble, con la aleta a compresión mayor o igual que la aleta a tensión, cargados en el plano del alma:
 
-![Ecuación F.2.6.13-8](img/ec-F.2.6.13-8.png)
+$$ L_{m}=\left[0.12+0.076\left(\dfrac{M_{1}}{M_{2}}\right)\right]\left(\dfrac{E}{F_{y}}\right)r_{y} \tag{F.2.6.13-8} $$
 
 donde:
 
@@ -3475,7 +3475,7 @@ $r_{y}$ = radio de giro respecto al eje $y$ , mm $(M_{1}/M_{2})$es positivo cuan
 
 (b) Para barras rectangulares sólidas y vigas cajón simétricas solicitadas por flexión sobre su eje mayor:
 
-![Ecuación](img/ec-p103-473.png)
+$$ L_{m}=\left[0.17+0.10\left(\dfrac{M_{1}}{M_{2}}\right)\right]\left(\dfrac{E}{F_{y}}\right)r_{y}\ge 0.10\left(\dfrac{E}{F_{y}}\right)r_{y} $$
 
 (F.2. 6.13-9) No hay límite para $L_{b}$ en miembros con sección transversal circular o rectangular ni para una viga de cualquier sección transversal sometida a flexión alrededor de su eje débil.
 
@@ -3517,27 +3517,27 @@ $φ_{v} =0.90$
 
 La resistencia nominal a cortante, $V_{n}$ , de almas rigidizadas o no rigidizadas, para los estados límites de fluencia por cortante y pandeo por cortante, se tomará igual a:
 
-![Ecuación F.2.7.2-1](img/ec-F.2.7.2-1.png)
+$$ V_{n}=0.60F_{y}A_{w}C_{v} \tag{F.2.7.2-1} $$
 
 (a) Para almas de miembros en perfiles laminados de sección en $I$ con $h /t_{w}≤2.24 \sqrt{E /F_{y}}$:
 
 $φ_{v}=1.00$ y
 
-![Ecuación F.2.7.2-2](img/ec-F.2.7.2-2.png)
+$$ C_{v}=1.0 \tag{F.2.7.2-2} $$
 
 (b) Para almas de todos los otros perfiles de simetría doble o simple y de canales, sin incluir los perfiles tubulares estructurales (PTE) de sección circular, el coeficiente de cortante del alma, $C_{v}$ , se determina como sigue:
 
 i) Para $ht_{w}≤1.10\sqrt{k_{v} E}$
 
-![Ecuación F.2.7.2-3](img/ec-F.2.7.2-3.png)
+$$ C_{v}=1.00 \tag{F.2.7.2-3} $$
 
 ii) Para $1.10\sqrt{k_{v} EF_{y}}<ht_{w}≤1.37\sqrt{k_{v} EF_{y}}$
 
-![Ecuación F.2.7.2-4](img/ec-F.2.7.2-4.png)
+$$ C_{v}=\dfrac{1.10\sqrt{k_{v}E/F_{y}}}{h/t_{w}} \tag{F.2.7.2-4} $$
 
 iii) Para $ht_{w}>1.37\sqrt{k_{v} EF_{y}}$
 
-![Ecuación F.2.7.2-5](img/ec-F.2.7.2-5.png)
+$$ C_{v}=\dfrac{1.51k_{v}E}{\left(h/t_{w}\right)^{2}F_{y}} \tag{F.2.7.2-5} $$
 
 donde:
 
@@ -3555,9 +3555,9 @@ $k_{v}=5$ excepto para almas de perfiles en $T$ en cuyo caso $k_{v}=1.2$.
 
 (ii) Para almas con rigidizadores transversales:
 
-![Ecuación F.2.7.2-6](img/ec-F.2.7.2-6.png)
+$$ k_{v}=5+\dfrac{5}{(a/h)^{2}} \tag{F.2.7.2-6} $$
 
-![Ecuación](img/ec-p105-308.png)
+$$ k_{v}=5\text{ cuando }a/h>3.0\text{ ó }a/h>\left[\dfrac{260}{(h/t_{w})}\right]^{2} $$
 
 donde:
 
@@ -3567,7 +3567,7 @@ $a$ = distancia libre entre rigidizadores transversales, mm
 
 Los rigidizadores transversales empleados para desarrollar en el alma la resistencia de diseño a cortante, tal como se requiere en el numeral F.2.7.2.1, deberán cumplir la siguiente condición:
 
-![Ecuación F.2.7.2-7](img/ec-F.2.7.2-7.png)
+$$ I_{st}\ge bt_{w}^{3}j \tag{F.2.7.2-7} $$
 
 donde:
 
@@ -3575,7 +3575,7 @@ $I_{st}$ = momento de inercia del rigidizador transversal con respecto a un eje 
 
 $b$ = la menor entre las dimensiones a y h y:
 
-![Ecuación F.2.7.2-8](img/ec-F.2.7.2-8.png)
+$$ j=\dfrac{2.5}{(a/h)^{2}}-2\ge 0.50 \tag{F.2.7.2-8} $$
 
 Los rigidizadores transversales se pueden interrumpir antes de llegar a la aleta a tensión siempre y cuando no deban transmitir una carga concentrada o una reacción. La soldadura que conecta un rigidizador transversal al alma deberá terminar a una distancia, desde del borde cercano de la soldadura que une el alma y la aleta, no menor que cuatro veces ni mayor que seis veces el espesor del alma. Cuando se usan rigidizadores simples, y la aleta a compresión consiste en una platina rectangular, aquellos deberán conectarse a dicha aleta para resistir cualquier tendencia al levantamiento debida a torsión en la aleta.
 
@@ -3587,7 +3587,7 @@ Cuando se usen pernos para conectar los rigidizadores al alma de la viga, ellos 
 
 (a) tableros extremos en miembros con rigidizadores transversales;
 
-![Ecuación](img/ec-p106-125.png)
+$$ \begin{aligned}&a/h>3\text{ ó }a/h>\left[\dfrac{260}{(h/t_{w})}\right]^{2};\ &2A_{w}/(A_{fc}+A_{ft})>2.5;\ &h/b_{fc}\text{ ó }h/b_{ft}>6.0\end{aligned} $$
 
 (b) miembros con $a /h/\frac{260}{(h/t_{w})}$;
 
@@ -3607,19 +3607,19 @@ $b_{ft}$= ancho de la aleta a tensión, mm En estos casos la resistencia nominal
 
 (a) Para $h /t_{w}≤1.10 \sqrt{k_{v} E / F_{y}}$
 
-![Ecuación F.2.7.3-1](img/ec-F.2.7.3-1.png)
+$$ V_{n}=0.60F_{y}A_{w} \tag{F.2.7.3-1} $$
 
 (b) Para $h /t_{w}>1.10 \sqrt{k_{v} E / F_{y}}$
 
-![Ecuación F.2.7.3-2](img/ec-F.2.7.3-2.png)
+$$ V_{n}=0.60F_{y}A_{w}\left(C_{v}+\dfrac{1-C_{v}}{1.15\sqrt{1+(a/h)^{2}}}\right) \tag{F.2.7.3-2} $$
 
 donde $k_{v}$ y $C_{v}$ son los definidos en el numeral F.2.7.2.1
 
 **F.2.7.3.3** — Rigidizadores transversales — Los rigidizadores transversales sujetos a la acción del campo tensionado deberán cumplir los requisitos del numeral F.2.7.2.2, además de las siguientes limitaciones:
 
-![Ecuación F.2.7.3-3](img/ec-F.2.7.3-3.png)
+$$ (b/t)_{st}\le 0.56\sqrt{\dfrac{E}{F_{yst}}} \tag{F.2.7.3-3} $$
 
-![Ecuación F.2.7.3-4](img/ec-F.2.7.3-4.png)
+$$ I_{st}\ge I_{st1}+(I_{st2}-I_{st1})\left[\dfrac{V_{r}-V_{c1}}{V_{c2}-V_{c1}}\right] \tag{F.2.7.3-4} $$
 
 donde:
 
@@ -3635,7 +3635,7 @@ $I_{st2}$= mínimo momento de inercia requerido en el rigidizador transversal pa
 
 $V_{r}=V_{c2}$, mm4.
 
-![Ecuación F.2.7.3-5](img/ec-F.2.7.3-5.png)
+$$ =\dfrac{h^{4}\rho _{st}^{1.3}}{40}\left(\dfrac{F_{yw}}{E}\right)^{1.5} \tag{F.2.7.3-5} $$
 
 $V_{r}$ = la mayor entre las resistencias requeridas a cortante en los paneles del alma adyacentes al rigidizador, N
 
@@ -3692,17 +3692,17 @@ $k_{v}$ = 5 Si no se conoce el radio de la esquina, $h$ se tomará como la dimen
 
 La resistencia nominal a cortante, $V_{n}$ , de PTE circulares, para los estados límites de fluencia por cortante y pandeo por cortante, se tomará igual a:
 
-![Ecuación F.2.7.6-1](img/ec-F.2.7.6-1.png)
+$$ V_{n}=F_{cr}A_{g}/2 \tag{F.2.7.6-1} $$
 
 donde:
 
 $F_{cr}$ es el mayor entre los siguientes valores:
 
-![Ecuación F.2.7.6-2a](img/ec-F.2.7.6-2a.png)
+$$ F_{cr}=\dfrac{1.60E}{\sqrt{\dfrac{L_{v}}{D}}\left(\dfrac{D}{t}\right)^{5/4}} \tag{F.2.7.6-2a} $$
 
 y
 
-![Ecuación F.2.7.6-2b](img/ec-F.2.7.6-2b.png)
+$$ F_{cr}=\dfrac{0.78E}{(D/t)^{3/2}} \tag{F.2.7.6-2b} $$
 
 sin exceder de $0.60F_{y}$ .
 
@@ -3740,11 +3740,11 @@ Se permite usar el numeral F.2.8.2 en lugar de las provisiones de este numeral
 
 (a) Para $\frac{P_{u}}{φP_{n}} ≥0.2$
 
-![Ecuación F.2.8.1-1a](img/ec-F.2.8.1-1a.png)
+$$ \dfrac{P_{u}}{\phi P_{n}}+\dfrac{8}{9}\left(\dfrac{M_{ux}}{\phi _{b}M_{nx}}+\dfrac{M_{uy}}{\phi _{b}M_{ny}}\right)\le 1.0 \tag{F.2.8.1-1a} $$
 
 (b) Para$\frac{P_{u}}{φP_{n}} <0.2$
 
-![Ecuación F.2.8.1-1b](img/ec-F.2.8.1-1b.png)
+$$ \dfrac{P_{u}}{2\phi P_{n}}+\left(\dfrac{M_{ux}}{\phi _{b}M_{nx}}+\dfrac{M_{uy}}{\phi _{b}M_{ny}}\right)\le 1.0 \tag{F.2.8.1-1b} $$
 
 donde:
 
@@ -3788,7 +3788,7 @@ $P_{ey}=$ $L^{2}_{b}$ Se permite usar un análisis más detallado de la interacc
 
 (b) Para el estado límite de pandeo fuera del plano y pandeo lateral-torsional:
 
-![Ecuación F.2.8.1-2](img/ec-F.2.8.1-2.png)
+$$ \dfrac{P_{u}}{\phi _{c}P_{ny}}\left(1.5-0.5\dfrac{P_{u}}{\phi _{c}P_{ny}}\right)+\left(\dfrac{M_{ux}}{C_{b}\phi _{b}M_{nx}}\right)^{2}\le 1.0 \tag{F.2.8.1-2} $$
 
 donde:
 
@@ -3811,7 +3811,7 @@ Este numeral se refiere a la interacción de esfuerzos axiales y de flexión par
 
 Se debe satisfacer la siguiente relación:
 
-![Ecuación F.2.8.2-1](img/ec-F.2.8.2-1.png)
+$$ \left|\dfrac{f_{ra}}{F_{ca}}+\dfrac{f_{rbw}}{F_{cbw}}+\dfrac{f_{rbz}}{F_{cbz}}\right|\le 1.0 \tag{F.2.8.2-1} $$
 
 donde:
 
@@ -3850,7 +3850,7 @@ CORTANTE O FUERZA AXIAL.
 
 $φ_{T}=0.90$ y la resistencia nominal a la torsión calculada como:
 
-![Ecuación F.2.8.3-1](img/ec-F.2.8.3-1.png)
+$$ T_{n}=F_{cr}C \tag{F.2.8.3-1} $$
 
 para los estados límites de fluencia por torsión y pandeo por torsión, donde:
 
@@ -3858,11 +3858,11 @@ $C$ es la constante torsional para el PTE y el esfuerzo crítico$F_{cr}$ se dete
 
 (a) Para un PTE circular, $F_{cr}$ será el mayor valor entre
 
-![Ecuación F.2.8.3-2a](img/ec-F.2.8.3-2a.png)
+$$ F_{cr}=\dfrac{1.23E}{\sqrt{\dfrac{L}{D}}\left(\dfrac{D}{t}\right)^{5/4}} \tag{F.2.8.3-2a} $$
 
 y
 
-![Ecuación F.2.8.3-2b](img/ec-F.2.8.3-2b.png)
+$$ F_{cr}=\dfrac{0.60E}{(D/t)^{3/2}} \tag{F.2.8.3-2b} $$
 
 pero no debe tomarse mayor que $0.6F_{y} ,$ donde:
 
@@ -3874,15 +3874,15 @@ $D$ = diámetro exterior, mm
 
 (i) Para $h /t≤2.45\sqrt{E /F_{y}}$
 
-![Ecuación F.2.8.3-3](img/ec-F.2.8.3-3.png)
+$$ F_{cr}=0.6F_{y} \tag{F.2.8.3-3} $$
 
 (ii) Para $2.45 \sqrt{E /F_{y}}<h /t≤3.07 \sqrt{E /F_{y}}$
 
-![Ecuación F.2.8.3-4](img/ec-F.2.8.3-4.png)
+$$ F_{cr}=0.6F_{y}(2.45\sqrt{E/F_{y}})/(h/t) \tag{F.2.8.3-4} $$
 
 (iii) Para $3.07 \sqrt{E /F_{y}}<h /t≤260$
 
-![Ecuación F.2.8.3-5](img/ec-F.2.8.3-5.png)
+$$ F_{cr}=0.458\pi ^{2}E/(h/t)^{2} \tag{F.2.8.3-5} $$
 
 donde:
 
@@ -3901,7 +3901,7 @@ $2$ Para un PTE circular: $C=\frac{π(D−t)t}{2}$ Para un PTE rectangular: $C=2
 
 **F.2.8.3.2** — Perfiles Tubulares Estructurales (PTE) solicitados por una combinación de torsión, cortante, flexión y fuerza axial — Cuando la resistencia requerida a torsión, $T_{u}$ , sea menor o igual que el 20% de la resistencia de diseño a torsión, $φ_{T}T_{n}$, la interacción de torsión, cortante, flexión o fuerza axial para un PTE se determinará según el numeral F.2.8.1 y se despreciarán los efectos torsionales. Cuando $T_{u}$ exceda el 20% de $φ_{T}T_{n}$, la interacción de torsión, cortante, flexión y fuerza axial, en el punto en consideración, estará limitada por:
 
-![Ecuación F.2.8.3-6](img/ec-F.2.8.3-6.png)
+$$ \left(\dfrac{P_{u}}{\phi P_{n}}+\dfrac{M_{u}}{\phi _{b}M_{n}}\right)+\left(\dfrac{V_{u}}{\phi _{v}V_{n}}+\dfrac{T_{u}}{\phi _{T}T_{n}}\right)^{2}\le 1.0 \tag{F.2.8.3-6} $$
 
 donde:
 
@@ -3927,15 +3927,15 @@ $φ_{T}=0.90$ y con base en los siguientes esfuerzos de diseño:
 
 (a) Para el estado límite de fluencia bajo esfuerzos normales
 
-![Ecuación F.2.8.3-7](img/ec-F.2.8.3-7.png)
+$$ F_{n}=F_{y} \tag{F.2.8.3-7} $$
 
 (b) Para el estado límite de fluencia por cortante bajo esfuerzos cortantes
 
-![Ecuación F.2.8.3-8](img/ec-F.2.8.3-8.png)
+$$ F_{n}=0.6F_{y} \tag{F.2.8.3-8} $$
 
 (c) Para el estado límite de pandeo
 
-![Ecuación F.2.8.3-9](img/ec-F.2.8.3-9.png)
+$$ F_{n}=F_{cr} \tag{F.2.8.3-9} $$
 
 donde:
 
@@ -3947,7 +3947,7 @@ Se permite algún grado de fluencia local restringida en la vecindad de zonas qu
 
 Donde se tengan perforaciones en una aleta bajo esfuerzos de tensión por la combinación de carga axial y flexión sobre el eje mayor, la resistencia a la rotura por tensión en la aleta estará limitada por la ecuación F.2.8.4-1. Cada aleta solicitada por tensión bajo carga axial y flexión deberá ser verificada separadamente.
 
-![Ecuación F.2.8.4-1](img/ec-F.2.8.4-1.png)
+$$ \dfrac{P_{u}}{\phi _{t}P_{n}}+\dfrac{M_{ux}}{\phi _{b}M_{nx}}\le 1.0 \tag{F.2.8.4-1} $$
 
 donde:
 
@@ -4057,7 +4057,7 @@ En ningún caso el espaciamiento de los estribos debe ser superior a 0.5 veces l
 
 (c) La mínima relación de áreas para el refuerzo longitudinal continuo, $ρ_{sr}$, será de 0.004, donde $ρ_{sr}$ está dado por:
 
-![Ecuación F.2.9.2-1](img/ec-F.2.9.2-1.png)
+$$ \rho _{sr}=\dfrac{A_{sr}}{A_{g}} \tag{F.2.9.2-1} $$
 
 donde:
 
@@ -4076,17 +4076,17 @@ $φ_{c} =0.75$ y con $P_{n}$ calculado como sigue:
 
 (a) Cuando $P_{e}≥0.44P_{no}$
 
-![Ecuación F.2.9.2-2](img/ec-F.2.9.2-2.png)
+$$ P_{n}=P_{no}\left[0.658^{(P_{no}/P_{e})}\right] \tag{F.2.9.2-2} $$
 
 (b) Cuando: $P_{e}<0.44P_{no}$
 
-![Ecuación F.2.9.2-3](img/ec-F.2.9.2-3.png)
+$$ P_{n}=0.877P_{e} \tag{F.2.9.2-3} $$
 
 donde:
 
-![Ecuación F.2.9.2-4](img/ec-F.2.9.2-4.png)
+$$ P_{no}=A_{s}F_{y}+A_{sr}F_{ysr}+0.85A_{c}f'_{c} \tag{F.2.9.2-4} $$
 
-![Ecuación F.2.9.2-5](img/ec-F.2.9.2-5.png)
+$$ P_{e}=\pi ^{2}(EI_{eff})/(KL)^{2} \tag{F.2.9.2-5} $$
 
 (carga crítica de pandeo elástico, calculada de acuerdo con el numeral F.2.3 o con el numeral F.2.21 del presente Capítulo) y:
 
@@ -4100,11 +4100,11 @@ $E_{c}$= modulo de elasticidad del concreto = $0.043w^{1.5}_{c}\sqrt{f_{c} ' }$,
 
 $EI_{eff}$ = rigidez efectiva de la sección compuesta, N·mm2
 
-![Ecuación F.2.9.2-6](img/ec-F.2.9.2-6.png)
+$$ EI_{eff}=E_{s}I_{s}+0.5E_{s}I_{sr}+C_{1}E_{c}I_{c} \tag{F.2.9.2-6} $$
 
 donde:
 
-![Ecuación F.2.9.2-7](img/ec-F.2.9.2-7.png)
+$$ C_{1}=0.1+2\left(\dfrac{A_{s}}{A_{c}+A_{s}}\right)\le 0.3 \tag{F.2.9.2-7} $$
 
 (coeficiente para calcular la rigidez efectiva de un miembro compuesto tipo perfil revestido a compresión)
 
@@ -4134,7 +4134,7 @@ Las fórmulas F.2.9.2-6 y F.2.9.2-10 fueron desarrolladas con base en datos de s
 
 $φ_{t} =0.90$ y
 
-![Ecuación F.2.9.2-8](img/ec-F.2.9.2-8.png)
+$$ P_{n}=A_{s}F_{y}+A_{sr}F_{ysr} \tag{F.2.9.2-8} $$
 
 **F.2.9.2.1.4** — Transferencia de carga — Las cargas aplicadas a los miembros compuestos tipo perfil revestido cargados axialmente se transferirán entre el acero y el concreto de acuerdo con los requerimientos establecidos en el numeral F.2.9.6.
 
@@ -4155,41 +4155,41 @@ Si la sección transversal compuesta incluye dos o más perfiles de acero revest
 
 Para secciones compactas:
 
-![Ecuación F.2.9.2-9a](img/ec-F.2.9.2-9a.png)
+$$ P_{no}=P_{p} \tag{F.2.9.2-9a} $$
 
 donde:
 
-![Ecuación F.2.9.2-9b](img/ec-F.2.9.2-9b.png)
+$$ P_{p}=A_{s}F_{y}+C_{2}f'_{c}\left(A_{c}+A_{sr}\dfrac{E_{s}}{E_{c}}\right) \tag{F.2.9.2-9b} $$
 
 $C_{2}=0.85$ para secciones rectangulares y $0.95$ para secciones circulares.
 
 Para secciones no compactas:
 
-![Ecuación F.2.9.2-9c](img/ec-F.2.9.2-9c.png)
+$$ P_{no}=P_{p}-\dfrac{P_{p}-P_{y}}{(\lambda _{r}-\lambda _{p})^{2}}(\lambda -\lambda _{p})^{2} \tag{F.2.9.2-9c} $$
 
 donde:
 
 $λ$ , $λ_{p}$ y $λ_{r}$ son las relaciones de esbeltez determinadas según la tabla F.2.9.1.1a, y $P_{p}$ se obtiene de la fórmula F.2.9.2-9b
 
-![Ecuación F.2.9.2-9d](img/ec-F.2.9.2-9d.png)
+$$ P_{y}=A_{s}F_{y}+0.7f'_{c}\left(A_{c}+A_{sr}\dfrac{E_{s}}{E_{c}}\right) \tag{F.2.9.2-9d} $$
 
 Para secciones esbeltas:
 
-![Ecuación F.2.9.2-9e](img/ec-F.2.9.2-9e.png)
+$$ P_{no}=A_{s}F_{cr}+0.7f'_{c}\left(A_{c}+A_{sr}\dfrac{E_{s}}{E_{c}}\right) \tag{F.2.9.2-9e} $$
 
 donde:
 
-![Ecuación F.2.9.2-10](img/ec-F.2.9.2-10.png)
+$$ F_{cr}=\dfrac{9E_{s}}{(b/t)^{2}}\quad \text{para secciones rectangulares rellenas} \tag{F.2.9.2-10} $$
 
-![Ecuación F.2.9.2-11](img/ec-F.2.9.2-11.png)
+$$ F_{cr}=\dfrac{0.72F_{y}}{\left[(D/t)\dfrac{F_{y}}{E_{s}}\right]^{0.2}}\quad \text{para secciones circulares rellenas} \tag{F.2.9.2-11} $$
 
 La rigidez efectiva de la sección compuesta, $EI_{eff}$, se tomará como sigue para todo tipo de secciones:
 
-![Ecuación F.2.9.2-12](img/ec-F.2.9.2-12.png)
+$$ EI_{eff}=E_{s}I_{s}+E_{s}I_{sr}+C_{3}E_{c}I_{c} \tag{F.2.9.2-12} $$
 
 donde:
 
-![Ecuación F.2.9.2-13](img/ec-F.2.9.2-13.png)
+$$ C_{3}=0.6+2\left(\dfrac{A_{s}}{A_{c}+A_{s}}\right)\le 0.9 \tag{F.2.9.2-13} $$
 
 (coeficiente para el cálculo de la rigidez efectiva de miembros compuestos tipo perfil relleno a compresión) Puede tomarse como valor mínimo para la resistencia de diseño a compresión el calculado para el miembro de acero sin revestir de acuerdo con el numeral F.2.5.
 
@@ -4197,7 +4197,7 @@ donde:
 
 $φ_{T}=0.90$ y
 
-![Ecuación F.2.9.2-14](img/ec-F.2.9.2-14.png)
+$$ P_{n}=A_{s}F_{y}+A_{sr}F_{ysr} \tag{F.2.9.2-14} $$
 
 **F.2.9.2.2.4** — Transferencia de carga — Las cargas aplicadas a los miembros compuestos tipo perfil relleno cargados axialmente se transferirán entre el acero y el concreto de acuerdo con los requerimientos establecidos en el numeral F.2.9.6.
 
@@ -4294,15 +4294,15 @@ Cuando el peralte nominal del tablero metálico sea de 38 mm o mayor, el ancho p
 
 (a) Aplastamiento del Concreto
 
-![Ecuación F.2.9.3-1a](img/ec-F.2.9.3-1a.png)
+$$ V'_{r}=0.85f'_{c}A_{c} \tag{F.2.9.3-1a} $$
 
 (c) Fluencia de la sección de acero
 
-![Ecuación F.2.9.3-1b](img/ec-F.2.9.3-1b.png)
+$$ V'_{r}=F_{y}A_{s} \tag{F.2.9.3-1b} $$
 
 (c) Resistencia de los conectores
 
-![Ecuación F.2.9.3-1c](img/ec-F.2.9.3-1c.png)
+$$ V'_{r}=\sum Q_{n} \tag{F.2.9.3-1c} $$
 
 donde:
 
@@ -4316,7 +4316,7 @@ $∑Q_{n}$ = suma de las resistencias nominales de los conectores entre el punto
 
 (a) Fluencia a tensión del refuerzo de la losa.
 
-![Ecuación F.2.9.3-2a](img/ec-F.2.9.3-2a.png)
+$$ V'_{r}=A_{sr}F_{ysr} \tag{F.2.9.3-2a} $$
 
 donde:
 
@@ -4326,7 +4326,7 @@ $F_{ysr}$= esfuerzo de fluencia mínimo especificado para el acero de refuerzo, 
 
 (b) Resistencia al corte de los conectores tipo espigo con cabeza o tipo canal
 
-![Ecuación F.2.9.3-2b](img/ec-F.2.9.3-2b.png)
+$$ V'_{r}=\sum Q_{n} \tag{F.2.9.3-2b} $$
 
 <!-- mod:1-decreto-092-2011-200 -->
 > **Modificación — Decreto 092 de 2011** · anexo, p. 43
@@ -4355,7 +4355,7 @@ $φ_{b} =0.90$ y $M_{n}$ calculado como sigue:
 
 (a) Para secciones compactas:
 
-![Ecuación F.2.9.3-3a](img/ec-F.2.9.3-3a.png)
+$$ M_{n}=M_{p} \tag{F.2.9.3-3a} $$
 
 donde:
 
@@ -4363,7 +4363,7 @@ $M_{p}$ = momento correspondiente a la distribución plástica de esfuerzos sobr
 
 (b) Para secciones no compactas:
 
-![Ecuación F.2.9.3-3b](img/ec-F.2.9.3-3b.png)
+$$ M_{n}=M_{p}-\left[M_{p}-M_{y}\right](\lambda -\lambda _{p})(\lambda _{r}-\lambda _{p}) \tag{F.2.9.3-3b} $$
 
 donde:
 
@@ -4431,7 +4431,7 @@ Las provisiones para la resistencia al aplastamiento bajo la aplicación de fuer
 
 **F.2.9.6.2.1** — Fuerza externa aplicada a la sección de acero — Cuando la fuerza externa se aplica en su totalidad a la sección de acero, la fuerza que requiere ser transferida al concreto, $V_{r}'$ , se determinará como sigue:
 
-![Ecuación F.2.9.6-1](img/ec-F.2.9.6-1.png)
+$$ V'_{r}=P_{r}\left(1-\dfrac{A_{s}F_{y}}{P_{no}}\right) \tag{F.2.9.6-1} $$
 
 donde:
 
@@ -4446,7 +4446,7 @@ $P_{no}$ = resistencia nominal a carga axial, sin considerar los efectos de long
 
 **F.2.9.6.2.2** — Fuerza externa aplicada al concreto — Cuando la fuerza externa se aplica en su totalidad al revestimiento o relleno de concreto, la fuerza que se debe transferir al acero, $V_{r}'$ , se determina como sigue:
 
-![Ecuación F.2.9.6-2](img/ec-F.2.9.6-2.png)
+$$ V'_{r}=P_{r}(A_{s}F_{y}/P_{no}) \tag{F.2.9.6-2} $$
 
 <!-- mod:1-decreto-092-2011-206 -->
 > **Modificación — Decreto 092 de 2011** · anexo, p. 44
@@ -4472,7 +4472,7 @@ Para miembros compuestos tipo perfil revestido no se permite el uso del mecanism
 
 $φ_{B}=0.65$ y
 
-![Ecuación F.2.9.6-3](img/ec-F.2.9.6-3.png)
+$$ R_{n}=1.7f'_{c}A_{1} \tag{F.2.9.6-3} $$
 
 donde:
 
@@ -4480,7 +4480,7 @@ $A_{1}$ = área del concreto que recibe la carga, mm2 Un ejemplo de transferenci
 
 **F.2.9.6.3.2** — Conexión a cortante — Cuando en un miembro compuesto tipo perfil revestido o relleno la fuerza se transfiere a través de un mecanismo de cortante, la resistencia de diseño a cortante suministrada por los conectores tipo espigo con cabeza, tipo perno o tipo canal, $R_{a}$ , se determinará como sigue:
 
-![Ecuación F.2.9.6-4](img/ec-F.2.9.6-4.png)
+$$ R_{a}=\sum Q_{cv} \tag{F.2.9.6-4} $$
 
 donde:
 
@@ -4497,11 +4497,11 @@ $φ =0.45$ y $R_{n}$ calculado como sigue:
 
 Para secciones de acero rectangulares rellenas de concreto:
 
-![Ecuación F.2.9.6-5](img/ec-F.2.9.6-5.png)
+$$ R_{n}=B^{2}C_{in}F_{in} \tag{F.2.9.6-5} $$
 
 Para secciones de acero circulares rellenas de concreto:
 
-![Ecuación F.2.9.6-6](img/ec-F.2.9.6-6.png)
+$$ R_{n}=0.25\pi D^{2}C_{in}F_{in} \tag{F.2.9.6-6} $$
 
 donde:
 
@@ -4555,7 +4555,7 @@ El numeral F.2.9.8.2 se aplica a miembros a flexión de sección compuesta en lo
 
 **F.2.9.8.2.1** — Resistencia de los conectores de acero tipo espigo con cabeza — La resistencia nominal de un conector de acero tipo espigo con cabeza embebido en una losa de concreto maciza o vaciada sobre un tablero metálico se tomará como:
 
-![Ecuación F.2.9.8-1](img/ec-F.2.9.8-1.png)
+$$ Q_{n}=0.5A_{sc}\sqrt{f'_{c}E_{c}}\le R_{g}R_{p}A_{sc}F_{u} \tag{F.2.9.8-1} $$
 
 donde:
 
@@ -4627,7 +4627,7 @@ $w_{r}$ = ancho promedio de la nervadura o capitel (según se define en el numer
 
 **F.2.9.8.2.2** — Resistencia de los conectores tipo perno — El uso de conectores tipo perno estará limitado a losas macizas de concreto sobre perfiles de acero. La resistencia nominal de un conector tipo perno embebido en una losa de concreto se tomará como:
 
-![Ecuación F.2.9.8-2](img/ec-F.2.9.8-2.png)
+$$ Q_{n}=0.14A_{cp}\sqrt{f'_{c}E_{c}}\left(\dfrac{S}{d_{cp}}\right)^{0.25}\le A_{cp}F_{u} \tag{F.2.9.8-2} $$
 
 donde:
 
@@ -4647,7 +4647,7 @@ $w_{c}$ = peso del concreto por unidad de volumen $(1500≤w_{c}≤2500)$ kg/m3 
 
 **F.2.9.8.2.3** — Resistencia de los conectores de acero tipo canal — La resistencia nominal de un conector tipo canal embebido en una losa maciza de concreto se calculará como sigue:
 
-![Ecuación F.2.9.8-3](img/ec-F.2.9.8-3.png)
+$$ Q_{n}=0.3(t_{f}+0.5t_{w})l_{c}\sqrt{f'_{c}E_{c}} \tag{F.2.9.8-3} $$
 
 donde:
 
@@ -4715,7 +4715,7 @@ espigo hasta el nivel superior de la cabeza en el perno instalado, y el diámetr
 
 $φ_{v}=0.65$ y
 
-![Ecuación F.2.9.8-4](img/ec-F.2.9.8-4.png)
+$$ Q_{nv}=A_{sc}F_{u} \tag{F.2.9.8-4} $$
 
 donde:
 
@@ -4740,7 +4740,7 @@ Si la resistencia al desprendimiento de un bloque de concreto bajo fuerza cortan
 
 $φ_{t} =0.75$ y
 
-![Ecuación F.2.9.8-5](img/ec-F.2.9.8-5.png)
+$$ Q_{nt}=A_{sc}F_{u} \tag{F.2.9.8-5} $$
 
 donde:
 
@@ -4759,7 +4759,7 @@ Se recomienda suministrar refuerzo de confinamiento suplementario alrededor del 
 
 **F.2.9.8.3.3** — Resistencia de conectores de acero tipo espigo con cabeza a cortante y tensión combinadas en Componentes de Construcción Compuesta — Cuando la resistencia al desprendimiento de un bloque de concreto bajo fuerza cortante no sea un estado límite que controle el diseño, y la distancia desde el centro del conector hasta un borde libre del concreto, medida en dirección perpendicular a la altura del conector, sea mayor o igual que 1.5 veces la altura del conector medida hasta el nivel superior de la cabeza, y el espaciamiento centro a centro entre conectores sea mayor o igual que 3 veces la altura del conector medida hasta el nivel superior de la cabeza, la resistencia nominal para la interacción de cortante y tensión en un conector de acero tipo espigo con cabeza se calculará con base en la siguiente ecuación:
 
-![Ecuación F.2.9.8-6](img/ec-F.2.9.8-6.png)
+$$ \left[\left(\dfrac{Q_{rt}}{\phi _{t}Q_{nt}}\right)^{5/3}+\left(\dfrac{Q_{rv}}{\phi _{v}Q_{nv}}\right)^{5/3}\right]\le 1.0 \tag{F.2.9.8-6} $$
 
 donde:
 
@@ -5009,7 +5009,7 @@ La longitud de las soldaduras de filete diseñadas con base en su resistencia de
 
 Para soldaduras longitudinales de filete, paralelas a la dirección del esfuerzo, que transmitan la fuerza al extremo de un miembro solicitado por carga axial, con una longitud de soldadura hasta de 100 veces el tamaño del filete, se permite tomar la longitud efectiva igual a la longitud real. Cuando la longitud de dichas soldaduras exceda de 100 veces el tamaño del filete, la longitud efectiva se determinará multiplicando la longitud real por el factor de reducción, $β$ , calculado como sigue:
 
-![Ecuación F.2.10.2-1](img/ec-F.2.10.2-1.png)
+$$ \beta =1.2-0.002(l/w)\le 1.0 \tag{F.2.10.2-1} $$
 
 donde:
 
@@ -5055,11 +5055,11 @@ El espesor de las soldaduras de tapón o de ranura en materiales de 16 mm o meno
 
 Para el metal base:
 
-![Ecuación F.2.10.2-2](img/ec-F.2.10.2-2.png)
+$$ R_{n}=F_{nBM}A_{BM} \tag{F.2.10.2-2} $$
 
 Para el metal de la soldadura:
 
-![Ecuación F.2.10.2-3](img/ec-F.2.10.2-3.png)
+$$ R_{n}=F_{nw}A_{we} \tag{F.2.10.2-3} $$
 
 donde:
 
@@ -5132,11 +5132,11 @@ $φ =0.75$ y $R_{n}$ calculado como sigue:
 
 (a) Para un grupo de soldaduras, todas en una línea o todas paralelas, cargado en su propio plano a través de su centro de gravedad
 
-![Ecuación F.2.10.2-4](img/ec-F.2.10.2-4.png)
+$$ R_{n}=F_{nw}A_{we} \tag{F.2.10.2-4} $$
 
 donde:
 
-![Ecuación F.2.10.2-5](img/ec-F.2.10.2-5.png)
+$$ F_{nw}=0.60F_{EXX}(1.0+0.50\operatorname{sen}^{1.5}\theta ) \tag{F.2.10.2-5} $$
 
 y
 
@@ -5146,17 +5146,17 @@ $θ$ = ángulo de aplicación de la carga, medido desde el eje longitudinal de l
 
 (b) Para los elementos de un grupo de soldaduras analizado aplicando un método de centro instantáneo de rotación, los componentes de la resistencia nominal, $R_{nx}$ y $R_{ny}$, y la capacidad nominal a momento, $M_{n}$ , se pueden determinar como sigue:
 
-![Ecuación F.2.10.2-6](img/ec-F.2.10.2-6.png)
+$$ R_{nx}=\sum F_{nwix}A_{wei}\qquad R_{ny}=\sum F_{nwiy}A_{wei} \tag{F.2.10.2-6} $$
 
-![Ecuación F.2.10.2-7](img/ec-F.2.10.2-7.png)
+$$ M_{n}=\sum \left[F_{nwiy}A_{wei}(x_{i})-F_{nwix}A_{wei}(y_{i})\right] \tag{F.2.10.2-7} $$
 
 donde:
 
 $A_{wei}$= área efectiva en el plano de la garganta para el elemento "$i$" de una soldadura, mm2
 
-![Ecuación F.2.10.2-8](img/ec-F.2.10.2-8.png)
+$$ F_{nwi}=0.60F_{EXX}(1.0+0.50\operatorname{sen}^{1.5}\theta )f(p_{i}) \tag{F.2.10.2-8} $$
 
-![Ecuación F.2.10.2-9](img/ec-F.2.10.2-9.png)
+$$ f(p_{i})=\left[p_{i}(1.9-0.9p_{i})\right]^{0.3} \tag{F.2.10.2-9} $$
 
 $F_{nwi}$= esfuerzo nominal en el i-ésimo elemento, MPa
 
@@ -5184,11 +5184,11 @@ $θ_{i}$ = ángulo de la carga medido desde el eje longitudinal del i-ésimo ele
 
 (c) Para grupos de soldaduras de filete cargados concéntricamente y consistentes en elementos con el mismo tamaño de soldadura orientados tanto longitudinal como transversalmente en relación con la dirección de aplicación de la carga, la resistencia combinada del grupo de soldaduras de filete , $R_{n}$, se determinará como el mayor valor entre:
 
-![Ecuación F.2.10.2-10a](img/ec-F.2.10.2-10a.png)
+$$ R_{n}=R_{nw1}+R_{nwt} \tag{F.2.10.2-10a} $$
 
 y
 
-![Ecuación F.2.10.2-10b](img/ec-F.2.10.2-10b.png)
+$$ R_{n}=0.85R_{nw1}+1.5R_{nwt} \tag{F.2.10.2-10b} $$
 
 donde:
 
@@ -5441,7 +5441,7 @@ Valores del Incremento de la distancia al borde $C_{2}$ Pernos con diámetro en 
 
 $φ =0.75$ y
 
-![Ecuación F.2.10.3-1](img/ec-F.2.10.3-1.png)
+$$ R_{n}=F_{n}A_{b} \tag{F.2.10.3-1} $$
 
 donde:
 
@@ -5460,13 +5460,13 @@ La resistencia requerida a tensión incluirá cualquier tensión que resulte del
 
 $φ =0.75$ y
 
-![Ecuación F.2.10.3-2](img/ec-F.2.10.3-2.png)
+$$ R_{n}=F'_{nt}A_{b} \tag{F.2.10.3-2} $$
 
 donde:
 
 $F_{nt}'$ = resistencia nominal a tensión por unidad de área, modificada para incluir los efectos del esfuerzo cortante, MPa.
 
-![Ecuación F.2.10.3-3](img/ec-F.2.10.3-3.png)
+$$ F'_{nt}=1.3F_{nt}-\dfrac{F_{nt}}{\phi F_{nv}}f_{v}\le F_{nt} \tag{F.2.10.3-3} $$
 
 $F_{nt}$= resistencia nominal a tensión por unidad de área de la tabla F.2.10.3-2, MPa.
 
@@ -5490,7 +5490,7 @@ $φ =0.85$ Para perforaciones de ranura larga:
 
 $φ =0.70$ La resistencia nominal será igual a:
 
-![Ecuación F.2.10.3-4](img/ec-F.2.10.3-4.png)
+$$ R_{n}=\mu D_{u}h_{f}T_{b}n_{s} \tag{F.2.10.3-4} $$
 
 donde:
 
@@ -5512,7 +5512,7 @@ $n_{s}$ = número de planos sobre los cuales debe producirse el deslizamiento pa
 
 **F.2.10.3.9** — Esfuerzos combinados de cortante y tensión en conexiones de deslizamiento crítico — Cuando sobre una conexión de deslizamiento crítico actúa una fuerza de tensión que reduce la fuerza neta de apriete, la resistencia de diseño al deslizamiento por perno, calculada según el numeral F.2.10.3.8, se multiplicará por el factor $k_{sc}$, calculado como sigue:
 
-![Ecuación F.2.10.3-5](img/ec-F.2.10.3-5.png)
+$$ k_{sc}=1-\dfrac{T_{u}}{D_{u}T_{b}n_{b}} \tag{F.2.10.3-5} $$
 
 donde:
 
@@ -5530,15 +5530,15 @@ $φ =0.75$ y $R_{n}$ calculado como sigue:
 
 (i) Cuando la deformación alrededor de la perforación del perno, bajo cargas de servicio, es una consideración de diseño:
 
-![Ecuación F.2.10.3-6a](img/ec-F.2.10.3-6a.png)
+$$ R_{n}=1.2L_{c}tF_{u}\le 2.4dtF_{u} \tag{F.2.10.3-6a} $$
 
 (ii) Cuando la deformación alrededor de la perforación del perno, bajo cargas de servicio, no es una consideración de diseño:
 
-![Ecuación F.2.10.3-6b](img/ec-F.2.10.3-6b.png)
+$$ R_{n}=1.5L_{c}tF_{u}\le 3.0dtF_{u} \tag{F.2.10.3-6b} $$
 
 (b) Para un perno en una perforación de ranura larga con la ranura perpendicular a la dirección de la fuerza:
 
-![Ecuación F.2.10.3-6c](img/ec-F.2.10.3-6c.png)
+$$ R_{n}=1.0L_{c}tF_{u}\le 2.0dtF_{u} \tag{F.2.10.3-6c} $$
 
 (c) Para conexiones donde los pernos atraviesan completamente un miembro en cajón sin rigidizar o un PTE, véase el numeral F.2.10.7 y la fórmula F.2.10.7-1, donde:
 
@@ -5569,11 +5569,11 @@ Este numeral se aplica a los elementos de los miembros en la zona de la conexió
 
 (a) Para fluencia por tensión en elementos de conexión:
 
-![Ecuación F.2.10.4-1](img/ec-F.2.10.4-1.png)
+$$ \begin{gathered}\phi =0.90 \\ R_{n}=F_{y}A_{g}\end{gathered} \tag{F.2.10.4-1} $$
 
 (b) Para rotura por tensión en elementos de conexión:
 
-![Ecuación F.2.10.4-2](img/ec-F.2.10.4-2.png)
+$$ \begin{gathered}\phi =0.75 \\ R_{n}=F_{u}A_{e}\end{gathered} \tag{F.2.10.4-2} $$
 
 donde:
 
@@ -5585,7 +5585,7 @@ $A_{e}=A_{n}≤0.85A_{g}$ El área efectiva de la platina de conexión puede est
 
 (a) Para fluencia por cortante del elemento:
 
-![Ecuación F.2.10.4-3](img/ec-F.2.10.4-3.png)
+$$ \begin{gathered}\phi =1.00 \\ R_{n}=0.60F_{y}A_{gv}\end{gathered} \tag{F.2.10.4-3} $$
 
 donde:
 
@@ -5593,7 +5593,7 @@ $A_{gv}$ = área bruta sometida a cortante, mm2
 
 (b) Para rotura por cortante del elemento:
 
-![Ecuación F.2.10.4-4](img/ec-F.2.10.4-4.png)
+$$ \begin{gathered}\phi =0.75 \\ R_{n}=0.60F_{u}A_{nv}\end{gathered} \tag{F.2.10.4-4} $$
 
 donde:
 
@@ -5603,7 +5603,7 @@ $A_{nv}$ = área neta sometida a cortante, mm2
 
 $φ =0.75$ y
 
-![Ecuación F.2.10.4-5](img/ec-F.2.10.4-5.png)
+$$ R_{n}=0.60F_{u}A_{nv}+U_{bs}F_{u}A_{nt}\le 0.6F_{y}A_{gv}+U_{bs}F_{u}A_{nt} \tag{F.2.10.4-5} $$
 
 donde:
 
@@ -5617,7 +5617,7 @@ $A_{nv}$= área neta sometida a cortante, mm2 Cuando el esfuerzo de tensión sea
 
 Para $KL /r≤25$
 
-![Ecuación F.2.10.4-6](img/ec-F.2.10.4-6.png)
+$$ \begin{gathered}P_{n}=F_{y}A_{g} \\ \phi =0.90\end{gathered} \tag{F.2.10.4-6} $$
 
 Para $KL /r>25$ se aplican los requisitos del numeral F.2.5.
 
@@ -5633,7 +5633,7 @@ Para $KL /r>25$ se aplican los requisitos del numeral F.2.5.
 
 **F.2.10.5.2** — Platinas de relleno atornilladas — Cuando un perno que transmite carga atraviesa platinas de relleno con un espesor total menor o igual que 6.4 mm, no se requiere reducir la resistencia a cortante. Por el contrario, cuando el espesor total de tales platinas es superior a 6.4 mm, se aplicará uno de los siguientes requerimientos:
 
-![Ecuación](img/ec-p153-160.png)
+$$ \left[1-0.0154(t-6)\right], $$
 
 (a) La resistencia a cortante de los pernos se multiplicará por un factor igual a $\left[1-0.0154(t-6)\right]$, pero no menor que 0.85, donde $t$ es el espesor total en mm de las platinas de relleno;
 
@@ -5660,7 +5660,7 @@ $φ =0.75$ y $R_{n}$ , la resistencia nominal al aplastamiento, definida como si
 
 (a) Para superficies maquinadas, pasadores en perforaciones rimadas o taladradas y en extremos de rigidizadores de apoyo ajustados:
 
-![Ecuación F.2.10.7-1](img/ec-F.2.10.7-1.png)
+$$ R_{n}=1.8F_{y}A_{pb} \tag{F.2.10.7-1} $$
 
 donde:
 
@@ -5672,11 +5672,11 @@ $A_{pb}$= área de apoyo en proyección, mm2.
 
 (ii) Si $d≤635$ mm
 
-![Ecuación F.2.10.7-2](img/ec-F.2.10.7-2.png)
+$$ R_{n}=1.2(F_{y}-90)l_{b}d/20 \tag{F.2.10.7-2} $$
 
 (iii) Si $d>635$ mm
 
-![Ecuación F.2.10.7-3](img/ec-F.2.10.7-3.png)
+$$ R_{n}=30.2(F_{y}-90)l_{b}\sqrt{d}/20 \tag{F.2.10.7-3} $$
 
 donde:
 
@@ -5699,11 +5699,11 @@ $φ =0.65$ y $P_{p}$ , la resistencia nominal al aplastamiento, calculada como s
 
 (a) Sobre un apoyo en concreto cargado en toda su área:
 
-![Ecuación F.2.10.8-1](img/ec-F.2.10.8-1.png)
+$$ P_{p}=0.85f'_{c}A_{l} \tag{F.2.10.8-1} $$
 
 (b) Sobre un apoyo en concreto cargado sólo en parte de su área:
 
-![Ecuación F.2.10.8-2](img/ec-F.2.10.8-2.png)
+$$ P_{p}=0.85f'_{c}A_{l}\sqrt{A_{2}/A_{1}}\le 1.7f'_{c}A_{1} \tag{F.2.10.8-2} $$
 
 donde:
 
@@ -5737,7 +5737,7 @@ La resistencia de diseño para el estado límite de flexión local de la aleta, 
 
 $φ =0.90$ y
 
-![Ecuación F.2.10.10-1](img/ec-F.2.10.10-1.png)
+$$ R_{n}=6.25t_{f}^{2}F_{yf} \tag{F.2.10.10-1} $$
 
 donde:
 
@@ -5757,11 +5757,11 @@ $φ =1.00$ y $R_{n}$ , la resistencia nominal, calculada como sigue:
 
 (a) Cuando la fuerza concentrada que ha de resistirse está aplicada a una distancia, medida desde el extremo del miembro, mayor que el peralte $d$ del miembro,
 
-![Ecuación F.2.10.10-2](img/ec-F.2.10.10-2.png)
+$$ R_{n}=(5k+l_{b})F_{yw}t_{w} \tag{F.2.10.10-2} $$
 
 (b) Cuando la fuerza concentrada que ha de resistirse está aplicada a una distancia, medida desde el extremo del miembro, menor o igual que el peralte $d$ del miembro,
 
-![Ecuación F.2.10.10-3](img/ec-F.2.10.10-3.png)
+$$ R_{n}=(2.5k+l_{b})F_{yw}t_{w} \tag{F.2.10.10-3} $$
 
 donde:
 
@@ -5781,17 +5781,17 @@ $φ =0.75$ y $R_{n}$ , la resistencia nominal, calculada como sigue:
 
 (a) Cuando la fuerza concentrada de compresión a soportar se aplica a una distancia, medida desde el extremo del miembro, mayor o igual que $d /2$ :
 
-![Ecuación F.2.10.10-4](img/ec-F.2.10.10-4.png)
+$$ R_{n}=0.80t_{w}^{2}\left[1+3\left(\dfrac{l_{b}}{d}\right)\left(\dfrac{t_{w}}{t_{f}}\right)^{1.5}\right]\sqrt{\dfrac{EF_{yw}t_{f}}{t_{w}}} \tag{F.2.10.10-4} $$
 
 (b) Cuando la fuerza concentrada de compresión a soportar se aplica a una distancia, medida desde el extremo del miembro, menor que $d /2$ :
 
 (i) Si $l_{b}/d≤0.2$
 
-![Ecuación F.2.10.10-5a](img/ec-F.2.10.10-5a.png)
+$$ R_{n}=0.40t_{w}^{2}\left[1+3\left(\dfrac{l_{b}}{d}\right)\left(\dfrac{t_{w}}{t_{f}}\right)^{1.5}\right]\sqrt{\dfrac{EF_{yw}t_{f}}{t_{w}}} \tag{F.2.10.10-5a} $$
 
 (ii) Si $l_{b}/d>0.2$
 
-![Ecuación F.2.10.10-5b](img/ec-F.2.10.10-5b.png)
+$$ R_{n}=0.40t_{w}^{2}\left[1+\left(\dfrac{4(l_{b})}{d}-0.2\right)\left(\dfrac{t_{w}}{t_{f}}\right)^{1.5}\right]\sqrt{\dfrac{EF_{yw}t_{f}}{t_{w}}} \tag{F.2.10.10-5b} $$
 
 donde:
 
@@ -5809,7 +5809,7 @@ $φ =0.85$ y $R_{n}$, la resistencia nominal para el estado límite de pandeo la
 
 (i) Para $\frac{h/t_{w}}{L_{b}/b_{f}}≤2.3$
 
-![Ecuación F.2.10.10-6](img/ec-F.2.10.10-6.png)
+$$ R_{n}=\dfrac{C_{r}t_{w}^{3}t_{f}}{h^{2}}\left[1+0.4\left(\dfrac{h/t_{w}}{L_{b}/b_{f}}\right)^{3}\right] \tag{F.2.10.10-6} $$
 
 (ii) Para $\frac{h/t_{w}}{L_{b}/b_{f}}>2.3$, no se aplica el estado límite de pandeo lateral del alma.
 
@@ -5819,7 +5819,7 @@ Cuando la resistencia requerida del alma excede la resistencia de diseño, $φR_
 
 (i) Para $\frac{h/t_{w}}{L_{b}/b_{f}}≤1.7$
 
-![Ecuación F.2.10.10-7](img/ec-F.2.10.10-7.png)
+$$ R_{n}=\dfrac{C_{r}t_{w}^{3}t_{f}}{h^{2}}\left[0.4\left(\dfrac{h/t_{w}}{L_{b}/b_{f}}\right)^{3}\right] \tag{F.2.10.10-7} $$
 
 (ii) Para $\frac{h/t_{w}}{l/b_{f}}>1.7$, no se aplica el estado límite de pandeo lateral del alma.
 
@@ -5858,7 +5858,7 @@ La resistencia de diseño para el estado límite de pandeo local del alma se det
 
 $φ =0.90$ y
 
-![Ecuación F.2.10.10-8](img/ec-F.2.10.10-8.png)
+$$ R_{n}=\dfrac{24t_{w}^{3}\sqrt{EF_{yw}}}{h} \tag{F.2.10.10-8} $$
 
 Cuando el par de fuerzas concentradas de compresión a resistir se aplique a una distancia, medida desde el extremo del miembro, menor que $d /2$ , $R_{n}$ se reducirá en un 50%.
 
@@ -5874,21 +5874,21 @@ $φ =0.90$ y $R_{n}$ , la resistencia nominal, calculada como sigue:
 
 (i) Para $P_{u}≤0.4P_{y}$
 
-![Ecuación F.2.10.10-9](img/ec-F.2.10.10-9.png)
+$$ R_{n}=0.60F_{y}d_{c}t_{w} \tag{F.2.10.10-9} $$
 
 (ii) Para $P_{u}>0.4P_{y}$
 
-![Ecuación F.2.10.10-10](img/ec-F.2.10.10-10.png)
+$$ R_{n}=0.60F_{y}d_{c}t_{w}\left(1.4-\dfrac{P_{u}}{P_{y}}\right) \tag{F.2.10.10-10} $$
 
 (b) Cuando en el análisis se considera el efecto la deformación plástica de la zona de panel sobre la estabilidad del marco:
 
 (i) Para $P_{u}≤0.75P_{y}$
 
-![Ecuación F.2.10.10-11](img/ec-F.2.10.10-11.png)
+$$ R_{n}=0.60F_{y}d_{c}t_{w}\left(1+\dfrac{3b_{cf}t_{cf}^{2}}{d_{b}d_{c}t_{w}}\right) \tag{F.2.10.10-11} $$
 
 (ii) Para $P_{u}>0.75P_{y}$
 
-![Ecuación F.2.10.10-12](img/ec-F.2.10.10-12.png)
+$$ R_{n}=0.60F_{y}d_{c}t_{w}\left(1+\dfrac{3b_{cf}t_{cf}^{2}}{d_{b}d_{c}t_{w}}\right)\left(1.9-\dfrac{1.2P_{u}}{P_{y}}\right) \tag{F.2.10.10-12} $$
 
 En las fórmulas F.2.10.10-9 a F.2.10.10-12 se aplican las siguientes definiciones:
 
@@ -6365,11 +6365,11 @@ Límites de aplicación de la tabla F.2.11.3-2
 
 Al diseñar las soldaduras a los ramales deberá darse la debida consideración a la condición de no uniformidad en la transferencia de carga a lo largo de la línea de soldadura, debida a las diferencias en las rigideces relativas de las paredes de los PTE en conexiones de PTE a PTE y de platinas transversales a PTE, Este requisito se deberá satisfacer calculando, como se presenta a continuación, la resistencia de diseño de las soldaduras de conexión de los ramales y comparándola con la resistencia requerida:
 
-![Ecuación F.2.11.4-1](img/ec-F.2.11.4-1.png)
+$$ R_{n}=F_{nw}t_{w}I_{e} \tag{F.2.11.4-1} $$
 
-![Ecuación F.2.11.4-2](img/ec-F.2.11.4-2.png)
+$$ M_{n-ip}=F_{nw}S_{ip} \tag{F.2.11.4-2} $$
 
-![Ecuación F.2.11.4-3](img/ec-F.2.11.4-3.png)
+$$ M_{n-op}=F_{nw}S_{op} \tag{F.2.11.4-3} $$
 
 Para considerar los efectos de la interacción, véase la ecuación F.2.11.3-14.
 
@@ -6974,11 +6974,11 @@ Los miembros y conexiones que tengan elementos que puedan llegar a la fluencia d
 
 (i) Para $P_{u}/φ_{c}P_{y}≤0.125$
 
-![Ecuación F.2.15.2-1](img/ec-F.2.15.2-1.png)
+$$ \lambda _{pd}=3.76\sqrt{\dfrac{E}{F_{y}}}\left(1-\dfrac{2.75P_{u}}{\phi _{c}P_{y}}\right) \tag{F.2.15.2-1} $$
 
 (ii) Para $P_{u}/φ_{c}P_{y}>0.125$
 
-![Ecuación F.2.15.2-2](img/ec-F.2.15.2-2.png)
+$$ \lambda _{pd}=1.12\sqrt{\dfrac{E}{F_{y}}}\left(2.33-\dfrac{P_{u}}{\phi _{c}P_{y}}\right)\ge 1.49\sqrt{\dfrac{E}{F_{y}}} \tag{F.2.15.2-2} $$
 
 donde:
 
@@ -6998,7 +6998,7 @@ $φ_{c}$ = coeficiente de reducción de resistencia para flexión $=0.90$
 
 (b) Para la relación ancho-espesor $(b /t)$ de aletas de secciones en cajón y PTE , cubreplacas en aletas y platinas de diafragma entre líneas de pernos o soldaduras:
 
-![Ecuación F.2.15.2-3](img/ec-F.2.15.2-3.png)
+$$ \lambda _{pd}=0.94\sqrt{E/F_{y}} \tag{F.2.15.2-3} $$
 
 donde:
 
@@ -7008,7 +7008,7 @@ $t$ = como se define en la sección F.2.2.4.1, mm
 
 (c) Para la relación diámetro-espesor $(D /t)$ de PTE circulares a flexión:
 
-![Ecuación F.2.15.2-4](img/ec-F.2.15.2-4.png)
+$$ \lambda _{pd}=0.045E/F_{y} \tag{F.2.15.2-4} $$
 
 donde:
 
@@ -7018,7 +7018,7 @@ $D$ = diámetro exterior del PTE circular (mm)
 
 (a) Para miembros de sección en $I$ solicitados por flexión sobre el eje mayor:
 
-![Ecuación F.2.15.2-5](img/ec-F.2.15.2-5.png)
+$$ L_{pd}=\left[0.12-0.076\left(\dfrac{M'_{1}}{M_{2}}\right)\right]\dfrac{E}{F_{y}}r_{y} \tag{F.2.15.2-5} $$
 
 donde:
 
@@ -7026,15 +7026,15 @@ $r_{y}$ = radio de giro respecto al eje $y$ , mm
 
 (i) Cuando la magnitud del momento flector en cualquier punto a lo largo de la longitud no arriostrada es mayor que $M_{2}$ :
 
-![Ecuación F.2.15.2-6a](img/ec-F.2.15.2-6a.png)
+$$ M'_{1}/M_{2}=+1 \tag{F.2.15.2-6a} $$
 
 En caso contrario:
 
-![Ecuación F.2.15.2-6b](img/ec-F.2.15.2-6b.png)
+$$ \begin{aligned}&\text{Cuando }M_{mid}>(M_{1}/M_{2})/2\ &M'_{1}=2M_{mid}-M_{2}<M_{2}\end{aligned} \tag{F.2.15.2-6b} $$
 
 (ii) Cuando $M_{mid}>(M_{1}/M_{2}$
 
-![Ecuación F.2.15.2-6c](img/ec-F.2.15.2-6c.png)
+$$ \begin{aligned}&\text{Cuando }M_{mid}<(M_{1}/M_{2})/2\ &M'_{1}=M_{1}\end{aligned} \tag{F.2.15.2-6c} $$
 
 (iii) Cuando $M_{mid}<(M_{1}/M_{2}$ donde:
 
@@ -7048,7 +7048,7 @@ $M_{1}'$ = momento efectivo en el extremo opuesto a $M_{2}$ de la longitud no ar
 
 (b) Para barras rectangulares sólidas, PTE rectangulares y vigas de sección en cajón solicitados por flexión alrededor de su eje mayor:
 
-![Ecuación F.2.15.2-7](img/ec-F.2.15.2-7.png)
+$$ L_{pd}=\left[0.17-0.10\left(\dfrac{M'_{1}}{M_{2}}\right)\right]\dfrac{E}{F_{y}}r_{y}\ge 0.10\left(\dfrac{E}{F_{y}}\right)r_{y} \tag{F.2.15.2-7} $$
 
 Para todo tipo de miembros solicitados por compresión axial y que contengan rótulas plásticas, las longitudes sin arriostramiento lateral para los ejes mayor y menor de la sección transversal no debe ser superiores a $4.71r_{x}\sqrt{E /F_{y}}$ y $4.71r_{y}\sqrt{E /F_{y}}$ respectivamente.
 
@@ -7100,9 +7100,9 @@ Se incluyen las siguientes secciones:
 
 El sistema de cubierta se considerará estable para empozamiento y no requerirá más revisiones si se cumplen las dos condiciones siguientes:
 
-![Ecuación F.2.16.1-1](img/ec-F.2.16.1-1.png)
+$$ C_{p}+0.9C_{s}\le 0.25 \tag{F.2.16.1-1} $$
 
-![Ecuación F.2.16.1-2](img/ec-F.2.16.1-2.png)
+$$ I_{d}\ge 3940S^{4} \tag{F.2.16.1-2} $$
 
 donde:
 
@@ -7136,11 +7136,11 @@ Cuando se requiera un cálculo más exacto de la rigidez de la cubierta, se pued
 
 El índice de esfuerzo se define como:
 
-![Ecuación](img/ec-p196-406.png)
+$$ U_{p}=\left(\dfrac{0.8F_{y}-f_{o}}{f_{o}}\right)_{p} $$
 
 $\frac{0.8F_{y}−f_{o}}{f_{o}}$ para miembros principales F.2.16.2-1 y como:
 
-![Ecuación](img/ec-p196-453.png)
+$$ U_{s}=\left(\dfrac{0.8F_{y}-f_{o}}{f_{o}}\right)_{s} $$
 
 $\frac{0.8F_{y}−f_{o}}{f_{o}}$ para miembros secundarios F.2.16.2-2 donde:
 
@@ -7210,7 +7210,7 @@ El rango de esfuerzos bajo cargas de servicio debe ser menor o igual que el rang
 
 (a) Para las categorías de esfuerzos A, B, B’, C, D, E y E’, el rango de esfuerzos admisibles, $F_{SR}$, se determinará por la fórmula:
 
-![Ecuación F.2.17.3-1](img/ec-F.2.17.3-1.png)
+$$ F_{SR}=\left(\dfrac{C_{f}\,329}{n_{SR}}\right)^{0.333}\ge F_{TH} \tag{F.2.17.3-1} $$
 
 donde:
 
@@ -7224,23 +7224,23 @@ $F_{TH}$ = umbral del rango de esfuerzos admisibles, rango máximo de esfuerzos 
 
 (b) Para la categoría de esfuerzos $F$ , el rango de esfuerzos admisibles, $F_{SR}$, se determinará por medio de la fórmula:
 
-![Ecuación F.2.17.3-2](img/ec-F.2.17.3-2.png)
+$$ F_{SR}=\left(\dfrac{C_{f}\,x\,11\,x\,10^{4}}{n_{SR}}\right)^{0.167}\ge F_{TH} \tag{F.2.17.3-2} $$
 
 (c) Para una platina solicitada por cargas de tensión, conectada en sus extremos mediante detalles en cruz, en $T$ o de esquina, con soldaduras acanaladas de penetración completa, soldaduras acanaladas de penetración parcial, soldaduras de filete, o combinaciones de las anteriores, siendo las soldaduras transversales a la dirección del esfuerzo, el rango de esfuerzos admisibles en la sección transversal de la platina solicitada por tensión, sobre la línea de borde de la soldadura, se determinará como sigue:
 
 (i) Con base en que la grieta se inicie desde el borde de la soldadura en la platina a tensión, el rango de esfuerzos admisibles, $F_{SR}$, se determinará con la fórmula F.2.17.3-3, para la categoría de esfuerzos $C$ , como sigue:
 
-![Ecuación F.2.17.3-3](img/ec-F.2.17.3-3.png)
+$$ F_{SR}=\left(\dfrac{14.4x10^{11}}{n_{SR}}\right)^{0.333}\ge 68.9 \tag{F.2.17.3-3} $$
 
 (ii) Con base en que la grieta se inicie desde la raíz de la soldadura en la platina a tensión, cuando se usen soldaduras acanaladas de penetración parcial, transversales a la dirección del esfuerzo, con o sin filetes de refuerzo o de contorno, el rango de esfuerzos admisibles, $F_{SR}$, sobre la sección transversal tomada por el borde de la soldadura, se calculará con la fórmula F.2.17.3-4, para la categoría de esfuerzos $C'$ , como sigue:
 
-![Ecuación F.2.17.3-4](img/ec-F.2.17.3-4.png)
+$$ F_{SR}=R_{PJP}\left(\dfrac{14.4x10^{11}}{n_{SR}}\right)^{0.333} \tag{F.2.17.3-4} $$
 
 donde:
 
 $R_{PJP}$ es el factor de reducción para soldaduras acanaladas de penetración parcial, transversales a la dirección del esfuerzo, reforzadas o no reforzadas, que se calcula como sigue:
 
-![Ecuación](img/ec-p200-104.png)
+$$ R_{PJP}=\left(\dfrac{1.12-1.01(2a/t_{p})+1.24(w/t_{p})}{t_{p}^{0.167}}\right)\le 1.0 $$
 
 Si $R_{PJP}=1$, se debe utilizar la categoría de esfuerzos $C$ .
 
@@ -7250,13 +7250,13 @@ $w$ = tamaño del filete de refuerzo o de contorno, si lo hay, en la dirección 
 
 $t_{p}$ = espesor de la platina a tensión, mm (iii) Con base en el inicio de la grieta desde las raíces de un par de soldaduras transversales de filete en lados opuestos de la platina a tensión, el rango de esfuerzos admisibles, $F_{SR}$, sobre la sección transversal tomada por el borde de la soldaduras, se calculará con la fórmula F.2.17.3-5, para la categoría de esfuerzos $C''$ , como sigue:
 
-![Ecuación F.2.17.3-5](img/ec-F.2.17.3-5.png)
+$$ F_{SR}=R_{FIL}\left(\dfrac{14.4x10^{11}}{n_{SR}}\right)^{0.333} \tag{F.2.17.3-5} $$
 
 donde:
 
 $R_{FIL}$ es el factor de reducción para juntas donde se use únicamente un par de soldaduras transversales de filete.
 
-![Ecuación](img/ec-p200-396.png)
+$$ R_{FIL}=\left(\dfrac{0.10+1.24(w/t_{p})}{t_{p}^{0.167}}\right)\le 1.0 $$
 
 Si $R_{FIL}=1.0$ se debe utilizar la categoría de esfuerzos $C$ .
 
@@ -7268,11 +7268,11 @@ El rango de esfuerzos para cargas de servicio estará limitado por el rango de e
 
 (b) Para pernos de alta resistencia, pernos comunes y pernos de anclaje con roscas laminadas o cortadas, el rango de esfuerzos de tensión sobre el área neta para tensión, debidos a la carga axial y el momento aplicados más el efecto de la acción de palanca, debe ser menor o igual que el rango de esfuerzos admisibles calculado con la fórmula F.2.17.4-1. El factor $A_{sr}$ se tomará como 3.9 x 108 (como para la categoría de esfuerzos E’). El umbral del rango de esfuerzos, $A_{sr}$, se tomará como 48 MPa (como para la categoría de esfuerzos D).
 
-![Ecuación F.2.17.4-1](img/ec-F.2.17.4-1.png)
+$$ F_{SR}=\left(\dfrac{1.28x10^{11}}{n_{SR}}\right)^{0.333}\ge 48.0 \tag{F.2.17.4-1} $$
 
 El área neta a tensión está dada por la siguiente fórmula:
 
-![Ecuación F.2.17.4-2](img/ec-F.2.17.4-2.png)
+$$ A_{t}=\dfrac{\pi }{4}(d_{b}-0.9382p)^{2} \tag{F.2.17.4-2} $$
 
 donde:
 
@@ -7518,7 +7518,7 @@ El diseño estructural para condiciones de incendio con base en el numeral F.2.1
 
 **F.2.18.1.4** — Combinaciones de carga y resistencia requerida — La resistencia requerida de una estructura y sus elementos se determinará a partir de la siguiente combinación de cargas gravitacionales:
 
-![Ecuación F.2.18-1](img/ec-F.2.18-1.png)
+$$ [0.9\text{ ó }1.2]D+T+0.5L+0.2G \tag{F.2.18-1} $$
 
 donde:
 
@@ -7641,7 +7641,7 @@ La resistencia de diseño de un miembro a tensión se determinará usando las pr
 
 La resistencia de diseño de un miembro a compresión se determinará usando las provisiones de la sección F.2.5, con las propiedades del acero estipuladas en la sección F.2.18.2.3, y usando la fórmula F.2.18.2-1 en lugar de las fórmulas F.2.5.3-2 y F.2.5.3-3 para calcular la resistencia nominal a compresión para el estado límite de pandeo flexional:
 
-![Ecuación F.2.18.2-1](img/ec-F.2.18.2-1.png)
+$$ F_{cr(T)}=\left[0.42\sqrt{F_{y(T)}/F_{e(T)}}\right]F_{y(T)} \tag{F.2.18.2-1} $$
 
 donde $F_{y(T)}$ es el esfuerzo de fluencia para temperaturas elevadas y $F_{e(T)}$es el esfuerzo crítico de pandeo elástico calculado con la fórmula F.2.5.3-4, usando el módulo elástico a temperaturas elevadas, $E_{(T)}$. Para obtener$F_{y(T)}$ y $E_{(T)}$ deben usarse los coeficientes de la tabla F.2.18.2-1.
 
@@ -7651,25 +7651,25 @@ La resistencia de diseño de un miembro a flexión se determinará usando las pr
 
 (a) Para $L_{b}≤L_{r(T)}$
 
-![Ecuación F.2.18.2-2](img/ec-F.2.18.2-2.png)
+$$ M_{n(T)}=C_{b}\left[M_{r(T)}+\left[M_{p(T)}-M_{r(T)}(1-L_{b}/L_{r(T)})^{c_{x}}\right]\right] \tag{F.2.18.2-2} $$
 
 (b) Para $L_{b}>L_{r(T)}$
 
-![Ecuación F.2.18.2-3](img/ec-F.2.18.2-3.png)
+$$ M_{n}(T)=F_{cr(T)}S_{x} \tag{F.2.18.2-3} $$
 
 donde:
 
-![Ecuación F.2.18.2-4](img/ec-F.2.18.2-4.png)
+$$ F_{cr(T)}=\dfrac{C_{b}\pi ^{2}E_{(T)}}{(L_{b}/r_{ts})^{2}}\sqrt{1+0.078\dfrac{J_{c}}{S_{x}h_{o}}\left(\dfrac{L_{b}}{r_{ts}}\right)^{2}} \tag{F.2.18.2-4} $$
 
-![Ecuación F.2.18.2-5](img/ec-F.2.18.2-5.png)
+$$ L_{r(T)}=1.95r_{ts}\dfrac{E_{(T)}}{F_{L(T)}}\sqrt{\dfrac{J_{c}}{S_{x}h_{o}}+\sqrt{\left(\dfrac{J_{c}}{S_{x}h_{o}}\right)^{2}+6.76\left(\dfrac{F_{L(T)}}{E_{(T)}}\right)^{2}}} \tag{F.2.18.2-5} $$
 
-![Ecuación F.2.18.2-6](img/ec-F.2.18.2-6.png)
+$$ M_{r(T)}=S_{x}F_{L(T)} \tag{F.2.18.2-6} $$
 
-![Ecuación F.2.18.2-7](img/ec-F.2.18.2-7.png)
+$$ F_{L(T)}=F_{y}(k_{p}-0.3k_{y}) \tag{F.2.18.2-7} $$
 
-![Ecuación F.2.18.2-8](img/ec-F.2.18.2-8.png)
+$$ M_{p(T)}=Z_{x}F_{y(T)} \tag{F.2.18.2-8} $$
 
-![Ecuación F.2.18.2-9](img/ec-F.2.18.2-9.png)
+$$ c_{x}=0.6+\dfrac{T}{250}\le 3.0\quad (T\text{ en grados centígrados}) \tag{F.2.18.2-9} $$
 
 Las propiedades del material a temperaturas elevadas ($F_{y(T)}$ y $E_{(T)}$) y los coeficientes $k_{p}$ y $k_{y}$ se calculan de acuerdo con la tabla F.2.18.2-1. Los otros términos corresponden a los definidos en el numeral F.2.6.
 
@@ -7777,11 +7777,11 @@ Se permite arriostrar una columna individual en sus extremos y en puntos interme
 
 **F.2.20.2.1** — Arriostramiento Relativo — La resistencia requerida del arriostramiento es:
 
-![Ecuación F.2.20.2-1](img/ec-F.2.20.2-1.png)
+$$ P_{br}=0.004P_{u} \tag{F.2.20.2-1} $$
 
 La rigidez requerida del arriostramiento es:
 
-![Ecuación F.2.20.2-2](img/ec-F.2.20.2-2.png)
+$$ \beta _{br}=\dfrac{1}{\phi }\left(\dfrac{2P_{u}}{L_{b}}\right) \tag{F.2.20.2-2} $$
 
 donde:
 
@@ -7793,11 +7793,11 @@ $P_{u}$ = resistencia requerida a compresión para el miembro arriostrado, N
 
 **F.2.20.2.2** — Arriostramiento Nodal — La resistencia requerida del arriostramiento es
 
-![Ecuación F.2.20.2-3](img/ec-F.2.20.2-3.png)
+$$ P_{br}=0.01P_{u} \tag{F.2.20.2-3} $$
 
 La rigidez requerida del arriostramiento es
 
-![Ecuación F.2.20.2-4](img/ec-F.2.20.2-4.png)
+$$ \beta _{br}=\dfrac{1}{\phi }\left(\dfrac{8P_{u}}{L_{b}}\right) \tag{F.2.20.2-4} $$
 
 donde:
 
@@ -7819,11 +7819,11 @@ Las vigas y armaduras deben estar restringidas contra la rotación alrededor de 
 
 **F.2.20.3.1.1** — Arriostramiento Relativo — La resistencia requerida del arriostramiento es:
 
-![Ecuación F.2.20.3-1](img/ec-F.2.20.3-1.png)
+$$ P_{br}=0.008M_{u}C_{d}/h_{o} \tag{F.2.20.3-1} $$
 
 La rigidez requerida del arriostramiento es:
 
-![Ecuación F.2.20.3-2](img/ec-F.2.20.3-2.png)
+$$ \beta _{br}=\dfrac{1}{\phi }\left(\dfrac{4M_{u}C_{d}}{L_{b}h_{o}}\right) \tag{F.2.20.3-2} $$
 
 donde:
 
@@ -7839,11 +7839,11 @@ $M_{u}$ = resistencia requerida a la flexión en el miembro que se arriostra, N�
 
 **F.2.20.3.1.2** — Arriostramiento Nodal — La resistencia requerida del arriostramiento es:
 
-![Ecuación F.2.20.3-3](img/ec-F.2.20.3-3.png)
+$$ P_{br}=0.02M_{u}C_{d}/h_{o} \tag{F.2.20.3-3} $$
 
 La rigidez requerida del arriostramiento es:
 
-![Ecuación F.2.20.3-4](img/ec-F.2.20.3-4.png)
+$$ \beta _{br}=\dfrac{1}{\phi }\left(\dfrac{10M_{u}C_{d}}{L_{b}h_{o}}\right) \tag{F.2.20.3-4} $$
 
 donde:
 
@@ -7857,17 +7857,17 @@ El arriostramiento torsional puede suministrarse mediante una viga con conexione
 
 **F.2.20.3.2.1** — Arriostramiento Nodal — La resistencia requerida del arriostramiento es:
 
-![Ecuación F.2.20.3-5](img/ec-F.2.20.3-5.png)
+$$ M_{br}=\dfrac{0.024M_{u}L}{nC_{b}L_{b}} \tag{F.2.20.3-5} $$
 
 La rigidez requerida del arriostramiento es:
 
-![Ecuación F.2.20.3-6](img/ec-F.2.20.3-6.png)
+$$ \beta _{Tb}=\dfrac{\beta _{T}}{\left(1-\dfrac{\beta _{T}}{\beta _{sec}}\right)} \tag{F.2.20.3-6} $$
 
 donde:
 
-![Ecuación F.2.20.3-7](img/ec-F.2.20.3-7.png)
+$$ \beta _{T}=\dfrac{1}{\phi }\left(\dfrac{2.4LM_{u}^{2}}{nEI_{y}C_{b}^{2}}\right) \tag{F.2.20.3-7} $$
 
-![Ecuación F.2.20.3-8](img/ec-F.2.20.3-8.png)
+$$ \beta _{sec}=\dfrac{3.3E}{h_{o}}\left(\dfrac{1.5h_{o}t_{w}^{3}}{12}+\dfrac{t_{st}b_{s}^{3}}{12}\right) \tag{F.2.20.3-8} $$
 
 donde:
 
@@ -7905,7 +7905,7 @@ Cuando se requieran, los rigidizadores del alma deberán extenderse sobre toda l
 
 (c) La rigidez a la distorsión del alma debe tomarse igual a:
 
-![Ecuación F.2.20.3-9](img/ec-F.2.20.3-9.png)
+$$ \beta _{sec}=\dfrac{3.3Et_{w}^{3}}{12h_{o}} \tag{F.2.20.3-9} $$
 
 #### F.2.20.4 — ARRIOSTRAMIENTO DE VIGA-COLUMNAS
 
@@ -7977,7 +7977,7 @@ La relación entre la deriva de segundo orden y la deriva de primer orden en un 
 
 (c) Las resistencias requeridas a la compresión de todos los miembros cuyas rigideces flexionales se considere contribuyan a la estabilidad lateral de la estructura satisfacen la siguiente relación:
 
-![Ecuación F.2.21.3-1](img/ec-F.2.21.3-1.png)
+$$ P_{u}/P_{y}\le 0.5 \tag{F.2.21.3-1} $$
 
 donde:
 
@@ -7989,7 +7989,7 @@ $P_{y}=AF_{y}$, resistencia a la fluencia del miembro, N
 
 (a) Todas las combinaciones de carga deben incluir una carga lateral adicional, $N_{i}$ , aplicada en combinación con las demás cargas existentes en cada nivel de la estructura:
 
-![Ecuación F.2.21.3-2](img/ec-F.2.21.3-2.png)
+$$ N_{i}=2.1(\Delta /L)Y_{il}\ge 0.0042Y_{il} \tag{F.2.21.3-2} $$
 
 donde:
 
@@ -8038,9 +8038,9 @@ El uso de este procedimiento se limita a estructuras que soportan cargas gravita
 
 La resistencia requerida a flexión de segundo orden, $M_{u}$ , y la resistencia requerida a carga axial de segundo orden, $P_{u}$ , se determinarán como sigue:
 
-![Ecuación F.2.22.2-1a](img/ec-F.2.22.2-1a.png)
+$$ M_{u}=B_{1}M_{nt}+B_{2}M_{lt} \tag{F.2.22.2-1a} $$
 
-![Ecuación F.2.22.2-1b](img/ec-F.2.22.2-1b.png)
+$$ P_{u}=P_{nt}+B_{2}P_{lt} \tag{F.2.22.2-1b} $$
 
 donde:
 
@@ -8062,7 +8062,7 @@ $P_{lt}$ = fuerza axial asociada al desplazamiento lateral del pórtico únicame
 
 **F.2.22.2.1** — Coeficiente amplificador $B_{1}$ para efectos $(P −δ)$ — El coeficiente amplificador $B_{1}$ se obtendrá para cada miembro sujeto a compresión y para cada dirección de la flexión como sigue:
 
-![Ecuación F.2.22.2-2](img/ec-F.2.22.2-2.png)
+$$ B_{1}=\dfrac{C_{m}}{1-\dfrac{P_{u}}{P_{e1}}} \tag{F.2.22.2-2} $$
 
 donde:
 
@@ -8070,7 +8070,7 @@ $C_{m}$ = coeficiente asociado a una condición sin traslación lateral del pór
 
 (a) Para viga-columnas sin carga transversal entre puntos de soporte en el plano de flexión,
 
-![Ecuación F.2.22.2-3](img/ec-F.2.22.2-3.png)
+$$ C_{m}=0.60-0.40(M_{1}/M_{2}) \tag{F.2.22.2-3} $$
 
 donde $M_{1}$ y $M_{2}$ , obtenidos de un análisis de primer orden, son respectivamente los momentos de menor y mayor magnitud en los extremos de la porción del miembro no arriostrada en el plano de flexión bajo consideración. $M_{1}/M_{2}$ es positivo cuando la flexión produce doble curvatura en el miembro, y negativo cuando la curvatura es simple.
 
@@ -8078,7 +8078,7 @@ donde $M_{1}$ y $M_{2}$ , obtenidos de un análisis de primer orden, son respect
 
 $P_{e1}$ = Carga crítica de pandeo elástico del miembro en el plano de flexión, calculada suponiendo que no hay desplazamiento lateral, N
 
-![Ecuación F.2.22.2-4](img/ec-F.2.22.2-4.png)
+$$ P_{e1}=\dfrac{\pi ^{2}EI*}{(K_{1}L)^{2}} \tag{F.2.22.2-4} $$
 
 donde:
 
@@ -8103,7 +8103,7 @@ Se permite usar el estimativo de primer orden de $P_{u}$ (ésto es, $P_{u}=P_{nt
 
 **F.2.22.2.2** — Coeficiente amplificador $B_{2}$ para efectos $P −Δ$ — El coeficiente amplificador $B_{2}$ se obtendrá para cada piso y para cada dirección de desplazamiento lateral como sigue:
 
-![Ecuación F.2.22.2-5](img/ec-F.2.22.2-5.png)
+$$ B_{2}=\dfrac{1}{1-\dfrac{\sum P_{piso}}{\sum P_{e\,piso}}} \tag{F.2.22.2-5} $$
 
 donde:
 
@@ -8111,11 +8111,11 @@ $P_{piso}$ = carga vertical total soportada por el piso (cargas mayoradas), incl
 
 $Pe piso$= carga crítica de pandeo elástico para el piso en la dirección de desplazamiento en consideración, determinada por un análisis de pandeo con desplazamiento lateral, o calculada como sigue, N:
 
-![Ecuación F.2.22.2-6](img/ec-F.2.22.2-6.png)
+$$ P_{e\,piso}=R_{M}\dfrac{HL}{\Delta _{H}} \tag{F.2.22.2-6} $$
 
 donde:
 
-![Ecuación F.2.22.2-7](img/ec-F.2.22.2-7.png)
+$$ R_{M}=1-0.15(P_{mf}/P_{piso}) \tag{F.2.22.2-7} $$
 
 $L$ = altura del piso, (mm)
 

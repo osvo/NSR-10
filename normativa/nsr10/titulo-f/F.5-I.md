@@ -24,7 +24,7 @@ Ecuaciones de las curvas de diseño
 
 ![Ecuación](img/ec-p581-425.png)
 
-![Ecuación](img/ec-p581-592.png)
+$$ \upsilon _{1}=\left\{5.35\left(\dfrac{d}{a}\right)^{2}+4\right\}\dfrac{430}{(d/t\varepsilon )^{2}}\qquad 1.0\ge \dfrac{a}{d}\ge 0.5 $$
 
 **Tabla F.5.** — $I$-1 (continuación)
 
@@ -36,11 +36,11 @@ Ecuaciones de las curvas de diseño
 | F.5.5.5 F.5.5.6 F.5.5.7 |  | donde: |  |
 | F.5.E.1 |  |  |  |
 
-![Ecuación](img/ec-p582-107.png)
+$$ \upsilon _{1}=\left\{5.35+4\left(\dfrac{d}{a}\right)^{2}\right\}\dfrac{430}{(d/t\varepsilon )^{2}}\qquad 2.5\ge \dfrac{a}{d}>1.0 $$
 
-![Ecuación](img/ec-p582-138.png)
+$$ \begin{aligned} \upsilon _{2}&=3^{1/2}Q\operatorname{sen}^{2}\theta \left[\cot \theta -\dfrac{a}{d}\right] &&\qquad 2.5\ge \dfrac{a}{d}>1.0 \\ \upsilon _{3}&=2\left(3^{1/2}\right)Q^{1/2}\operatorname{sen}\theta &&\qquad 1.0\ge \dfrac{a}{d}\ge 0.5 \\ m_{1}&=Q^{1/2}\dfrac{a}{d}\operatorname{sen}\theta \end{aligned} $$
 
-![Ecuación](img/ec-p582-218.png)
+$$ \begin{aligned} Q&=\left\{1-\upsilon _{1}^{2}\left[1-\dfrac{3\operatorname{sen}^{2}2\theta }{4}\right]\right\}^{1/2}-\dfrac{3^{1/2}}{2}\upsilon _{1}\operatorname{sen}2\theta \\ \theta &=\dfrac{2}{3}\tan ^{-1}\left(d/a\right)\end{aligned} $$
 
 ![Ecuación](img/ec-p582-277.png)
 

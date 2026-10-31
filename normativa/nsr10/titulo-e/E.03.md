@@ -108,7 +108,7 @@ Para proveer un reparto uniforme de la responsabilidad de resistir las fuerzas s
 
 La longitud de muros confinados requerida en cada una de las direcciones principales de la edificación, en metros, no puede ser menor que la que se obtiene por medio de la ecuación E.3.6-1
 
-![Ecuación E.3.6-1](img/ec-E.3.6-1.png)
+$$ L_{min} = \dfrac{M_o A_p}{t} \tag{E.3.6-1} $$
 
 donde:
 
@@ -153,7 +153,7 @@ Para efectos de contabilizar la longitud de muros confinados en cada dirección 
 
 Los muros deben estar distribuidos de manera aproximadamente simétrica. Por lo tanto, debe cumplirse con la ecuación E.3.6-2, tomada en su valor absoluto:
 
-![Ecuación E.3.6-2](img/ec-E.3.6-2.png)
+$$ \left| \dfrac{\left[ \dfrac{\sum (L_{mi}\, b)}{\sum L_{mi}} - \dfrac{B}{2} \right]}{B} \right| \le 0.15 \tag{E.3.6-2} $$
 
 En donde:
 

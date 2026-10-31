@@ -58,7 +58,7 @@ Para el análisis y diseño de elementos estructurales se debe utilizar $E_{0.5}
 
 Con base en los esfuerzos admisibles, de la tabla G.2.2.1 y los módulos de elasticidad de la tabla G.2.2.2, afectados de los coeficientes de modificación a que haya lugar por razón de duración de la carga, contenido de humedad, temperatura, estabilidad, altura, uso a lo ancho, incisión, acción de conjunto, estabilidad de columnas, rigidez al pandeo, área de soporte y cualquier otra condición modificatoria, se determinarán los esfuerzos admisibles modificados según las prescripciones de los capítulos siguientes y la fórmula general:
 
-![Ecuación G.2.2-1](img/ec-G.2.2-1.png)
+$$ F'_i = F_i C_D C_m C_t C_L C_F C_{fu} \ldots \tag{G.2.2-1} $$
 
 En donde
 
@@ -171,7 +171,7 @@ Los anteriores valores se aplican a madera aserrada
 
 **G.2.2.3.6** — Por rigidez al pandeo $(C_{T})$ — Para incrementar la rigidez de la cuerda de compresión, relativa a carga axial en elementos de madera de 50 mm (b) x 100 mm(d) o más pequeños, y que estén sujetos a flexión y comprensión axial bajo condiciones de servicio seco y además estén conectados por la cara más angosta del elemento a comprensión a un tablero estructural de madera de espesor mínimo (3/8"), 9.5 mm, con clavos de espaciamiento y tamaño adecuados, pueden desarrollar mejor rigidez a flexión en el eje fuerte, debido a la acción conjunta del elemento y el tablero. Será permitido entonces incrementar el $E_{min}$ módulo de elasticidad valor de diseño para estabilidad de vigas y columnas, por el factor $C_{T}$; en el cálculo de la estabilidad de columnas cuando $ℓ_{e}<2440$ mm; cuando $ℓ_{e}>2440$ mm, se deben tomar $ℓ_{e}=2440$ mm.
 
-![Ecuación G.2.2-1](img/ec-G.2.2-1-2.png)
+$$ C_T = 1 + \dfrac{K_M \ell_e}{K_T E_{0.5}} \tag{G.2.2-1} $$
 
 En donde:
 
@@ -193,7 +193,7 @@ $E_{0.5}$ = módulo de elasticidad promedio, en MPa
 
 **G.2.2.3.7** — Por desviación al grano — La desviación del grano expresada en forma de grano espiralado, grano diagonal y grano entrecruzado es muy común en maderas latifoliadas tropicales. Por razones de uso estructural de algunas maderas con grano desviado, se podrá utilizar la fórmula de Hankinson, para determinar la resistencia a una desviación determinada.
 
-![Ecuación G.2.2-2](img/ec-G.2.2-2.png)
+$$ N = \dfrac{PQ}{P \operatorname{sen}^n \alpha + Q \cos^n \alpha} \tag{G.2.2-2} $$
 
 $N$ = fuerza admisible a un ángulo $α$ de la desviación de las fibras
 
@@ -205,9 +205,9 @@ $n$ = constante determinada empíricamente. Véase la tabla G.2.2-8.
 
 $α$ = ángulo en grados, entre la dirección de la carga aplicada y la dirección del grano. Se define así:
 
-![Ecuación G.2.2-3](img/ec-G.2.2-3.png)
+$$ \alpha = \operatorname{arco\,tan} \left(\dfrac{1}{z}\right) \tag{G.2.2-3} $$
 
-![Ecuación G.2.2-4](img/ec-G.2.2-4.png)
+$$ \dfrac{1}{z} = \sqrt{\left(\dfrac{1}{x}\right)^2 + \left(\dfrac{1}{y}\right)^2} \tag{G.2.2-4} $$
 
 $\frac{1}{x}$= tangente del ángulo que forma la dirección de las fibras con el eje longitudinal de una cara de la pieza de madera.
 

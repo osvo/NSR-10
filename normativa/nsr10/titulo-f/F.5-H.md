@@ -64,7 +64,7 @@ Para tales secciones, el pandeo como columna respecto al eje perpendicular a $ss
 
 F.5.H.4.3 — SECCIONES ASIMETRICAS — Cuando la sección no tiene eje de simetría, como en la figura F.5.H.3, todos los tres modos fundamentales interactúan, conduciendo a una ecuación para $λ$ dada por:
 
-![Ecuación](img/ec-p576-656.png)
+$$ \lambda =\left(\dfrac{Q}{X^{1/2}}\right)\lambda _{t} $$
 
 Donde:
 

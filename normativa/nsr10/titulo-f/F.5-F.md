@@ -82,13 +82,13 @@ torsionales de secciones abiertas de pared delgada
 
 (c) $d$ se toma como positivo si el elemento producido en el sentido hacia B tiene a B a su izquierda, y negativo si B está a su derecha F.5.F.5.2 - FORMULAS - La distancia e a la que se ubica el centro de corte a la izquierda de B está dada por:
 
-![Ecuación](img/ec-p562-143.png)
+$$ e=\dfrac{1}{I_{AA}}\sum_{2}^{V} \left[bt\left\{2aP-bd\left(a-\dfrac{c}{6}\right)\right\}\right] $$
 
 Donde:
 
 $I_{AA}$= segundo momento del área de toda la sección respecto a AA El coeficiente de alabeo, $H$ , está dado por:
 
-![Ecuación](img/ec-p562-248.png)
+$$ H=2\sum_{2}^{V} \left[\left\{bt\left(P^{2}-bdP+\dfrac{b^{2}d^{2}}{3}\right)\right\}-e^{2}I_{AA}\right] $$
 
 Este tratamiento sólo cubre las secciones que pueden ser desarrolladas a partir de una sola lámina (posiblemente de espesor variable). Para secciones que se bifurcan es necesario consultar la literatura pertinente.
 
@@ -112,13 +112,13 @@ $P= ∑Rbd$ $2$ La sumatoria $P$ abarca la mitad de la sección solamente. Empie
 
 F.5.F.6.2 — FORMULA — El coeficiente de alabeo, H, está dado por la siguiente expresión:
 
-![Ecuación](img/ec-p562-673.png)
+$$ H=2\sum_{1}^{V} \left[bt\left\{(P+K)(P+K-bd)+\dfrac{b^{2}d^{2}}{3}\right\}\right] $$
 
 Donde:
 
 torsionales de secciones abiertas de pared delgada
 
-![Ecuación](img/ec-p563-59.png)
+$$ K=-\dfrac{2}{A}\sum_{2}^{V} \left\{bt\left(P-\dfrac{bd}{2}\right)\right\} $$
 
 Este tratamiento sólo cubre una sección que pueda ser desarrollada a partir de una sola lámina (posiblemente de espesor variable). Para secciones que se bifurcan, consulte la literatura pertinente.
 
@@ -154,9 +154,9 @@ $P'= ∑rbd'$ $1$ La convención de signos es la siguiente:
 
 F.5.F.7.2 — FORMULAS — Las coordenadas del centro de corte, $S$, están dadas por:
 
-![Ecuación](img/ec-p563-603.png)
+$$ U=\dfrac{1}{I_{uu}}\sum_{1}^{n} \left[bt\left\{a_{v}P-bd\left(\dfrac{a_{v}}{2}-\dfrac{c_{v}}{12}\right)\right\}\right] $$
 
-![Ecuación](img/ec-p563-649.png)
+$$ V=\dfrac{1}{I_{vv}}\sum_{1}^{n} \left[bt\left\{a_{u}P-bd\left(\dfrac{a_{u}}{2}-\dfrac{c_{u}}{12}\right)\right\}\right] $$
 
 Donde:
 
@@ -164,11 +164,11 @@ $I_{uu}$, $I_{vv}$= segundo momento del área de la sección respecto a $G_{u}$ 
 
 torsionales de secciones abiertas de pared delgada
 
-![Ecuación](img/ec-p564-71.png)
+$$ H=\sum_{1}^{n} \left[bt\left\{(P'-K')(P'-K'-bd')+\dfrac{b^{2}d'^{2}}{3}\right\}\right] $$
 
 Donde:
 
-![Ecuación](img/ec-p564-140.png)
+$$ K'=\dfrac{1}{A}\sum_{1}^{n} bt\left(P'-\dfrac{bd'}{2}\right) $$
 
 $A$ es el área de la sección.
 

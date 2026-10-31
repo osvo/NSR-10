@@ -212,7 +212,7 @@ Excepción 1 — Para configuraciones con almas múltiples, será permitido el u
 
 $R_{b}=1.00$ Para $0.067E /F_{sy}<w /t_{<}0.974E /F_{sy}$
 
-![Ecuación F.4.1.2-1](img/ec-F.4.1.2-1.png)
+$$ R_{b}=1-0.26\left[wF_{sy}/(tE)-0.067\right]^{0.4} \tag{F.4.1.2-1} $$
 
 Para $0.974E /F_{sy}≤w /t_{≤}500$
 
@@ -222,7 +222,7 @@ $R_{b}=0.75$
 
 $R_{b}=1.00$ Para $0.0173E /F_{sy}<w /t_{≤}60$
 
-![Ecuación F.4.1.2-2](img/ec-F.4.1.2-2.png)
+$$ R_{b}=1.079-0.6\sqrt{wF_{sy}/(tE)} \tag{F.4.1.2-2} $$
 
 Donde:
 
@@ -236,9 +236,9 @@ $w$ = ancho plano de la aleta en compresión La excepción antes expuesta no apl
 
 Excepción 2 — Para miembros en compresión, de secciones cerradas tipo cajón, concéntricamente cargados, se permitirá el uso de un esfuerzo de fluencia reducido de $0.9F_{sy}$ , en lugar de $F_{y}$ , en las ecuaciones F.4.3.4-2, F.4.3.4-3 y F.4.3.4-4 para la determinación de la resistencia axial en la sección F.4.3.4. Se usará un radio de giro reducido $(R_{r})( r)$ en la ecuación F.4.3.4-5 cuando el valor de la longitud efectiva $KL$ sea menor a $1.1L_{o}$ , donde $L_{o}$ es dado por la ecuación F.4.1.2-3 y $R_{r}$ es dado por la ecuación F.4.1.2-4.
 
-![Ecuación F.4.1.2-3](img/ec-F.4.1.2-3.png)
+$$ L_{o}=\pi r\sqrt{E/F_{cr}} \tag{F.4.1.2-3} $$
 
-![Ecuación F.4.1.2-4](img/ec-F.4.1.2-4.png)
+$$ R_{r}=0.65+\dfrac{0.35(KL)}{1.1L_{o}} \tag{F.4.1.2-4} $$
 
 Donde:
 
@@ -266,7 +266,7 @@ $KL$ = longitud efectiva
 
 El diseño bajo este método debe ser hecho de acuerdo con la siguiente ecuación:
 
-![Ecuación F.4.1.4-1](img/ec-F.4.1.4-1.png)
+$$ R\le R_{n}/\Omega \tag{F.4.1.4-1} $$
 
 Donde:
 
@@ -288,7 +288,7 @@ $R_{n}/Ω$ = esfuerzo de Diseño Admisible, usado donde se indique.
 
 El diseño debe ser realizado de acuerdo con la siguiente ecuación:
 
-![Ecuación F.4.1.5-1](img/ec-F.4.1.5-1.png)
+$$ R_{U}\le \phi R_{n} \tag{F.4.1.5-1} $$
 
 Donde:
 
@@ -316,7 +316,7 @@ Las limitaciones y métodos utilizados en la determinación de $F_{ya}$ son los 
 
 (1) Ensayos a tensión de la sección completa (Ver párrafo (a) de la sección F.4.6.3.1) (2) Ensayos sobre columnas cortas (Ver párrafo (b) de la sección F.4.6.3.1) (3) Calculado como sigue:
 
-![Ecuación F.4.1.6-1](img/ec-F.4.1.6-1.png)
+$$ F_{ya}=CF_{yc}+(1-C)F_{yf}\le F_{uv} \tag{F.4.1.6-1} $$
 
 Donde:
 
@@ -326,15 +326,15 @@ $c$ = relación entre el total del área de las esquinas y el total del área de
 
 $F_{yf}$= es la media ponderada del punto de fluencia a tensión de las porciones planas establecidas de acuerdo con la sección F.4.6.3.2 de este Reglamento o el punto de fluencia del acero virgen si no se realizan ensayos.
 
-![Ecuación F.4.1.6-2](img/ec-F.4.1.6-2.png)
+$$ F_{yc}=B_{c}F_{yv}/(R/t)^{m} \tag{F.4.1.6-2} $$
 
 La anterior expresión define el esfuerzo de fluencia a tensión de las esquinas.
 
 Esta ecuación es aplicable solamente cuando $F_{uv}/F_{yv}≥1.2$, $R /t_{≤}7$, y el ángulo incluido es $≤120^{\circ}$
 
-![Ecuación F.4.1.6-3](img/ec-F.4.1.6-3.png)
+$$ B_{c}=3.69(F_{uv}/F_{yv})-0.819(F_{uv}/F_{yv})^{2}-1.79 \tag{F.4.1.6-3} $$
 
-![Ecuación F.4.1.6-4](img/ec-F.4.1.6-4.png)
+$$ m=0.192(F_{uv}/F_{yv})-0.068 \tag{F.4.1.6-4} $$
 
 Donde:
 
@@ -428,7 +428,7 @@ Los elementos rigidizados con relaciones $w /t$ mayores que 500 pueden ser usado
 
 **F.4.2.1.1.2** — Deflexión hacia el interior de la longitud completa de la Aleta — Cuando la aleta de un miembro en flexión es inusualmente ancha, y se desea limitar la máxima curvatura o movimientos de esta hacia el eje neutro, la siguiente ecuación aplica a las aletas en compresión y tensión independiente de si están rigidizadas o no:
 
-![Ecuación F.4.2.1-1](img/ec-F.4.2.1-1.png)
+$$ w_{f}=\sqrt{0.061tdE/f_{av}}\sqrt[4]{(100c_{f}/d)} \tag{F.4.2.1-1} $$
 
 Donde:
 
@@ -482,9 +482,9 @@ $t$ = espesor del alma Cuando el alma conste de dos o más láminas, se debe cal
 
 (a) Determinación de la resistencia El ancho efectivo,$b$ , se determinará a partir de las siguientes ecuaciones:
 
-![Ecuación F.4.2.2-1](img/ec-F.4.2.2-1.png)
+$$ b=w\text{ cuando }\lambda \le 0.673 \tag{F.4.2.2-1} $$
 
-![Ecuación F.4.2.2-2](img/ec-F.4.2.2-2.png)
+$$ b=\rho w\text{ cuando }\lambda >0.673 \tag{F.4.2.2-2} $$
 
 Donde:
 
@@ -492,11 +492,11 @@ $w$ = ancho plano como se muestra en la figura F.4.2.2-1
 
 $ρ$ = factor de reducción local
 
-![Ecuación F.4.2.2-3](img/ec-F.4.2.2-3.png)
+$$ =(1-0.22/\lambda )/\lambda \tag{F.4.2.2-3} $$
 
 $λ$ es un factor de esbeltez determinado como sigue:
 
-![Ecuación F.4.2.2-4](img/ec-F.4.2.2-4.png)
+$$ \lambda =\sqrt{f/F_{cr}} \tag{F.4.2.2-4} $$
 
 Donde:
 
@@ -516,7 +516,7 @@ Para miembros en flexión:
 
 Para miembros a compresión $f$ se toma igual al $F_{n}$ , como es determinado en F.4.3.4.
 
-![Ecuación F.4.2.2-5](img/ec-F.4.2.2-5.png)
+$$ F_{cr}=k\dfrac{\pi ^{2}E}{12(1-\mu ^{2})}\left(\dfrac{t}{w}\right)^{2} \tag{F.4.2.2-5} $$
 
 Donde:
 
@@ -532,9 +532,9 @@ $μ$ = relación de Poisson del acero
 
 El ancho efectivo, $b_{d}$ , usado para la determinación del estado de servicio de la estructura debe ser calculado como sigue:
 
-![Ecuación F.4.2.2-6](img/ec-F.4.2.2-6.png)
+$$ b_{d}=w\text{ cuando }\lambda \le 0.673 \tag{F.4.2.2-6} $$
 
-![Ecuación F.4.2.2-7](img/ec-F.4.2.2-7.png)
+$$ b_{d}=\rho w\text{ cuando }\lambda >0.673 \tag{F.4.2.2-7} $$
 
 Donde:
 
@@ -552,13 +552,13 @@ Para elementos rigidizados soportados por un alma en cada borde longitudinal, se
 
 $ρ =1.00$ cuando $λ ≤0.673$
 
-![Ecuación F.4.2.2-8](img/ec-F.4.2.2-8.png)
+$$ \rho =(1.358-0.461/\lambda )/\lambda \text{ cuando }0.673<\lambda <\lambda _{c} \tag{F.4.2.2-8} $$
 
-![Ecuación F.4.2.2-9](img/ec-F.4.2.2-9.png)
+$$ \rho =(0.41+0.59\sqrt{F_{y}/f_{d}}-0.22/\lambda )/\lambda \text{ cuando }\lambda \ge \lambda _{c} \tag{F.4.2.2-9} $$
 
 $ρ ≤1.00$ para todos los casos Donde:
 
-![Ecuación F.4.2.2-10](img/ec-F.4.2.2-10.png)
+$$ \lambda _{c}=0.256+0.328(w/t)\sqrt{F_{y}/E} \tag{F.4.2.2-10} $$
 
 $λ$ está definida por la ecuación F.4.2.2-4, excepto que $f_{d}$ reemplaza a $f$ .
 
@@ -574,9 +574,9 @@ El ancho efectivo, $b$ , debe determinarse como sigue:
 
 Para $0.50≥d_{h}/w≥0$, y $w /t≤70$ y la distancia entre centros de huecos es $≥0.50w$ y $≥3d_{h}$
 
-![Ecuación F.4.2.2-11](img/ec-F.4.2.2-11.png)
+$$ b=w-d_{h}\text{ cuando }\lambda \le 0.673 \tag{F.4.2.2-11} $$
 
-![Ecuación F.4.2.2-12](img/ec-F.4.2.2-12.png)
+$$ b=\dfrac{w\left[1-\dfrac{(0.22)}{\lambda }-\dfrac{(0.8d_{h})}{w}+\dfrac{(0.085d_{h})}{w\lambda }\right]}{\lambda }\text{ cuando }\lambda >0.673 \tag{F.4.2.2-12} $$
 
 En todos los casos $b≤w−d_{h}$ Donde:
 
@@ -610,35 +610,35 @@ $h_{o}$ = altura del alma medida entre bordes exteriores, tal y como se define e
 
 $k$ = coeficiente de pandeo de placas
 
-![Ecuación F.4.2.2-13](img/ec-F.4.2.2-13.png)
+$$ \psi =\left|f_{2}/f_{1}\right|\text{ (valor absoluto) } \tag{F.4.2.2-13} $$
 
 (a) Determinación de la resistencia (1) Para almas bajo gradiente de esfuerzo ( $f_{1}$ en compresión y $f_{2}$ en tensión como se muestra en la figura F.4.2.2-3(a)), los anchos efectivos y el coeficiente de pandeo de placas serán calculados como sigue:
 
-![Ecuación F.4.2.2-14](img/ec-F.4.2.2-14.png)
+$$ k=4+2(1+\psi )^{3}+2(1+\psi ) \tag{F.4.2.2-14} $$
 
 Para $h_{o}/b_{o}≤4$
 
-![Ecuación F.4.2.2-15](img/ec-F.4.2.2-15.png)
+$$ b_{1}=b_{e}/(3+\psi ) \tag{F.4.2.2-15} $$
 
-![Ecuación F.4.2.2-16](img/ec-F.4.2.2-16.png)
+$$ b_{2}=b_{e}/2\text{ cuando }\psi >0.236 \tag{F.4.2.2-16} $$
 
-![Ecuación F.4.2.2-17](img/ec-F.4.2.2-17.png)
+$$ b_{2}=b_{e}-b_{1}\text{ cuando }\psi \le 0.236 \tag{F.4.2.2-17} $$
 
 Adicionalmente, $b_{1}+b_{2}$ no excederá la porción en compresión del alma calculada sobre la base de la sección efectiva.
 
 Para $h_{o}/b_{o}>4$
 
-![Ecuación F.4.2.2-18](img/ec-F.4.2.2-18.png)
+$$ b_{1}=b_{e}/(3+\psi ) \tag{F.4.2.2-18} $$
 
-![Ecuación F.4.2.2-19](img/ec-F.4.2.2-19.png)
+$$ b_{1}=b_{e}/(1+\psi )-b_{1} \tag{F.4.2.2-19} $$
 
 (2) Para otro elemento rigidizado bajo gradiente de esfuerzo ( $f_{1}$ y $f_{2}$en compresión como se muestra en la figura F.4.2.2-3(b))
 
-![Ecuación F.4.2.2-20](img/ec-F.4.2.2-20.png)
+$$ k=4+2(1-\psi )^{2}+2(1-\psi ) \tag{F.4.2.2-20} $$
 
-![Ecuación F.4.2.2-21](img/ec-F.4.2.2-21.png)
+$$ b_{1}=b_{e}/(3-\psi ) \tag{F.4.2.2-21} $$
 
-![Ecuación F.4.2.2-22](img/ec-F.4.2.2-22.png)
+$$ b_{2}=b_{e}-b_{1} \tag{F.4.2.2-22} $$
 
 ![Figura F.4.2.2-3 — Almas y otros elementos rigidizados bajo gradiente de esfuerzo](img/figF.4.2.2-3.png)
 
@@ -694,7 +694,7 @@ $t$ = espesor del elemento
 
 $w$ = ancho plano del elemento no rigidizado, donde $w /t≤60$
 
-![Ecuación F.4.2.3-1](img/ec-F.4.2.3-1.png)
+$$ \psi =\left|f_{1}/f_{2}\right|=\text{ (valor absoluto) } \tag{F.4.2.3-1} $$
 
 $λ$ = factor de esbeltez definido en la sección F.4.2.2.1(a) con $f=f_{1}$
 
@@ -706,11 +706,11 @@ $ρ$ = factor de reducción tal como se define en esta sección o, de otra forma
 
 Si el esfuerzo decrece hacia el borde no soportado (libre) (figura F.4.2.3-2(a)):
 
-![Ecuación F.4.2.3-2](img/ec-F.4.2.3-2.png)
+$$ k=\dfrac{0.578}{\psi +0.34} \tag{F.4.2.3-2} $$
 
 Si el esfuerzo crece hacia el borde no soportado (libre) (figura F.4.2.3-2(b))
 
-![Ecuación F.4.2.3-3](img/ec-F.4.2.3-3.png)
+$$ k=0.57-0.21\psi +0.07\psi ^{2} \tag{F.4.2.3-3} $$
 
 ![Figura F.4.2.3-2 — Elementos no rigidizado bajo gradiente de esfuerzo, ambos bordes longitudinales en](img/figF.4.2.3-2.png)
 
@@ -724,15 +724,15 @@ $ρ =1.0$ cuando $λ ≤0.673 (1+ ψ)$
 
 $+ ψ$ (F.4.2.3-4)
 
-![Ecuación F.4.2.3-5](img/ec-F.4.2.3-5.png)
+$$ k=0.57+0.21\psi +0.07\psi ^{2} \tag{F.4.2.3-5} $$
 
 (b) Si el borde soportado está en compresión (figura F.4.2.3-3(b)) Para $ψ <1.0$
 
 $ρ =1.0$ cuando $λ ≤0.673$
 
-![Ecuación F.4.2.3-6](img/ec-F.4.2.3-6.png)
+$$ \rho =(1-\psi )\dfrac{\left(1-\dfrac{0.22}{\lambda }\right)}{\lambda }+\psi \text{ cuando }\lambda >0.673 \tag{F.4.2.3-6} $$
 
-![Ecuación F.4.2.3-7](img/ec-F.4.2.3-7.png)
+$$ k=1.70+5\psi +17.1\psi ^{2} \tag{F.4.2.3-7} $$
 
 Para $ψ ≥1.0$
 
@@ -740,15 +740,15 @@ $ρ =1.0$ Para la determinación del ancho efectivo, $b$ , de los elementos no r
 
 Alternativa 1 para secciones C no rigidizadas: Cuando el borde no soportado (libre) está en compresión y el borde soportado está en tensión (figura F.4.2.3-4(a)):
 
-![Ecuación F.4.2.3-8](img/ec-F.4.2.3-8.png)
+$$ b=w\text{ cuando }\lambda \le 0.856 \tag{F.4.2.3-8} $$
 
-![Ecuación F.4.2.3-9](img/ec-F.4.2.3-9.png)
+$$ b=\rho w\text{ cuando }\lambda >0.856 \tag{F.4.2.3-9} $$
 
 Figura F.4.2.3-3 — Elementos no rigidizados bajo gradiente de esfuerzo, un borde longitudinal en compresión y el otro borde longitudinal en tensión Donde:
 
-![Ecuación F.4.2.3-10](img/ec-F.4.2.3-10.png)
+$$ \rho =0.925/\sqrt{\lambda } \tag{F.4.2.3-10} $$
 
-![Ecuación F.4.2.3-11](img/ec-F.4.2.3-11.png)
+$$ \begin{gathered}k=0.145(b_{o}/h_{o})+1.256 \\ 0.1\le b_{o}/h_{o}\le 1.0\end{gathered} \tag{F.4.2.3-11} $$
 
 Alternativa 2 para secciones C no rigidizadas: Cuando el borde soportado está en compresión y el borde no soportado está en tensión (figura F.4.2.3-4(b)), el ancho efectivo se determina de acuerdo con la sección F.4.2.2.3.
 
@@ -766,23 +766,23 @@ SIMPLE COMO RIGIDIZADOR DE BORDE — Los anchos efectivos de elementos bajo comp
 
 $I_{a}=0$ (No se necesita rigidizador de borde)
 
-![Ecuación F.4.2.4-1](img/ec-F.4.2.4-1.png)
+$$ b=w \tag{F.4.2.4-1} $$
 
-![Ecuación F.4.2.4-2](img/ec-F.4.2.4-2.png)
+$$ b_{1}=b_{2}=w/2\text{ (véase figura F.4.2.4-1) } \tag{F.4.2.4-2} $$
 
-![Ecuación F.4.2.4-3](img/ec-F.4.2.4-3.png)
+$$ d_{s}=d'_{s} \tag{F.4.2.4-3} $$
 
 Para $w /t_{>}0.328S$:
 
-![Ecuación F.4.2.4-4](img/ec-F.4.2.4-4.png)
+$$ b_{1}=(b/2)(R_{I})\text{ (véase figura F.4.2.4-1) } \tag{F.4.2.4-4} $$
 
-![Ecuación F.4.2.4-5](img/ec-F.4.2.4-5.png)
+$$ b_{2}=b-b_{1}\text{ (véase figura F.4.2.4-1) } \tag{F.4.2.4-5} $$
 
-![Ecuación F.4.2.4-6](img/ec-F.4.2.4-6.png)
+$$ d_{s}=d'_{s}(R_{I}) \tag{F.4.2.4-6} $$
 
 Donde:
 
-![Ecuación F.4.2.4-7](img/ec-F.4.2.4-7.png)
+$$ S=1.28\sqrt{E/f} \tag{F.4.2.4-7} $$
 
 $w$ = dimensión plana definida en la figura F.4.2.4-1
 
@@ -790,7 +790,7 @@ $t$ = espesor de la sección
 
 $I_{a}$ = momento de Inercia adecuado del rigidizador de tal forma que cada elemento componente se comporte como un elemento rigidizado.
 
-![Ecuación F.4.2.4-8](img/ec-F.4.2.4-8.png)
+$$ =399t^{4}\left[\dfrac{w/t}{S}-0.328\right]^{3}\le t^{4}\left[115\dfrac{w/t}{S}+5\right] \tag{F.4.2.4-8} $$
 
 $b$ = ancho efectivo de diseño
 
@@ -800,13 +800,13 @@ $d_{s}$ = ancho efectivo reducido del rigidizador tal como se define en la figur
 
 $d_{s}'$ = ancho efectivo del rigidizador calculado de acuerdo con la sección F.4.2.3.2 (véase figura F.4.2.4-1)
 
-![Ecuación F.4.2.4-9](img/ec-F.4.2.4-9.png)
+$$ (R_{I})=I_{s}/I_{a}\le 1 \tag{F.4.2.4-9} $$
 
 Donde:
 
 $I_{s}$ = momento de Inercia de la sección completa del rigidizador alrededor de su propio eje centroidal paralelo al elemento a ser rigidizado. Para rigidizadores de borde, la esquina redondeada entre el rigidizador y el elemento a ser rigidizado no será considerada como parte del rigidizador.
 
-![Ecuación F.4.2.4-10](img/ec-F.4.2.4-10.png)
+$$ =(d^{3}t\operatorname{sen}^{2}\theta )/12 \tag{F.4.2.4-10} $$
 
 Para la definición de las demás variables remitirse a la figura F.4.2.4-1.
 
@@ -820,11 +820,11 @@ Determinación del coeficiente de pandeo de placa $( k)$
 |---|---|
 | $D /w_{≤}0.25$ | $0.25_{<}D /w_{<}0.80$ |
 
-![Ecuación](img/ec-p350-658.png)
+$$ 3.57(R_{I})^{n}+0.43\le 4\qquad \left(4.82-\dfrac{5D}{w}\right)(R_{I})^{n}+0.43\le 4 $$
 
 Donde:
 
-![Ecuación F.4.2.4-11](img/ec-F.4.2.4-11.png)
+$$ n=\left(0.582-\dfrac{w/t}{4S}\right)\ge \dfrac{1}{3} \tag{F.4.2.4-11} $$
 
 ![Figura F.4.2.4-1 — Elementos con pestaña (labio) simple rigidizadora de borde](img/figF.4.2.4-1.png)
 
@@ -876,45 +876,45 @@ $i_{λ}$ = índice para el rigidizador "$i$" = factor de esbeltez
 
 $ρ$ = factor de reducción El ancho efectivo se determinará como sigue:
 
-![Ecuación F.4.2.5-1](img/ec-F.4.2.5-1.png)
+$$ b_{e}=\rho \left[\dfrac{A_{g}}{t}\right] \tag{F.4.2.5-1} $$
 
 $ρ =1$ cuando $λ ≤0.673$
 
-![Ecuación F.4.2.5-2](img/ec-F.4.2.5-2.png)
+$$ \rho =(1-0.22/\lambda )/\lambda \text{ cuando }\lambda >0.673 \tag{F.4.2.5-2} $$
 
 Donde:
 
-![Ecuación F.4.2.5-3](img/ec-F.4.2.5-3.png)
+$$ \lambda =\sqrt{\dfrac{f}{F_{cr}}} \tag{F.4.2.5-3} $$
 
 Donde:
 
-![Ecuación F.4.2.5-4](img/ec-F.4.2.5-4.png)
+$$ F_{cr}=k\dfrac{\pi ^{2}E}{12(1-\mu ^{2})}\left(\dfrac{t}{b_{o}}\right)^{2} \tag{F.4.2.5-4} $$
 
 El coeficiente de pandeo de placa, $k$ , se determinará a partir del mínimo entre $Rk_{d}$ y $k_{loc}$, determinado de acuerdo con la sección F.4.2.5.1.1 ó F.4.2.5.1.2, según corresponda.
 
-![Ecuación F.4.2.5-5](img/ec-F.4.2.5-5.png)
+$$ k=\text{ el valor mínimo entre }Rk_{d}\text{ y }k_{loc} \tag{F.4.2.5-5} $$
 
 $R=2$ cuando $b_{o}/h_{<}1$
 
-![Ecuación F.4.2.5-6](img/ec-F.4.2.5-6.png)
+$$ R=\dfrac{11-b_{o}/h}{5}\ge \dfrac{1}{2}\text{ cuando }b_{o}/h\ge 1 \tag{F.4.2.5-6} $$
 
 **F.4.2.5.1.1** — Caso Específico: “n” rigidizadores idénticos igualmente espaciados — Para elementos bajo compresión uniforme con rigidizadores idénticos, múltiples e igualmente espaciados, los coeficientes de pandeo de placa y los anchos efectivos se calcularán como sigue:
 
 a) Determinación de la resistencia
 
-![Ecuación F.4.2.5-7](img/ec-F.4.2.5-7.png)
+$$ k_{loc}=4(n+1)^{2} \tag{F.4.2.5-7} $$
 
-![Ecuación F.4.2.5-8](img/ec-F.4.2.5-8.png)
-
-Donde:
-
-![Ecuación F.4.2.5-9](img/ec-F.4.2.5-9.png)
+$$ k_{d}=\dfrac{(1+\beta ^{2})^{2}+\gamma (1+n)}{\beta ^{2}(1+\delta (n+1))} \tag{F.4.2.5-8} $$
 
 Donde:
 
-![Ecuación F.4.2.5-10](img/ec-F.4.2.5-10.png)
+$$ \beta =(1+\gamma (n+1))^{1/4} \tag{F.4.2.5-9} $$
 
-![Ecuación F.4.2.5-11](img/ec-F.4.2.5-11.png)
+Donde:
+
+$$ \gamma =\dfrac{10.92I_{sp}}{b_{o}t^{3}} \tag{F.4.2.5-10} $$
+
+$$ \delta =\dfrac{A_{s}}{b_{o}t} \tag{F.4.2.5-11} $$
 
 Si $L_{br}< βb_{o}$ se permitirá utilizar la relación $L_{br}/b_{o}$ en lugar de $β$ para tener en cuenta el incremento en la capacidad debido al arriostramiento.
 
@@ -924,21 +924,21 @@ b) Determinación del Estado de servicio — El ancho efectivo, $b_{d}$ , utiliz
 
 a) Determinación de la resistencia
 
-![Ecuación F.4.2.5-12](img/ec-F.4.2.5-12.png)
+$$ k_{loc}=4(b_{o}/b_{p})^{2} \tag{F.4.2.5-12} $$
 
-![Ecuación F.4.2.5-13](img/ec-F.4.2.5-13.png)
-
-Donde:
-
-![Ecuación F.4.2.5-14](img/ec-F.4.2.5-14.png)
+$$ k_{d}=\dfrac{(1+\beta ^{2})^{2}+2\sum _{i=1}^{n}\gamma _{i}\omega _{i}}{\beta ^{2}(1+2\sum _{i=1}^{n}\delta _{i}\omega _{i})} \tag{F.4.2.5-13} $$
 
 Donde:
 
-![Ecuación F.4.2.5-15](img/ec-F.4.2.5-15.png)
+$$ \beta =\left(2\sum_{i=1}^{n} \gamma _{i}\omega _{i}+1\right)^{1/4} \tag{F.4.2.5-14} $$
 
-![Ecuación F.4.2.5-16](img/ec-F.4.2.5-16.png)
+Donde:
 
-![Ecuación F.4.2.5-17](img/ec-F.4.2.5-17.png)
+$$ \gamma _{i}=\dfrac{10.92(I_{sp})i}{b_{o}t^{3}} \tag{F.4.2.5-15} $$
+
+$$ \omega _{i}=\operatorname{sen}^{2}\left(\pi \dfrac{c_{i}}{b_{o}}\right) \tag{F.4.2.5-16} $$
+
+$$ \delta _{i}=\dfrac{(A_{s})i}{b_{o}t} \tag{F.4.2.5-17} $$
 
 Si $L_{br}< βb_{o}$ se permitirá utilizar la relación $L_{br}/b_{o}$ en lugar de $β$ para tener en cuenta el incremento en la capacidad debido al arriostramiento.
 
@@ -976,7 +976,7 @@ Para miembros en tensión cargados axialmente, la resistencia nominal a tensión
 
 a) Para fluencia en la sección bruta:
 
-![Ecuación F.4.3.2-1](img/ec-F.4.3.2-1.png)
+$$ \begin{gathered}T_{n}=A_{g}F_{y} \\ \phi _{t}=0.90\end{gathered} \tag{F.4.3.2-1} $$
 
 Donde:
 
@@ -988,7 +988,7 @@ $F_{y}$ = esfuerzo de fluencia de diseño como se define en la sección F.4.1.6.
 
 b) Para rotura en la sección neta lejos de la conexión:
 
-![Ecuación F.4.3.2-2](img/ec-F.4.3.2-2.png)
+$$ \begin{gathered}T_{n}=A_{n}F_{u} \\ \phi _{t}=0.75\end{gathered} \tag{F.4.3.2-2} $$
 
 Donde:
 
@@ -1010,7 +1010,7 @@ Para secciones con aletas a compresión rigidizadas o parcialmente rigidizadas: 
 
 a) Procedimiento 1 — Basado en la iniciación de la fluencia – La resistencia nominal a flexión , $M_{n}$ , para el momento de fluencia efectivo se calculará de acuerdo con la ecuación F.4.3.3-1, como sigue:
 
-![Ecuación F.4.3.3-1](img/ec-F.4.3.3-1.png)
+$$ M_{n}=S_{e}F_{y} \tag{F.4.3.3-1} $$
 
 Donde:
 
@@ -1042,13 +1042,13 @@ $C_{y}$ = factor de deformación unitaria a compresión determinado como sigue:
 
 $C_{y}=3.0$ cuando $w /t ≤λ_{1}$
 
-![Ecuación F.4.3.3-2](img/ec-F.4.3.3-2.png)
+$$ C_{y}=3-2\left(\dfrac{w/t-\lambda _{1}}{\lambda _{2}-\lambda _{1}}\right)\text{ cuando }\lambda _{1}<w/t<\lambda _{2} \tag{F.4.3.3-2} $$
 
 $C_{y}=1.0$ cuando $w /t ≥λ_{2}$ Donde:
 
-![Ecuación F.4.3.3-3](img/ec-F.4.3.3-3.png)
+$$ \lambda _{1}=\dfrac{1.11}{\sqrt{F_{y}/E}} \tag{F.4.3.3-3} $$
 
-![Ecuación F.4.3.3-4](img/ec-F.4.3.3-4.png)
+$$ \lambda _{2}=\dfrac{1.28}{\sqrt{F_{y}/E}} \tag{F.4.3.3-4} $$
 
 (b) Elementos en compresión no rigidizados Para elementos en compresión no rigidizados, $C_{y}$ , se calculará como sigue:
 
@@ -1056,13 +1056,13 @@ $C_{y}=1.0$ cuando $w /t ≥λ_{2}$ Donde:
 
 $C_{y}=3.0$ cuando $λ ≤λ_{3}$
 
-![Ecuación F.4.3.3-5](img/ec-F.4.3.3-5.png)
+$$ C_{y}=3-2\left[(\lambda -\lambda _{3})/(\lambda _{4}-\lambda _{3})\right] \tag{F.4.3.3-5} $$
 
 cuando $λ_{3} < λ < λ_{4}$
 
 $C_{y}=1.0$ cuando $λ ≥λ_{4}$ Donde:
 
-![Ecuación F.4.3.3-6](img/ec-F.4.3.3-6.png)
+$$ \begin{gathered}\lambda _{3}=0.43 \\ \lambda _{4}=0.673(1+\psi )\end{gathered} \tag{F.4.3.3-6} $$
 
 $ψ$ = Valor definido en la sección F.4.2.3.2 (ii) Elementos en compresión no rigidizados bajo gradiente de esfuerzo que cause compresión en ambos bordes longitudinales
 
@@ -1082,7 +1082,7 @@ $φ_{b} =0.90$
 
 Para segmentos no arriostrados lateralmente de secciones de simetría sencilla, doble y de punto, sujetas a pandeo lateral torsional la resistencia nominal a flexión $M_{n}$ , se calculará como sigue:
 
-![Ecuación F.4.3.3-7](img/ec-F.4.3.3-7.png)
+$$ M_{n}=S_{c}F_{c} \tag{F.4.3.3-7} $$
 
 Donde:
 
@@ -1092,11 +1092,11 @@ $F_{c}$ se determina como sigue:
 
 Para $F_{e}≥2.78F_{y}$ El segmento del miembro no está sujeto a pandeo lateral torsional para momentos menores o iguales a $M_{y}$ . La resistencia de diseño a flexión se determinará conforme a la sección F.4.3.3.1.1(a) Para $2.78F_{y}>F_{e}>0.56F_{y}$
 
-![Ecuación F.4.3.3-8](img/ec-F.4.3.3-8.png)
+$$ F_{c}=\dfrac{10}{9}F_{y}\left(1-\dfrac{10F_{y}}{36F_{e}}\right) \tag{F.4.3.3-8} $$
 
 Para $F_{e}≤0.56F_{y}$
 
-![Ecuación F.4.3.3-9](img/ec-F.4.3.3-9.png)
+$$ F_{c}=F_{e} \tag{F.4.3.3-9} $$
 
 Donde:
 
@@ -1110,15 +1110,15 @@ $F_{e}$ = esfuerzo crítico elástico de pandeo lateral torsional calculado de a
 
 para secciones de simetría sencilla y doble
 
-![Ecuación F.4.3.3-10](img/ec-F.4.3.3-10.png)
+$$ F_{e}=\dfrac{C_{b}r_{o}A}{S_{f}}\sqrt{\sigma _{ey}\sigma _{t}} \tag{F.4.3.3-10} $$
 
 Para secciones de simetría de punto
 
-![Ecuación F.4.3.3-11](img/ec-F.4.3.3-11.png)
+$$ F_{e}=\dfrac{C_{b}r_{o}A}{2S_{f}}\sqrt{\sigma _{ey}\sigma _{t}} \tag{F.4.3.3-11} $$
 
 Donde:
 
-![Ecuación F.4.3.3-12](img/ec-F.4.3.3-12.png)
+$$ C_{b}=\dfrac{12.5M_{\max }}{2.5M_{\max }+3M_{A}+4M_{B}+3M_{C}} \tag{F.4.3.3-12} $$
 
 Donde:
 
@@ -1132,7 +1132,7 @@ $M_{C}$= valor absoluto del momento a los tres-cuartos del segmento no arriostra
 
 $r_{o}$ = radio polar de giro de la sección transversal alrededor del centro de corte
 
-![Ecuación F.4.3.3-13](img/ec-F.4.3.3-13.png)
+$$ =\sqrt{r_{x}^{2}+r_{y}^{2}+x_{o}^{2}} \tag{F.4.3.3-13} $$
 
 Donde:
 
@@ -1144,7 +1144,7 @@ $A$ = área transversal completa no reducida
 
 $S_{f}$ = módulo elástico de la sección completa no reducida respecto a la fibra extrema en compresión
 
-![Ecuación F.4.3.3-14](img/ec-F.4.3.3-14.png)
+$$ \sigma _{ey}=\dfrac{\pi ^{2}E}{(K_{y}L_{y}/r_{y})^{2}} \tag{F.4.3.3-14} $$
 
 Donde:
 
@@ -1154,7 +1154,7 @@ $K_{y}$ = factor de longitud efectiva para flexión alrededor del eje $y$
 
 $L_{y}$ = longitud no arriostrada del miembro para flexión alrededor del eje $y$
 
-![Ecuación F.4.3.3-15](img/ec-F.4.3.3-15.png)
+$$ \sigma _{t}=\dfrac{1}{Ar_{o}^{2}}\left[GJ+\dfrac{\pi ^{2}EC_{w}}{(K_{t}L_{t})^{2}}\right] \tag{F.4.3.3-15} $$
 
 Donde:
 
@@ -1176,13 +1176,13 @@ Alternativamente, $F_{e}$ puede ser calculado usando la ecuación dada en
 
 (ii) Para secciones de simetría sencilla con flexión alrededor del eje centroidal perpendicular al eje de simetría:
 
-![Ecuación F.4.3.3-16](img/ec-F.4.3.3-16.png)
+$$ F_{e}=\dfrac{C_{s}A\sigma _{ex}}{C_{TF}S_{f}}\left[j+C_{s}\sqrt{j^{2}+r_{o}^{2}(\sigma _{t}/\sigma _{ex})}\right] \tag{F.4.3.3-16} $$
 
 $C_{s}= +1$ para momento que produzca compresión en el lado del centro de corte, medido desde el centroide
 
 $C_{s}= −1$ para momento que produzca tensión en el lado del centro de corte, medido desde el centroide
 
-![Ecuación F.4.3.3-17](img/ec-F.4.3.3-17.png)
+$$ \sigma _{ex}=\dfrac{\pi ^{2}E}{(K_{x}L_{x}/r_{x})^{2}} \tag{F.4.3.3-17} $$
 
 Donde:
 
@@ -1190,23 +1190,23 @@ $K_{x}$ = factor de longitud efectiva para flexión alrededor del eje $x$
 
 $L_{x}$ = longitud no arriostrada del miembro para flexión alrededor del eje $x$
 
-![Ecuación F.4.3.3-18](img/ec-F.4.3.3-18.png)
+$$ C_{TF}=0.6-0.4(M_{1}/M_{2}) \tag{F.4.3.3-18} $$
 
 Donde:
 
 $M_{1}$ es el momento menor y $M_{2}$ es el momento mayor en los extremos de la longitud no arriostrada en el plano de flexión, y donde $M_{1}/M_{2}$ (relación de momentos en el extremo) es positiva cuando $M_{1}$ y $M_{2}$ tienen el mismo signo (flexión en curvatura doble) y negativa cuando son de signos opuestos (flexión en curvatura sencilla) Cuando el momento flector en cualquier punto dentro de la longitud no arriostrada es más grande que los momentos en ambos extremos de esta longitud, $C_{TF}$ será tomado igual a la unidad.
 
-![Ecuación F.4.3.3-19](img/ec-F.4.3.3-19.png)
+$$ j=\dfrac{1}{2I_{y}}\left[\int_{A} x^{3}dA+\int_{A} xy^{2}dA\right]-x_{o} \tag{F.4.3.3-19} $$
 
 (b) Para secciones I, secciones C de simetría sencilla, o secciones Z sometidas abajo flexión alrededor del eje centroidal perpendicular al alma (eje x), se permite el uso de las siguientes ecuaciones, para el cálculo de $F_{e}$ , en lugar de las presentadas en el inciso a):
 
 Para secciones $I$ con simetría doble y secciones $C$ de simetría sencilla
 
-![Ecuación F.4.3.3-20](img/ec-F.4.3.3-20.png)
+$$ F_{e}=\dfrac{C_{b}\pi ^{2}EdI_{yc}}{S_{f}(K_{y}L_{y})^{2}} \tag{F.4.3.3-20} $$
 
 Para secciones $Z$ con simetría de punto
 
-![Ecuación F.4.3.3-21](img/ec-F.4.3.3-21.png)
+$$ F_{e}=\dfrac{C_{b}\pi ^{2}EdI_{yc}}{2S_{f}(K_{y}L_{y})^{2}} \tag{F.4.3.3-21} $$
 
 Donde:
 
@@ -1220,13 +1220,13 @@ Los otros términos son definidos en (a)
 
 Si la longitud no arriostrada lateralmente del miembro es menor o igual a $L_{u}$ , la resistencia nominal a flexión se determinará utilizando la sección F.4.3.3.1.1. $L_{u}$ debe ser calculado como sigue:
 
-![Ecuación F.4.3.3-22](img/ec-F.4.3.3-22.png)
+$$ L_{u}=\dfrac{0.36C_{b}\pi }{F_{y}S_{f}}\sqrt{EGJI_{y}} \tag{F.4.3.3-22} $$
 
 Las variables se definen en la sección F.4.3.3.1.2.1.
 
 Si la longitud no arriostrada lateralmente de un miembro es mayor que $L_{u}$ , tal como se calcula en la ecuación anterior, la resistencia nominal a flexión se determinará de acuerdo con la sección F.4.3.3.1.2.1, donde el esfuerzo crítico de pandeo lateral torsional, $F_{e}$ , se calcula como sigue:
 
-![Ecuación F.4.3.3-23](img/ec-F.4.3.3-23.png)
+$$ F_{e}=\dfrac{C_{b}\pi }{K_{y}L_{y}S_{f}}\sqrt{EGJI_{y}} \tag{F.4.3.3-23} $$
 
 Donde:
 
@@ -1238,17 +1238,17 @@ Las otras variables se definen en la sección F.4.3.3.1.2.1.
 
 **F.4.3.3.1.3** — Resistencia a flexión de miembros de sección tubular cilíndrica cerrada — Para miembros de sección tubular cilíndrica cerrada que tienen una relación diámetro exterior a espesor de pared, $D /t$ , no mayor a $0.441E /F_{y}$ , la resistencia nominal a flexión $M_{n}$ , se calculará de acuerdo con la ecuación F.4.3.3-24.
 
-![Ecuación F.4.3.3-24](img/ec-F.4.3.3-24.png)
+$$ \begin{gathered}M_{n}=F_{c}S_{f} \\ \phi _{b}=0.95\end{gathered} \tag{F.4.3.3-24} $$
 
 Para $D /t≤0.0714 E /F_{y}$
 
-![Ecuación F.4.3.3-25](img/ec-F.4.3.3-25.png)
+$$ F_{c}=1.25F_{y} \tag{F.4.3.3-25} $$
 
 Para $0.0714 E /F_{y}<D /t≤0.318 E /F_{y}$
 
-![Ecuación F.4.3.3-26](img/ec-F.4.3.3-26.png)
+$$ F_{c}=\left[0.970+0.020\left(\dfrac{E/F_{y}}{D/t}\right)\right]F_{y} \tag{F.4.3.3-26} $$
 
-![Ecuación F.4.3.3-27](img/ec-F.4.3.3-27.png)
+$$ \begin{gathered}\text{Para }0.318E/F_{y}<D/t\le 0.441E/F_{y} \\ F_{c}=0.328E/(D/t)\end{gathered} \tag{F.4.3.3-27} $$
 
 Para $0.318 E /F_{y}<D /t$ Donde:
 
@@ -1266,23 +1266,23 @@ Las otras variables se definen en la sección F.4.3.3.1.2.1
 
 $φ_{b} =0.90$ Para $λ_{d}≤0.673$
 
-![Ecuación F.4.3.3-28](img/ec-F.4.3.3-28.png)
+$$ M_{n}=M_{y} \tag{F.4.3.3-28} $$
 
 Para $λ_{d}>0.673$
 
-![Ecuación F.4.3.3-29](img/ec-F.4.3.3-29.png)
+$$ M_{n}=\left(1-0.22\left(\dfrac{M_{crd}}{M_{y}}\right)^{0.5}\right)\left(\dfrac{M_{crd}}{M_{y}}\right)^{0.5}M_{y} \tag{F.4.3.3-29} $$
 
 Donde:
 
-![Ecuación F.4.3.3-30](img/ec-F.4.3.3-30.png)
+$$ \lambda _{d}=\sqrt{M_{y}/M_{crd}} \tag{F.4.3.3-30} $$
 
-![Ecuación F.4.3.3-31](img/ec-F.4.3.3-31.png)
+$$ M_{y}=S_{fy}F_{y} \tag{F.4.3.3-31} $$
 
 Donde:
 
 $S_{fy}$ = módulo elástico de la sección completa no reducida respecto a la fibra extrema en la primera fluencia
 
-![Ecuación F.4.3.3-32](img/ec-F.4.3.3-32.png)
+$$ M_{crd}=S_{f}F_{d} \tag{F.4.3.3-32} $$
 
 Donde:
 
@@ -1306,43 +1306,43 @@ $D$ = dimensión entre bordes externos de la pestaña como se define en la figur
 
 $θ$ = ángulo de la pestaña como se define en la figura F.4.2.4-1 El esfuerzo de pandeo distorsional, $F_{d}$ , se calculará como sigue:
 
-![Ecuación F.4.3.3-33](img/ec-F.4.3.3-33.png)
+$$ F_{d}=\beta k_{d}\dfrac{\pi ^{2}E}{12(1-\mu ^{2})}\left(\dfrac{t}{b_{o}}\right)^{2} \tag{F.4.3.3-33} $$
 
 Donde:
 
 $β$ = un valor que toma en cuenta el gradiente del momento el cual, conservadoramente, puede tomarse igual a 1.0
 
-![Ecuación F.4.3.3-34](img/ec-F.4.3.3-34.png)
+$$ =1.0\le 1+0.4(L/L_{m})^{0.7}(1-M_{1}/M_{2})^{0.7}\le 1.3 \tag{F.4.3.3-34} $$
 
 Donde:
 
 $L$ = valor mínimo entre $L_{cr}$ y $L_{m}$ Donde:
 
-![Ecuación F.4.3.3-35](img/ec-F.4.3.3-35.png)
+$$ L_{cr}=1.2h_{o}\left(\dfrac{b_{o}D\operatorname{sen}\theta }{h_{o}t}\right)^{0.6}\le 10h_{o} \tag{F.4.3.3-35} $$
 
 $L_{m}$= distancia entre puntos de restricción contra el pandeo distorsional (para miembros restringidos en forma continua $L_{m}=L_{cr}$)
 
 $M_{1}$ y $M_{2}$ = son el valor menor y mayor del momento en los extremos, respectivamente, en el segmento no arriostrado $(L_{m})$ de la viga; $M_{1}/M_{2}$ ; es negativo cuando los momentos causan curvatura doble y positiva cuando la flexión causa curvatura sencilla.
 
-![Ecuación F.4.3.3-36](img/ec-F.4.3.3-36.png)
+$$ k_{d}=0.5\le 0.6\left(\dfrac{b_{o}D\operatorname{sen}\theta }{h_{o}t}\right)^{0.7}\le 8.0 \tag{F.4.3.3-36} $$
 
 $E_{μ}$ = módulo de elasticidad = relación de Poisson
 
 (b) Disposiciones para secciones C y Z o cualquier sección abierta con una aleta en compresión rigidizada que se extiende hacia un lado del alma donde el rigidizador es una pestaña simple o un rigidizador de borde complejo — Se permite la aplicación de estas disposiciones a cualquier sección con un alma sencilla y aleta sencilla rigidizada en el borde bajo compresión, incluyendo aquellas que cumplen los límites geométricos de la sección F.4.3.3.1.4(a). El esfuerzo distorsional de pandeo, $F_{d}$ , debe ser calculado de acuerdo con la ecuación F.4.3.3-37 como sigue:
 
-![Ecuación F.4.3.3-37](img/ec-F.4.3.3-37.png)
+$$ F_{d}=\beta \dfrac{k_{\phi fe}+k_{\phi we}+k_{\phi }}{\tilde{k}_{\phi fg}+\tilde{k}_{\phi wg}} \tag{F.4.3.3-37} $$
 
 Donde:
 
 $β$ = un valor que toma en cuenta el gradiente del momento el cual, conservadoramente, puede tomarse igual a 1.0
 
-![Ecuación F.4.3.3-38](img/ec-F.4.3.3-38.png)
+$$ =1.0\le 1+0.4(L/L_{m})^{0.7}(1-M_{1}/M_{2})^{0.7}\le 1.3 \tag{F.4.3.3-38} $$
 
 Donde:
 
 $L$ = valor mínimo entre $L_{cr}$ y $L_{m}$ Donde:
 
-![Ecuación F.4.3.3-39](img/ec-F.4.3.3-39.png)
+$$ L_{cr}=\left(\dfrac{4\pi ^{4}h_{o}(1-\mu ^{2})}{t^{3}}\left(I_{xf}(x_{o}-h_{x})^{2}+C_{wf}-\dfrac{I_{xyf}^{2}}{I_{yf}}(x_{o}-h_{x})^{2}\right)+\dfrac{\pi ^{4}h_{o}^{4}}{720}\right)^{1/4} \tag{F.4.3.3-39} $$
 
 Donde:
 
@@ -1370,7 +1370,7 @@ $M_{1}$ y $M_{2}$ = son el valor menor y mayor del momento en los extremos, resp
 
 $kφfe$ = rigidez elástica rotacional provista por la aleta a la unión aleta-alma
 
-![Ecuación F.4.3.3-40](img/ec-F.4.3.3-40.png)
+$$ \left(\dfrac{\pi }{L}\right)^{4}\left(EI_{xf}(x_{o}-h_{x})^{2}+EC_{wf}-E\dfrac{I_{xyf}^{2}}{I_{yf}}(x_{o}-h_{x})^{2}\right)+\left(\dfrac{\pi }{L}\right)^{2}GJ_{f} \tag{F.4.3.3-40} $$
 
 Donde:
 
@@ -1382,13 +1382,13 @@ $J_{f}$ = constante de torsión de Saint-Venant de la aleta en compresión, más
 
 $kφ_{we}$ = rigidez elástica rotacional provista por el alma a la unión aleta-alma
 
-![Ecuación F.4.3.3-41](img/ec-F.4.3.3-41.png)
+$$ \dfrac{Et^{3}}{12(1-\mu ^{2})}\left(\dfrac{3}{h_{o}}+\left(\dfrac{\pi }{L}\right)^{2}\dfrac{19h_{o}}{60}+\left(\dfrac{\pi }{L}\right)^{4}\dfrac{h_{o}^{3}}{240}\right) \tag{F.4.3.3-41} $$
 
 $kφ$ = rigidez rotacional provista por un elemento de restricción (riostra, panel, tablero de cerramiento) a la unión aleta-alma de un miembro (cero si la aleta en compresión no está restringida)
 
 $\tilde{k}_{φfg}$ = rigidez geométrica rotacional (dividida por el esfuerzo $F_{d}$ ) demandada por la aleta a partir de la unión aleta-alma
 
-![Ecuación F.4.3.3-42](img/ec-F.4.3.3-42.png)
+$$ \left(\dfrac{\pi }{L}\right)^{2}\left[A_{f}\left((x_{o}-h_{x})^{2}\left(\dfrac{I_{xyf}}{I_{yf}}\right)^{2}-2y_{o}(x_{o}-h_{x})\left(\dfrac{I_{xyf}}{I_{yf}}\right)+h_{x}^{2}+y_{o}^{2}\right)+I_{xf}+I_{yf}\right] \tag{F.4.3.3-42} $$
 
 Donde:
 
@@ -1398,7 +1398,7 @@ $y_{o}$ = distancia en $y$ a partir del la unión aleta-alma hasta el centroide 
 
 $\tilde{k}_{φwg}$ = rigidez geométrica rotacional (dividida por el esfuerzo $F_{d}$ ) demandada por el alma a partir de la unión aleta-alma
 
-![Ecuación F.4.3.3-43](img/ec-F.4.3.3-43.png)
+$$ \dfrac{h_{o}t\pi ^{2}}{13\,440}\left(\dfrac{\left[45\,360(1-\xi _{web})+62\,160\right]\left(\dfrac{L}{h_{o}}\right)^{2}+448\pi ^{2}+\left(\dfrac{h_{o}}{L}\right)^{2}\left[53+3(1-\xi _{web})\right]\pi ^{4}}{\pi ^{4}+28\pi ^{2}\left(\dfrac{L}{h_{o}}\right)^{2}+420\left(\dfrac{L}{h_{o}}\right)^{4}}\right) \tag{F.4.3.3-43} $$
 
 Donde:
 
@@ -1412,27 +1412,27 @@ $f_{1}= −f_{2}$, $ξ_{web}=2$)
 
 **F.4.3.3.2.1** — Resistencia al corte de almas sin huecos — La resistencia nominal a cortante, $V_{n}$ , se calculará de acuerdo con la ecuación F.4.3.3-44.
 
-![Ecuación F.4.3.3-44](img/ec-F.4.3.3-44.png)
+$$ \begin{gathered}V_{n}=A_{w}F_{v} \\ \phi _{v}=0.95\end{gathered} \tag{F.4.3.3-44} $$
 
 (a) Para $h /t≤\sqrt{Ek_{v}/F_{y}}$
 
-![Ecuación F.4.3.3-45](img/ec-F.4.3.3-45.png)
+$$ F_{v}=0.60F_{y} \tag{F.4.3.3-45} $$
 
 (b) Para $\sqrt{Ek_{v}/F_{y}}<h /t≤1.51 \sqrt{Ek_{v}/F_{y}}$
 
-![Ecuación F.4.3.3-46](img/ec-F.4.3.3-46.png)
+$$ F_{v}=\dfrac{0.60\sqrt{Ek_{v}F_{y}}}{(h/t)} \tag{F.4.3.3-46} $$
 
 (c) Para $h /t>1.51\sqrt{ Ek_{v}/F_{y}}$
 
-![Ecuación F.4.3.3-47a](img/ec-F.4.3.3-47a.png)
+$$ F_{v}=\dfrac{\pi ^{2}Ek_{v}}{12(1-\mu ^{2})(h/t)^{2}} \tag{F.4.3.3-47a} $$
 
-![Ecuación F.4.3.3-47b](img/ec-F.4.3.3-47b.png)
+$$ =0.904Ek_{v}/(h/t)^{2} \tag{F.4.3.3-47b} $$
 
 Donde:
 
 $V_{n}$ = resistencia nominal al corte
 
-![Ecuación F.4.3.3-48](img/ec-F.4.3.3-48.png)
+$$ A_{w}=\text{ área del elemento alma }=ht \tag{F.4.3.3-48} $$
 
 Donde:
 
@@ -1448,11 +1448,11 @@ $k_{v}$ = coeficiente de pandeo al corte calculado de acuerdo con 1 ó 2 como si
 
 (1) Para almas no reforzadas, $k_{v}=5.34$ (2) Para almas con rigidizadores transversales que satisfacen los requisitos de la sección F.4.3.3.7 Cuando $a /h≤1.0$
 
-![Ecuación F.4.3.3-49](img/ec-F.4.3.3-49.png)
+$$ k_{v}=4.00+\dfrac{5.34}{(a/h)^{2}} \tag{F.4.3.3-49} $$
 
 Cuando $a /h>1.0$
 
-![Ecuación F.4.3.3-50](img/ec-F.4.3.3-50.png)
+$$ k_{v}=5.34+\dfrac{4.00}{(a/h)^{2}} \tag{F.4.3.3-50} $$
 
 Donde:
 
@@ -1480,13 +1480,13 @@ Cuando $c /t≥54$
 
 $q_{s}=1.0$ Cuando $5≤c /t<54$
 
-![Ecuación F.4.3.3-51](img/ec-F.4.3.3-51.png)
+$$ q_{s}=c/(54t) \tag{F.4.3.3-51} $$
 
 Donde:
 
-![Ecuación F.4.3.3-52](img/ec-F.4.3.3-52.png)
+$$ c=h/2-d_{h}/2.83\text{ para huecos circulares } \tag{F.4.3.3-52} $$
 
-![Ecuación F.4.3.3-53](img/ec-F.4.3.3-53.png)
+$$ c=h/2-d_{h}/2\text{ para huecos no circulares } \tag{F.4.3.3-53} $$
 
 **F.4.3.3.3** — Flexión y corte combinados
 
@@ -1494,11 +1494,11 @@ Donde:
 
 Para vigas con almas no reforzadas, la resistencia requerida a flexión $M$ , y la resistencia requerida al corte, $V$ , deben también satisfacer la siguiente ecuación de interacción:
 
-![Ecuación F.4.3.3-54](img/ec-F.4.3.3-54.png)
+$$ \sqrt{\left(\dfrac{\bar{M}}{\phi _{b}M_{nxo}}\right)^{2}+\left(\dfrac{\bar{V}}{\phi _{v}V_{n}}\right)^{2}}\le 1.0 \tag{F.4.3.3-54} $$
 
 Para vigas con rigidizadores transversales en el alma, cuando $M/(φ_{b}M_{nxo})>0.5$ y $V/(φ_{v}V_{n})>0.7$, $M$ y $V$ deben también satisfacer la siguiente ecuación de interacción:
 
-![Ecuación F.4.3.3-55](img/ec-F.4.3.3-55.png)
+$$ 0.6\left(\dfrac{\bar{M}}{\phi _{b}M_{nxo}}\right)+\left(\dfrac{\bar{V}}{\phi _{v}V_{n}}\right)\le 1.3 \tag{F.4.3.3-55} $$
 
 Donde:
 
@@ -1520,7 +1520,7 @@ $V_{n}$ = resistencia nominal cuando se solo se considera cortante
 
 **F.4.3.3.4.1** — Resistencia a arrugamiento de almas sin huecos — La resistencia nominal a arrugamiento del alma,$P_{n}$ , se determinará de acuerdo con la ecuación F.4.3.3-56 ó F.4.3.3-57, según sea aplicable. Se usarán los factores de resistencia en las tablas F.4.3.3-1 a F.4.3.3-5 para la determinación de la resistencia de diseño
 
-![Ecuación F.4.3.3-56](img/ec-F.4.3.3-56.png)
+$$ P_{n}=Ct^{2}F_{y}\operatorname{sen}\theta \left(1-C_{R}\sqrt{\dfrac{R}{t}}\right)\left(1+C_{N}\sqrt{\dfrac{N}{t}}\right)\left(1-C_{h}\sqrt{\dfrac{h}{t}}\right) \tag{F.4.3.3-56} $$
 
 Donde:
 
@@ -1546,13 +1546,13 @@ $C_{h}$ = coeficiente de esbeltez del alma tomado de la tabla F.4.3.3-1, F.4.3.3
 
 $h$ = dimensión plana del alma, medida en su mismo plano Alternativamente, para la condición de carga de extremo sobre una aleta en una sección C ó Z, la resistencia nominal a arrugamiento del alma, $P_{nc}$, con voladizo sobre un lado, puede calcularse de la siguiente manera, excepto que $P_{nc}$ no debe ser mayor al valor obtenido para la condición de carga interior sobre una aleta:
 
-![Ecuación F.4.3.3-57](img/ec-F.4.3.3-57.png)
+$$ P_{nc}=\alpha P_{n} \tag{F.4.3.3-57} $$
 
 Donde:
 
 $P_{nc}$ = resistencia nominal a arrugamiento del alma de secciones C y Z con voladizos
 
-![Ecuación F.4.3.3-58](img/ec-F.4.3.3-58.png)
+$$ \alpha =\dfrac{1.34(L_{o}/h)^{0.26}}{0.009(h/t)+0.3}\ge 1.0 \tag{F.4.3.3-58} $$
 
 Donde:
 
@@ -1689,11 +1689,11 @@ $d$ = altura de la sección transversal
 
 $L_{h}$ = longitud del hueco en el alma Para reacción en el extremo sobre una sola aleta (ecuación F.4.3.3-56 con la tabla F.4.3.3-2), cuando ninguna porción de un hueco en el alma está dentro de la longitud del apoyo, el factor de reducción, $R_{c}$ , se calculará como sigue:
 
-![Ecuación F.4.3.3-59](img/ec-F.4.3.3-59.png)
+$$ R_{c}=1.01-0.325d_{h}/h+0.083x/h\le 1.0 \tag{F.4.3.3-59} $$
 
 $N≥25$ mm Para reacción interior sobre una sola aleta (ecuación F.4.3.3-56 con la tabla F.4.3.3-2) cuando cualquier porción de un hueco en el alma no está dentro de la longitud del apoyo, el factor de reducción, $R_{c}$ , se calculará como sigue:
 
-![Ecuación F.4.3.3-60](img/ec-F.4.3.3-60.png)
+$$ R_{c}=0.90-0.047d_{h}/h+0.053x/h\le 1.0 \tag{F.4.3.3-60} $$
 
 $N≥76$ mm (3 pulgadas) Donde:
 
@@ -1707,19 +1707,19 @@ $N$ = longitud de apoyo de la carga
 
 (a) Para secciones con almas sencillas no reforzadas:
 
-![Ecuación F.4.3.3-61](img/ec-F.4.3.3-61.png)
+$$ 0.91\left(\dfrac{\bar{P}}{P_{n}}\right)+\left(\dfrac{\bar{M}}{M_{nxo}}\right)\le 1.33\phi \tag{F.4.3.3-61} $$
 
 Donde $φ =0.90$ Excepción: En los apoyos interiores de luces continuas, la anterior ecuación no es aplicable a tableros metálicos o vigas con dos o más almas sencillas, cuando la parte en compresión de las almas adyacentes estén lateralmente soportadas en la región del momento negativo por elementos continuos o intermitentes conectados a la aleta, chapas rígidas o arriostramiento lateral, y el espaciamiento entre almas adyacentes no exceda 254mm.
 
 (b) Para secciones con almas múltiples no reforzadas tales como vigas tipo I armadas de dos secciones C conectadas espalda con espalda, o secciones similares las cuales proveen un alto grado de restricción al giro del alma (tales como secciones I armadas por dos ángulos soldados a una sección C):
 
-![Ecuación F.4.3.3-62](img/ec-F.4.3.3-62.png)
+$$ 0.88\left(\dfrac{\bar{P}}{P_{n}}\right)+\left(\dfrac{\bar{M}}{M_{nxo}}\right)\le 1.46\phi \tag{F.4.3.3-62} $$
 
 Donde $φ =0.90$
 
 (c) Para dos secciones Z traslapadas sobre el apoyo
 
-![Ecuación F.4.3.3-63](img/ec-F.4.3.3-63.png)
+$$ 0.86\left(\dfrac{\bar{P}}{P_{n}}\right)+\left(\dfrac{\bar{M}}{M_{nxo}}\right)\le 1.65\phi \tag{F.4.3.3-63} $$
 
 Donde $φ =0.90$ La ecuación anterior es válida para secciones dentro de los siguientes límites:
 
@@ -1751,7 +1751,7 @@ $P_{n}$ = resistencia nominal para carga concentrada o reacción en ausencia de 
 
 Como se especifica en la ecuación F.4.3.3-64, el factor de reducción, $R$ , será igual a la relación de los esfuerzos normales debido a solo la flexión dividido por los esfuerzos combinados de ambos, flexión y alabeo torsional, en el punto de esfuerzo combinado máximo de la sección transversal.
 
-![Ecuación F.4.3.3-64](img/ec-F.4.3.3-64.png)
+$$ R=\dfrac{f_{\text{flexión}}}{f_{\text{flexión}}+f_{\text{torsión}}}\le 1.0 \tag{F.4.3.3-64} $$
 
 Los esfuerzos deben calcularse utilizando las propiedades de la sección completa para los esfuerzos torsionales y las propiedades de la sección efectiva para los esfuerzos por flexión. Para secciones C de aletas con bordes rigidizados, si el máximo esfuerzo de compresión combinado ocurre en la unión del alma con la aleta se puede incrementar el factor $R$ en un 15%, pero nunca será mayor a la unidad (1.0).
 
@@ -1763,17 +1763,17 @@ Las disposiciones de esta sección no aplicarán cuando se utilicen las especifi
 
 $φ_{c} =0.85$
 
-![Ecuación F.4.3.3-65](img/ec-F.4.3.3-65.png)
+$$ \text{ (a) }P_{n}=F_{wy}A_{c} \tag{F.4.3.3-65} $$
 
 (b) $P_{n}$ = resistencia nominal axial evaluada de acuerdo con la sección F.4.3.4.1(a), con $A_{e}$ reemplazado por $A_{b}$ Donde:
 
 $F_{wy}$ = valor menor de $F_{y}$ para almas de vigas, o $F_{ys}$ para la sección del rigidizador Para rigidizadores de apoyo en soportes interiores o bajo cargas concentradas
 
-![Ecuación F.4.3.3-66](img/ec-F.4.3.3-66.png)
+$$ A_{c}=18t^{2}+A_{s} \tag{F.4.3.3-66} $$
 
 Para rigidizadores de apoyo en soportes de extremos
 
-![Ecuación F.4.3.3-67](img/ec-F.4.3.3-67.png)
+$$ A_{c}=10t^{2}+A_{s} \tag{F.4.3.3-67} $$
 
 Donde:
 
@@ -1781,17 +1781,17 @@ $t$ = espesor del acero base del alma de la viga
 
 $A_{s}$ = área de la sección transversal del rigidizador de apoyo Para rigidizadores de apoyo en soportes interiores o bajo cargas concentradas
 
-![Ecuación F.4.3.3-68](img/ec-F.4.3.3-68.png)
+$$ A_{b}=b_{1}t+A_{s} \tag{F.4.3.3-68} $$
 
 Para rigidizadores de apoyo en soportes de extremos
 
-![Ecuación F.4.3.3-69](img/ec-F.4.3.3-69.png)
+$$ A_{b}=b_{2}t+A_{s} \tag{F.4.3.3-69} $$
 
 Donde:
 
-![Ecuación F.4.3.3-70](img/ec-F.4.3.3-70.png)
+$$ b_{1}=25t\left[0.0024(L_{st}/t)+0.72\right]\le 25t \tag{F.4.3.3-70} $$
 
-![Ecuación F.4.3.3-71](img/ec-F.4.3.3-71.png)
+$$ b_{2}=12t\left[0.0044(L_{st}/t)+0.83\right]\le 12t \tag{F.4.3.3-71} $$
 
 Donde:
 
@@ -1801,7 +1801,7 @@ Figura F.4.3.3-1 — Rigidizador de apoyo
 
 **F.4.3.3.7.2** — Rigidizadores de apoyo en miembros en sección $C$ a flexión — Para carga sobre las dos aletas de miembros en sección $C$ bajo flexión, con rigidizadores de apoyo que no cumplan los requerimientos de la sección F.4.3.3.7.1, la resistencia nominal, $P_{n}$ , se determinará de acuerdo con la ecuación F.4.3.3-72.
 
-![Ecuación F.4.3.3-72](img/ec-F.4.3.3-72.png)
+$$ \begin{gathered}P_{n}=0.7(P_{wc}+A_{e}F_{y})\ge P_{wc} \\ \phi _{c}=0.90\end{gathered} \tag{F.4.3.3-72} $$
 
 Donde:
 
@@ -1825,7 +1825,7 @@ $F_{y}$ = esfuerzo de fluencia del acero del rigidizador de apoyo La ecuación F
 
 F.4.3.3.2, y la relación $a /h$ no excederá el valor de El momento de inercia real $I_{s}$, de un par de rigidizadores de cortante conectados, o un rigidizador de cortante sencillo, con referencia a un eje en el plano del alma, deberá tener un valor mínimo de:
 
-![Ecuación F.4.3.3-73](img/ec-F.4.3.3-73.png)
+$$ I_{s\,\min }=5ht^{3}\left[h/a-0.7(a/h)\right]\ge (h/50)^{4} \tag{F.4.3.3-73} $$
 
 Donde:
 
@@ -1833,19 +1833,19 @@ $t$ y $h$ se definen de acuerdo a la sección F.4.2.1.2
 
 $a$ = distancia entre rigidizadores de cortante El área bruta de los rigidizadores de cortante no será menor a:
 
-![Ecuación F.4.3.3-74](img/ec-F.4.3.3-74.png)
+$$ A_{st}=\dfrac{1-C_{v}}{2}\left[\dfrac{a}{h}-\dfrac{(a/h)^{2}}{(a/h)+\sqrt{1+(a/h)^{2}}}\right]YDht \tag{F.4.3.3-74} $$
 
 Donde:
 
-![Ecuación F.4.3.3-75](img/ec-F.4.3.3-75.png)
+$$ C_{v}=\dfrac{1.53Ek_{v}}{F_{y}(h/t)^{2}}\text{ cuando }C_{v}\le 0.8 \tag{F.4.3.3-75} $$
 
-![Ecuación F.4.3.3-76](img/ec-F.4.3.3-76.png)
+$$ C_{v}=\dfrac{1.11}{h/t}\sqrt{\dfrac{Ek_{v}}{F_{y}}}\text{ cuando }C_{v}>0.8 \tag{F.4.3.3-76} $$
 
 Donde:
 
-![Ecuación F.4.3.3-77](img/ec-F.4.3.3-77.png)
+$$ k_{v}=4.00+\dfrac{5.34}{(a/h)^{2}}\text{ cuando }a/h\le 1.0 \tag{F.4.3.3-77} $$
 
-![Ecuación F.4.3.3-78](img/ec-F.4.3.3-78.png)
+$$ k_{v}=5.34+\dfrac{4.00}{(a/h)^{2}}\text{ cuando }a/h>1.0 \tag{F.4.3.3-78} $$
 
 $Y=esfuerzo de fluencia del acero del alma$ $esfuerzo de fluencia del acero del rigidizador$
 
@@ -1865,7 +1865,7 @@ La resistencia de diseño a carga axial debe ser el menor valor de los calculado
 
 (a) La resistencia nominal bajo carga axial $P_{n}$ , se calculará de acuerdo con la ecuación F.4.3.4-1.
 
-![Ecuación F.4.3.4-1](img/ec-F.4.3.4-1.png)
+$$ \begin{gathered}P_{n}=A_{e}F_{n} \\ \phi _{c}=0.85\end{gathered} \tag{F.4.3.4-1} $$
 
 Donde:
 
@@ -1873,13 +1873,13 @@ $A_{e}$ = área efectiva calculada con el esfuerzo $F_{n}$ . Para secciones con 
 
 $F_{n}$ es determinado como sigue:
 
-![Ecuación F.4.3.4-2](img/ec-F.4.3.4-2.png)
+$$ \text{ Para }\lambda _{c}\le 1.5\qquad F_{n}=(0.658^{\lambda _{c}^{2}})F_{y} \tag{F.4.3.4-2} $$
 
-![Ecuación F.4.3.4-3](img/ec-F.4.3.4-3.png)
+$$ \text{ Para }\lambda _{c}>1.5\qquad F_{n}=\left(\dfrac{0.877}{\lambda _{c}^{2}}\right)F_{y} \tag{F.4.3.4-3} $$
 
 Donde:
 
-![Ecuación F.4.3.4-4](img/ec-F.4.3.4-4.png)
+$$ \lambda _{c}=\sqrt{\dfrac{F_{y}}{F_{e}}} \tag{F.4.3.4-4} $$
 
 $F_{e}$ = es el valor mínimo del esfuerzo de pandeo flector elástico, de pandeo torsional y de pandeo flexo-torsional determinado de acuerdo con las secciones F.4.3.4.1.1 a la F.4.3.4.1.5.
 
@@ -1887,7 +1887,7 @@ $F_{e}$ = es el valor mínimo del esfuerzo de pandeo flector elástico, de pande
 
 **F.4.3.4.1.1** — Secciones no sujetas a pandeo torsional o flexo-torsional – Para secciones de simetría doble, secciones cerradas o cualquier otra sección para la cual se puede demostrar que no está sujeta a pandeo torsional o flexo-torsional, el esfuerzo de pandeo flector elástico, $F_{e}$ , se determinará como sigue:
 
-![Ecuación F.4.3.4-5](img/ec-F.4.3.4-5.png)
+$$ F_{e}=\dfrac{\pi ^{2}E}{(KL/r)^{2}} \tag{F.4.3.4-5} $$
 
 Donde:
 
@@ -1901,15 +1901,15 @@ $r$ = radio de giro de la sección transversal completa no reducida alrededor de
 
 **F.4.3.4.1.2** — Secciones de simetría doble y simetría sencilla sujetas a pandeo torsional o flexo-torsional — Para secciones de simetría sencilla sujetas a pandeo flexo-torsional, $F_{e}$ se tomará como el menor valor de $F_{e}$ calculado de acuerdo a la sección F.4.3.4.1.1 y $F_{e}$ calculado como sigue:
 
-![Ecuación F.4.3.4-6](img/ec-F.4.3.4-6.png)
+$$ F_{e}=\dfrac{1}{2\beta }\left[(\sigma _{ex}+\sigma _{t})-\sqrt{(\sigma _{ex}+\sigma _{t})^{2}-4\beta \sigma _{ex}\sigma _{t}}\right] \tag{F.4.3.4-6} $$
 
 Alternativamente, se puede obtener una estimación conservadora de $F_{e}$ a partir de la siguiente ecuación:
 
-![Ecuación F.4.3.4-7](img/ec-F.4.3.4-7.png)
+$$ F_{e}=\dfrac{\sigma _{t}\sigma _{ex}}{\sigma _{t}+\sigma _{ex}} \tag{F.4.3.4-7} $$
 
 Donde:
 
-![Ecuación F.4.3.4-8](img/ec-F.4.3.4-8.png)
+$$ \beta =1-(x_{o}/r_{o})^{2} \tag{F.4.3.4-8} $$
 
 $σ_{t}$ y $σ_{ex}$ se definen en la sección F.4.3.3.1.2.1 Para secciones de simetría sencilla, se supone el eje $x$ como eje de simetría.
 
@@ -1923,11 +1923,11 @@ Para secciones de simetría sencilla en ángulo en las cuales el área efectiva 
 
 **F.4.3.4.1.5** — Secciones tubulares cilíndricas cerradas — Para miembros tubulares cilíndricos cerrados que tienen una relación diámetro externo a espesor de pared, $D /t$ , no mayor a $0.441E /F_{y}$ y en los cuales la resultante de todas las cargas y momentos actuantes son equivalentes a una fuerza puntual en la dirección del eje de miembro pasando a través del centroide de la sección, el esfuerzo de pandeo flector, $F_{e}$ , se calculará de acuerdo con la sección F.4.3.4.1.1, y el área efectiva, $A_{e}$ , se calculará como sigue:
 
-![Ecuación F.4.3.4-9](img/ec-F.4.3.4-9.png)
+$$ A_{e}=A_{o}+R(A-A_{o}) \tag{F.4.3.4-9} $$
 
 Donde:
 
-![Ecuación F.4.3.4-10](img/ec-F.4.3.4-10.png)
+$$ A_{o}=\left[\dfrac{0.037}{(DF_{y})/tE}+0.667\right]A\le A\text{ para }\dfrac{D}{t}\le 0.441\dfrac{E}{F_{y}} \tag{F.4.3.4-10} $$
 
 Donde:
 
@@ -1941,25 +1941,25 @@ $E$ = módulo de elasticidad del acero
 
 $A$ = área de la sección transversal completa no reducida
 
-![Ecuación F.4.3.4-11](img/ec-F.4.3.4-11.png)
+$$ R=F_{y}/(2F_{e})\le 1.0 \tag{F.4.3.4-11} $$
 
 **F.4.3.4.2** — Resistencia al pandeo distorsional — Las especificaciones de este numeral aplicarán a secciones I, Z, C, sombrero, y otros miembros de sección transversal abierta que empleen aletas con rigidizadores de borde, con la excepción de miembros que cumplen el criterio de la sección F.4.4.6.1.2. La resistencia nominal bajo carga axial se calculará de acuerdo con las ecuaciones F.4.3.4-12 y F.4.3.4-13.
 
 $φ_{c} =0.85$ Para $λ_{d}≤0.561$
 
-![Ecuación F.4.3.4-12](img/ec-F.4.3.4-12.png)
+$$ P_{n}=P_{y} \tag{F.4.3.4-12} $$
 
 Para $λ_{d}>0.561$
 
-![Ecuación F.4.3.4-13](img/ec-F.4.3.4-13.png)
+$$ P_{n}=\left(1-0.25\left(\dfrac{P_{crd}}{P_{y}}\right)^{0.6}\right)\left(\dfrac{P_{crd}}{P_{y}}\right)^{0.6}P_{y} \tag{F.4.3.4-13} $$
 
 Donde:
 
-![Ecuación F.4.3.4-14](img/ec-F.4.3.4-14.png)
+$$ \lambda _{d}=\sqrt{P_{y}/P_{crd}} \tag{F.4.3.4-14} $$
 
 $P_{n}$ = resistencia nominal axial
 
-![Ecuación F.4.3.4-15](img/ec-F.4.3.4-15.png)
+$$ P_{y}=A_{g}F_{y} \tag{F.4.3.4-15} $$
 
 Donde:
 
@@ -1967,7 +1967,7 @@ $A_{g}$ = área bruta de la sección transversal
 
 $F_{y}$ = esfuerzo de fluencia
 
-![Ecuación F.4.3.4-16](img/ec-F.4.3.4-16.png)
+$$ P_{crd}=A_{g}F_{d} \tag{F.4.3.4-16} $$
 
 Donde:
 
@@ -1991,27 +1991,27 @@ $t$ = espesor del acero base
 
 $θ$ = ángulo de la pestaña como se define en la figura F.4.2.4-1 El esfuerzo de pandeo distorsional, $F_{d}$ , se calculará como sigue:
 
-![Ecuación F.4.3.4-17](img/ec-F.4.3.4-17.png)
+$$ F_{d}=\alpha k_{d}\dfrac{\pi ^{2}E}{12(1-\mu ^{2})}\left(\dfrac{t}{b_{o}}\right)^{2} \tag{F.4.3.4-17} $$
 
 Donde:
 
 $α$ = un valor que toma en cuenta el beneficio de una longitud no arriostrada, $L_{m}$, más corta que $L_{cr}$, el cual, conservadoramente puede tomarse igual a 1.0 = $1.0$ para $L_{m}≥L_{cr}$
 
-![Ecuación F.4.3.4-18](img/ec-F.4.3.4-18.png)
+$$ =(L_{m}/L_{cr})^{\ln (L_{m}/L_{cr})}\text{ para }L_{m}<L_{cr} \tag{F.4.3.4-18} $$
 
 Donde:
 
 $L_{m}$ = distancia entre puntos de restricción contra el pandeo distorsional (para miembros restringidos en forma continua $L_{cr}=L_{m}$, sin embargo, la restricción puede ser incluida como un resorte rotacional, $kφ$ , de acuerdo a la disposiciones de la sección F.4.3.4.2(b) ó (c)
 
-![Ecuación F.4.3.4-19](img/ec-F.4.3.4-19.png)
+$$ L_{cr}=1.2h_{o}\left(\dfrac{b_{o}D\operatorname{sen}\theta }{h_{o}t}\right)^{0.6}\le 10h_{o} \tag{F.4.3.4-19} $$
 
-![Ecuación F.4.3.4-20](img/ec-F.4.3.4-20.png)
+$$ k_{d}=0.05\le 0.1\left(\dfrac{b_{o}D\operatorname{sen}\theta }{h_{o}t}\right)^{1.4}\le 8.0 \tag{F.4.3.4-20} $$
 
 $E_{μ}$ = módulo de elasticidad del acero = relación de Poisson
 
 (b) Para secciones C y Z, sombrero ó cualquier sección abierta con aletas rigidizadas de igual dimensión donde el rigidizador es una pestaña (labio) simple o un rigidizador de borde complejo — Las disposiciones de esta parte de la norma aplicarán a cualquier sección abierta con aletas rigidizadas de igual dimensión, incluyendo aquellas que cumplen los límites geométricos de la sección F.4.3.4.2(a)
 
-![Ecuación F.4.3.4-21](img/ec-F.4.3.4-21.png)
+$$ F_{d}=\dfrac{k_{\phi fe}+k_{\phi we}+k_{\phi }}{\tilde{k}_{\phi fg}+\tilde{k}_{\phi wg}} \tag{F.4.3.4-21} $$
 
 Donde:
 
@@ -2019,7 +2019,7 @@ $kφ_{fe}$ = rigidez elástica rotacional provista por la aleta a la unión alet
 
 $kφ_{we}$= rigidez elástica rotacional provista por el alma a la unión aleta-alma
 
-![Ecuación F.4.3.4-22](img/ec-F.4.3.4-22.png)
+$$ =\dfrac{Et^{3}}{6h_{o}(1-\mu ^{2})} \tag{F.4.3.4-22} $$
 
 $kφ$ = rigidez rotacional provista por los elementos de restricción (riostras, panel, tablero de cerramiento) a la unión aleta-alma de un miembro (el valor es cero si el elemento es no restringido) Si la rigidez rotacional provista a las dos aletas es diferente entre sí, se utilizará el valor más pequeño entre los dos.
 
@@ -2027,13 +2027,13 @@ $\tilde{k}_{φfg}$= rigidez geométrica rotacional (dividida por el esfuerzo $F_
 
 $\tilde{k}_{φwg}$= rigidez geométrica rotacional (dividida por el esfuerzo $F_{d}$ ) demandada por el alma a partir de la unión aleta-alma
 
-![Ecuación F.4.3.4-23](img/ec-F.4.3.4-23.png)
+$$ =\left(\dfrac{\pi }{L}\right)^{2}\dfrac{th_{o}^{3}}{60} \tag{F.4.3.4-23} $$
 
 Donde:
 
 $L$ = valor mínimo entre $L_{cr}$ y $L_{m}$ Donde:
 
-![Ecuación F.4.3.4-24](img/ec-F.4.3.4-24.png)
+$$ L_{cr}=\left(\dfrac{6\pi ^{4}h_{o}(1-\mu ^{2})}{t^{3}}\left(I_{xf}(x_{o}-h_{x})^{2}+C_{wf}-\dfrac{I_{xyf}^{2}}{I_{yf}}(x_{o}-h_{x})^{2}\right)\right)^{1/4} \tag{F.4.3.4-24} $$
 
 $L_{m}$= distancia entre puntos de restricción contra el pandeo distorsional (para miembros restringidos en forma continua $L_{cr}=L_{m}$) Remitirse a la sección F.4.3.3.1.4(b) para definición de las demás variables en la ecuación F.4.3.4-24.
 
@@ -2045,9 +2045,9 @@ $L_{m}$= distancia entre puntos de restricción contra el pandeo distorsional (p
 
 **F.4.3.5.1.1** — Método de Diseño con Coeficientes de Carga y Resistencia (DCCR) — Las resistencias requeridas (tensión y momentos mayorados) $T$ , $M_{x}$ y $M_{y}$ deben satisfacer las siguientes ecuaciones de interacción:
 
-![Ecuación F.4.3.5-1](img/ec-F.4.3.5-1.png)
+$$ \dfrac{\bar{M}_{x}}{\phi _{b}M_{nxt}}+\dfrac{\bar{M}_{y}}{\phi _{b}M_{nyt}}+\dfrac{\bar{T}}{\phi _{t}T_{n}}\le 1.0 \tag{F.4.3.5-1} $$
 
-![Ecuación F.4.3.5-2](img/ec-F.4.3.5-2.png)
+$$ \dfrac{\bar{M}_{x}}{\phi _{b}M_{nx}}+\dfrac{\bar{M}_{y}}{\phi _{b}M_{ny}}-\dfrac{\bar{T}}{\phi _{t}T_{n}}\le 1.0 \tag{F.4.3.5-2} $$
 
 Donde:
 
@@ -2057,7 +2057,7 @@ $M_{y}=M_{uy}$
 
 $φ_{b}$ = para resistencia a flexión (sección F.4.3.3.1.1), $φ_{b} =0.90$ o $0.95$ . Para vigas no arriostradas lateralmente (sección F.4.3.3.1.2), $φ_{b} =0.90$. Para miembros tubulares cilíndricos cerrados (sección F.4.3.3.1.3), $φ_{b} =0.95$.
 
-![Ecuación F.4.3.5-3](img/ec-F.4.3.5-3.png)
+$$ M_{nxt},\;M_{nyt}=S_{ft}F_{y} \tag{F.4.3.5-3} $$
 
 Donde:
 
@@ -2081,13 +2081,13 @@ $α_{x} = α_{y} =1.0$, y $C_{mx}=C_{my}=1.0$. Adicionalmente, cada relación in
 
 Para secciones ángulo no rigidizadas, de simetría sencilla, con área efectiva no reducida, se permitirá tomar $M_{y}$ como la resistencia requerida a flexión solamente. Para otro tipo de secciones en ángulo o ángulos no rigidizados de simetría sencilla para los cuales el área efectiva $(A_{e})$ en el esfuerzo $F_{y}$ es menor que el área se la sección transversal completa no reducida $( A )$, $M_{y}$ se tomará ya sea como la resistencia requerida a flexión o la resistencia requerida a flexión más $PL /1000$ , el que resulte en un valor mínimo permisible para $P$ .
 
-![Ecuación F.4.3.5-4](img/ec-F.4.3.5-4.png)
+$$ \dfrac{\bar{P}}{\phi _{c}P_{n}}+\dfrac{C_{mx}\bar{M}_{x}}{\phi _{b}M_{nx}\alpha _{x}}+\dfrac{C_{my}\bar{M}_{y}}{\phi _{b}M_{ny}\alpha _{y}}\le 1.0 \tag{F.4.3.5-4} $$
 
-![Ecuación F.4.3.5-5](img/ec-F.4.3.5-5.png)
+$$ \dfrac{\bar{P}}{\phi _{c}P_{no}}+\dfrac{\bar{M}_{x}}{\phi _{b}M_{nx}}+\dfrac{\bar{M}_{y}}{\phi _{b}M_{ny}}\le 1.0 \tag{F.4.3.5-5} $$
 
 Cuando $Pφ_{c}P_{n}≤0.15$ se permitirá el uso de la siguiente ecuación en lugar de las dos anteriores:
 
-![Ecuación F.4.3.5-6](img/ec-F.4.3.5-6.png)
+$$ \dfrac{\bar{P}}{\phi _{c}P_{n}}+\dfrac{\bar{M}_{x}}{\phi _{b}M_{nx}}+\dfrac{\bar{M}_{y}}{\phi _{b}M_{ny}}\le 1.0 \tag{F.4.3.5-6} $$
 
 Donde:
 
@@ -2105,15 +2105,15 @@ $φ_{b}$ = factor para resistencia a flexión (sección F.4.3.3.1.1), $φ_{b} =0
 
 $M_{nx}$, $M_{ny}$ = resistencia nominal a flexión alrededor de los ejes centroidales de acuerdo con la sección F.4.3.3.1
 
-![Ecuación F.4.3.5-7](img/ec-F.4.3.5-7.png)
+$$ \alpha _{x}=1-\dfrac{\bar{P}}{P_{EX}}>0 \tag{F.4.3.5-7} $$
 
-![Ecuación F.4.3.5-8](img/ec-F.4.3.5-8.png)
+$$ \alpha _{y}=1-\dfrac{\bar{P}}{P_{EY}}>0 \tag{F.4.3.5-8} $$
 
 Donde:
 
-![Ecuación F.4.3.5-9](img/ec-F.4.3.5-9.png)
+$$ P_{EX}=\dfrac{\pi ^{2}El_{x}}{(K_{x}L_{x})^{2}} \tag{F.4.3.5-9} $$
 
-![Ecuación F.4.3.5-10](img/ec-F.4.3.5-10.png)
+$$ P_{EY}=\dfrac{\pi ^{2}El_{y}}{(K_{y}L_{y})^{2}} \tag{F.4.3.5-10} $$
 
 Donde:
 
@@ -2139,7 +2139,7 @@ $C_{m}=0.85$
 
 (b) Para miembros restringidos en compresión en pórticos arriostrados contra la traslación de nudos y no sujetos a carga lateral entre sus apoyos, en plano de la flexión
 
-![Ecuación F.4.3.5-11](img/ec-F.4.3.5-11.png)
+$$ C_{m}=0.6-0.4(M_{1}/M_{2}) \tag{F.4.3.5-11} $$
 
 Donde:
 
@@ -2157,7 +2157,7 @@ $M_{1}/M_{2}$ es positivo cuando el miembro se flexiona en curvatura doble y neg
 
 **F.4.4.1.1** — Miembros a flexión compuestos por dos secciones $C$ espalda con espalda — La máxima separación longitudinal entre soldaduras u otros conectores, $s_{max}$, que unen dos secciones C para formar una sección I será:
 
-![Ecuación F.4.4.1-1](img/ec-F.4.4.1-1.png)
+$$ s_{\max }=L/6\le 2gT_{s}/mq \tag{F.4.4.1-1} $$
 
 Donde:
 
@@ -2171,7 +2171,7 @@ $m$ = distancia desde el centro de cortante de una sola sección C al plano medi
 
 $q$ = carga de diseño sobre la viga para espaciamiento de los conectores (Ver adelante los métodos de determinación) La carga, $q$ , se obtendrá dividiendo la magnitud de las cargas concentradas o reacciones mayoradas entre la longitud de apoyo. En vigas diseñadas para una carga uniformemente distribuida, $q$ , se tomará igual a tres veces la carga uniformemente distribuida, basándose en las combinaciones de carga críticas. Si la longitud de apoyo de una carga concentrada o reacción es más pequeña que el espacio entre soldaduras, $s$ , la resistencia de diseño de las soldaduras o conexiones más cercanas a la carga o reacción se calculará como sigue:
 
-![Ecuación F.4.4.1-2](img/ec-F.4.4.1-2.png)
+$$ T_{s}=P_{s}m/2g \tag{F.4.4.1-2} $$
 
 Donde:
 
@@ -2185,7 +2185,7 @@ El máximo espaciamiento permisible de las conexiones, $s_{max}$, dependerá de 
 
 **F.4.4.1.2** — Miembros a compresión compuestos por dos secciones en contacto — Para miembros en compresión compuestos de dos secciones en contacto, la resistencia axial de diseño se determinará de acuerdo con la sección F.4.3.4.1(a) con la siguiente modificación: Si el modo de pandeo implica una deformación relativa que produce fuerzas cortantes en los conectores entre secciones individuales, $KL /r$ se reemplaza por $(KL /r)m$ calculado como sigue:
 
-![Ecuación F.4.4.1-3](img/ec-F.4.4.1-3.png)
+$$ \left(\dfrac{KL}{r}\right)_{m}=\sqrt{\left(\dfrac{KL}{r}\right)_{o}^{2}+\left(\dfrac{a}{r_{i}}\right)^{2}} \tag{F.4.4.1-3} $$
 
 Donde:
 
@@ -2205,11 +2205,11 @@ Adicionalmente, la resistencia del sujetador y su espaciamiento deben satisfacer
 
 Cuando $a /r_{i}>50$
 
-![Ecuación F.4.4.1-4](img/ec-F.4.4.1-4.png)
+$$ \left(\dfrac{KL}{r}\right)_{m}=\sqrt{\left(\dfrac{KL}{r}\right)_{o}^{2}+\left(\dfrac{a}{r_{i}}-50\right)^{2}} \tag{F.4.4.1-4} $$
 
 Cuando $a /r_{i}≤50$
 
-![Ecuación F.4.4.1-5](img/ec-F.4.4.1-5.png)
+$$ \left(\dfrac{KL}{r}\right)_{m}=\left(\dfrac{KL}{r}\right)_{o} \tag{F.4.4.1-5} $$
 
 Todas las variables se definen y limitan en la sección F.4.4.1.2.
 
@@ -2250,15 +2250,15 @@ Las riostras deben diseñarse para restringir la flexión lateral o torsión de 
 
 (a) Para cargas uniformes
 
-![Ecuación F.4.4.3-1](img/ec-F.4.4.3-1.png)
+$$ P_{L1}=1.5\left[W_{y}K'-(W_{x}/2)+(M_{z}/d)\right] \tag{F.4.4.3-1} $$
 
-![Ecuación F.4.4.3-2](img/ec-F.4.4.3-2.png)
+$$ P_{L2}=1.5\left[W_{y}K'-(W_{x}/2)-(M_{z}/d)\right] \tag{F.4.4.3-2} $$
 
 Cuando la carga uniforme, $W$ , actúa a través del plano del alma, entonces $W_{y}=W$:
 
-![Ecuación F.4.4.3-3](img/ec-F.4.4.3-3.png)
+$$ P_{L1}=-P_{L2}=1.5(m/d)W\text{ para secciones }C \tag{F.4.4.3-3} $$
 
-![Ecuación F.4.4.3-4](img/ec-F.4.4.3-4.png)
+$$ P_{L1}=P_{L2}=1.5\left(\dfrac{I_{xy}}{2I_{x}}\right)W\text{ para secciones }Z \tag{F.4.4.3-4} $$
 
 Donde:
 
@@ -2272,7 +2272,7 @@ $a$ = distancia longitudinal entre ejes de riostras
 
 $K_{' =}0$ para secciones $C$
 
-![Ecuación F.4.4.3-5](img/ec-F.4.4.3-5.png)
+$$ K'=I_{xy}/(2I_{x})\text{ para secciones }Z \tag{F.4.4.3-5} $$
 
 Donde:
 
@@ -2294,15 +2294,15 @@ Figura F.4.4.3-1 — Sistema de coordenadas y direcciones positivas de las fuerz
 
 (b) Para cargas concentradas,
 
-![Ecuación F.4.4.3-6](img/ec-F.4.4.3-6.png)
+$$ P_{L1}=P_{y}K'-(P_{x}/2)+(M_{z}/d) \tag{F.4.4.3-6} $$
 
-![Ecuación F.4.4.3-7](img/ec-F.4.4.3-7.png)
+$$ P_{L2}=P_{y}K'-(P_{x}/2)+(M_{z}/d) \tag{F.4.4.3-7} $$
 
 Cuando una carga de diseño actúa a través del plano del alma, entonces $P_{y}=P$
 
-![Ecuación F.4.4.3-8](img/ec-F.4.4.3-8.png)
+$$ P_{L1}=-P_{L2}=(m/d)P\text{ para secciones }C \tag{F.4.4.3-8} $$
 
-![Ecuación F.4.4.3-9](img/ec-F.4.4.3-9.png)
+$$ P_{L1}=P_{L2}=\left(\dfrac{I_{xy}}{2I_{x}}\right)P\text{ para secciones }Z \tag{F.4.4.3-9} $$
 
 Donde:
 
@@ -2324,11 +2324,11 @@ Cuando todas las cargas y reacciones sobre una viga se transmiten a través de m
 
 **F.4.4.3.3** — Arriostramiento de miembros en compresión axialmente cargados — La resistencia requerida en las riostras para restringir la translación lateral en un punto de arriostramiento para un miembro individual en compresión se calculará como sigue:
 
-![Ecuación F.4.4.3-10](img/ec-F.4.4.3-10.png)
+$$ P_{br,1}=0.01P_{n} \tag{F.4.4.3-10} $$
 
 La rigidez requerida en la riostra para restringir la translación lateral en un punto de arriostramiento para un miembro individual en compresión se debe calcular como sigue:
 
-![Ecuación F.4.4.3-11](img/ec-F.4.4.3-11.png)
+$$ \beta _{br,1}=\dfrac{2\left[4-(2/n)\right]P_{n}}{L_{b}} \tag{F.4.4.3-11} $$
 
 Donde:
 
@@ -2399,7 +2399,7 @@ Las disposiciones de la sección F.4.4.6.1 a la sección F.4.4.6.3 aplicarán pa
 
 La resistencia nominal a flexión, $M_{n}$ , de una sección C ó Z cargada en un plano paralelo al alma, con la aleta a tensión sujeta a un tablero ó panel y con la aleta a compresión no arriostrada lateralmente, se calculará de acuerdo con la ecuación F.4.4.6-1.
 
-![Ecuación F.4.4.6-1](img/ec-F.4.4.6-1.png)
+$$ \begin{gathered}M_{n}=RS_{e}F_{y} \\ \phi _{b}=0.90\end{gathered} \tag{F.4.4.6-1} $$
 
 Donde $R$ se obtiene de la tabla F.4.4.6-1 para una luz simple con secciones C o Z, y
 
@@ -2434,7 +2434,7 @@ Valores de $R$ para secciones C ó Z en luces simples
 
 Para miembros en luces simples, $R$ se reducirá debido a los efectos del aislamiento comprimido entre la lámina de acero y el miembro. La reducción debe ser calculada multiplicando $R$ de la tabla F.4.4.6-1 por el siguiente factor de corrección, $r$ :
 
-![Ecuación F.4.4.6-2](img/ec-F.4.4.6-2.png)
+$$ r=1.00-0.0004t_{i}\text{ con }t_{i}\text{ en milímetros } \tag{F.4.4.6-2} $$
 
 Donde:
 
@@ -2442,7 +2442,7 @@ $t_{i}$ = Espesor del aislamiento en fibra de vidrio no comprimido, mm
 
 **F.4.4.6.1.2** — Miembros a flexión con una aleta sujeta a un sistema de cubierta de junta continua (Standing Seam) — La resistencia nominal a flexión, $M_{n}$ , de una sección C o Z, cargada en un plano paralelo al alma que soporte un sistema de cubierta de junta continua en la aleta superior se determinará utilizando un arriostramiento discreto y las especificaciones de la sección F.4.3.3.1.2.1 o podrá calcularse de acuerdo con este numeral.
 
-![Ecuación F.4.4.6-3](img/ec-F.4.4.6-3.png)
+$$ \begin{gathered}M_{n}=RS_{e}F_{y} \\ \phi _{b}=0.90\end{gathered} \tag{F.4.4.6-3} $$
 
 Donde:
 
@@ -2454,15 +2454,15 @@ La resistencia nominal bajo carga axial de una sección C ó Z, en una luz simpl
 
 (a) La resistencia nominal en el eje débil se calculará de acuerdo con la ecuación F.4.4.6-5.
 
-![Ecuación F.4.4.6-4](img/ec-F.4.4.6-4.png)
+$$ \begin{gathered}P_{n}=C_{1}C_{2}C_{3}AE/29\,500 \\ \phi _{c}=0.85\end{gathered} \tag{F.4.4.6-4} $$
 
 Donde:
 
-![Ecuación F.4.4.6-5](img/ec-F.4.4.6-5.png)
+$$ C_{1}=(0.79x+0.54) \tag{F.4.4.6-5} $$
 
-![Ecuación F.4.4.6-6](img/ec-F.4.4.6-6.png)
+$$ C_{2}=(1.17\alpha t+0.93) \tag{F.4.4.6-6} $$
 
-![Ecuación F.4.4.6-7](img/ec-F.4.4.6-7.png)
+$$ C_{3}=\alpha (2.5b-1.63d)+22.8 \tag{F.4.4.6-7} $$
 
 Donde:
 
@@ -2496,7 +2496,7 @@ La resistencia nominal axial de secciones Z, en luces simples o continuas, se ca
 
 (a) Para la resistencia de diseño en el eje débil
 
-![Ecuación F.4.4.6-8](img/ec-F.4.4.6-8.png)
+$$ \begin{gathered}P_{n}=k_{af}RF_{y}A \\ \phi _{c}=0.85\end{gathered} \tag{F.4.4.6-8} $$
 
 Donde:
 
@@ -2506,7 +2506,7 @@ $k_{af}=0.36$ 8 Puede obtenerse más información sobre el procedimiento de ensa
 
 Para $90<d /t≤130$
 
-![Ecuación F.4.4.6-9](img/ec-F.4.4.6-9.png)
+$$ k_{af}=0.72-\dfrac{d}{250t} \tag{F.4.4.6-9} $$
 
 Para $d /t>130$
 
@@ -2540,7 +2540,7 @@ Adicionalmente, las correas deben ser restringidas por el tablero metálico de t
 
 Los dispositivos de anclaje11, o riostras, se localizarán en cada vano de correas y se conectarán al miembro en la aleta superior o cerca de ella. Si los dispositivos de anclaje no están directamente conectados a todas las líneas de correas de cada vano, se suministrarán mecanismos para transmitir las fuerzas desde otra línea de correas a los dispositivos de anclaje. Debe demostrarse que la fuerza requerida, $P_{L}$ , puede transferirse al dispositivo de anclaje a través del tablero de cubierta y su sistema de sujeción. La rigidez lateral del dispositivo de anclaje se determinará mediante análisis o ensayos. Estos análisis o ensayos deben tomar en cuenta los efectos de la flexibilidad del alma de la correa sobre la conexión del dispositivo de anclaje.
 
-![Ecuación F.4.4.6-10](img/ec-F.4.4.6-10.png)
+$$ P_{Lj}=\sum_{i=1}^{N_{F}} \left(P_{i}\dfrac{K_{eff_{i,j}}}{k_{total_{i}}}\right) \tag{F.4.4.6-10} $$
 
 Donde:
 
@@ -2556,7 +2556,7 @@ $N_{a}$ = número de dispositivos de anclaje a lo largo de una línea de anclaje
 
 $P_{i}$ = fuerza lateral introducida al sistema en la $i−\text{ésima}$ correa
 
-![Ecuación F.4.4.6-11](img/ec-F.4.4.6-11.png)
+$$ =(C1)W_{P_{i}}\left\{\left[\left(\dfrac{C2}{1\,000}\right)\dfrac{I_{xy}L}{I_{x}d}+(C3)\dfrac{(m+0.25b)t}{d^{2}}\right]\alpha \cos \theta -(C4)\operatorname{sen}\theta \right\} \tag{F.4.4.6-11} $$
 
 Donde:
 
@@ -2564,7 +2564,7 @@ $C1$ , $C2$ , $C3$ y $C4$ = Coeficientes presentados en las tablas F.4.4.6-2 a F
 
 $W_{P,i}$= carga total vertical requerida soportada por la $i−\text{ésima}$ correa en un solo vano
 
-![Ecuación F.4.4.6-12](img/ec-F.4.4.6-12.png)
+$$ =w_{i}L \tag{F.4.4.6-12} $$
 
 Donde:
 
@@ -2590,7 +2590,7 @@ $θ$ = ángulo entre la vertical y el plano del alma de la correa
 
 $K_{eff}$= rigidez lateral efectiva del $j−\text{ésimo}$ dispositivo de anclaje con respecto a la $i−\text{ésima}$ correa
 
-![Ecuación F.4.4.6-13](img/ec-F.4.4.6-13.png)
+$$ =\left[\dfrac{1}{K_{a}}+\dfrac{d_{P_{i,j}}}{(C6)LA_{p}E}\right]^{-1} \tag{F.4.4.6-13} $$
 
 Donde:
 
@@ -2606,13 +2606,13 @@ $E$ = módulo de elasticidad del acero
 
 $Ktotal_{i}$= rigidez lateral efectiva de todos los elementos que resisten la fuerza $P_{i}$
 
-![Ecuación F.4.4.6-14](img/ec-F.4.4.6-14.png)
+$$ =\sum_{j=1}^{N_{a}} (K_{eff_{i,j}})+K_{sys} \tag{F.4.4.6-14} $$
 
 Donde:
 
 $K_{sys}$= rigidez lateral del sistema de cubierta, despreciando el aporte de los dispositivos de anclaje
 
-![Ecuación F.4.4.6-15](img/ec-F.4.4.6-15.png)
+$$ =\left(\dfrac{C5}{1\,000}\right)(N_{p})\dfrac{ELt^{2}}{d^{2}} \tag{F.4.4.6-15} $$
 
 Para sistemas con luces múltiples la fuerza $P_{i}$ , calculada de acuerdo con la ecuación F.4.4.6-12 y los coeficientes $C1$ a $C4$ de las tablas F.4.4.6-2 a F.4.4.6-4, en los casos de “línea exterior de pórticos”, “vano de extremo” o “anclaje exterior del vano de extremo”, debe ser mayor al 80% de la fuerza determinada usando los coeficientes $C2$ a $C4$ para todas las otras posiciones del área de cubierta.
 
@@ -2622,17 +2622,17 @@ Para sistemas con luces múltiples y dispositivos de anclaje en los tercios o lo
 
 La rigidez total efectiva en cada correa debe satisfacer la siguiente ecuación:
 
-![Ecuación F.4.4.6-16](img/ec-F.4.4.6-16.png)
+$$ K_{total_{i}}\ge K_{req} \tag{F.4.4.6-16} $$
 
 Donde:
 
-![Ecuación F.4.4.6-17](img/ec-F.4.4.6-17.png)
+$$ K_{req}=\dfrac{1}{\phi }\dfrac{20\left|\sum _{i=1}^{N_{P}}P_{i}\right|}{d} \tag{F.4.4.6-17} $$
 
 $φ_{b} =0.75$ En lugar de las ecuaciones F.4.4.6-11 a F.4.4.6-16, se permite un análisis alternativo para las fuerzas de restricción lateral. Un análisis de este tipo debe incluir los efectos de primer o segundo orden y tener en cuenta también los efectos de la pendiente de cubierta, torsión resultante debido a cargas aplicadas excéntricas al centro de cortante, torsión resultante de las resistencia lateral suministrada por el cerramiento y cargas aplicadas oblicuamente a los ejes principales. Este análisis alternativo debe incluir también los efectos de la restricción lateral y rotacional suministrada por el tablero sujeto a la aleta superior de los miembros. Debe considerarse la rigidez del dispositivo de anclaje y tomarse en cuenta el efecto de la flexibilidad del alma de la correa sobre la conexión del dispositivo de anclaje.
 
 Cuando las fuerzas de restricción lateral se determinan por medio de un análisis racional, el máximo desplazamiento lateral de la aleta superior de la correa entre líneas de arriostramiento lateral evaluado con las cargas de servicio no excederá la luz del vano dividida por 360. El desplazamiento lateral de la aleta superior de la correa en la línea de restricción, $Δ_{tf}$ se calculará a los niveles de cargas mayoradas para diseño y debe limitarse por:
 
-![Ecuación F.4.4.6-18](img/ec-F.4.4.6-18.png)
+$$ \Delta _{tf}\le \phi \dfrac{d}{20} \tag{F.4.4.6-18} $$
 
 **Tabla F.4.4.6-2**
 
@@ -2719,13 +2719,13 @@ P = Plana, H = Horizontal, V = Vertical, S = Sobrecabeza
 
 (a) Para tensión o compresión normales al área efectiva o paralelas al eje de la soldadura, la resistencia nominal, $P_{n}$ , se calculará de acuerdo con la ecuación F.4.5.2-1:
 
-![Ecuación F.4.5.2-1](img/ec-F.4.5.2-1.png)
+$$ \begin{gathered}P_{n}=Lt_{e}F_{y} \\ \phi =0.90\end{gathered} \tag{F.4.5.2-1} $$
 
 (b) Para cortante en el área efectiva, la resistencia nominal, $P_{n}$ , será el menor valor calculado de acuerdo con las ecuaciones F.4.5.2-2 y F.4.5.2-3:
 
-![Ecuación F.4.5.2-2](img/ec-F.4.5.2-2.png)
+$$ \begin{gathered}P_{n}=Lt_{e}0.6F_{xx} \\ \phi =0.80\end{gathered} \tag{F.4.5.2-2} $$
 
-![Ecuación F.4.5.2-3](img/ec-F.4.5.2-3.png)
+$$ \begin{gathered}P_{n}=Lt_{e}F_{y}/\sqrt{3} \\ \phi =0.90\end{gathered} \tag{F.4.5.2-3} $$
 
 Donde:
 
@@ -2759,7 +2759,7 @@ Figura F.4.5.2-2 — Soldadura de tapón con arandela
 
 **F.4.5.2.2.1.1** — Distancia mínima al borde — La distancia medida en la línea de la fuerza, a partir del eje central de una soldadura, al borde más cercano de otra soldadura adyacente o al borde final de la parte conectada hacia la cual se dirige la fuerza, no será menor que el valor $e_{min}$ determinado con las ecuación F.4.5.2-4. Remitirse a las figuras F.4.5.2-3 y F.4.5.2- 4 para distancias al borde de soldaduras de tapón.
 
-![Ecuación F.4.5.2-4](img/ec-F.4.5.2-4.png)
+$$ e_{\min }=\dfrac{\bar{P}}{\phi F_{u}t} \tag{F.4.5.2-4} $$
 
 Cuando $F_{u}/F_{sy}≥1.08$
 
@@ -2785,19 +2785,19 @@ Figura F.4.5.2-4 — Distancia al borde para soldaduras de tapón — doble lám
 
 **F.4.5.2.2.1.2** — Resistencia a cortante para láminas soldadas a un miembro de soporte de mayor espesor — La resistencia nominal a cortante, $P_{n}$ , de cada soldadura de tapón entre la lámina, ó láminas, y un miembro de apoyo de mayor espesor se determinará el valor más pequeño entre los incisos (a) o (b).
 
-![Ecuación F.4.5.2-5](img/ec-F.4.5.2-5.png)
+$$ \begin{gathered}\text{ (a) }P_{n}=(\pi d_{e}^{2}/4)0.75F_{xx} \\ \phi =0.60\end{gathered} \tag{F.4.5.2-5} $$
 
 (b) Para $(d_{a}/t)≤0.815 \sqrt{E /F_{u}}$
 
-![Ecuación F.4.5.2-6](img/ec-F.4.5.2-6.png)
+$$ \begin{gathered}P_{n}=2.20td_{a}F_{u} \\ \phi =0.70\end{gathered} \tag{F.4.5.2-6} $$
 
-![Ecuación F.4.5.2-7](img/ec-F.4.5.2-7.png)
+$$ \begin{gathered}\text{(c) Para }0.815\sqrt{E/F_{u}}<(d_{a}/t)<1.397\sqrt{E/F_{u}} \\ P_{n}=0.280\left[1+5.59\dfrac{\sqrt{E/F_{u}}}{d_{a}/t}\right]td_{a}F_{u} \\ \phi =0.55\end{gathered} \tag{F.4.5.2-7} $$
 
 (c) Para $0.815 \sqrt{E F_{u}}<$
 
 (d) Para $(d_{a}/t)≥1.397 \sqrt{E /F_{u}}$
 
-![Ecuación F.4.5.2-8](img/ec-F.4.5.2-8.png)
+$$ \begin{gathered}P_{n}=1.40td_{a}F_{u} \\ \phi =0.50\end{gathered} \tag{F.4.5.2-8} $$
 
 Donde:
 
@@ -2805,7 +2805,7 @@ $P_{n}$ = resistencia nominal a cortante de la soldadura de tapón
 
 $d_{e}$ = diámetro efectivo del área de fusión en el plano de la máxima transferencia de cortante
 
-![Ecuación F.4.5.2-9](img/ec-F.4.5.2-9.png)
+$$ =0.7d-1.5t\le 0.55d \tag{F.4.5.2-9} $$
 
 Donde:
 
@@ -2831,7 +2831,7 @@ Figura F.4.5.2-6 — Soldadura de tapón — Doble espesor de lámina
 
 **F.4.5.2.2.1.3** — Resistencia a cortante para conexiones lámina a lámina — La resistencia nominal a cortante para cada soldadura entre dos láminas de igual espesor se determinará de acuerdo con la ecuación F.4.5.2-10.
 
-![Ecuación F.4.5.2-10](img/ec-F.4.5.2-10.png)
+$$ \begin{gathered}P_{n}=1.65td_{a}F_{u} \\ \phi =0.70\end{gathered} \tag{F.4.5.2-10} $$
 
 Donde:
 
@@ -2855,9 +2855,9 @@ Figura F.4.5.2-7 — Soldadura de tapón — Lámina a lámina
 
 **F.4.5.2.2.2** — Tensión — La resistencia última nominal a tensión de levantamiento, $P_{n}$ , de cada soldadura de tapón cargada concéntricamente y que conecta láminas y miembros de soporte, se calculará como el menor valor de las ecuaciones F.4.5.2-11 ó F.4.5.2-12.
 
-![Ecuación F.4.5.2-11](img/ec-F.4.5.2-11.png)
+$$ P_{n}=\dfrac{\pi d_{e}^{2}}{4}F_{xx} \tag{F.4.5.2-11} $$
 
-![Ecuación F.4.5.2-12](img/ec-F.4.5.2-12.png)
+$$ P_{n}=0.8(F_{u}/F_{y})^{2}td_{a}F_{u} \tag{F.4.5.2-12} $$
 
 Para aplicación a tableros metálicos y paneles:
 
@@ -2881,9 +2881,9 @@ Cuando se demuestre mediante ensayos que un procedimiento de soldadura proporcio
 
 (b) Lámina a lámina en posición plana u horizontal La resistencia nominal a cortante, $P_{n}$ , de una soldadura de ranura se determinará con el menor valor de las ecuaciones F.4.5.2-13 y F.4.5.2-14.
 
-![Ecuación F.4.5.2-13](img/ec-F.4.5.2-13.png)
+$$ P_{n}=\left(\dfrac{\pi d_{e}^{2}}{4}+Ld_{e}\right)0.75F_{xx} \tag{F.4.5.2-13} $$
 
-![Ecuación F.4.5.2-14](img/ec-F.4.5.2-14.png)
+$$ \begin{gathered}P_{n}=2.5tF_{u}(0.25L+0.96d_{a}) \\ \phi =0.60\end{gathered} \tag{F.4.5.2-14} $$
 
 Donde:
 
@@ -2891,7 +2891,7 @@ $P_{n}$ = resistencia nominal a cortante de la soldadura de ranura
 
 $d_{e}$ = ancho efectivo de la ranura en las superficies fundidas
 
-![Ecuación F.4.5.2-15](img/ec-F.4.5.2-15.png)
+$$ =0.7d-1.5t \tag{F.4.5.2-15} $$
 
 Donde:
 
@@ -2917,15 +2917,15 @@ La resistencia nominal a cortante, $P_{n}$ , de una soldadura de filete se deter
 
 (1) Para carga longitudinal Para $L /t_{<}25$
 
-![Ecuación F.4.5.2-16](img/ec-F.4.5.2-16.png)
+$$ \begin{gathered}P_{n}=\left(1-\dfrac{0.01L}{t}\right)LtF_{u} \\ \phi =0.60\end{gathered} \tag{F.4.5.2-16} $$
 
 Para $L /t_{≥}25$
 
-![Ecuación F.4.5.2-17](img/ec-F.4.5.2-17.png)
+$$ \begin{gathered}P_{n}=0.75tLF_{u} \\ \phi =0.50\end{gathered} \tag{F.4.5.2-17} $$
 
 (2) Para carga transversal
 
-![Ecuación F.4.5.2-18](img/ec-F.4.5.2-18.png)
+$$ \begin{gathered}P_{n}=tLF_{u} \\ \phi =0.65\end{gathered} \tag{F.4.5.2-18} $$
 
 Donde:
 
@@ -2937,7 +2937,7 @@ Figura F.4.5.2-10 — Soldaduras de filete — Junta traslapada
 
 **F.4.5.2.4** — 2 — Soldaduras de filete Junta en T Adicionalmente, para $t>2.54$ mm, la resistencia nominal a cortante determinada de acuerdo con (1) y (2), anteriormente descritos, no excederá el siguiente valor de $P_{n}$ :
 
-![Ecuación F.4.5.2-19](img/ec-F.4.5.2-19.png)
+$$ \begin{gathered}P_{n}=0.75t_{w}LF_{xx} \\ \phi =0.60\end{gathered} \tag{F.4.5.2-19} $$
 
 Donde:
 
@@ -2959,7 +2959,7 @@ La resistencia nominal a cortante, $P_{n}$ , de una soldadura abocinada se deter
 
 (a) Para soldaduras abocinadas en media V cargadas transversalmente (véase la figura F.4.5.2-12)
 
-![Ecuación F.4.5.2-20](img/ec-F.4.5.2-20.png)
+$$ \begin{gathered}P_{n}=0.833tLF_{u} \\ \phi =0.60\end{gathered} \tag{F.4.5.2-20} $$
 
 ![Figura F.4.5.2-12 — Soldadura abocinada en media V](img/figF.4.5.2-12.png)
 
@@ -2967,15 +2967,15 @@ Figura F.4.5.2-12 — Soldadura abocinada en media V
 
 (b) Para soldaduras abocinadas cargadas longitudinalmente (véase las figuras F.4.5.2-13 a F.4.5.2.5-7) (1) Para $t_{≤}t_{w}<2t$ o si la altura del labio o pestaña, $h$ , es menor que la longitud de soldadura, $L$ :
 
-![Ecuación F.4.5.2-21](img/ec-F.4.5.2-21.png)
+$$ \begin{gathered}P_{n}=0.75tLF_{u} \\ \phi =0.55\end{gathered} \tag{F.4.5.2-21} $$
 
 (2) Para $t_{w}≥2t$ con la altura del labio o pestaña, $h$ , igual o más grande que la longitud de soldadura, $L$ :
 
-![Ecuación F.4.5.2-22](img/ec-F.4.5.2-22.png)
+$$ \begin{gathered}P_{n}=1.50tLF_{u} \\ \phi =0.55\end{gathered} \tag{F.4.5.2-22} $$
 
 Adicionalmente, para $t>2.5$ mm, la resistencia nominal determinada de acuerdo con (a) y (b) no excederá el valor de $P_{n}$ calculado conforme a la ecuación F.4.5.2-23.
 
-![Ecuación F.4.5.2-23](img/ec-F.4.5.2-23.png)
+$$ \begin{gathered}P_{n}=0.75t_{w}LF_{xx} \\ \phi =0.60\end{gathered} \tag{F.4.5.2-23} $$
 
 Donde:
 
@@ -3029,11 +3029,11 @@ $φ =0.65$ Con $t$ en milímetros y $P_{n}$ en kN:
 
 Para $0.25$ mm $≤t<3.6$ mm
 
-![Ecuación F.4.5.2-24](img/ec-F.4.5.2-24.png)
+$$ P_{n}=5.51t^{1.47} \tag{F.4.5.2-24} $$
 
 Para $3.6$ mm $≤t≤4.6$ mm
 
-![Ecuación F.4.5.2-25](img/ec-F.4.5.2-25.png)
+$$ P_{n}=7.6t+8.57 \tag{F.4.5.2-25} $$
 
 Donde:
 
@@ -3045,7 +3045,7 @@ $t$ = espesor de la lámina exterior más delgada
 
 Para rotura y/o fluencia en la sección neta efectiva de la parte conectada, la resistencia última nominal de tensión, $P_{n}$ , se determinará de acuerdo con la ecuación F.4.5.2-28.
 
-![Ecuación F.4.5.2-26](img/ec-F.4.5.2-26.png)
+$$ \begin{gathered}P_{n}=A_{e}F_{u} \\ \phi =0.60\end{gathered} \tag{F.4.5.2-26} $$
 
 Donde:
 
@@ -3063,13 +3063,13 @@ $U_{=}1.0$ para miembros en los que la carga se transmite directamente con todos
 
 (a) Para miembros en ángulo
 
-![Ecuación F.4.5.2-27](img/ec-F.4.5.2-27.png)
+$$ U=1.0-1.20\bar{x}/L<0.9 \tag{F.4.5.2-27} $$
 
 Pero $U≥0.4$
 
 (b) Para miembros en canal
 
-![Ecuación F.4.5.2-28](img/ec-F.4.5.2-28.png)
+$$ U=1.0-0.36\bar{x}/L<0.90 \tag{F.4.5.2-28} $$
 
 Pero $U≥0.5$ Donde:
 
@@ -3113,7 +3113,7 @@ Los pernos se instalarán y ajustarán para conseguir un comportamiento satisfac
 
 **F.4.5.3.1** — Cortante, espaciamiento y distancia al borde — La resistencia nominal a cortante, $P_{n}$ , de la parte conectada cuando es afectada por el espaciamiento y la distancia al borde en la dirección de la fuerza aplicada se calculará de acuerdo con la ecuación F.4.5.3-1.
 
-![Ecuación F.4.5.3-1](img/ec-F.4.5.3-1.png)
+$$ P_{n}=teF_{u} \tag{F.4.5.3-1} $$
 
 (a) Cuando $F_{u}/F_{sy}≥1.08$
 
@@ -3139,15 +3139,15 @@ Para perforaciones agrandadas y perforaciones tipo ranura, la distancia entre bo
 
 (a) Para conexiones de láminas planas sin un patrón de perforaciones escalonadas
 
-![Ecuación F.4.5.3-2](img/ec-F.4.5.3-2.png)
+$$ P_{n}=A_{n}F_{t} \tag{F.4.5.3-2} $$
 
 (1) Cuando se instalan dos arandelas, una bajo la cabeza del perno y otra en la tuerca Para un perno sencillo, o una hilera sencilla de pernos perpendicular a la fuerza
 
-![Ecuación F.4.5.3-3](img/ec-F.4.5.3-3.png)
+$$ F_{t}=(0.1+3d/s)F_{u}\le F_{u} \tag{F.4.5.3-3} $$
 
 Para múltiples pernos en una línea paralela a la fuerza
 
-![Ecuación F.4.5.3-4](img/ec-F.4.5.3-4.png)
+$$ F_{t}=F_{u} \tag{F.4.5.3-4} $$
 
 Para cortante doble:
 
@@ -3155,11 +3155,11 @@ $φ =0.65$ Para cortante sencillo:
 
 $φ =0.55$ (2) Cuando no se instalan arandelas o se instala solo una bajo la cabeza del perno, o en la tuerca Para un perno sencillo, o una hilera sencilla de pernos perpendicular a la fuerza
 
-![Ecuación F.4.5.3-5](img/ec-F.4.5.3-5.png)
+$$ F_{t}=(2.5d/s)F_{u}\le F_{u} \tag{F.4.5.3-5} $$
 
 Para múltiples pernos en una línea paralela a la fuerza
 
-![Ecuación F.4.5.3-6](img/ec-F.4.5.3-6.png)
+$$ \begin{gathered}F_{t}=F_{u} \\ \phi =0.65\end{gathered} \tag{F.4.5.3-6} $$
 
 Donde:
 
@@ -3175,13 +3175,13 @@ $F_{u}$ = resistencia última de tensión de la parte conectada tal como se espe
 
 (b) Para conexiones de láminas planas con un patrón de perforaciones escalonadas
 
-![Ecuación F.4.5.3-7](img/ec-F.4.5.3-7.png)
+$$ \begin{gathered}P_{n}=A_{n}F_{t} \\ \phi =0.65\end{gathered} \tag{F.4.5.3-7} $$
 
 Donde:
 
 $F_{t}$ = se determina de acuerdo con las ecuaciones F.4.5.3-3 a F.4.5.3-6
 
-![Ecuación F.4.5.3-8](img/ec-F.4.5.3-8.png)
+$$ A_{n}=0.90\left[A_{g}-n_{b}d_{h}t+(\sum s'^{2}/4g)t\right] \tag{F.4.5.3-8} $$
 
 $A_{g}$ = área bruta del miembro
 
@@ -3195,7 +3195,7 @@ $d_{h}$ = diámetro de la perforación estándar Véase la sección F.4.5.3.1 pa
 
 (c) Para conexiones diferentes a láminas planas
 
-![Ecuación F.4.5.3-9](img/ec-F.4.5.3-9.png)
+$$ \begin{gathered}P_{n}=A_{e}F_{u} \\ \phi =0.65\end{gathered} \tag{F.4.5.3-9} $$
 
 Donde:
 
@@ -3205,11 +3205,11 @@ $U=1.0$ para miembros en los que la carga se transmite directamente a todos los 
 
 (1) Para miembros en ángulo con dos o más pernos en la línea de la fuerza
 
-![Ecuación F.4.5.3-10](img/ec-F.4.5.3-10.png)
+$$ U=1.0-1.20\bar{x}/L<0.9 \tag{F.4.5.3-10} $$
 
 Pero $U≥0.4$ (2) Para miembros en canal con dos o más pernos en la línea de la fuerza
 
-![Ecuación F.4.5.3-11](img/ec-F.4.5.3-11.png)
+$$ U=1.0-0.36\bar{x}/L<0.9 \tag{F.4.5.3-11} $$
 
 Pero $U≥0.5$ Donde:
 
@@ -3225,7 +3225,7 @@ Figura F.4.5.3-2 — Conexiones de láminas planas con perforaciones escalonadas
 
 **F.4.5.3.3.1** — Resistencia sin consideración de deformaciones de la perforación — Cuando la deformación alrededor de las perforaciones de los pernos no es una consideración de diseño, la resistencia nominal al aplastamiento, $P_{n}$ , de la lámina conectada por cada perno cargado debe determinarse de acuerdo con la ecuación F.4.5.3-12.
 
-![Ecuación F.4.5.3-12](img/ec-F.4.5.3-12.png)
+$$ \begin{gathered}P_{n}=Cm_{f}dtF_{u} \\ \phi =0.60\end{gathered} \tag{F.4.5.3-12} $$
 
 Donde:
 
@@ -3261,13 +3261,13 @@ Factor de modificación, $m_{f}$ , para conexiones por aplastamiento
 
 **F.4.5.3.3.2** — Resistencia con consideración de deformaciones de la perforación — Cuando la deformación alrededor de las perforaciones de pernos es una consideración de diseño, la resistencia nominal al aplastamiento, $P_{n}$ , se calculará de acuerdo con la ecuación F.4.5.3-13. Adicionalmente, la resistencia de diseño no debe exceder la resistencia de diseño obtenida de acuerdo con la sección F.4.5.3.3.1.
 
-![Ecuación F.4.5.3-13](img/ec-F.4.5.3-13.png)
+$$ \begin{gathered}P_{n}=(4.64\alpha t+1.53)dtF_{u} \\ \phi =0.65\end{gathered} \tag{F.4.5.3-13} $$
 
 $α$ = $0.0394$ para el sistema internacional de unidades ($t$ en milímetros) Remitirse a la sección F.4.5.3.3.1 para la definición de las otras variables.
 
 **F.4.5.3.4** — Cortante y tensión en pernos — La resistencia nominal del perno, $P_{n}$ , resultante del cortante, la tensión o una combinación de cortante y tensión, se calculará de acuerdo con lo estipulado en esta sección.
 
-![Ecuación F.4.5.3-14](img/ec-F.4.5.3-14.png)
+$$ P_{n}=A_{b}F_{n} \tag{F.4.5.3-14} $$
 
 Donde:
 
@@ -3281,7 +3281,7 @@ Los correspondientes factores de resistencia, $φ$ , se muestran en la tabla F.4
 
 (b) Cuando los pernos están sujetos a una combinación de cortante y tensión, $F_{n}$ , se obtiene a partir de $F_{nt}'$ en la siguiente ecuación F.4.5.3-15 como sigue:
 
-![Ecuación F.4.5.3-15](img/ec-F.4.5.3-15.png)
+$$ F'_{nt}=1.3F_{nt}-\dfrac{F_{nt}}{\phi F_{nv}}f_{v}\le F_{nt} \tag{F.4.5.3-15} $$
 
 Donde:
 
@@ -3367,23 +3367,23 @@ $F_{u2}$ = resistencia última del miembro que no está en contacto con la cabez
 
 Para $t_{2}/t_{1}≤1.0$, $P_{ns}$ se tomará como el menor valor de:
 
-![Ecuación F.4.5.4-1](img/ec-F.4.5.4-1.png)
+$$ P_{ns}=4.2(t_{2}^{3}d)^{1/2}F_{u2} \tag{F.4.5.4-1} $$
 
-![Ecuación F.4.5.4-2](img/ec-F.4.5.4-2.png)
+$$ P_{ns}=2.7t_{1}dF_{u1} \tag{F.4.5.4-2} $$
 
-![Ecuación F.4.5.4-3](img/ec-F.4.5.4-3.png)
+$$ P_{ns}=2.7t_{2}dF_{u2} \tag{F.4.5.4-3} $$
 
 Para $t_{2}/t_{1}≥2.5$, $P_{ns}$ se tomará como el menor valor de:
 
-![Ecuación F.4.5.4-4](img/ec-F.4.5.4-4.png)
+$$ P_{ns}=2.7t_{1}dF_{u1} \tag{F.4.5.4-4} $$
 
-![Ecuación F.4.5.4-5](img/ec-F.4.5.4-5.png)
+$$ P_{ns}=2.7t_{2}dF_{u2} \tag{F.4.5.4-5} $$
 
 Para $1.0<t_{2}/t_{1}<2.5$, $P_{ns}$ se calculará mediante interpolación lineal entre los dos casos presentados anteriormente
 
 **F.4.5.4.3.2** — Conexión a cortante limitada por la distancia al borde de la parte conectada — La resistencia nominal a cortante por tornillo, $P_{ns}$, no excederá la calculada de acuerdo con la ecuación F.4.5.4-6, donde la distancia al borde de la parte conectada es paralela a la línea de la fuerza aplicada.
 
-![Ecuación F.4.5.4-6](img/ec-F.4.5.4-6.png)
+$$ \begin{gathered}P_{ns}=teF_{u} \\ \phi =0.50\end{gathered} \tag{F.4.5.4-6} $$
 
 Donde:
 
@@ -3401,11 +3401,11 @@ En lugar de los valores suministrados en la sección F.4.5.4, se permitirá la d
 
 **F.4.5.4.4.1** — Desgarramiento del tornillo — La resistencia nominal al desgarramiento del tornillo, $P_{not}$, se calculará como sigue:
 
-![Ecuación F.4.5.4-7](img/ec-F.4.5.4-7.png)
+$$ P_{not}=0.85t_{c}dF_{u2} \tag{F.4.5.4-7} $$
 
 **F.4.5.4.4.2** — Desgarramiento del material en contacto con la cabeza o la arandela — La resistencia nominal al desgarramiento del material en contacto con la cabeza del tornillo o la arandela, $P_{nov}$, se calculará como sigue:
 
-![Ecuación F.4.5.4-8](img/ec-F.4.5.4-8.png)
+$$ P_{nov}=1.5t_{1}d'_{w}F_{u1} \tag{F.4.5.4-8} $$
 
 Donde:
 
@@ -3413,7 +3413,7 @@ $d_{w}'$ = Diámetro efectivo al desgarramiento del material en contacto con la 
 
 (a) Para un tornillo con cabeza redonda, cabeza hexagonal (figura F.4.5.4-1(1)), o cabeza hexagonal con arandela integrada (figura F.4.5.4-1(2)) con una arandela de acero macizo e independiente debajo de la cabeza
 
-![Ecuación F.4.5.4-9](img/ec-F.4.5.4-9.png)
+$$ d'_{w}=d_{h}+2t_{w}+t_{1}\le d_{w} \tag{F.4.5.4-9} $$
 
 Donde:
 
@@ -3439,7 +3439,7 @@ En lugar de los valores suministrados en la sección F.4.5.4, se permitirá la d
 
 **F.4.5.4.5** — Comportamiento combinado entre el Cortante y el desgarramiento del material en contacto con la cabeza o la arandela — Para conexiones atornilladas sujetas a una combinación de fuerzas cortantes y de tensión deben cumplirse los siguientes requisitos:
 
-![Ecuación F.4.5.4-10](img/ec-F.4.5.4-10.png)
+$$ \dfrac{\bar{Q}}{P_{ns}}+0.71\dfrac{\bar{T}}{P_{nov}}\le 1.10\phi \tag{F.4.5.4-10} $$
 
 Adicionalmente, $Q$ y $T$ no deben exceder las correspondientes resistencias de diseño determinadas conforme a las secciones F.4.5.4.3 y F.4.5.4.4, respectivamente.
 
@@ -3451,11 +3451,11 @@ $T$ = resistencia requerida a tensión de la conexión, $T=T_{u}$
 
 $P_{ns}$ = resistencia nominal a cortante de la conexión
 
-![Ecuación F.4.5.4-11](img/ec-F.4.5.4-11.png)
+$$ =2.7t_{1}dF_{u1} \tag{F.4.5.4-11} $$
 
 $P_{nov}$ = resistencia nominal al desgarramiento del material en contacto con la cabeza o la arandela de la conexión
 
-![Ecuación F.4.5.4-12](img/ec-F.4.5.4-12.png)
+$$ =1.5t_{1}d_{w}F_{u1} \tag{F.4.5.4-12} $$
 
 Donde:
 
@@ -3469,11 +3469,11 @@ $φ =0.65$ La ecuación F.4.5.4-10 es válida para conexiones que estén dentro 
 
 **F.4.5.5.1** — Rotura a cortante — En conexiones de extremos de vigas donde una o más aletas están recortadas y la falla puede ocurrir a lo largo de un plano a través de los sujetadores, la resistencia nominal a cortante, $V_{n}$ , se debe calcular conforme a la ecuación F.4.5.5-1.
 
-![Ecuación F.4.5.5-1](img/ec-F.4.5.5-1.png)
+$$ \begin{gathered}V_{n}=0.6F_{u}A_{wn} \\ \phi =0.75\end{gathered} \tag{F.4.5.5-1} $$
 
 Donde:
 
-![Ecuación F.4.5.5-2](img/ec-F.4.5.5-2.png)
+$$ A_{wn}=(h_{wc}-nd_{h})t \tag{F.4.5.5-2} $$
 
 $h_{wc}$= altura del alma plana recortada
 
@@ -3491,9 +3491,9 @@ $t$ = espesor del alma recortada
 
 La resistencia nominal a la ruptura por bloque de cortante, $R_{n}$ , se determinará como el menor valor entre las ecuaciones F.4.5.5-3 y F.4.5.5-4.
 
-![Ecuación F.4.5.5-3](img/ec-F.4.5.5-3.png)
+$$ R_{n}=0.6F_{y}A_{gv}+F_{u}A_{nt} \tag{F.4.5.5-3} $$
 
-![Ecuación F.4.5.5-4](img/ec-F.4.5.5-4.png)
+$$ R_{n}=0.6F_{u}A_{nv}+F_{u}A_{nt} \tag{F.4.5.5-4} $$
 
 Para conexiones pernadas $φ =0.65$ Para conexiones soldadas $φ =0.60$ Donde:
 
@@ -3518,3 +3518,1368 @@ La resistencia nominal a la tensión del sujetador y la resistencia nominal de a
 Los ensayos pueden realizarse por medio de un laboratorio independiente o por un laboratorio de pruebas del fabricante.
 
 Las disposiciones de este capítulo no se deben aplicar a diafragmas de acero formados en frío. Para estos elementos, se debe remitir a las especificaciones de la sección F.4.4.5
+
+#### F.4.6.1 — ENSAYOS PARA DETERMINACIÓN DEL COMPORTAMIENTO ESTRUCTURAL
+
+**F.4.6.1.1** — Diseño con Coeficientes de Carga y Resistencia (DCCR) — Cuando se requiera determinar el comportamiento estructural mediante ensayos se debe seguir el procedimiento descrito a continuación:
+
+(a) La evaluación de los resultados debe basarse en el valor promedio de los datos obtenidos del ensayo con no menos de tres especímenes idénticos, siempre y cuando la desviación entre el resultado de cualquier ensayo individual y el valor promedio de todo el estudio no exceda ±15%.
+
+Si tal desviación del valor promedio excede el 15% deben hacerse más pruebas de la misma clase hasta que la desviación entre el resultado de cualquier ensayo individual y el promedio obtenido de todo el estudio no exceda el 15% o hasta que, al menos, se hayan realizado tres ensayos adicionales. Ningún resultado de ensayo será eliminado a menos que existan bases sólidas para su exclusión. El valor promedio de todos los ensayos será considerado, entonces, como la resistencia nominal, $R_{n}$ , para la serie de pruebas. El valor $R_{n}$ y el coeficiente de variación $V_{p}$ de los resultados de la prueba se deberán determinar por medio de un análisis estadístico.
+
+(b) La resistencia de los elementos ensayados, conjuntos, conexiones, o miembros deben satisfacer la ecuación F.4.6.1-1:
+
+$$ \sum \gamma _{i}Q_{i}\le \phi R_{n} \tag{F.4.6.1-1} $$
+
+Donde:
+
+$∑γ_{i}Q_{i}$ = resistencia requerida basada en la combinación de carga más crítica y determinada de acuerdo con la sección F.4.1.5.1.2. $γ_{i}$ y $Q_{i}$ son factores de carga y efectos de carga, respectivamente.
+
+$φ$ = factor de resistencia
+
+$$ =C_{\phi }(M_{m}F_{m}P_{m})e^{-\beta _{o}}\sqrt{V_{M}^{2}+V_{F}^{2}+C_{P}V_{P}^{2}+V_{Q}^{2}} \tag{F.4.6.1-2} $$
+
+Donde:
+
+$Cφ$ = coeficiente de calibración = $1.52$ = $1.6$ para vigas con la aleta en tensión sujeta, en toda su longitud, a un tablero metálico o panel de cerramiento y con la aleta en compresión no arriostrada lateralmente
+
+$M_{m}$ = valor medio del factor de material, $M$ , presentado en la tabla F.4.6.1-1 para el tipo de componente involucrado
+
+$F_{m}$ = valor medio del factor de fabricación, $F$ , presentado en la tabla F.4.6.1-1 para el tipo de componente involucrado
+
+$P_{m}$ = valor medio del factor profesional, $P$ , para el componente ensayado = $1.0$
+
+$e$ = base de logaritmo natural = $2.718$
+
+$β_{o}$ = índice de confiabilidad del objetivo = $2.5$ para miembros estructurales y $3.5$ para conexiones = $1.5$ para vigas con la aleta en tensión sujeta, en toda su longitud, a un tablero metálico o panel de cerramiento y con la aleta en compresión no arriostrada lateralmente
+
+$V_{M}$ = coeficiente de variación del factor de material presentado en la tabla F.4.6.1-1 para el tipo de componente involucrado
+
+$V_{F}$ = coeficiente de variación del factor de fabricación presentado en la tabla F.4.6.1-1 para el tipo de componente involucrado
+
+$C_{p}$ = factor de corrección
+
+$$ =(1+1/n)m/(m-2)\text{ para }n\ge 4 \tag{F.4.6.1-3} $$
+
+= $5.7$ para $n=3$ Donde:
+
+$n$ = número de ensayos
+
+$m$ = grados de libertad = $n−1$
+
+$V_{p}$ = coeficiente de variación de los resultados de la prueba, no menor al 6.5%
+
+$V_{Q}$ = coeficiente de variación del efecto de la carga = $0.21$ = $0.43$ para vigas con la aleta en tensión sujeta, en toda su longitud, a un tablero metálico o panel de cerramiento y con la aleta en compresión no arriostrada lateralmente
+
+$R_{n}$ = valor promedio de todos los resultados de la prueba Los valores registrados en la tabla F.4.6.1-1 no excluirán la utilización de otros datos estadísticos documentados si estos últimos son establecidos a partir de suficientes resultados sobre las propiedades del material y su fabricación.
+
+Para aceros que no estén listados en la sección F.4.1.2.1, los valores $M_{m}$ y $V_{m}$ serán determinados por análisis estadístico de los materiales usados.
+
+Cuando algunas distorsiones interfieren con el adecuado funcionamiento del espécimen en su uso real, los efectos de la carga basados en la combinación de carga crítica y la incidencia de la distorsión aceptable también deben satisfacer la ecuación F.4.6.1-1, excepto que el factor de resistencia $φ$ se tomará como la unidad y el factor de carga para la carga muerta se tomará como 1.0
+
+(c) Las propiedades mecánicas de la lámina de acero se determinarán con base en muestras representativas del material tomado del espécimen de prueba o la lámina plana usada para formar el espécimen de prueba. Las propiedades mecánicas reportadas por el proveedor del acero no se usarán en la evaluación de los resultados del ensayo. Si el esfuerzo de fluencia del acero del cual se forman las secciones ensayadas es mayor que el valor especificado, los resultados de la prueba se deberán disminuir al esfuerzo de fluencia mínimo especificado del acero que el fabricante pretende utilizar. Los resultados de la prueba no se aumentarán si el esfuerzo de fluencia del espécimen de prueba es menor que el esfuerzo de fluencia mínimo especificado.
+
+Deben hacerse ajustes similares con base en la resistencia última en aquellos casos donde ésta sea el factor crítico. Deben considerarse también las variaciones que puedan presentarse entre el espesor de diseño y el espesor de los especímenes usados en las pruebas.
+
+**Tabla F.4.6.1-1**
+
+Datos estadísticos para la determinación del factor de resistencia
+
+| Tipo de Componente | $M_{m}$ | $V_{m}$ | $F_{m}$ | $V_{F}$ |
+|---|---|---|---|---|
+| Rigidizadores transversales | 1.10 | 0.10 | 1.00 | 0.05 |
+| Rigidizadores de cortante | 1.00 | 0.06 | 1.00 | 0.05 |
+| Miembros a tensión | 1.10 | 0.10 | 1.00 | 0.05 |
+| Miembros a flexión |  |  |  |  |
+| Resistencia a la flexión | 1.10 | 0.10 | 1.00 | 0.05 |
+| Resistencia al pandeo lateral torsional | 1.00 | 0.06 | 1.00 | 0.05 |
+| Una aleta sujeta en toda su longitud a un panel o Tablero | 1.10 | 0.10 | 1.00 | 0.05 |
+| Resistencia a cortante | 1.10 | 0.10 | 1.00 | 0.05 |
+| Flexión y cortante combinados | 1.10 | 0.10 | 1.00 | 0.05 |
+| Resistencia a arrugamiento del alma | 1.10 | 0.10 | 1.00 | 0.05 |
+| Arrugamiento del alma y flexión combinados | 1.10 | 0.10 | 1.00 | 0.05 |
+| Miembros en compresión cargados concéntricamente | 1.10 | 0.10 | 1.00 | 0.05 |
+| Carga axial y flexión combinados | 1.05 | 0.10 | 1.00 | 0.05 |
+
+... continúa
+
+**Tabla F.4.6.1-1** — (continuación)
+
+Datos estadísticos para la determinación del factor de resistencia
+
+| Tipo de Componente | $M_{m}$ | $V_{m}$ | $F_{m}$ | $V_{F}$ |
+|---|---|---|---|---|
+| Miembros tubulares cilíndricos |  |  |  |  |
+| Resistencia a flexión | 1.10 | 0.10 | 1.00 | 0.05 |
+| Compresión axial | 1.10 | 0.10 | 1.00 | 0.05 |
+| Parales de muros y ensambles de parales de muros |  |  |  |  |
+| Parales de muro en compresión | 1.10 | 0.10 | 1.00 | 0.05 |
+| Parales de muro en flexión | 1.10 | 0.10 | 1.00 | 0.05 |
+| Parales de muro con carga axial y flexión Combinados | 1.05 | 0.10 | 1.00 | 0.05 |
+| Miembros estructurales no listados en esta tabla | 1.00 | 0.10 | 1.00 | 0.05 |
+| Conexiones soldadas |  |  |  |  |
+| Puntos de soldadura de arco |  |  |  |  |
+| Resistencia a cortante de soldaduras | 1.10 | 0.10 | 1.00 | 0.10 |
+| Resistencia última a tensión de soldaduras | 1.10 | 0.10 | 1.00 | 0.10 |
+| Falla de placas | 1.10 | 0.08 | 1.00 | 0.15 |
+| Cordones de soldadura de arco |  |  |  |  |
+| Resistencia a cortante de las soldaduras | 1.10 | 0.10 | 1.00 | 0.10 |
+| Desgarramiento de placa | 1.10 | 0.10 | 1.00 | 0.10 |
+| Soldaduras de filete |  |  |  |  |
+| Resistencia a cortante de las soldaduras | 1.10 | 0.10 | 1.00 | 0.10 |
+| Falla de placas | 1.10 | 0.08 | 1.00 | 0.15 |
+| Soldaduras de ranura abocinada |  |  |  |  |
+| Resistencia a cortante de las soldaduras | 1.10 | 0.10 | 1.00 | 0.10 |
+| Falla de placas | 1.10 | 0.10 | 1.00 | 0.10 |
+| Soldaduras por resistencia | 1.10 | 0.10 | 1.00 | 0.10 |
+| Conexiones con pernos |  |  |  |  |
+| Resistencia a cortante del perno | 1.10 | 0.08 | 1.00 | 0.05 |
+| Resistencia última a tensión del perno | 1.10 | 0.08 | 1.00 | 0.05 |
+| Mínimo espaciamiento y distancia al borde | 1.10 | 0.08 | 1.00 | 0.05 |
+| Resistencia a la tensión en la sección neta | 1.10 | 0.08 | 1.00 | 0.05 |
+| Resistencia al aplastamiento | 1.10 | 0.08 | 1.00 | 0.05 |
+| Conexiones atornilladas |  |  |  |  |
+| Resistencia a cortante del tornillo | 1.10 | 0.10 | 1.00 | 0.10 |
+| Resistencia última a tensión del tornillo | 1.10 | 0.10 | 1.00 | 0.10 |
+| Mínimo espaciamiento y distancia al borde | 1.10 | 0.10 | 1.00 | 0.10 |
+| Resistencia a tensión en la sección neta | 1.10 | 0.10 | 1.00 | 0.10 |
+| Resistencia ante inclinación y aplastamiento | 1.10 | 0.08 | 1.00 | 0.05 |
+| Desgarramiento del tornillo | 1.10 | 0.10 | 1.00 | 0.10 |
+| Desgarramiento del material en contacto con la cabeza del tornillo o la arandela | 1.10 | 0.10 | 1.00 | 0.10 |
+| Cortante y fuerzas de desgarramiento del material en contacto con la cabeza o arandela combinados | 1.10 | 0.10 | 1.00 | 0.10 |
+| Conexiones no listadas en esta tabla | 1.10 | 0.10 | 1.00 | 0.15 |
+
+#### F.4.6.2 — ENSAYOS DE CONFIRMACIÓN DEL COMPORTAMIENTO ESTRUCTURAL
+
+Para miembros estructurales, conexiones y conjuntos para los cuales la resistencia nominal se calcula de acuerdo con las disposiciones de este Reglamento o sus referencias específicas, se permitirá la realización de ensayos de confirmación para demostrar que la resistencia no es menor a la resistencia nominal, $R_{n}$ , especificada en este Reglamento o sus referencias específicas para el tipo de comportamiento en estudio.
+
+#### F.4.6.3 — ENSAYOS PARA DETERMINACIÓN DE LAS PROPIEDADES MECÁNICAS
+
+**F.4.6.3.1** — Sección completa — Los ensayos para la determinación de las propiedades mecánicas de las secciones completas a ser utilizadas en el numeral F.4.1.6.2 serán realizados de acuerdo con lo descrito a continuación:
+
+(a) Los procedimientos de la prueba a tensión deben estar de acuerdo con la norma NTC 3353 (ASTM A370-05)
+
+(b) Las determinaciones del esfuerzo de fluencia a compresión se harán por medio de ensayos de compresión sobre especímenes cortos1 de la sección completa.
+
+El esfuerzo de fluencia a compresión se tomará como el menor valor de la resistencia máxima a compresión dividida por el área de la sección transversal o el esfuerzo definido por alguno de los dos siguientes métodos (1) Para aceros con fluencia bien definida el esfuerzo de fluencia se determina por el método del diagrama autográfico o por el método de deformación total bajo cargas.
+
+(2) Para aceros con fluencia gradual, el esfuerzo se determina por el método de deformación bajo carga o por el método de la paralela al 0.2%.
+
+Cuando se utilice el método de deformación total bajo carga, el esfuerzo de fluencia determinado no debe tener una diferencia mayor al 5% con respecto al esfuerzo de fluencia determinado por el método de la paralela al 0.2%.
+
+(c) Cuando el efecto principal sobre el miembro corresponda a esfuerzos de flexión para cargas de servicio, el esfuerzo de fluencia se determinará sólo para las aletas. Para la determinación de tal esfuerzo de fluencia cada espécimen consistirá de una aleta completa, más una porción del alma con una relación de ancho plano tal que el valor de $ρ$ para el espécimen sea igual a la unidad.
+
+(d) Para propósitos de aceptación y control debe hacerse un ensayo de sección completa por cada rollo madre
+
+(e) Se permitirá, como opción del fabricante, el uso de ensayos, ya sean de tensión o compresión, para aprobación de rutina y propósitos de control, siempre y cuando el fabricante demuestre que tales ensayos indican de manera confiable el esfuerzo de fluencia de la sección cuando está sujeta a la clase de esfuerzo bajo el cual va a ser utilizado el miembro.
+
+**F.4.6.3.2** — Elementos planos de secciones formadas — Los ensayos para la determinación de las propiedades mecánicas de elementos planos de secciones formadas y las propiedades mecánicas representativas del acero virgen a ser usadas en la sección F.4.1.6.2 serán realizados de acuerdo con esta sección.
+
+El esfuerzo de fluencia de partes planas, $F_{yf}$, se establecerá por medio de un promedio ponderado de los esfuerzos de fluencia de muestras para ensayo de tensión estándar, tomadas longitudinalmente de las porciones planas de un miembro representativo formado en frío. El promedio ponderado será la suma de los productos del esfuerzo de fluencia promedio para cada porción plana multiplicado por el área de la sección transversal, dividida por el área total de las partes planas en la sección transversal. El número exacto de tales muestras de ensayo dependerá de la forma del miembro. En la sección transversal debe tomarse al menos una muestra de la mitad de cada parte plana. Si el esfuerzo real de fluencia virgen excede el esfuerzo de fluencia mínimo especificado, el esfuerzo de fluencia de las partes planas, $F_{yf}$, será ajustado multiplicando los valores del ensayo por la relación del esfuerzo de fluencia mínimo especificado al esfuerzo real de fluencia virgen.
+
+**F.4.6.3.3** — Acero virgen — Las siguientes disposiciones aplicarán a aceros producidos de manera diferente a los listados en la sección F.4.1.2.1, bajo especificaciones NTC (o ASTM), y utilizados en secciones para las cuales el esfuerzo de fluencia incrementado del acero después del formado en frío se calcula a partir de las propiedades del acero virgen de acuerdo con la sección F.4.1.6.2. Para propósitos de aceptación y control, deben tomarse al menos cuatro especímenes a tensión de cada rollo madre para el establecimiento de los valores representativos del esfuerzo de fluencia a tensión virgen y la resistencia última a tensión. Las muestras de ensayo deben ser tomadas longitudinalmente a una distancia del borde externo del rollo igual a la cuarta parte del ancho.
+
+1 Para mayor información sobre este ensayo remitirse al documento AISI S902
+
+### F.4.7 — TABLEROS METÁLICOS PARA TRABAJO EN SECCIÓN COMPUESTA
+
+Las disposiciones de esta parte del Reglamento se aplican a losas o diafragmas diseñados y construidos con un tablero metálico sobre el cual se hace un vaciado en concreto. Todo lo estipulado en esta sección está de acuerdo con los numerales F.4.1 a F.4.5 de esta norma, excepto donde se indique lo contrario.
+
+Los planos deben especificar claramente la solución técnica del sistema y mostrar los detalles de instalación así, como los accesorios a utilizar.
+
+#### F.4.7.1 — ALCANCE
+
+Esta parte del Reglamento se refiere a tableros de acero para entrepisos de comportamiento compuesto. El tablero es formado en frío y actúa como una formaleta permanente y como el refuerzo positivo a flexión para el concreto estructural. Cuando se sujeta adecuadamente, el tablero en acero también actúa como una plataforma de trabajo para las diferentes actividades en la construcción. Después que el concreto ha curado genera un vínculo con el tablero en acero debido a la geometría del panel metálico, medios mecánicos, adherencia superficial o por una combinación de todos estos medios. La figura F.4.7.1-1 muestra la sección transversal típica de una losa en comportamiento compuesto con un tablero en acero.
+
+![Figura F.4.7.1-1 — Sección transversal de losa o entrepiso en comportamiento compuesto con un tablero](img/figF.4.7.1-1.png)
+
+Figura F.4.7.1-1 — Sección transversal de losa o entrepiso en comportamiento compuesto con un tablero metálico
+
+#### F.4.7.2 — MATERIALES
+
+El tablero de acero para entrepisos de comportamiento compuesto debe ser fabricado siguiendo los lineamientos estipulados en las secciones F.4.1 a F.4.5 de esta norma, a menos que se indique algo diferente en esta sección. El acero utilizado para su formación debe tener un esfuerzo mínimo de fluencia de 230 MPa (33 ksi). El espesor mínimo de la lámina, aceptado para fabricación del tablero metálico de trabajo en sección compuesta, corresponde a un espesor de acero base de 0.71 mm (tipo o calibre 22), de acuerdo con la sección F.4.7.2.1 y la tabla F.4.7.2-2.
+
+**F.4.7.2.1** — Tolerancias – Las tolerancias aplicables en la fabricación del tablero se encuentran consignadas en la tabla F.4.7.2-1:
+
+**Tabla F.4.7.2-1**
+
+Tolerancias de fabricación del tablero
+
+| Longitud del panel | $±12$ mm |
+|---|---|
+| Espesor | No debe ser menor al 95% del espesor de diseño |
+| Ancho útil del panel | $+20$ mm , $−10$ mm |
+| Flecha y curvatura | $6$ mm en $3.00$ m de longitud |
+| Extremo del panel fuera de escuadra | $10$ mm por metro de ancho del panel |
+
+Si la literatura publicada del producto no muestra el espesor del material sin recubrimiento en milímetros (o décimas de pulgada), pero sí presenta en una lista los números del tipo o calibre, el espesor del acero antes del recubrimiento en pintura o metal (espesor base de acuerdo con la sección F.4.1.2.4) deberá estar en concordancia con lo estipulado en la tabla F.4.7.2-2
+
+**Tabla F.4.7.2-2**
+
+Espesores de diseño y mínimos aceptables del material antes del recubrimiento
+
+| Tipo o calibre | Espesor de diseño |  | Espesor mínimo |  |
+|---|---|---|---|---|
+|  | mm | Pulg | mm | Pulg |
+| 22 | 0.75 | 0.0295 | 0.71 | 0.0280 |
+| 21 | 0.84 | 0.0329 | 0.79 | 0.0311 |
+| 20 | 0.91 | 0.0358 | 0.86 | 0.0340 |
+| 19 | 1.06 | 0.0418 | 1.01 | 0.0398 |
+| 18 | 1.20 | 0.0474 | 1.14 | 0.0449 |
+| 17 | 1.37 | 0.0538 | 1.30 | 0.0512 |
+| 16 | 1.52 | 0.0598 | 1.44 | 0.0567 |
+
+**F.4.7.2.2** — Acabados — El acabado sobre el tablero de acero para entrepiso de comportamiento compuesto debe ser especificado por el diseñador y debe ser adecuado para el medio ambiente en que se encuentre la estructura.
+
+Debido a que el tablero es el refuerzo a flexión para la losa, este debe ser diseñado para trabajar durante toda la vida útil de la estructura. El acabado mínimo debe ser un recubrimiento galvanizado en zinc G60 (Z180), de acuerdo con la norma NTC 4011 (ASTM A653/A653M)
+
+#### F.4.7.3 — DISEÑO DEL TABLERO COMO FORMALETA
+
+Las propiedades de la sección del tablero de acero se deben calcular de acuerdo a lo dispuesto en las secciones F.4.2 a F.4.5 de este Reglamento.
+
+![Figura F.4.7.3-1 — Diagramas de carga, momentos, deflexiones y reacciones durante la](img/figF.4.7.3-1.png)
+
+Figura F.4.7.3-1 — Diagramas de carga, momentos, deflexiones y reacciones durante la construcción con un tablero metálico para entrepiso
+
+**F.4.7.3.1** — Diseño por Esfuerzos Admisibles (DEA — Debe considerarse la interacción del cortante y la flexión en los cálculos. El esfuerzo debido a la flexión no excederá 0.6 veces el esfuerzo de fluencia de diseño, $F_{y}$ , con un máximo de 250 MPa, bajo las cargas combinadas del concreto fresco, el panel metálico y las siguientes cargas vivas mínimas de construcción: 1.0 kPa de carga uniformemente distribuida o una carga concentrada de 2.2 kN en un ancho de 1.0 m. Remitirse a la figura F.4.7.3-1 para las condiciones de carga durante la construcción cuando el tablero trabaja como formaleta. El tablero metálico debe ser seleccionado para soportar una carga mínima distribuida de 2.4 kPa. Para luces simples la carga del concreto fresco debe ser como mínimo la menor de su peso propio incrementado en un 50% ó 1.5 kPa.
+
+**F.4.7.3.2** — Diseño con Coeficientes de Carga y Resistencia (DCCR) — Las factores de carga a emplear para las condiciones de construcción mostradas en la figura F.4.7.3-1 deben estar de acuerdo con el Título B de este Reglamento. Se debe verificar la interacción entre el cortante y la flexión. La resistencia requerida se debe calcular teniendo en cuenta las cargas combinadas del concreto fresco, el panel metálico y las siguientes cargas vivas mínimas de construcción: 1.0 kPa de carga uniformemente distribuida o una carga concentrada de 2.2 kN en un ancho de 1.0 m. El tablero metálico debe ser seleccionado para soportar una carga mínima distribuida de 2.4 kPa. Para luces simples la carga del concreto fresco debe ser como mínimo la menor de su peso propio incrementado en un 50% ó 1.5 kPa.
+
+Los factores de resistencia para flexión, cortante y apoyo interior se deben determinar de acuerdo con lo requerido por las secciones F.4.3 a F.4.5 de esta especificación.
+
+**F.4.7.3.3** — Deflexiones — Las deflexiones teóricas calculadas para el tablero de acero trabajando como formaleta deben basarse en el peso del concreto fresco, determinado a partir del espesor de diseño de la losa, y el peso propio del panel metálico uniformemente cargado en todas las luces (véase figura F.4.7.3-1 columna 2). Las deflexiones deben limitarse a la menor entre $L /180$ ó 20 mm, medidas con respecto a los miembros de apoyo. Para el cálculo de las deflexiones no se toman en cuenta las cargas de construcción debido a su naturaleza temporal.
+
+**F.4.7.3.4** — Longitud mínima de apoyo — Las longitudes mínimas de apoyo se deben determinar de acuerdo con las disposiciones de la sección F.4.3.3.4 de esta norma. Para el cálculo de estas longitudes se debe utilizar la carga del concreto fresco, el peso propio del panel metálico, y una carga de construcción de 1.0 kPa. (véase la figura F.4.7.3-1 columna 3) Se recomienda un apoyo mínimo de 40 mm para prevenir el deslizamiento de la lámina con respecto a su apoyo, sin embargo, este debe ser calculado siguiendo las disposiciones del párrafo anterior. El tablero de acero debe ser sujetado de manera adecuada para evitar su deslizamiento. La capacidad de arrugamiento del alma del tablero, en apoyos interiores, puede ser incrementada un 33% debido a cargas temporales de construcción.
+
+#### F.4.7.4 — ALMACENAMIENTO EN SITIO E INSTALACIÓN
+
+**F.4.7.4.1** — Almacenamiento en sitio — El paquete de tableros en acero debe estar separado del terreno con un extremo elevado para proveer el suficiente drenaje y protegido contra la intemperie con una cubierta impermeable, lo suficientemente ventilado para evitar la condensación.
+
+**F.4.7.4.2** — Instalación del tablero — Cada unidad de tablero debe ser colocada sobre la estructura de soporte. Debe ajustarse a su posición final, con sus traslapos longitudinales bien alineados y los extremos apoyados sobre los miembros estructurales sin escalonamientos sobre los apoyos. Todos los paneles metálicos deben estar alineados longitudinalmente en los diferentes vanos.
+
+**F.4.7.4.3** — Bordes extremos a tope — Las láminas del panel deben estar a tope sobre los apoyos. Debe tenerse en cuenta la máxima tolerancia en la longitud de 12 mm (remitirse a la sección F.4.7.2.1) El traslapo sobre los apoyos de las láminas no es conveniente debido a los resaltos de cortante (repujado en el alma) o que el perfil de la sección transversal puede evitar el ajuste lámina a lámina. El espacio entre láminas traslapadas puede hacer más difícil la operación de sujeción mediante soldadura. Los espacios entre bordes extremos de láminas son aceptables, pudiendo requerirse la colocación de cintas especiales para el sello de la junta.
+
+**F.4.7.4.4** — Anclaje — Las láminas del tablero para entrepiso deben estar ancladas a los miembros de soporte (incluyendo estructuras de acero y/o muros de carga en el perímetro longitudinal y no sólo transversal), ya sea por soldadura o por sujetadores mecánicos. Esta sujeción debe hacerse inmediatamente después de la alineación. El anclaje mínimo para la instalación de la lámina se especifica en la sección F.4.7.4.4.1. No debe caminarse o estacionarse sobre el tablero de acero hasta que se hayan realizado estos anclajes mínimos. Las unidades del tablero metálico con separaciones entre apoyos mayores a 1.5 m deberán tener sujetadores longitudinales en los traslapos lámina a lámina y lámina a borde perimetral (el perímetro con el miembro estructural de acero o concreto), en la mitad de la luz o a intervalos de 1.0 m, la menor de las dos. Estos sujetadores longitudinales se colocaran a partir del centro de la luz hacia los apoyos.
+
+Bajo ninguna circunstancia deben dejarse láminas no sujetadas, garantizándose siempre el anclaje de los tableros. El objetivo del sujetador en el traslapo longitudinal es prevenir deflexiones diferenciales entre las láminas o tableros durante el vaciado del concreto y por lo tanto evitar la separación de la junta longitudinal.
+
+No se deben admitir los huecos causados por soldadura durante las operaciones de sujeción de lámina. Debe seleccionarse un sistema adecuado de anclaje.
+
+**F.4.7.4.4.1** — Soldadura — Los procedimientos de soldadura estarán estrictamente de acuerdo con las especificaciones de la sección F.4.5 de este Reglamento, o un su defecto a lo dispuesto en el numeral F.2. Se requiere un punto de soldadura mínimo de 15 mm de diámetro, o equivalente, en las crestas laterales del tablero metálico sobre el apoyo, más un número adicional de puntos de soldadura intermedios hasta obtener un espaciamiento promedio de 300 mm. El máximo espaciamiento entre puntos adyacentes de sujeción no excederá los 460 mm. Cuando se utilicen soldaduras de filete deben ser de al menos 25 mm de longitud. El metal de aporte penetrará todas las capas de material del tablero en el final del traslapo longitudinal sobre el apoyo y tendrá una buena fusión a los miembros estructurales de soporte. Se deben utilizar arandelas para soldar sobre todas las unidades de tablero con espesor base de 0.71 mm (calibre 22). Las arandelas tendrán un espesor mínimo de 1.50 mm (calibre 16), y un diámetro nominal de perforación de 10 mm.
+
+**F.4.7.4.4.2** — Sujetadores mecánicos — Los sujetadores mecánicos (tornillos, sujetadores anclados neumáticamente o accionados con pólvora) pueden utilizarse como medios de anclaje, siempre y cuando el tipo y espaciamiento del sujetador satisfaga el criterio de diseño. Para la aprobación de su uso, el fabricante del sujetador deberá presentar los ensayos documentados, formulas de diseño y tablas.
+
+#### F.4.7.5 — DISEÑO DEL TABLERO Y CONCRETO COMO UNA UNIDAD COMPUESTA
+
+**F.4.7.5.1** — Generalidades — El sistema de entrepiso compuesto se debe diseñar como una losa de concreto reforzado con el tablero de acero actuando como el refuerzo positivo. Las losas deben diseñarse como sistemas de luces simples o continuas bajo cargas uniformes. La altura o espesor de la losa corresponde a la distancia medida desde la parte inferior del tablero metálico hasta el plano superior del concreto.
+
+Las consideraciones especiales para cargas concentradas (sección F.4.7.7.4) y comportamiento como diafragma requieren un análisis adicional. La capacidad de carga horizontal debe analizarse con procedimientos racionales aceptados2. Su comportamiento como diafragma debe ser aprobado por el ingeniero diseñador.
+
+Si el diseñador requiere un sistema de losa continuo sobre los apoyos, debe garantizarse la presencia de refuerzo negativo utilizando las ecuaciones convencionales del concreto reforzado, de acuerdo con lo estipulado en el Título C de esta norma. La malla electro-soldada, en caso de seleccionarse como el refuerzo por temperatura, no garantiza por sí sólo la suficiente área de acero para lograr el comportamiento como losa continua (ver sección F.4.7.5.5). El tablero metálico no puede considerarse como refuerzo en compresión para el caso de voladizos. Debe tenerse especial cuidado con cargas provenientes de cielos falsos en voladizos del sistema de entrepiso compuesto.
+
+Los procedimientos de diseño de este numeral no se pueden aplicar a sistemas de losa de entrepiso sin conectores de cortante unidos al sistema de apoyo, sin la presencia de barreras para el fraguado del concreto u otras restricciones. Las losas deben estar unidas a su sistema de apoyo, así sea con los anclajes mínimos por construcción del numeral F.4.7.4.4. En caso de que no se consideren conectores de cortante para el 2 Información al respecto puede encontrarse en el SDI Diaphragm Design Manual, Third Edition.
+
+diseño, la capacidad de carga por unidad de área debe determinarse mediante ensayos de adherencia concreto-lámina o por el método de esfuerzos admisibles (DEA) (sección F.4.7.5.6.1). La presencia de conectores de cortante en una cuantía adecuada garantiza el alcance de la resistencia de diseño a flexión en la sección transversal de la losa. Debe utilizarse el apropiado factor de resistencia, $φ$ , para la determinación de la resistencia de diseño.
+
+**F.4.7.5.2** — Ensayos — El fabricante podrá utilizar los criterios de diseño aplicables para determinar la resistencia del sistema de losa (ver sección F.4.7.5.6) o, alternativamente, el fabricante deberá realizar, bajo supervisión profesional, un número suficiente de ensayos con el sistema losa-tablero para garantizar su comportamiento compuesto.
+
+**F.4.7.5.2.1** — Determinación de la carga — La capacidad de carga sobreimpuesta disponible se determinará con los procedimientos estándar de diseño del concreto reforzado, mediante el uso de factores de resistencia de diseño o factores de seguridad, según sea aplicable, y factores de reducción basados en la presencia, ausencia, o espaciamiento de los conectores de cortante sobre las vigas perpendiculares al tablero, tal como se muestra en la sección F.4.7.5.6.
+
+**F.4.7.5.3** — Concreto — El concreto estará de acuerdo con lo estipulado en el Título C de este Reglamento. La resistencia mínima a compresión, $f_{c}'$ , será de 21 MPa o lo que se requiera para resistencia al fuego o durabilidad. No se deben utilizar aditivos que contengan sales clorhídricas.
+
+**F.4.7.5.3.1** — Recubrimiento mínimo — El recubrimiento mínimo de concreto sobre la cresta del tablero metálico debe ser de 50 mm. Cuando se requiera refuerzo adicional para momento negativo, el recubrimiento mínimo de concreto sobre estas barras será de 20 mm.
+
+**F.4.7.5.4** — Deflexiones — Las deflexiones del sistema de losa compuesto no excederán $L /360$ bajo la carga sobreimpuesta. Para el sistema compuesto estas deflexiones pueden calcularse utilizando el promedio de la inercia agrietada y no agrietada, cuando se use el procedimiento de la sección transformada.
+
+**F.4.7.5.5** — Refuerzo por retracción y temperatura — El refuerzo por retracción y temperatura deberá consistir de una malla electro-soldada o barras de refuerzo, con un área mínima de 0.00075 veces el área del concreto sobre el tablero metálico , pero no debe ser menor que una malla con un área de 59.3 mm2 de acero por metro de ancho de losa.
+
+Alternativamente, pueden utilizarse fibras de acero en lugar de la malla de refuerzo para efectos de retracción y temperatura de acuerdo a las especificaciones NTC 5214 (ASTM A820)3, en una cuantía mínima de 14.8 kg/m3, o fibras macro sintéticas , hechas a partir de poliolefino virgen, con un diámetro equivalente entre 0.4 mm y 1.25 mm con una relación de aspecto mínima (longitud/diámetro equivalente) de 50, en una cuantía mínima de 2.4 kg/m3.
+
+**F.4.7.5.6** — Flexión
+
+**F.4.7.5.6.1** — Método de Diseño por Esfuerzos Admisibles (DEA) — La resistencia admisible a flexión se debe determinar con la siguiente ecuación:
+
+$$ M_{adm}=CF_{y}S_{c} \tag{F.4.7.5-1} $$
+
+Donde
+
+$M_{adm}$= resistencia admisible a flexión4
+
+$F_{y}$ = esfuerzo de fluencia de diseño determinado en la sección F.4.1.6.1
+
+$S_{c}$ = módulo elástico mínimo de la sección transversal transformada agrietada
+
+$C$ = factor de seguridad 3 NTC 5214 – Fibras de acero para concreto reforzado 4 No existe una correlación entre las capacidades de carga halladas por los dos diferentes métodos de diseño, DCCR o DEA.
+
+Si no se considera la presencia de conectores de cortante en el diseño $C=0.60$. Si estos se consideran $C$ puede tomarse igual a $0.75$ .
+
+**F.4.7.5.6.2** — Método de Diseño con Coeficientes de Carga y Resistencia (DCCR) – La resistencia de diseño a flexión se debe calcular a partir de los procedimientos estándar de diseño de concreto reforzado del Título C de este Reglamento y las combinaciones de carga de acuerdo con lo establecido en el Título B de este Reglamento. La resistencia de diseño a flexión, cuando se dispone de conectores en la cuantía suficiente para alcanzar la capacidad máxima de la sección transversal, como se especifica en F.4.7.5.6-3, se debe determinar a partir de la ecuación F.4.7.5-2:
+
+$$ \phi M_{n}=\phi A_{s}F_{y}(d-a/2) \tag{F.4.7.5-2} $$
+
+Donde:
+
+$φ_{M}$ = resistencia de diseño a flexión ancho unitario.
+
+$φ$ = factor de resistencia, $φ =0.85$
+
+$F_{y}$ = esfuerzo de fluencia de diseño determinado en la sección F.4.1.6.1
+
+$d$ = distancia desde la parte superior de la losa de concreto hasta el centroide del tablero metálico
+
+$A_{s}$ = área transversal del tablero metálico
+
+$$ a=A_{s}F_{y}/(0.85f'_{c}b) \tag{F.4.7.5-3} $$
+
+Donde:
+
+$f_{c}'$ = resistencia a compresión del concreto, mínimo 21 MPa
+
+$b$ = ancho unitario de la zona a compresión de concreto (usualmente, 1.0 m = 1000 mm) Adicionalmente, la resistencia de diseño a flexión cuando no se dispone o no se toman en cuenta los conectores de cortante, se determina mediante:
+
+$$ \phi M_{n}=\phi S_{c}F_{y} \tag{F.4.7.5-4} $$
+
+Donde:
+
+$φ =0.85$
+
+$F_{y}$ = esfuerzo de fluencia de diseño determinado en la sección F.4.1.6.1
+
+$S_{c}$ = módulo elástico mínimo de la sección transversal transformada agrietada Debido a la escasez de ensayos sobre tableros metálicos calibre 16 (1.50 mm) y a que la profundidad de los resaltes de cortante (repujado en el alma) requerida para desarrollar la capacidad a momento en la sección transversal, sin incluir los conectores de cortante, podría no ser suficiente en este espesor de lámina, los valores máximos de resistencia a flexión deben ser los obtenidos para el sistema con un tablero en calibre 18 (1.20 mm). El fabricante sólo podrá publicar tablas de carga y capacidades máximas limitadas a las máximas obtenidas para un sistema de entrepiso con un tablero de 1.2 mm (calibre 18) de espesor. Las propiedades para el diseño de la sección transversal del tablero metálico, deben ser suministradas por el fabricante del producto.
+
+Se puede realizar una interpolación lineal entre las ecuaciones F.4.7.5-2 y F.4.7.5-4 para obtener la resistencia a flexión de una losa con conectores de cortante en un número no suficiente para alcanzar la resistencia nominal máxima a flexión de la sección transversal.
+
+**F.4.7.5.6.3** — Conectores de cortante — El número requerido de pernos conectores de cortante de diámetro de 19 mm por metro de ancho para anclar la losa de manera que pueda alcanzarse la resistencia nominal a flexión en la sección transversal, será estimado por la siguiente ecuación:
+
+$$ N_{s}=F_{y}(A_{s}-A_{webs}/2-A_{bf})/(142.58(f'_{c}E_{c})^{1/2}) \tag{F.4.7.5-5} $$
+
+Donde:
+
+$N_{s}$ = número de pernos conectores de 19 mm requerido por metro de ancho
+
+$A_{s}$ = área de acero en mm2 por metro de ancho
+
+$A_{webs}$= área de las almas en mm2 por metro de ancho
+
+$A_{bf}$= área de acero de la aleta inferior en mm2 por metro de ancho
+
+$F_{y}$ = esfuerzo de fluencia de diseño en MPa determinado en la sección F.4.1.6.1
+
+$E_{c}$ = módulo de elasticidad del concreto en MPa de acuerdo con el Título C de este Reglamento.
+
+El valor de $A_{s}$ se calcula con base en el ancho plano del material. Las propiedades de la sección transversal, para la determinación del número requerido de conectores de cortante, deben ser suministradas por el fabricante del producto, o en su defecto, este presentará esquemas o planos de la sección para el cálculo de las áreas en la obtención de $N_{s}$ .
+
+**F.4.7.5.7** — Cortante — El área de concreto disponible para cortante se obtiene a partir de la figura F.4.7.5-1. Debido a que el refuerzo negativo puede o no utilizarse, queda a discreción del diseñador revisar si el área de concreto sobre cualquier barra de acero debe ser deducida del área de concreto disponible para resistir fuerzas cortantes. La resistencia de diseño a cortante, $φV_{n}$, es la resistencia a cortante vertical total del sistema de entrepiso compuesto, multiplicada por un factor de resistencia. Esta resistencia será la suma de las capacidades a cortante del tablero metálico y del concreto, calculada mediante la ecuación F.4.7.5-6:
+
+$$ \phi V_{n}=\phi V_{tab}+\phi V_{c} \tag{F.4.7.5-6} $$
+
+Donde:
+
+$φ$ = factor de resistencia, $φ =0.85$
+
+$φV_{n}$= resistencia de diseño a cortante del sistema de entrepiso compuesto
+
+$φV_{tab}$ = resistencia de diseño a cortante del tablero metálico de acuerdo con lo especificado en F.4.3.3.2.1
+
+$φV_{c}$= resistencia de diseño a cortante suministrada por el concreto, que puede calcularse como:
+
+$$ \phi V_{c}=\phi \dfrac{\sqrt{f'_{c}}}{6}A_{c} \tag{F.4.7.5-7} $$
+
+Donde:
+
+$f_{c}'$ = resistencia a compresión del concreto en MPa, mínimo 21 MPa
+
+$A_{c}$ = área de concreto disponible para cortante en mm2 obtenida de la figura F.4.7.5-1 (a) (b) (c) Figura F.4.7.5-1 — Áreas disponibles para cortante
+
+**F.4.7.5.8** — Cortante y momento flector combinados
+
+**F.4.7.5.8.1** — Método de Diseño por Esfuerzos Admisibles (DEA) — La ecuación de interacción para cortante y momento flector es la siguiente:
+
+$$ \begin{gathered}\sqrt{\left(\dfrac{\Omega _{b}M}{M_{n}}\right)^{2}+\left(\dfrac{\Omega _{v}V}{V_{n}}\right)^{2}}\le 1.0 \\ \Omega _{v}=1.60 \\ \Omega _{b}=1.67\end{gathered} \tag{F.4.7.5-8} $$
+
+Donde:
+
+$V$ = resistencia requerida a cortante
+
+$M$ = resistencia requerida a flexión
+
+$V_{n}$ = resistencia nominal a cortante de acuerdo con la sección F.4.7.5.7
+
+$M_{n}$ = resistencia a flexión para DEA
+
+$$ =F_{y}S_{c} \tag{F.4.7.5-9} $$
+
+$F_{y}$ y $S_{c}$ se definen en la sección F.4.7.5.6.1 La ecuación F.4.7.5-8 se debe utilizar para la interacción del tablero metálico actuando como formaleta (etapa de construcción) y también cuando está trabajando con el concreto como sistema compuesto.
+
+**F.4.7.5.8.2** — Método de Diseño con Coeficientes de Carga y Resistencia (DCCR) — La ecuación de interacción entre cortante y momento flector es:
+
+$$ \sqrt{\left(\dfrac{\bar{M}}{\phi _{b}M_{n}}\right)^{2}+\left(\dfrac{\bar{V}}{\phi _{v}V_{n}}\right)^{2}}\le 1.0 \tag{F.4.7.5-10} $$
+
+$φ_{v}=0.95$
+
+$φ_{b}=0.95$ Donde:
+
+$V$ = resistencia requerida a cortante, $V=V_{u}$
+
+$M$ = resistencia requerida a flexión, $M=M_{u}$
+
+$V_{n}$ = resistencia nominal a cortante de acuerdo con la sección F.4.7.5.7
+
+$M_{n}$ = resistencia nominal a flexión de acuerdo con la sección F.4.7.5.6.2 La ecuación F.4.7.5-10 se debe utilizar para la interacción del tablero metálico actuando como formaleta (etapa de construcción) y también cuando está trabajando con el concreto como sistema compuesto.
+
+#### F.4.7.6 — PROCEDIMIENTO CONSTRUCTIVO
+
+**F.4.7.6.1** — Apuntalamiento temporal — En caso de requerirse apuntalamiento temporal para la condición mínima de carga sobreimpuesta al tablero de 2.4 kPa, este debe estar asegurado en el sitio antes de empezar la instalación de los tableros. El apuntalamiento debe diseñarse e instalarse de acuerdo con los procedimientos de apuntalamiento para concreto reforzado estipulados en el Título C de este Reglamento. El apuntalamiento debe permanecer en su sitio hasta que el concreto alcance el 75% de su resistencia especificada a compresión y durante un mínimo de 7 días.
+
+**F.4.7.6.2** — Limpieza — Antes del vaciado del concreto el tablero de acero debe estar libre de tierra, escombros, agua estancada, residuos por operaciones de taladrado o algún otro material extraño.
+
+**F.4.7.6.3** — Vaciado del concreto — Debe tenerse especial cuidado durante el vaciado del concreto de manera que el tablero no esté sujeto a ningún impacto que exceda su capacidad de diseño. El concreto debe colocarse desde un bajo nivel con respecto al panel metálico, para evitar impactos. El vaciado debe realizarse de manera uniforme sobre la estructura de soporte y desde allí extenderse hacia el centro de la luz del tablero. Si se utilizan equipos menores de acarreo de material deben colocarse tablones para el tránsito de estos. Los equipos solo pueden operar sobre esta plataforma. Los tablones serán de una rigidez adecuada para transferir las cargas al tablero metálico sin causar daño. Deben evitarse todos los daños por una inadecuada colocación del concreto.
+
+#### F.4.7.7 — CONSIDERACIONES ADICIONALES
+
+**F.4.7.7.1** — Estacionamientos — El uso del sistema de entrepiso compuesto es apropiado para edificios de estacionamientos. La experiencia práctica ha mostrado un comportamiento excelente. Para su uso en edificios de parqueaderos deben tenerse en cuenta las siguientes consideraciones:
+
+(1) Las losas deben diseñarse como sistemas de luces continuas con refuerzo para momento negativo sobre los apoyos.
+
+(2) En caso de ser necesario, se debe suministrar refuerzo adicional para detener el agrietamiento causado por grandes diferencias de temperatura y para garantizar una mejor distribución de las cargas (3) En zonas con alta presencia salina (agua marina) deben tomarse medidas de protección. Se recomienda un galvanizado mínimo G90 (Z275), de acuerdo con la norma NTC 4011 (ASTM A653/A653M) y recubrir la parte inferior del tablero con una pintura durable. Las medidas de protección deben mantenerse durante toda la vida útil de la estructura.
+
+**F.4.7.7.2** — Voladizos — En el caso de voladizos, el tablero solo debe trabajar como formaleta permanente, y debe suministrarse el refuerzo negativo que se requiera para soportar la condición de carga. No se debe considerar al tablero como refuerzo en compresión.
+
+El esfuerzo máximo admisible en la sección transversal del tablero metálico, actuando como formaleta en voladizo, debe ser 138 MPa (20 000 lb/pulg2) calculado bajo las cargas combinadas del peso propio del concreto fresco, el peso propio del tablero metálico y 1.0 kPa o el peso propio del concreto fresco, el peso propio del tablero metálico y una carga puntual, aplicada en el extremo del voladizo, de 2200 N por metro de ancho, la más crítica de ambas combinaciones. La deflexión máxima en el borde libre es $L /120$ , donde $L$ es la longitud del voladizo, bajo las cargas del peso propio del concreto y el peso propio del tablero. Se supone un ancho de apoyo de 89 mm para la revisión por arrugamiento del alma con una carga combinada del peso propio del concreto, el peso propio del tablero metálico y 1.0 kPa. Si el ancho del apoyo es menor a 89 mm debe consultarse con el fabricante del tablero metálico.
+
+**F.4.7.7.3** — Vigas y viguetas en sección compuesta — Las secciones del sistema de entrepiso compuesto son apropiadas para su uso con vigas en sección compuesta.
+
+**F.4.7.7.4** — Cargas concentradas — La figura F.4.7.7-1 muestra los anchos efectivos de distribución de una carga concentrada. Este análisis debe hacerse cuando se apliquen al sistema cargas sobreimpuestas mayores de 20 kPa. El área obtenida para el acero de distribución mediante este procedimiento no debe ser inferior a $0.00075A_{c}'$ , donde $A_{c}'$ es el área de concreto (por ancho unitario) sobre las crestas del tablero metálico, la cual es diferente al área de concreto $A_{c}$ disponible para cortante. Las fórmulas para los anchos de distribución efectiva son las siguientes:
+
+$$ b_{m}=b_{2}+2t_{c}+2t_{t} \tag{F.4.7.7-1} $$
+
+$$ \text{Flexión en una luz simple: }b_{e}=b_{m}+2(1-x/L)x \tag{F.4.7.7-2} $$
+
+Donde $x$ es distancia de localización de la carga con respecto al apoyo
+
+$$ \text{Flexión en luces continuas: }b_{e}=b_{m}+(4/3)(1-x/L)x \tag{F.4.7.7-3} $$
+
+$$ \text{Cortante: }b_{e}=b_{m}+(1-x/L)x \tag{F.4.7.7-4} $$
+
+Pero en ningún caso:
+
+$$ b_{e}>2.71(t_{c}/h)\text{, en metros} \tag{F.4.7.7-5a} $$
+
+Momento alrededor del eje débil:
+
+$$ M=\dfrac{Pb_{e}}{15w} \tag{F.4.7.7-6} $$
+
+Donde:
+
+$$ w=\dfrac{L}{2}+b_{3}\text{, pero no debe superar el valor de }L \tag{F.4.7.7-7} $$
+
+**F.4.7.7.5** — Tubería — Pueden colocarse conductos en el sistema de losa cuando el tamaño del tubo sea de 25.4 mm o menor en diámetro, o menor a 1/3 del recubrimiento del concreto, sin atravesar valles del tablero, y esté espaciado 460 mm como mínimo, con un recubrimiento mínimo de 19 mm, excepto que las especificaciones de diseño limiten a una condición más exigente.
+
+![Figura F.4.7.7-1 — Distribución de cargas concentradas (continua ...)](img/figF.4.7.7-1.png)
+
+Figura F.4.7.7-1 — Distribución de cargas concentradas (continua ...)
+
+![Figura F.4.7.7-1 — Distribución de cargas concentradas (continuación)](img/figF.4.7.7-1.png)
+
+Figura F.4.7.7-1 — Distribución de cargas concentradas (continuación)
+
+### F.4.8 — ESPECIFICACIONES PARA CONSTRUCCIÓN DE ENTRAMADOS DE ACERO
+
+FORMADO EN FRÍO, SISTEMAS DE CONSTRUCCIÓN EN SECO Y ENTRAMADOS DE CERCHAS
+
+#### F.4.8.1 — GENERALIDADES
+
+Las disposiciones de esta sección son aplicables al diseño e instalación de miembros estructurales y no estructurales para entramados de acero formado en frío5, en los que el espesor mínimo del acero esté entre 0.46 mm y 3.00 mm. Los miembros cubiertos por esta sección incluyen parales de secciones C, viguetas, canales guía, secciones en U, secciones omega, ángulos y otros miembros de comportamiento similar.
+
+#### F.4.8.2 — MATERIALES
+
+**F.4.8.2.1** — Especificaciones del material — Los miembros estructurales y no estructurales se deben formar en frío a partir de láminas de acero de acuerdo con los requisitos de la norma ASTM A1003 / A1003M.
+
+**F.4.8.2.2** — Espesor del acero base — Los miembros estructurales y no estructurales se deben forma en frío a partir de láminas de acero con el espesor mínimo listado en la tabla F.4.8.2-1.
+
+5 Especificaciones para entramados de sistemas de construcción en seco (Drywall)
+
+**Tabla F.4.8.2-1**
+
+Espesores estándar
+
+| Espesor de diseño |  | Espesor mínimo del acero base |  |
+|---|---|---|---|
+| mm | pulgadas | mm | pulgadas |
+| 0.478 | 0.0188 | 0.455 | 0.0179 |
+| 0.719 | 0.0283 | 0.683 | 0.0269 |
+| 0.792 | 0.0312 | 0.752 | 0.0296 |
+| 0.879 | 0.0346 | 0.836 | 0.0329 |
+| 1.146 | 0.0451 | 1.087 | 0.0428 |
+| 1.438 | 0.0566 | 1.367 | 0.0538 |
+| 1.811 | 0.0713 | 1.720 | 0.0677 |
+| 2.583 | 0.1017 | 2.454 | 0.0966 |
+| 3.155 | 0.1242 | 2.997 | 0.1180 |
+
+**F.4.8.2.3** — Protección contra corrosión — Los miembros estructurales y no estructurales deben cumplir con los requisitos mínimos de recubrimiento metálico listados en la tabla F.4.8.2-2 (masa de recubrimiento por unidad de área). Se permite el uso de recubrimientos alternativos si se demuestra su equivalencia.
+
+**Tabla F.4.8.2-2**
+
+Requerimientos mínimos de recubrimientos metálicos (masa por unidad de área)
+
+| Designación de Material | Designación del recubrimiento |
+|---|---|
+| Tipo H y Tipo L | G60 [Z180]A AZ50 [AZM150]B |
+| Tipo NS | G40 [Z120]A AZ50 [AZM150)B |
+
+A Laminas de acero recubiertas en zinc de acuerdo con la especificación NTC 4011 (ASTM A653/A653M) B Láminas de acero recubiertas con aleación 55% aluminio-zinc de acuerdo con la especificación NTC 4015 (ASTM A792/A792M)
+
+#### F.4.8.3 — PRODUCTOS
+
+**F.4.8.3.1** — Designación del producto — Para referenciar los miembros estructurales y no estructurales, debe utilizarse una nomenclatura de cuatro partes, que identifique el tamaño (tanto altura del alma como ancho de aleta), estilo, y espesor, de acuerdo a los siguientes códigos secuenciales:
+
+Un primer número de 3 ó 4 dígitos indicando la altura del alma del miembro en milímetros, seguido de una letra que indica:
+
+$P$ = miembro de un entramado, paral o vigueta, con pestañas
+
+$G$ = sección canal guía
+
+$U$ = sección canal o paral de un entramado sin pestañas
+
+$O$ = sección omega
+
+$L$ = sección en ángulo Un tercer número de 3 ó 4 dígitos que indica el ancho de aleta en milímetros, seguido por un guión, y un último número indicando el espesor en milímetros.
+
+Cuando se utilicen miembros para aplicaciones estructurales, debe especificarse el grado (resistencia) del material en todos los documentos y planos.
+
+**F.4.8.3.2** — Geometría estándar — La geometría estándar para miembros estructurales y no estructurales se muestra en la figura F.4.8.3-1 y puede corresponder a cualquier combinación de las dimensiones básicas listadas en las tablas F.4.8.3-1 a F.4.8.3-5, dependiendo del tipo de miembro.
+
+![Figura F.4.8.3-1 — Miembros típicos para entramados de lámina formada en frío.](img/figF.4.8.3-1.png)
+
+Figura F.4.8.3-1 — Miembros típicos para entramados de lámina formada en frío.
+
+**Tabla F.4.8.3-1**
+
+Dimensiones estándar para parales y viguetas en sección C (P)
+
+| Altura del Alma (Altura de diseño) |  |
+|---|---|
+| mm | Pulg |
+| 41.3 | 1-5/8 |
+| 63.5 | 2-1/2 |
+| 88.9 | 3-1/2 |
+| 92.1 | 3-5/8 |
+| 102 | 4 |
+| 140 | 5-1/2 |
+| 152 | 6 |
+| 203 | 8 |
+| 254 | 10 |
+| 305 | 12 |
+| 356 | 14 |
+
+| Ancho de Aleta (Ancho de diseño) |  |
+|---|---|
+| mm | Pulg |
+| 31.8 | 1-1/4 |
+| 34.9 | 1-3/8 |
+| 41.3 | 1-5/8 |
+| 50.8 | 2 |
+| 63.5 | 2-1/2 |
+| 76.2 | 3 |
+| 88.9 | 3-1/2 |
+
+**Tabla F.4.8.3-2**
+
+Dimensiones estándar para canales guía (G)
+
+| Altura del Alma (Altura de diseño) |  |
+|---|---|
+| mm | Pulg |
+| 41.3 | 1-5/8 |
+| 63.5 | 2-1/2 |
+| 88.9 | 3-1/2 |
+| 92.1 | 3-5/8 |
+| 102 | 4 |
+| 140 | 5-1/2 |
+| 152 | 6 |
+| 203 | 8 |
+| 254 | 10 |
+| 305 | 12 |
+| 356 | 14 |
+
+| Ancho de Aleta (Ancho de diseño) |  |
+|---|---|
+| mm | Pulg |
+| 31.8 | 1-1/4 |
+| 50.8 | 2 |
+| 63.5 | 2-1/2 |
+| 76.2 | 3 |
+
+**Tabla F.4.8.3-3**
+
+Dimensiones estándar para secciones U (U)
+
+| Altura del Alma (Altura de diseño) |  |
+|---|---|
+| mm | Pulg |
+| 19.1 | 3/4 |
+| 38.1 | 1-1/2 |
+| 50.8 | 2 |
+| 63.5 | 2-1/2 |
+
+| Ancho de Aleta (Ancho de diseño) |  |
+|---|---|
+| mm | Pulg |
+| 12.7 | 1/2 |
+| 19.1 | 3/4 |
+
+**Tabla F.4.8.3-4**
+
+Dimensiones estándar para perfiles omega (O)
+
+| Altura del Alma (Altura de diseño) |  |
+|---|---|
+| mm | Pulg |
+| 22.2 | 7/8 |
+| 38.1 | 1-1/2 |
+
+| Ancho de Aleta (Ancho de diseño) |  |
+|---|---|
+| mm | Pulg |
+| 31.8 | 1-1/4 |
+
+**Tabla F.4.8.3-5**
+
+Dimensiones estándar para ángulos (L)
+
+| Ancho de Aleta “A” |  |
+|---|---|
+| mm | Pulg |
+| 15.9 | 5/8 |
+| 22.2 | 7/8 |
+| 34.9 | 1-3/8 |
+| 38.1 | 1-1/2 |
+| 50.8 | 2 |
+| 76.2 | 3 |
+
+| Ancho de Aleta “B” |  |
+|---|---|
+| mm | Pulg |
+| 15.9 | 5/8 |
+| 22.2 | 7/8 |
+| 34.9 | 1-3/8 |
+| 38.1 | 1-1/2 |
+| 50.8 | 2 |
+| 76.2 | 3 |
+
+**F.4.8.3.3** — Radio interno de doblez — El tamaño del radio interno de doblez utilizado para el diseño debe cumplir con los requisitos mostrados en la tabla F.4.8.3-6.
+
+**Tabla F.4.8.3-6**
+
+Radio interno de doblez para diseño
+
+| Espesor de diseño | Radio interno de doblez |  |
+|---|---|---|
+| mm (pulg) | mm | Pulg |
+| 0.478 (0.0188) | 2.141 | 0.0843 |
+| 0.719 (0.0283) | 2.022 | 0.0796 |
+| 0.792 (0.0312) | 1.984 | 0.0781 |
+| 0.879 (0.0346) | 1.941 | 0.0764 |
+| 1.146 (0.0451) | 1.808 | 0.0712 |
+| 1.438 (0.0566) | 2.156 | 0.0849 |
+| 1.811 (0.0713) | 2.715 | 0.1069 |
+| 2.583 (0.1017) | 3.874 | 0.1525 |
+| 3.155 (0.1242) | 4.732 | 0.1863 |
+
+**F.4.8.3.4** — Longitud de la pestaña — La longitud de la pestaña en un miembro estructural o no estructural, paral o vigueta, en sección C debe estar relacionada con el ancho de aleta, tal como se muestra en la tabla F.4.8.3-7.
+
+**Tabla F.4.8.3-7**
+
+Longitud de diseño de la pestaña para parales y viguetas en secciones C
+
+| Sección | Ancho de aleta |  | Longitud de diseño de la pestaña |  |
+|---|---|---|---|---|
+|  | mm | pulg | mm | pulg |
+| P31.8 | 31.8 | 1-1/4 | 4.8 | 3/16 |
+| P34.9 | 34.9 | 1-3/8 | 9.5 | 3/8 |
+| P41.3 | 41.3 | 1-5/8 | 12.7 | 1/2 |
+| P50.8 | 50.8 | 2 | 15.9 | 5/8 |
+| P63.5 | 63.5 | 2-1/2 | 15.9 | 5/8 |
+| P76.2 | 76.2 | 3 | 15.9 | 5/8 |
+| P88.9 | 88.9 | 3-1/2 | 25.4 | 1 |
+
+**F.4.8.3.5** — Perforaciones — Las perforaciones realizadas por el fabricante deben cumplir con las siguientes condiciones, a menos que el fabricante especifique otras distintas:
+
+(1) Las perforaciones deben realizarse a lo largo del eje longitudinal del alma del miembro de entramado.
+
+(2) Las perforaciones deben tener un espaciamiento centro a centro no menor a 600 mm.
+
+(3) Las perforaciones deben tener un ancho no mayor a la mitad de la altura del miembro ó 63.5 mm, el que sea menor.
+
+(4) Las perforaciones deben tener una longitud no mayor a 114 mm.
+
+(5) La distancia desde el centro de la última perforación hasta el extremo final del miembro estructural no debe ser menor a 305 mm, a menos que se especifique algo diferente.
+
+Se permite cualquier configuración o combinación de perforaciones que se ajusten a las limitaciones, en anchos y longitud, anteriormente expuestas.
+
+**F.4.8.3.6** — Marcación del producto
+
+**F.4.8.3.6.1** — Miembros estructurales — Los miembros estructurales deben ser marcados de manera legible con la siguiente información mínima:
+
+(1) Fabricante (Nombre, logotipo o iniciales) (2) Espesor del acero base (3) Esfuerzo mínimo de fluencia (no es necesario si es Grado 33 [230 MPa]) (4) Recubrimiento (no es necesario si es G60 [Z180])
+
+**F.4.8.3.6.2** — Miembros no estructurales — Los miembros no estructurales deben ser marcados de manera legible con la siguiente información mínima:
+
+(1) Fabricante (Nombre, logotipo o iniciales) (2) Espesor del acero base (3) Esfuerzo mínimo de fluencia (no es necesario si es Grado 33 [230 MPa]) (4) Recubrimiento (no es necesario si es G40 [Z120])
+
+**F.4.8.3.6.3** — Codificación por colores — Cuando se utiliza una codificación por colores para miembros o paquetes de miembros similares debe utilizarse la clasificación presentada en la tabla F.4.8.3-8.
+
+**Tabla F.4.8.3-8**
+
+Codificación estándar por colores
+
+| Espesor de diseño mm | Color |
+|---|---|
+| 0.478 | Ninguno |
+| 0.719 | Negro |
+| 0.792 | Rosado |
+| 0.879 | Blanco |
+| 1.146 | Amarillo |
+| 1.438 | Verde |
+| 1.811 | Naranja |
+| 2.583 | Rojo |
+| 3.155 | Azul |
+
+**F.4.8.3.7** — Tolerancias de fabricación — Los miembros estructurales deben cumplir con las tolerancias de fabricación listadas en la tabla F.4.8.3-9. Los miembros no estructurales deberán cumplir con las tolerancias de fabricación listadas en la tabla F.4.8.3-10.
+
+**Tabla F.4.8.3-9**
+
+Tolerancias de fabricación para miembros estructurales
+
+| DimensiónA | Ítem revisado | Parales, mm | Canales Guías, mm |
+|---|---|---|---|
+| A | Longitud | +2.38 | +12.7 |
+|  |  | -2.38 | -6.35 |
+| BB | Altura del alma | +0.79 | +0.79 |
+|  |  | -0.79 | +3.18 |
+| C | Acampanado | +1.59 | +0 |
+|  | Exceso en doblez | -1.59 | -2.38 |
+| D | Ancho a centro de hueco | +1.59 | NA |
+|  |  | -1.59 | NA |
+| E | Longitud de centro de huecos | +6.35 | NA |
+|  |  | -6.35 | NA |
+| F | Corona | +1.59 | +1.59 |
+|  |  | -1.59 | -1.59 |
+| G | Curvatura lateral | 2.6 por m | 2.6 por m |
+|  |  | 12.7 max. | 12.7 max. |
+| H | Arco | 2.6 por m | 2.6 por m |
+|  |  | 12.7 max. | 12.7 max. |
+| I | Torsión (giro axial) | 2.6 por m | 2.6 por m |
+|  |  | 12.7 max. | 12.7 max. |
+
+A Todas las medidas deben ser tomadas a una distancia no menor de 305mm desde el extremo B Dimensión entre caras externas para Parales, caras internas para Canales Guía
+
+![Figura F.4.8.3-2 — Tolerancias de fabricación para miembros estructurales](img/figF.4.8.3-2.png)
+
+Figura F.4.8.3-2 — Tolerancias de fabricación para miembros estructurales
+
+**Tabla F.4.8.3-10**
+
+Tolerancias de fabricación para miembros no estructurales
+
+| DimensiónA | Ítem revisado | Parales, mm | Canales Guías, mm |
+|---|---|---|---|
+| A | Longitud | +3.18 | +25.4 |
+|  |  | -6.35 | -6.35 |
+| BB | Altura del alma | +0.79 | +3.18 |
+|  |  | -0.79 | -0 |
+| C | Acampanado | +1.59 | +0 |
+|  | Exceso en doblez | -1.59 | -4.76 |
+| D | Ancho a centro de hueco | +3.18 | NA |
+|  |  | -3.18 | NA |
+| E | Longitud de centro de huecos | +6.35 | NA |
+|  |  | -6.35 | NA |
+| F | Corona | +3.18 | +3.18 |
+|  |  | -3.18 | -3.18 |
+| G | Curvatura lateral | 2.6 por m | 2.6 por m |
+|  |  | 12.7 max. | 12.7 max. |
+| H | Arco | 2.6 por m | 2.6 por m |
+|  |  | 12.7 max. | 12.7 max. |
+| I | Torsión (giro axial) | 2.6 por m | 2.6 por m |
+|  |  | 12.7 max. | 12.7 max. |
+
+A Todas las medidas deben ser tomadas a una distancia no menor de 305 mm desde el extremo B Dimensión entre caras externas para parales, caras internas para Canales Guía
+
+![Figura F.4.8.3-3 — Tolerancias de fabricación para miembros no estructurales](img/figF.4.8.3-3.png)
+
+Figura F.4.8.3-3 — Tolerancias de fabricación para miembros no estructurales
+
+#### F.4.8.4 — DISEÑO
+
+La determinación de las resistencias de los miembros para sistemas de entramado estará de acuerdo con lo estipulado en los numerales F.4.1, F.4.2, F.4.3 y F.4.4 de este Reglamento, excepto cuando sea modificado en esta sección.
+
+**F.4.8.4.1** — Propiedades de la sección — Para secciones C y otras secciones transversales con geometría simple (véase figura F.4.8.3-1), las propiedades se determinan de acuerdo con los métodos convencionales del diseño estructural. Estas propiedades deben basarse en las secciones transversales totales, excepto cuando se requiera el uso de una sección transversal reducida o se requiera un ancho efectivo de diseño de acuerdo con las especificaciones de los numerales F.4.2 a F.4.4 de este Reglamento. Para otras geometrías de sección transversal, las propiedades deben basarse en ensayos, de acuerdo con la sección F.4.6.
+
+**F.4.8.4.2** — Diseño de parales de muros — Los miembros para sistemas de entramado estarán de acuerdo con lo especificado en este Reglamento. Los miembros deben estar en buenas condiciones. Los miembros dañados deberán reemplazarse o repararse de acuerdo con el diseño aprobado. Los parales de muros deben diseñarse con base en un diseño completamente en acero o arriostrado por los tableros. Las almas no deben tener perforaciones, o en caso de tenerlas deben estar de acuerdo con lo dispuesto en las secciones F.4.2 a F.4.5.
+
+(a) Diseño completamente en acero — Los conjuntos con parales de muros que utilicen el criterio de un comportamiento completamente en acero se deben diseñar sin tomar en cuenta el arriostramiento estructural y/o la contribución de la acción compuesta de los tableros a los que están unidos.
+
+(b) Diseño arriostrado por tableros — Los conjuntos con parales de muro que utilicen un criterio que incluya al tablero, se deben diseñar suponiendo que se instalan tableros idénticos a ambos lados del paral y están conectados a los miembros horizontales ubicados en la parte superior e inferior del muro para proveer soporte lateral y torsional al paral en el plano del muro. Los parales cuyos tableros de cerramiento laterales instalados a ambos lados no sean idénticos se deben diseñar suponiendo que el más débil de los dos tableros está sujeto a ambos lados.
+
+Cuando se utiliza un diseño arriostrado por tableros, los planos deben especificar el tablero como un elemento estructural. Sin embargo, se deben revisar los parales sin considerar el arriostramiento debido al tablero, para la siguiente combinación de carga:
+
+$$ 1.2D+(0.5L\text{ ó }0.2G)+0.2W \tag{F.4.8.4-1} $$
+
+Donde:
+
+$D$ = carga muerta
+
+$L$ = carga viva
+
+$G$ = carga de granizo
+
+$W$ = carga de viento
+
+**F.4.8.4.2.1** — Carga axial — Ambos extremos del paral deben estar restringidos contra rotación alrededor del eje longitudinal del miembro, así como desplazamiento perpendicular al mismo.
+
+(a) Para parales en compresión, considerando el diseño completamente en acero, la capacidad de carga axial se define en las secciones F.4.3.4 y F.4.4.4.1. La longitud efectiva, $KL$ , se determina por medio de un análisis adecuado y/o ensayos, o en la ausencia de éstos, $K_{x}$ , $K_{y}$ y $K_{t}$ se deben tomar igual a la unidad. La longitud no arriostrada con respecto al eje principal, $L_{x}$ , se debe tomar como la distancia entre apoyos extremos del miembro, mientras que las longitudes no arriostradas $L_{y}$ y $L_{t}$ se deben tomar como las distancias entre riostras.
+
+(b) Para parales en compresión, considerando el arriostramiento de los tableros, la resistencia axial se debe determinar de acuerdo con las disposiciones de esta sección.
+
+La resistencia axial se debe calcular de acuerdo con la sección F.4.3.4. La longitud no arriostrada con respecto al eje principal, $L_{x}$ , se debe tomar como la distancia entre apoyos extremos del miembro.
+
+La longitud no arriostrada con respecto al eje menor, $L_{y}$ y la longitud no arriostrada para torsión, $L_{t}$ , se deben tomar como el doble de la distancia entre los conectores del tablero. Los coeficientes de pandeo $K_{x}$ , $K_{y}$ y $K_{t}$ se deben tomar igual a la unidad.
+
+Para prevenir fallas de la conexión paral-tablero, cuando se instalen tableros iguales de yeso a ambos lados del muro, con tornillos espaciados centro a centro 305 mm como máximo, la carga nominal axial máxima en el paral de muro se debe limitar a los valores dados en la tabla F.4.8.4-1.
+
+**Tabla F.4.8.4-1**
+
+Carga nominal axial máxima por capacidad de la conexión paral-tablero en yeso
+
+| Tablero en Yeso | Tamaño del tornillo | Carga nominal (especificada) axial máxima por paral |
+|---|---|---|
+| 12.7 mm | No. 6 | 25.8 kN |
+| 12.7 mm | No. 8 | 29.8 kN |
+| 15.9 mm | No. 6 | 30.2 kN |
+| 15.9 mm | No. 8 | 34.7 kN |
+
+**F.4.8.4.2.2** — Flexión — Para diseño completamente en acero se seguirán los lineamientos de la sección F.4.3.3.1.2.1 y F.4.3.3.1.4, para la determinación de la resistencia a flexión.
+
+Para diseño considerando el arriostramiento por los tableros, y desconociendo cualquier restricción rotacional provista por éstos, se utilizarán las disposiciones de la sección F.4.3.3.1.1 para la determinación de la resistencia de diseño a flexión.
+
+**F.4.8.4.2.3** — Cortante — Para un diseño completamente en acero, o considerando el comportamiento compuesto con los tableros de yeso, la resistencia de diseño a cortante debe ser la definida en el numeral F.4.3.3.2.
+
+**F.4.8.4.2.4** — Carga axial y flexión — Para diseño completamente en acero, o considerando el comportamiento compuesto con los tableros de yeso, la resistencia axial y la resistencia a flexión deben satisfacer las ecuaciones de interacción de la sección F.4.3.5.
+
+**F.4.8.4.2.5** — Arrugamiento del alma — Para diseño completamente en acero, o diseño compuesto con los tableros, la resistencia a arrugamiento del alma del miembro, $P_{n}$ , se debe determinar de acuerdo con la sección F.4.3.3.4, o $P_{n}$ debe ser modificado de acuerdo con la sección F.4.8.4.2.7.2 para tomar en cuenta el incremento en la resistencia debido al canal guía.
+
+**F.4.8.4.2.6** — Secciones armadas — Para diseño completamente en acero, o en conjunto con los tableros, la resistencia de diseño de secciones armadas se define en F.4.4.1. Cuando los requisitos aplicables de conexiones no se cumplan, la resistencia de diseño de las secciones armadas debe ser igual a la suma de las resistencias de diseño de los miembros individuales de la sección transversal del miembro armado.
+
+**F.4.8.4.2.7** — Diseño de conexiones para parales de muro
+
+**F.4.8.4.2.7.1** — Métodos de sujeción — Los tornillos, pernos y conexiones soldadas deben diseñarse de acuerdo con los requisitos del numeral F.4.5 y lo descrito en esta sección. Para conexiones con otro tipo de sujetador, la resistencia de diseño se debe determinar mediante ensayos de acuerdo con la sección F.4.6.1.
+
+**F.4.8.4.2.7.2** — Conexión de paral en sección C a canal guía — La conexión del paral al canal guía debe satisfacer los requisitos de resistencia al arrugamiento del alma del paral, de acuerdo con las sección F.4.8.4.2.5, o tal como se define en esta sección.
+
+(a) Para parales de muros cortina que no sean adyacentes a las aberturas (puertas y ventanas), en los que ambas aletas del paral estén conectadas a los canales guía y el espesor del canal guía sea mayor o igual al espesor del paral, la resistencia nominal $P_{nst}$, se determina de acuerdo con la ecuación F.4.8.4-2, que se muestra a continuación:
+
+$$ P_{nst}=Ct^{2}F_{y}\left(1-C_{R}\sqrt{\dfrac{R}{t}}\right)\left(1+C_{N}\sqrt{\dfrac{N}{t}}\right)\left(1-C_{h}\sqrt{\dfrac{h}{t}}\right) \tag{F.4.8.4-2} $$
+
+Donde:
+
+$C$ = coeficiente de arrugamiento del alma = 3.7
+
+$C_{R}$ = coeficiente de radio interno de doblez = 0.19
+
+$C_{N}$ = coeficiente de longitud de apoyo = 0.74
+
+$C_{h}$ = coeficiente de esbeltez del alma = 0.019
+
+$R$ = radio interno de doblez del paral
+
+$N$ = longitud de apoyo del paral
+
+$h$ = altura de la porción plana del alma del paral, medida a lo largo de su plano
+
+$t$ = espesor de diseño del paral
+
+$φ =0.90$ La anterior ecuación es válida para el siguiente rango de parámetros:
+
+Tamaño del tornillo: No. 8, mínimo Sección del paral:
+
+Espesor de diseño: 0.88 mm a 1.96 mm Resistencia de diseño a la fluencia: 228 MPa a 345 MPa Altura nominal: 88.9 mm a 152.4 mm Sección del canal guía:
+
+Espesor de diseño: 0.88 mm a 1.96 mm Resistencia a la fluencia: 228 MPa a 345 MPa Altura nominal: 88.9 mm a 152.4 mm Ancho nominal del aleta: 31.8 mm a 60.3 mm
+
+(b) Para parales de muros cortina que no sean adyacentes a aberturas y cuando ambas aletas del paral estén conectadas a las aletas del canal guía y el espesor del canal guía es menor que el espesor del paral, la resistencia nominal, $P_{nst}$, será el menor valor obtenido de las ecuaciones F.4.8.4-2 ó F.4.8.4-3:
+
+$$ P_{nst}=0.6t_{t}w_{st}F_{ut} \tag{F.4.8.4-3} $$
+
+Donde:
+
+$t_{t}$ = espesor de diseño del canal guía en mm
+
+$w_{st}=20t_{t}+0.56α$
+
+$α$ = $25.4$
+
+$F_{ut}$= resistencia última a tensión del canal guía
+
+$P_{nst}$= resistencia nominal para la conexión del paral a la canal guía cuando está sujeta a cargas transversales
+
+$φ =0.90$ La anterior ecuación es válida dentro del siguiente rango de parámetros:
+
+Tamaño del tornillo: No. 8, mínimo Sección del paral:
+
+Espesor de diseño: 0.88 mm a 1.96 mm Resistencia de diseño a la fluencia: 228 MPa a 345 MPa Altura nominal: 88.9 mm a 152.4 mm Sección del canal guía:
+
+Espesor de diseño: 0.88 mm a 1.96 mm Resistencia de diseño a la fluencia: 228 MPa a 345 MPa Altura nominal: 88.9 mm a 152.4 mm Ancho nominal del aleta: 31.8 mm a 60.3 mm
+
+(c) Para parales de muro cortina que sean adyacentes a aberturas y cuando ambas aletas estén conectadas a las aletas del canal guía, y el canal guía termina en la abertura, la resistencia nominal se deberá tomar como $0.5P_{nst}$ usando $P_{nst}$ y $φ$ como se determina en la sección F.4.8.4.2.7.2(a) cuando el espesor del canal guía sea mayor o igual al espesor del paral, o en la sección F.4.8.4.2.7.2(b) cuando el espesor del canal guía sea menor que el espesor del paral.
+
+(d) Para parales de muro cortina que no sean adyacentes a aberturas y no tienen ambas aletas conectadas a las aletas de los canales guía y el espesor del canal guía sea mayor o igual al espesor del paral, la resistencia nominal, $P_{nst}$es igual a $P_{n}$ , con $φ$ tal como se determina en la sección F.4.3.3.4.1.
+
+(e) Para parales de muro cortina que son adyacentes a aberturas y no tienen ambas aletas conectadas a las aletas de los canales guía y el espesor del canal guía es mayor o igual al espesor del paral, la resistencia nominal, $P_{nst}$ es igual a $0.5P_{n}$ , con $φ$ tal como se determina en la sección F.4.3.3.4.1.
+
+**F.4.8.4.2.7.3** — Conexión de canal guía sujeta a deformaciones para parales en sección C — Para parales de muros cortina usados en conexiones de canales guía sujetas a deformaciones6 $P_{nst}$ será igual a $P_{n}$ , con $φ$ tal como se determina en la sección F.4.3.3.4.1.
+
+6 La deformación considerada corresponde a la estructura por encima del muro. Esta podría ser la losa de concreto o viga de acero a la cual se sujeta el canal guía. Esta canal guía es independiente del paral de muro.
+
+La longitud de apoyo que debe ser usada en estos cálculos no excederá el mínimo ajuste entre el paral y el canal guía ó 25.4 mm.
+
+La resistencia nominal de un canal guía sujeta a deflexión bajo cargas transversales, y conectada a su apoyo con un espaciamiento del sujetador no mayor que el espaciamiento entre parales se determina de acuerdo con la ecuación F.4.8.4-4, como sigue:
+
+$$ P_{ndt}=\dfrac{w_{dt}t^{2}F_{y}}{4e} \tag{F.4.8.4-4} $$
+
+Donde:
+
+$w_{dt}$= longitud efectiva del canal guía = $0.11(α^{2})(e^{0.5}/t^{1.5})+5.5α ≤S$
+
+$S$ = espaciamiento centro a centro de parales
+
+$t$ = espesor de diseño del canal guía
+
+$F_{y}$ = resistencia de diseño a la fluencia
+
+$e$ = distancia de diseño en el extremo o de deslizamiento (distancia entre el alma del paral en su extremo y el alma del canal guía, medida perpendicularmente al alma del canal guía)7
+
+$α$ = $25.4$
+
+$φ =0.55$ La anterior ecuación será válida dentro del siguiente rango de parámetros:
+
+Sección del paral:
+
+Espesor de diseño: 1.14 mm a 1.81 mm Resistencia de diseño a la fluencia: 228 MPa a 345 MPa Altura nominal: 88.9 mm a 152.4 mm Ancho nominal de la aleta: 41.3 mm a 63.5 mm Espaciamiento entre parales: 305 mm a 610 mm a centros Longitud de apoyo del paral: 19.1 mm Sección del canal guía:
+
+Espesor de diseño: 1.14 mm a 1.81 mm Resistencia de diseño a la fluencia: 228 MPa a 345 MPa Altura nominal: 88.9 mm a 152.4 mm Ancho nominal de aleta: 50.8 mm a 76.3 mm La distancia horizontal medida desde el lado del alma del paral hasta el borde terminal del perfil guía no será menor que la mitad de la longitud efectiva del canal guía $w_{dt}$.
+
+![Figura F.4.8.4-1 — Conexión de Canal Guía sujeta a deformaciones](img/figF.4.8.4-1.png)
+
+Figura F.4.8.4-1 — Conexión de Canal Guía sujeta a deformaciones 7 “e” es la cantidad de deformación vertical esperada de la estructura por encima del muro.
+
+**F.4.8.4.2.8** — Arriostramiento de parales de muro
+
+**F.4.8.4.2.8.1** — Diseño de riostras intermedias — Para miembros a flexión, cada riostra intermedia se debe diseñar de acuerdo con la sección F.4.4.3.
+
+Para miembros sometidos a carga axial, cada riostra intermedia se debe diseñar para el 2% de la fuerza de diseño a compresión en el miembro.
+
+Para cargas a flexión y axiales combinadas, cada riostra intermedia se debe diseñar para la fuerza combinada en la riostra determinada de acuerdo con la sección F.4.4.3 y el 2% de la fuerza de diseño a compresión en el miembro.
+
+**F.4.8.4.3** — Diseño de cerchas para sistemas de entramados
+
+**F.4.8.4.3.1** — Análisis — En lugar de un análisis racional para definir la flexibilidad de los nudos, se pueden hacer las siguientes suposiciones para el análisis:
+
+(1) Los miembros cordones son continuos, a menos que se supongan con articulaciones en los talones8, puntos de quiebre9 o en empalmes en su longitud.
+
+(2) Los miembros en el alma de la cercha (diagonales y verticales) se suponen con articulaciones en los extremos Se permite el uso de una rigidez específica en el nudo, distinta a la consideración de completa libertad al giro de una rótula, si la conexión se diseña para las fuerzas provenientes de un análisis estructural con la rigidez de nudo definida inicialmente.
+
+**F.4.8.4.3.2** — Diseño de miembros
+
+**F.4.8.4.3.2.1** — Miembros cordones en compresión — Los miembros cordones en compresión se deben revisar solamente para carga axial utilizando las disposiciones de la sección F.4.3.4, sólo a flexión bajo las disposiciones de la sección F.4.3.3.1 y, carga axial y flexión, combinadas, usando la sección F.4.3.5.2.
+
+**F.4.8.4.3.2.1.1** — Carga axial — Para la determinación de la resistencia bajo carga axial, la longitud efectiva, $KL$ , se debe establecer por medio de un análisis racional, ensayos, o las siguientes consideraciones de diseño, según sea apropiado:
+
+(a) Para secciones C el eje $x$ es el eje de simetría. $L_{x}$ es igual a la distancia entre los puntos de panel10, y $C_{m}$ se toma como $0.85$ , a menos que se realice algún análisis para justificar un valor diferente. Cuando el miembro cordón sea continuo, al menos en un punto de panel intermedio y exista un tablero sujeto directamente al mismo, $K_{x}$ , se toma como $0.75$ . En otros casos, $K_{x}$ se toma igual a la unidad.
+
+Como alternativa, $L_{x}$ puede tomarse como la distancia entre puntos de cambio de curvatura por flexión con $C_{m}$ y $K_{x}$ tomados como la unidad. Cuando el tablero este sujeto al miembro cordón, $L_{y}$ es igual a la distancia entre conectores del tablero y $K_{y}$ se debe tomar como $0.75$ . Cuando las correas estén sujetas al miembro cordón, $L_{y}$ es la distancia entre correas con $K_{y}$ igual a la unidad. $L_{t}$ es igual a la distancia entre puntos de panel. Cuando el cordón es continuo al menos en un punto de panel intermedio entre el talón y un punto de quiebre del cordón y cuando el tablero esta sujetado directamente al miembro cordón, $K_{t}$ se toma como $0.75$ . En otros casos, $K_{t}$ se toma como la unidad. Alternativamente, $L_{t}$ puede ser la distancia entre puntos de cambio de curvatura por flexión con $K_{t}$ tomado como la unidad.
+
+8 Véase definición de Talón en la sección F.4.1 9 Véase definición de Punto de Quiebre en la sección F.4.1 10 Véase definición de Punto de Panel en la sección F.4.1 Donde:
+
+$C_{m}$ = coeficiente de momento en los extremos, en la fórmula de interacción
+
+$K_{t}$ = factor de longitud efectiva para torsión
+
+$K_{x}$ = factor de longitud efectiva para pandeo alrededor del eje $x$
+
+$K_{y}$ = factor de longitud efectiva para pandeo alrededor del eje $y$
+
+$L_{t}$ = longitud no arriostrada para torsión del miembro en compresión
+
+$L_{x}$ = longitud no arriostrada para flexión alrededor del eje $x$ del miembro en compresión
+
+$L_{y}$ = longitud no arriostrada para flexión alrededor del eje $y$ del miembro en compresión
+
+(b) Para secciones sombrero el eje x es el eje de simetría. Cuando el tablero esté sujeto al miembro cordón, $L_{x}$ es igual a la distancia entre conectores del tablero y $K_{x}$ se toma como $0.75$ . Cuando las correas estén sujetas al miembro cordón, $L_{x}$ es la distancia entre correas con $K_{x}$ igual a la unidad. $L_{y}$ es igual a la distancia entre puntos de panel, y $C_{m}$ se toma como $0.85$ , a menos que se realice algún análisis para justificar un valor diferente. Cuando el miembro cordón es continuo al menos sobre un punto de panel intermedio y cuando el tablero esté sujeto directamente al mismo, $K_{y}$ se toma como $0.75$ . De otra manera, $K_{y}$ se toma como la unidad. Alternativamente, $L_{y}$ puede ser igual a la distancia entre puntos de cambio de curvatura por flexión con $C_{m}$ y $K_{y}$ tomados como la unidad. $L_{t}$ es igual a la distancia entre conectores del tablero o espaciamiento de correas.
+
+Cuando el miembro cordón sea continuo al menos en un punto de panel intermedio entre el talón y un punto de quiebre, y cuando el tablero es sujetado directamente al miembro cordón, $K_{t}$ se toma como $0.75$ . En otros casos, $K_{t}$ será tomado como la unidad. Alternativamente, $L_{t}$ puede ser la distancia entre puntos de cambio de curvatura por flexión con $K_{t}$ tomado como la unidad.
+
+(c) Para secciones Z el eje x está fuera del plano de la cercha. $L_{x}$ es igual a la distancia entre puntos de panel, y $C_{m}$ se toma como $0.85$ , a menos que se realice algún análisis para justificar un valor diferente. Cuando el miembro cordón es continuo al menos sobre un punto de panel intermedio y cuando el tablero este sujeto directamente al mismo, $K_{x}$ se toma como $0.75$ . En otros casos, $K_{x}$ se toma como la unidad. Alternativamente, $L_{x}$ es igual a la distancia entre puntos de cambio de curvatura por flexión con $C_{m}$ y $K_{x}$ tomados como la unidad. Cuando el tablero esté sujeto al miembro cordón, $L_{y}$ es igual a la distancia entre conectores del panel o tablero y $K_{y}$ se toma como $0.75$ . Cuando las correas estén sujetas al miembro cordón, $L_{y}$ es la distancia entre correas con $K_{y}$ igual a la unidad. Cuando la altura del miembro cordón sea menor a 152 mm, $L_{t}$ es igual a la distancia entre conectores del tablero o el espaciamiento entre correas. Para secciones Z en las que la altura del miembro cordón sea mayor o igual a 152 mm, $L_{t}$ es igual a la distancia entre puntos de panel. Cuando el miembro cordón es continuo al menos en un punto de panel intermedio entre el talón y un punto de quiebre, y cuando el tablero está directamente sujeto al miembro cordón, $K_{t}$ se toma como $0.75$ . En otros casos, $K_{t}$ se toma como la unidad. Alternativamente, $L_{t}$ es igual a la distancia entre puntos de cambio de curvatura por flexión con $K_{t}$ tomado como la unidad.
+
+**F.4.8.4.3.2.1.2** — Flexión — Para la determinación de la resistencia a flexión, la longitud efectiva, $KL$ , se debe establecer por medio de un análisis racional, ensayos, o las siguientes consideraciones de diseño según sea apropiado:
+
+(a) Cuando el tablero esté sujeto a la aleta en compresión el valor de $M_{n}$ del miembro cordón bajo carga axial se debe tomar como $S_{e} F_{y}$ de acuerdo con la sección F.4.3.3.1.1.
+
+(b) Cuando las correas estén sujetas a la aleta en compresión entre puntos de panel,
+
+$M_{n}=S_{c} F_{c}$ de acuerdo con las secciones F.4.3.3.1.2.1 y F.4.3.3.1.4 con $KL_{y}$ y $KL_{t}$ para secciones C y Z, y $KL_{x}$ y $KL_{t}$ para secciones sombrero, tomadas como la distancia entre correas.
+
+(c) Cuando el tablero o correas estén sujetos a la aleta en tensión, y la aleta en compresión no esté arriostrada lateralmente, $M_{n}$ se toma como $S_{c} F_{c}$ de acuerdo con las secciones F.4.3.3.1.2.1 y F.4.3.3.1.4. Para miembros cordones con luces continuas, $M_{n}$ en la región del punto de panel se determina con $KL_{y}$ y $KL_{t}$ para secciones C y Z, y $KL_{x}$ y $KL_{t}$ para secciones sombrero, tomadas como la distancia entre el punto de panel y el punto de cambio de curvatura por flexión, con $C_{b}$ tomado como la unidad. Para luces simples y continuas de miembros cordones, $M_{n}$ en la región entre apoyos, se determina con la longitud efectiva tomada como la distancia entre puntos de panel y $C_{b}$ se calcula de acuerdo con la sección F.4.3.3.1.2.1 Donde:
+
+$C_{b}$ = coeficiente de flexión dependiente del gradiente de momento
+
+$F_{c}$ = esfuerzo crítico de pandeo
+
+$F_{y}$ = esfuerzo de fluencia usado en el diseño
+
+$K_{t}$ = factor de longitud efectiva para torsión
+
+$K_{x}$ = factor de longitud efectiva para pandeo alrededor del eje $x$
+
+$K_{y}$ = factor de longitud efectiva para pandeo alrededor del eje $y$
+
+$L_{t}$ = longitud no arriostrada para torsión del miembro en compresión
+
+$L_{x}$ = longitud no arriostrada para flexión alrededor del eje $x$ del miembro en compresión
+
+$L_{y}$ = longitud no arriostrada para flexión alrededor del eje $y$ del miembro en compresión
+
+$M_{n}$ = resistencia nominal a flexión
+
+$S_{c}$ = módulo elástico de la sección efectiva calculado con respecto a la fibra extrema en compresión para el esfuerzo $F_{c}$
+
+$S_{e}$ = módulo elástico de la sección efectiva calculado con respecto a la fibra extrema en compresión para el esfuerzo $F_{y}$
+
+**F.4.8.4.3.2.1.3** — Cargas concentradas sobre puntos de panel — Cuando un miembro cordón, conformado por una sección C, está sujeto a cargas concentradas en un punto de panel, la interacción entre la compresión axial, flexión y arrugamiento del alma se considera como sigue:
+
+$$ \dfrac{\bar{P}}{P_{no}}+\dfrac{\bar{M}_{x}}{M_{nxo}}+\dfrac{\bar{R}}{R_{n}}\le 1.49\phi \tag{F.4.8.4-5} $$
+
+Donde:
+
+$P$ = resistencia axial requerida a compresión
+
+$M_{x}$ = resistencia requerida a flexión
+
+$R$ = resistencia requerida bajo la carga concentrada por arrugamiento
+
+$P_{no}$= resistencia nominal axial calculada con $f_{=}F_{y}$
+
+$M_{nxo}$= resistencia nominal a flexión calculada con $f_{=}F_{y}$
+
+$R_{n}$ = resistencia nominal al arrugamiento del alma bajo la condición de carga interior sobre una aleta
+
+$φ =0.85$
+
+**F.4.8.4.3.2.2** — Miembros cordones en tensión — Los miembros cordones a tensión se deben revisar para carga axial únicamente utilizando la sección F.4.3.2, para flexión únicamente utilizando la sección F.4.3.3.1, y carga axial y flexión combinadas usando la sección F.4.3.5.1. Se permite tomar la carga axial actuando en el centroide de la sección.
+
+**F.4.8.4.3.2.3** — Miembros del alma en compresión (verticales y diagonales) — Los miembros del alma (diagonales y verticales) en compresión se deben revisar para carga axial únicamente utilizando la sección F.4.3.4, y carga axial y flexión combinada usando la sección F.4.3.5.2, y los requisitos de esta sección, según sea aplicable:
+
+(a) Para un miembro en el alma de la cercha (vertical o diagonal) de sección C, bajo carga de compresión, sujeto en los extremos a través de su alma, espalda con espalda con el alma de un miembro cordón en sección C y que no esté sujeto a cargas aplicadas entre sus extremos, la interacción entre la carga axial a compresión y la flexión fuera de su plano se determina por medio de la siguiente ecuación de interacción,
+
+$$ \dfrac{R\bar{P}}{\phi _{c}P_{n}}+\dfrac{C_{my}R\bar{P}e}{\phi _{b}M_{ny}\alpha _{y}}\le 1.0 \tag{F.4.8.4-6} $$
+
+Donde:
+
+$$ R=-\left(\dfrac{L/r}{173}\right)^{2}+\dfrac{L/r}{88}-0.22\ge 0.6 \tag{F.4.8.4-7} $$
+
+$L$ = longitud no arriostrada del miembro del alma en compresión
+
+$r$ = radio de giro de la sección completa alrededor del eje menor
+
+$P_{n}$ = resistencia nominal axial basada en la sección F.4.3.4.1.1. Sólo se considera pandeo flector.
+
+$e$ = excentricidad de la fuerza de compresión con respecto al centroide de la sección completa del miembro del alma.
+
+$P$ , $C_{my}$, $M_{ny}$, $P$ , $φ_{c}$ , $φ_{b}$ y $α_{y}$ se definen la sección F.4.3.5.2.
+
+En el cálculo de la resistencia de diseño, las longitudes efectivas, $K_{x} L_{x}$ , $K_{y} L_{y}$ y $K_{t} L_{t}$ se toman como la distancia entre los centros de los patrones de conexiones de los extremos de miembros.
+
+(b) Para otros miembros del alma bajo cargas de compresión, cargados concéntricamente, se permite tomar la carga axial actuando a través del centroide de la sección.
+
+(c) Para otros miembros del alma bajo carga de compresión, no cargados concéntricamente, se deben tomar en cuenta la excentricidad.
+
+**F.4.8.4.3.2.4** — Miembros del alma en tensión (verticales y diagonales) — Los miembros del alma (diagonales y verticales) en tensión se deben revisar para carga axial únicamente utilizando las disposiciones de la sección F.4.3.2. Para miembros del alma cargados simétricamente, se permite tomar la carga axial de tensión actuando a través del centroide de la sección. Para otros miembros en tensión, no cargados simétricamente, se debe tener en cuenta la excentricidad.
+
+**F.4.8.4.3.2.5** — Excentricidad en uniones (juntas) — Se debe realizar un análisis utilizando nodos múltiples o un análisis usando nudos sencillos incluyendo las apropiadas consideraciones para los efectos de excentricidad.
+
+El cálculo del cortante y el momento para el miembro cordón sobre las uniones debe incluir las siguientes consideraciones:
+
+(a) Cuando la longitud de traslapo del miembro del alma sea más grande o igual al 75% de la altura del miembro cordón, este se debe revisar a flexión y cortante combinado de acuerdo con la ecuación F.4.3.3-55. Para cerchas en secciones C en las que se utilicen tornillos como conectores, debe colocarse un mínimo de cuatro unidades en la conexión del miembro alma (vertical o diagonal) al miembro cordón y deben distribuirse de manera uniforme en el área traslapada.
+
+(b) Cuando la longitud de traslapo del miembro del alma es menor al 75% de la altura del miembro cordón, este se debe revisar a flexión y cortante combinado de acuerdo con la ecuación F.4.3.3-54.
+
+A lo largo de la longitud del miembro cordón, en el punto medio entre la intersección con miembros del alma en una junta, se debe revisar el cortante de acuerdo con la sección F.4.3.3.2. El coeficiente de pandeo por cortante se determina con cualquiera de las ecuaciones F.4.3.3-49 ó F.4.3.3-50 con “$α$ ” tomada como el valor más pequeño de la distancia entre grupos de sujetadores, o centro a centro de los miembros del alma.
+
+**F.4.8.4.3.3** — Diseño de cartelas — La resistencia nominal bajo carga axial a compresión, $P_{n}$ , de cartelas planas y delgadas se calcula como sigue:
+
+$$ P_{n}=R_{g}btF_{y} \tag{F.4.8.4-8} $$
+
+Para $\frac{W_{min}}{L_{eff}}≤1.5$
+
+$$ R_{g}=\left(0.47\dfrac{W_{\min }}{L_{eff}}+0.3\right) \tag{F.4.8.4-9} $$
+
+Para $\frac{W_{min}}{L_{eff}}>1.5$
+
+$$ R_{g}=1.0 \tag{F.4.8.4-10} $$
+
+Donde:
+
+$b$ = ancho efectivo determinado de acuerdo con la sección F.4.2.2.1, con $f=F_{y}$, $k=4$ y
+
+$w=W_{min}$
+
+$F_{y}$ = resistencia a la fluencia mínima especificada
+
+$t$ = espesor de diseño de la cartela
+
+$φ_{c} =0.60$ Figura F.4.8.4-1 — Ancho de placa Whitmore $W_{min}$ es el menor valor del ancho de cartela real y la sección Whitmore, la cual se determina utilizando un ángulo de distribución de 30° a ambos lados de la conexión, comenzando en la primera fila de sujetadores en la conexión. $L_{eff}$ se toma como la longitud promedio entre las últimas filas de sujetadores de miembros de cercha adyacentes en la conexión (véase figura F.4.8.4-1).
+
+Las anteriores ecuaciones son válidas para los siguientes parámetros:
+
+Espesor de diseño de placa de cartela: 1.438 mm a 2.583 mm Esfuerzo de fluencia de diseño de la placa de cartela: 228 MPa a 345 MPa Relación $W_{min}/L_{eff}$: 0.8 a 6.0.
+
+Patrón de sujetadores de cartela a miembro cordón: Mínimo dos filas con dos sujetadores por fila
+
+(a) Sin paral intermedio
+
+(b) Con paral intermedio Figura F.4.8.4-3 — Longitud efectiva para conexión típica en punto de quiebre La resistencia nominal a tensión axial de placas planas y delgadas de cartelas se calcula de acuerdo con los requisitos de la sección F.4.3.2.
+
+**F.4.8.4.3.4** — Diseño de conexiones
+
+**F.4.8.4.3.4.1** — Métodos de sujeción o fijación — Los sistemas de sujeción o fijación deben ser aprobados por el diseñador de la cercha. Los tornillos, pernos y conexiones soldadas se deben diseñar de acuerdo con las disposiciones de este Reglamento. Para conexiones que utilicen otro tipo de sujetadores, los valores de diseño se deben determinar mediante ensayos de acuerdo con la sección F.4.6.1. Para otros métodos de sujeción deben seguirse las especificaciones del fabricante.
+
+**F.4.8.4.3.4.2** — Conexiones por recorte para secciones C — Se permite el recorte entre miembros en sección C en conexiones sobre puntos de quiebre y talones, de acuerdo con el diseño de la cercha.
+
+![Figura F.4.8.4-4 — Definición de dimensiones de recorte en cerchas](img/figF.4.8.4-4.png)
+
+Figura F.4.8.4-4 — Definición de dimensiones de recorte en cerchas
+
+(a) En conexiones de talones, con una aleta recortada, y un rigidizador de apoyo con un momento de inercia $(I_{min})$ mayor o igual a 67.000 mm4, la resistencia a la fuerza cortante se calcula de acuerdo con la sección F.4.3.3.2 y se deberá reducir por el siguiente factor, $R$ :
+
+$$ R=0.976-\dfrac{0.556c}{h}-\dfrac{0.532d_{c}}{h}\le 1.0 \tag{F.4.8.4-11} $$
+
+con los siguientes límites:
+
+$h /t≤200$, $0.10<c /h<1.0$ y $0.10<d_{c}/h<0.4$
+
+(b) En conexiones de talones, con una aleta recortada y un rigidizador de apoyo con un momento de inercia $(I_{min})$ menor a 67.000 mm4, la resistencia calculada en el talón es gobernada por el arrugamiento del alma de acuerdo con la sección F.4.3.3.4 y debe ser reducida por el siguiente factor, $R$ :
+
+$$ R=1.036-\dfrac{0.668c}{h}-\dfrac{0.0505d_{c}}{h}\le 1.0 \tag{F.4.8.4-12} $$
+
+con los siguientes límites:
+
+$h /t≤200$, $0.10<c /h<1.0$ y $0.10<d_{c}/h<0.4$ Donde:
+
+$c$ = longitud del recorte
+
+$d_{c}$ = altura del recorte
+
+$h$ = ancho plano del alma de la sección recortada
+
+$I_{min}$= se calcula con respecto a un eje paralelo al alma del miembro cordón
+
+$t$ = espesor de diseño de la sección recortada
+
+**F.4.8.4.4** — Dinteles — El diseño e instalación de dinteles de acero formado en frío tipo cajón, tipo espalda con espalda y tipo L, sencillos y dobles, con el propósito de soportar cargas, se hará de acuerdo con las secciones F.4.2 a F.4.5 y lo estipulado en este numeral.
+
+**F.4.8.4.4.1** — Diseño de dinteles
+
+**F.4.8.4.4.1.1** — Dinteles tipo espalda con espalda — Las disposiciones de esta sección se limitan a vigas dintel tipo espalda con espalda que se construyen usando secciones C de acero formado en frío de acuerdo con la sección F.4.8.4.4.2.
+
+**F.4.8.4.4.1.1.1** — Flexión — La flexión debe revisarse utilizando las disposiciones de la sección F.4.3.3.1.1.
+
+**F.4.8.4.4.1.1.2** — Cortante — El cortante debe revisarse utilizando las disposiciones de la sección F.4.3.3.2.
+
+**F.4.8.4.4.1.1.3** — Arrugamiento del alma — El arrugamiento del alma debe revisarse de acuerdo a la sección F.4.3.3.4. Para vigas dintel tipo espalda con espalda se deben utilizar las ecuaciones para miembros armados.
+
+**F.4.8.4.4.1.1.4** — Flexión y cortante — La combinación de flexión y cortante debe revisarse utilizando la sección F.4.3.3.3.
+
+**F.4.8.4.4.1.1.5** — Flexión y arrugamiento del alma — Las almas de vigas dintel tipo espalda con espalda sujetas a una combinación de flexión y arrugamiento del alma deben diseñarse utilizando la sección F.4.3.3.5. Para vigas dintel tipo espalda con espalda deben utilizarse las ecuaciones para miembros armados.
+
+**F.4.8.4.4.1.2** — Dinteles tipo cajón — Las disposiciones de esta sección se limitan a vigas dintel tipo cajón que sean instaladas usando secciones C de acero formado en frío de acuerdo con la sección F.4.8.4.4.2.
+
+**F.4.8.4.4.1.2.1** — Flexión — La flexión se evalúa utilizando las disposiciones de la sección F.4.3.3.1.1.
+
+**F.4.8.4.4.1.2.2** — Cortante — El cortante se evalúa utilizando las disposiciones de la sección F.4.3.3.2.
+
+**F.4.8.4.4.1.2.3** — Arrugamiento del alma — El arrugamiento del alma se evalúa utilizando la sección F.4.3.3.4. Para vigas dintel tipo cajón se utilizan las ecuaciones para geometrías con almas sencillas. Se permitirá que el valor de $P_{n}$ , para una condición de carga interior sobre una aleta, con el respectivo factor de resistencia $φ$ , pueda ser multiplicado por $α$ , donde $α$ toma en cuenta el incremento en resistencia debido al Canal Guía y se define como sigue:
+
+$α$ = Parámetro definido por la ecuación F.4.8.4-13 ó F.4.8.4-14
+
+$φ =0.80$ Cuando el espesor de diseño de la sección del Canal Guía sea $≥0.879$ mm, el ancho de la aleta del Canal Guía sea $≥25.4$ mm, la altura de la sección C sea $≤305$ mm y el espesor de diseño de la sección C sea $≥0.879$ mm, entonces:
+
+$$ \alpha =2.3\dfrac{t_{t}}{t_{c}}\ge 1.0 \tag{F.4.8.4-13} $$
+
+Donde:
+
+$t_{t}$ = 0.879 mm
+
+$t_{c}$ = espesor de diseño de la sección C En caso de que los límites antes expuestos no se cumplan:
+
+$$ \alpha =1.0 \tag{F.4.8.4-14} $$
+
+**F.4.8.4.4.1.2.4** — Flexión y cortante — La combinación de flexión y cortante se evalúa utilizando la sección F.4.3.3.3.
+
+**F.4.8.4.4.1.2.5** — Flexión y arrugamiento del alma — Las almas de vigas dintel tipo cajón, sujetas a una combinación de flexión y arrugamiento del alma se diseñan utilizando, ya sea la sección F.4.3.3.5 o la siguiente ecuación:
+
+$$ \dfrac{P_{u}}{P_{n}}+\dfrac{M_{u}}{M_{n}}\le 1.5\phi \tag{F.4.8.4-15} $$
+
+Donde:
+
+$P_{u}$ = resistencia requerida al arrugamiento del alma
+
+$M_{u}$ = resistencia requerida a flexión
+
+$P_{n}$ = resistencia nominal a arrugamiento del alma calculada en la sección F.4.8.4.4.1.2.3.
+
+$φ =0.85$
+
+$M_{n}$ = como se define en la sección F.4.3.3.1.
+
+**F.4.8.4.4.1.3** — Dinteles tipo L doble — Las disposiciones de esta sección se limitan a dinteles tipo L doble que sean instalados utilizando ángulos de acero formado en frío de acuerdo con la sección F.4.8.4.4.2 y que cumplan con los siguientes parámetros:
+
+(1) Ancho mínimo de aleta superior = 38.1 mm (2) Dimensión máxima del lado vertical = 254 mm (3) Espesor mínimo del acero base = 0.838 mm (4) Espesor máximo de diseño = 1.829 mm (5) Esfuerzo de fluencia mínimo de diseño, $F_{y}=230$ MPa (6) Esfuerzo de fluencia máximo de diseño, $F_{y}=345$ MPa (7) Paral para arrugamiento localizado en todos los puntos de carga (8) Longitud de apoyo mínima de 38.1 mm en los puntos de carga (9) Ancho mínimo del muro = 88.9 mm (3.5 pulgadas) (10) Luz máxima entre apoyos = 4.88 m
+
+**F.4.8.4.4.1.3.1** — Flexión
+
+**F.4.8.4.4.1.3.1.1** — Carga gravitacional
+
+(a) Para vigas dintel tipo L doble con el lado vertical de 203 mm de longitud o menos, el diseño debe basarse en la capacidad a flexión de las secciones L únicamente. La resistencia nominal a flexión bajo carga gravitacional, $M_{ng}$, se determina como sigue:
+
+$$ M_{ng}=S_{ec}F_{y} \tag{F.4.8.4-16} $$
+
+Donde:
+
+$F_{y}$ = esfuerzo de fluencia utilizado en el diseño
+
+$S_{ec}$= módulo elástico de la sección efectiva calculado con $f=F_{y}$ con respecto a las fibras extremas a compresión
+
+(b) Para vigas dintel tipo L doble con el lado vertical mayor a 203 mm , y una relación Luz/Lado vertical del dintel mayor o igual a 10, el diseño debe basarse en la capacidad a flexión de las secciones L únicamente (ecuación F.4.8.4-16)
+
+(c) Para vigas dintel tipo L doble con el lado vertical mayor a 203 mm , y una relación Luz/Lado vertical del dintel menor a 10, la resistencia nominal a flexión bajo carga gravitacional, $M_{ng}$, se determina como sigue:
+
+$$ M_{ng}=0.9S_{ec}F_{y} \tag{F.4.8.4-17} $$
+
+Donde:
+
+$F_{y}$ = esfuerzo de fluencia utilizado en el diseño
+
+$S_{ec}$= módulo elástico de la sección efectiva calculado con $f=F_{y}$ con respecto a las fibras extremas a compresión
+
+**F.4.8.4.4.1.3.1.2** — Carga de succión — Para vigas dintel tipo L doble, la resistencia nominal a flexión bajo cargas de succión, $M_{nu}$, se determina como sigue:
+
+$$ M_{nu}=RM_{ng} \tag{F.4.8.4-18} $$
+
+Donde:
+
+$M_{ng}$ = resistencia nominal a flexión bajo carga gravitacional determinada por la ecuación F.4.8.4-16
+
+$R$ = factor de succión = $0.25$ para $L_{h}/t≤150$ = $0.20$ para $L_{h}/t≥170$ = utilizar interpolación lineal para $150<L_{h}/t<170$
+
+$L_{h}$ = dimensión del lado vertical del ángulo
+
+$t$ = espesor de diseño
+
+**F.4.8.4.4.1.3.1.3** — Capacidad de diseño a momento — La resistencia a flexión de diseño se determina como sigue:
+
+Para cargas gravitacionales:
+
+$$ M_{u}=\phi M_{ng} \tag{F.4.8.4-19} $$
+
+$φ =0.90$ para vigas con $L_{h}≤203$ mm
+
+$φ =0.70$ para vigas con $L_{h}>203$ mm Para cargas de succión:
+
+$$ \begin{gathered}M_{u}=\phi M_{nu} \\ \phi =0.80\end{gathered} \tag{F.4.8.4-20} $$
+
+**F.4.8.4.4.1.3.2** — Cortante — El cortante no necesita ser considerado para el diseño de vigas dintel tipo L que sean fabricadas e instaladas de acuerdo con este Reglamento.
+
+**F.4.8.4.4.1.3.3** — Arrugamiento del alma — El arrugamiento del alma no necesita ser considerado para el diseño de vigas dintel tipo L que sean fabricadas e instaladas de acuerdo con este Reglamento.
+
+**F.4.8.4.4.1.3.4** — Flexión y cortante — La combinación de flexión y cortante no necesita ser considerada para el diseño de vigas dintel tipo L fabricadas e instaladas de acuerdo con este Reglamento.
+
+**F.4.8.4.4.1.3.5** — Flexión y arrugamiento del alma — La combinación de flexión y arrugamiento del alma no necesita ser considerada para el diseño de vigas dintel tipo L fabricadas e instaladas de acuerdo con este Reglamento.
+
+**F.4.8.4.4.1.4** — Dinteles tipo L sencilla — Las disposiciones de esta sección se limitan a dinteles tipo L sencilla que sean instalados utilizando ángulos de acero formado en frío de acuerdo con la sección F.4.8.4.4.2 y que cumpla con los siguientes parámetros:
+
+(1) Ancho mínimo de la aleta superior = 38.1 mm (2) Dimensión máxima del lado vertical = 203 mm (3) Espesor mínimo del acero base = 0.838 mm (4) Espesor máximo de diseño = 1.448 mm (5) Esfuerzo de fluencia mínimo de diseño, $F_{y}=230$ MPa (6) Esfuerzo de fluencia máximo de diseño, $F_{y}=345$ MPa (7) Paral para arrugamiento localizado en todos los puntos de carga (8) Longitud de apoyo mínima de 38.1 mm en los puntos de carga (9) Ancho mínimo del muro = 88.9 mm (10) Luz máxima entre apoyos = 1.22 m
+
+**F.4.8.4.4.1.4.1** — Flexión
+
+**F.4.8.4.4.1.4.1.1** — Carga gravitacional
+
+(a) Para vigas dintel tipo L sencilla con el lado vertical de 152mm de longitud o menos, el diseño debe basarse en la capacidad a flexión de la sección L únicamente. La resistencia nominal a flexión bajo carga gravitacional, $M_{ng}$, se determina como sigue:
+
+$$ M_{ng}=S_{ec}F_{y} \tag{F.4.8.4-21} $$
+
+Donde:
+
+$F_{y}$ = esfuerzo de fluencia utilizado en el diseño
+
+$S_{ec}$= módulo elástico de la sección efectiva calculado con $f=F_{y}$ con respecto a las fibras extremas a compresión
+
+(b) Para vigas dintel tipo L sencilla con el lado vertical mayor a 152mm, pero menor o igual a 203 mm, la resistencia nominal a flexión bajo carga gravitacional, $M_{ng}$, se determina como sigue:
+
+$$ M_{ng}=0.9S_{ec}F_{y} \tag{F.4.8.4-22} $$
+
+Donde:
+
+$F_{y}$ = esfuerzo de fluencia utilizado en el diseño
+
+$S_{ec}$= módulo elástico de la sección efectiva calculado con $f=F_{y}$ con respecto a las fibras extremas a compresión
+
+**F.4.8.4.4.1.4.1.2** — Carga de succión — No aplica
+
+**F.4.8.4.4.1.4.1.3** — Capacidad de diseño a momento — La resistencia a flexión de diseño se determina como sigue:
+
+Para cargas gravitacionales:
+
+$$ \begin{gathered}M_{u}=\phi M_{ng} \\ \phi =0.90\end{gathered} \tag{F.4.8.4-23} $$
+
+**F.4.8.4.4.1.4.2** — Cortante — El cortante no necesita ser considerado para el diseño de vigas dintel tipo L que sean fabricadas e instaladas de acuerdo con este Reglamento.
+
+**F.4.8.4.4.1.4.3** — Arrugamiento del alma — El arrugamiento del alma no necesita ser considerado para el diseño de vigas dintel tipo L que sean fabricadas e instaladas de acuerdo con este Reglamento.
+
+**F.4.8.4.4.1.4.4** — Flexión y cortante — La combinación de flexión y cortante no necesita ser considerada para el diseño de vigas dintel tipo L fabricadas e instaladas de acuerdo con este Reglamento.
+
+**F.4.8.4.4.1.4.5** — Flexión y arrugamiento del alma — La combinación de flexión y arrugamiento del alma no necesita ser considerada para el diseño de vigas dintel tipo L fabricadas e instaladas de acuerdo con este Reglamento.
+
+**F.4.8.4.4.1.5** — Conjuntos de dinteles tipo L invertidos
+
+(a) Las disposiciones de esta sección se limitan a dinteles tipo L invertidos que satisfacen los requisitos definidos en las secciones F.4.8.4.4.1.3 y F.4.8.4.4.1.4 para dinteles dobles y sencillos, respectivamente.
+
+(b) Para dinteles tipo L doble, la resistencia nominal a flexión del conjunto L combinado (ej: Un dintel tipo L más un dintel L invertido), se determina por la suma de las resistencias nominales a flexión bajo carga gravitacional y de succión tal como se determina en la sección F.4.8.4.4.1.3.1.
+
+(c) Para dinteles tipo L sencilla, la resistencia nominal a flexión del conjunto L combinado (ej: Un dintel L más un dintel L invertido), debe basarse en la resistencia nominal a flexión bajo carga gravitacional tal como se determina en la sección F.4.8.4.4.1.4.1.
+
+(d) El cortante, arrugamiento del alma, flexión y cortante combinados, y flexión y arrugamiento del alma combinados, no necesitan ser considerados para el diseño de dinteles L invertidos fabricados e instalados de acuerdo con este Reglamento.
+
+**F.4.8.4.4.2** — Instalación de dinteles — Los dinteles deben instalarse de acuerdo con las provisiones dadas en el numeral F.4.8 y los requisitos de las secciones F.4.8.4.4.2.1, F.4.8.4.4.2.2 y F.4.8.4.4.2.3, según sea aplicable.
+
+**F.4.8.4.4.2.1** — Dinteles tipo espalda con espalda y cajón — Los dinteles tipo espalda con espalda y cajón se deben instalar de acuerdo con las figuras F.4.8.4-5 y F.4.8.4-6, respectivamente. Para dinteles tipo cajón se permite conectar Canales Guías a las almas de las secciones C utilizando cordones de soldadura de 25.4 mm espaciados cada 610 mm a centros, en lugar de tornillos No. 8.
+
+![Figura F.4.8.4-5 — Dintel tipo espalda con espalda](img/figF.4.8.4-5.png)
+
+Figura F.4.8.4-5 — Dintel tipo espalda con espalda
+
+![Figura F.4.8.4-6 — Dintel tipo cajón](img/figF.4.8.4-6.png)
+
+Figura F.4.8.4-6 — Dintel tipo cajón
+
+**F.4.8.4.4.2.2** — Dinteles tipo L doble y sencilla — Los dinteles tipo L doble y sencilla se deben instalar de acuerdo con las figuras F.4.8.4-7 y F.4.8.4-8, respectivamente.
+
+![Figura F.4.8.4-7 — Dintel tipo L doble](img/figF.4.8.4-7.png)
+
+Figura F.4.8.4-7 — Dintel tipo L doble
+
+![Figura F.4.8.4-8 — Dintel tipo L sencilla](img/figF.4.8.4-8.png)
+
+Figura F.4.8.4-8 — Dintel tipo L sencilla
+
+#### F.4.8.5 — ESTADO DE SERVICIO
+
+Los requisitos para estados de servicio, tal como se describen en este Reglamento, deben determinarse por el diseñador de la edificación o con criterios de acuerdo a las especificaciones descritas en este Reglamento. Se permite el uso de áreas de sección transversal completas para los miembros de entramados en el cálculo de las deflexiones.

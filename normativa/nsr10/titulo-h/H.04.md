@@ -155,25 +155,25 @@ En todo caso se deberá demostrar que los valores de $F_{SB}$ directos equivalen
 
 (a) En este caso el Factor de Seguridad está definido por:
 
-![Ecuación H.4.7-1](img/ec-H.4.7-1.png)
+$$ F_{SL} = \tau_L / \tau_A \tag{H.4.7-1} $$
 
 en la cual $τ_{L}$ = resistencia al cortante en la interfaz suelo / elemento de cimentación $≤τ_{f}$
 
 (b) A menos que se demuestre con ensayos para la obra en estudio, se tomará, para la ecuación H.4.7-1
 
-![Ecuación H.4.7-2](img/ec-H.4.7-2.png)
+$$ \tau_L = 2/3\,\tau_F \tag{H.4.7-2} $$
 
 (c) En el caso de la ecuación H.2-6 $(τ_{F,S})$, se deberá usar
 
-![Ecuación H.4.7-3](img/ec-H.4.7-3.png)
+$$ \tau_L = \alpha\,\tau_F = \alpha S_u \tag{H.4.7-3} $$
 
-![Ecuación](img/ec-p23-128.png)
+$$ \alpha = 0.2 + 0.8 \exp \left[ 0.35 - (2S_u / P_A) \right] \le 1.0 $$
 
 en la cual (o una expresión con tendencia similar) Y se podrán usar los valores de $F_{SL}$ iguales a los de $F_{SB}$ de la tabla H.2.4-1
 
 (d) En el caso de pilotes o caissons en roca, se debe tomar $τ$L con una formulación apropiada, tal como
 
-![Ecuación](img/ec-p23-210.png)
+$$ \tau_L = \psi \left[ \sigma_c / 2P_A \right]^{0.5} $$
 
 (H.4-7-4) en la cual
 

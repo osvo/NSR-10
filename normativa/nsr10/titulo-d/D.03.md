@@ -294,15 +294,15 @@ La resistencia especificada a la compresión de la mampostería $f_{m}'$ , se pu
 
 Cuando $f_{m}'$ no se seleccione mediante ensayos de muretes preliminares o históricos, su valor puede determinarse con base en una correlación apropiada de la calidad de los materiales empleados. En ausencia de tal correlación, el valor de $f_{m}'$ , se puede determinar mediante la siguiente expresión:
 
-![Ecuación D.3.7-1](img/ec-D.3.7-1.png)
+$$ R_m = \left( \dfrac{2h}{75 + 3h} \right) f'_{cu} + \left( \dfrac{50k_p}{75 + 3h} \right) f'_{cp} \le 0.8f'_{cu} \tag{D.3.7-1} $$
 
-![Ecuación D.3.7-2](img/ec-D.3.7-2.png)
+$$ f'_m = 0.75R_m \tag{D.3.7-2} $$
 
 Los valores empleados en la ecuación D.3.7-1 deben indicarse en los planos estructurales y controlarse en la obra de acuerdo con lo establecido en la sección D.3.8, pero esto no exime de la obligación de comprobar el valor de $f_{m}'$ por medio de muretes como lo indica la sección D.3.8.1.4.
 
 **D.3.7.6** — VALOR DE $f_{m}'$ CUANDO LAS CELDAS SE INYECTAN CON MORTERO DE RELLENO, BASADO EN LA CALIDAD DE LOS MATERIALES — En la mampostería de cavidad reforzada o de perforación vertical, inyectada con mortero de relleno, se puede obtener el valor de $f_{m}'$ de la siguiente forma:
 
-![Ecuación D.3.7-3](img/ec-D.3.7-3.png)
+$$ f'_m = 0.75 \left[ rR_m + 0.9k_r (1 - r) f'_{cr} \right] \le 0.94R_m \tag{D.3.7-3} $$
 
 ### D.3.8 — EVALUACIÓN Y ACEPTACIÓN DE LA MAMPOSTERÍA
 

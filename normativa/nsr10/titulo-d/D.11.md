@@ -50,7 +50,7 @@ Los muros diafragma deben diseñarse para resistir los esfuerzos derivados de su
 
 El muro diafragma puede tomar un cortante máximo que no debe exceder el siguiente valor:
 
-![Ecuación D.11.4-1](img/ec-D.11.4-1.png)
+$$ V_u \le \phi v_m A_m \tag{D.11.4-1} $$
 
 donde:
 

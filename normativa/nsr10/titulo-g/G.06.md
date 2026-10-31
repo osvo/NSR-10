@@ -36,11 +36,11 @@ En uniones solicitadas por fuerzas de cortante tales como pernos, tornillos pasa
 
 (a) En uniones separadas del extremo de la pieza por una distancia superior o igual a 5 veces la altura de la misma
 
-![Ecuación G.6.3-1](img/ec-G.6.3-1.png)
+$$ f_v = \dfrac{3\,V'_r}{2bd_e} \le F'_v \tag{G.6.3-1} $$
 
 (b) En uniones separadas del extremo de la pieza por una distancia menor 5 veces la altura de la misma
 
-![Ecuación G.6.3-2](img/ec-G.6.3-2.png)
+$$ f_v = \dfrac{3\,V'_r}{2bd_e} \left(\dfrac{d}{d_e}\right)^2 \le F'_v \tag{G.6.3-2} $$
 
 Los esfuerzos anteriores se deducen de las fórmulas G.3.4-6 y G.3.4-7. $d_{e}$ corresponde a la distancia definida en G.3.4.4.5, según el medio de unión, figura G.3.4-4.
 
@@ -48,7 +48,7 @@ Los esfuerzos anteriores se deducen de las fórmulas G.3.4-6 y G.3.4-7. $d_{e}$ 
 
 Adicionalmente se debe verificar el cortante en la sección transversal bruta de acuerdo a la siguiente formula.
 
-![Ecuación G.6.3-3](img/ec-G.6.3-3.png)
+$$ f_v = \dfrac{3\,V_r}{2bd} \le F'_v \tag{G.6.3-3} $$
 
 #### G.6.3.2 — UNIONES EXCÉNTRICAS
 
@@ -167,17 +167,17 @@ Las cargas admisibles tabuladas en la tabla G.6.9-1, son para clavos comunes de 
 
 **G.6.7.6** — Si la penetración $p<12d$ en uniones de cortante simple o $p<8d$ en uniones de cortante múltiple, la capacidad admisible de carga será reducida según el factor de modificación $C_{p1}$.
 
-![Ecuación G.6.7-1](img/ec-G.6.7-1.png)
+$$ C_{p1} = \dfrac{p}{12d} \tag{G.6.7-1} $$
 
 Para uniones de cortante simple
 
-![Ecuación G.6.7-2](img/ec-G.6.7-2.png)
+$$ C_{p1} = \dfrac{p}{8d} \tag{G.6.7-2} $$
 
 Para uniones de cortante múltiple Y no serán aceptables penetraciones efectivas inferiores a $p=6d$, en uniones de cortante simple, o, $p=4d$, en uniones de cortante múltiple.
 
 **G.6.7.7** — en uniones de cortante múltiple la capacidad admisible $P_{em}$, de cada clavo, será calculada por la siguiente fórmula:
 
-![Ecuación G.6.7-3](img/ec-G.6.7-3.png)
+$$ P_{em} = \left(m - 0.25\right) P_{es} \tag{G.6.7-3} $$
 
 En donde:
 
@@ -285,7 +285,7 @@ Carga admisible en unión de cortante simple, en N, $(CH≤19\%)$
 
 La capacidad admisible modificada a cortante de un clavo será la dada por la siguiente fórmula:
 
-![Ecuación G.6.11-1](img/ec-G.6.11-1.png)
+$$ P_{adm} = P_{es} C_D C_m C_t C_p C_{ag} C_f C_{pre} C_{pL} \tag{G.6.11-1} $$
 
 En donde
 
@@ -319,7 +319,7 @@ La fuerza de extradición $W$ , que pueda desarrollar un clavo depende de la den
 
 La fuerza de extracción directa admisible en condición de madera seca, se determina con la fórmula G.6.12-1 y para el caso de maderas en condición húmeda, se reducirá según la tabla G.6.6-1.
 
-![Ecuación G.6.12-1](img/ec-G.6.12-1.png)
+$$ W = 4.4\,DBdp \tag{G.6.12-1} $$
 
 en donde:
 
@@ -335,7 +335,7 @@ $p$ = penetración del clavo en el elemento que recibe la punta del clavo, en mm
 
 Figura G.6.12-1 – Elemento principal – Clavo con carga de extracción La fuerza de extracción modificada será.
 
-![Ecuación G.6.12-2](img/ec-G.6.12-2.png)
+$$ W' = W C_D C_m C_t C_f \tag{G.6.12-2} $$
 
 #### G.6.12.1 — COEFICIENTE POR FORMA DE COLOCACION
 
@@ -441,11 +441,11 @@ Cargas admisible para uniones empernadas con doble cizallamiento $CH_{≤}19\%$ 
 
 Uniones con elementos laterales de madera:
 
-![Ecuación G.6.13-1](img/ec-G.6.13-1.png)
+$$ C_g = 1.00 - 0.08 \left(n_p - 2\right) \tag{G.6.13-1} $$
 
 Uniones con elementos laterales de acero:
 
-![Ecuación G.6.13-2](img/ec-G.6.13-2.png)
+$$ C_g = 1.00 - 0.07 \left(n_p - 2\right) \tag{G.6.13-2} $$
 
 en donde, $n_{p}=$ número de pernos en cada fila Alternativamente, el valor de $C_{g}$ puede obtenerse de la tabla G.6.13-4.
 
@@ -465,9 +465,9 @@ En caso de existir varias filas de pernos paralelas a la dirección de la carga,
 
 **G.6.13.13** — En términos generales la capacidad de una unión empernada está definida por su capacidad nominal, multiplicada por los coeficientes de reducción a que haya lugar. Esto es:
 
-![Ecuación G.6.13-5](img/ec-G.6.13-5.png)
+$$ P' = P C_D C_m C_t C_{pL} C_g \tag{G.6.13-5} $$
 
-![Ecuación G.6.13-6](img/ec-G.6.13-6.png)
+$$ Q' = Q C_D C_m C_t C_{pL} C_g \tag{G.6.13-6} $$
 
 En donde:
 
@@ -479,7 +479,7 @@ $C_{g}$ = coeficiente de acción de grupo.
 
 **G.6.13.13.1** — Cuando la fuerza en la unión sigue la dirección del elemento central pero forma un ángulo $α$ con la dirección de las fibras de los elementos laterales, o viceversa, la carga admisible modificada, $N'$ , se calculará con la fórmula de Hankinson.
 
-![Ecuación G.6.13-7](img/ec-G.6.13-7.png)
+$$ N' = \dfrac{P'Q'}{P' \operatorname{sen}^2 \alpha + Q' \cos^2 \alpha} \tag{G.6.13-7} $$
 
 A partir de los valores modificados $P'$ y $Q' .$ Obsérvese que los valores admisibles de las fuerzas paralela y perpendicular a la fibra, $P$ y $Q$ , deberán ser multiplicados por los coeficientes de modificación aplicables según el caso, antes de utilizar esta fórmula.
 

@@ -16,7 +16,7 @@ Para voladizos sometidos a un momento en la punta, $l$ se debe determinar de acu
 
 F.5.G.2 — DETERMINACION DE $λ$ El parámetro de esbeltez para pandeo torsional lateral $λ$ se obtiene de la siguiente expresión (véase F.5.4.5.6 (d)):
 
-![Ecuación](img/ec-p572-449.png)
+$$ \lambda =\pi \left(\dfrac{ES}{M_{cr}}\right)^{1/2} $$
 
 Donde:
 
@@ -30,11 +30,11 @@ $I_{y}$ = segundo momento del área respecto al menor eje centroidal
 
 $G$ , $J$ y $H$ = como se definen en F.5.1.3 Para una sección uniforme simétrica respecto al eje menor solamente, $M_{cr}$ está dado por:
 
-![Ecuación](img/ec-p572-691.png)
+$$ M_{cr}=\dfrac{\pi }{l}(EI_{y}GJ)^{1/2}\left\{\left(1+\dfrac{\pi ^{2}\beta _{x}^{2}}{4l^{2}}\dfrac{EI_{y}}{GJ}\right)^{1/2}+\dfrac{\pi \beta _{x}}{2l}\left(\dfrac{EI_{y}}{GJ}\right)^{1/2}\right\} $$
 
 Donde:
 
-![Ecuación](img/ec-p573-70.png)
+$$ \beta _{x}=\dfrac{l}{I_{x}}\left(\int\limits_{0}^{A} x^{2}ydA+\int\limits_{0}^{A} y^{3}dA\right)-2y_{0} $$
 
 $I_{x}$ = segundo momento del área respecto al mayor eje centroidal
 

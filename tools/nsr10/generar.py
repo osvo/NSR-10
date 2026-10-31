@@ -15,6 +15,7 @@ Pasos:
 """
 import glob
 import os
+import re
 import shutil
 import sys
 
@@ -30,6 +31,54 @@ TITULOS = {"A": "FORK-DOC-006.pdf", "B": "FORK-DOC-008.pdf", "C": "FORK-DOC-014.
            "D": "FORK-DOC-017.pdf", "E": "FORK-DOC-018.pdf", "F": "FORK-DOC-019.pdf",
            "G": "FORK-DOC-022.pdf", "H": "FORK-DOC-023.pdf", "I": "FORK-DOC-025.pdf",
            "J": "FORK-DOC-026.pdf", "K": "FORK-DOC-027.pdf"}
+
+# Páginas que faltan en el PDF de un título y se toman de la compilación completa (FORK-DOC-057,
+# NSR10-Completa.pdf). El PDF del Título F salta de F-396 a F-439: faltan F.4.6 (resto), F.4.7 y
+# F.4.8, que en la compilación son las páginas 1078 a 1119. Se extraen aparte y se agregan al final
+# del capítulo, después de la introducción de F.4.6 que sí trae el PDF del título.
+SUPLEMENTOS = {"F": {"pdf": "FORK-DOC-057.pdf", "paginas": (1078, 1119), "archivo": "F.04.md",
+                     "tras": "### F.4.6 — ENSAYOS PARA CASOS ESPECIALES"}}
+
+
+def suplir(fuentes, letra, carpeta):
+    """Extrae las páginas faltantes y las inserta en el capítulo; los recortes se nombran con la
+    página de la compilación («ec-c1082-120.png») para que no choquen con los del título."""
+    import tempfile
+    import pymupdf
+    s = SUPLEMENTOS[letra]
+    a, b = s["paginas"]
+    with tempfile.TemporaryDirectory() as tmp:
+        parcial = os.path.join(tmp, "suplemento.pdf")
+        doc = pymupdf.open()
+        doc.insert_pdf(pymupdf.open(os.path.join(fuentes, s["pdf"])), from_page=a - 1, to_page=b - 1)
+        doc.save(parcial)
+        salida = os.path.join(tmp, "md")
+        extraer.procesar(parcial, letra, salida)
+        cuerpo = []
+        for nombre in sorted(os.listdir(salida)):
+            if nombre.endswith(".md") and nombre != "README.md":
+                lineas = open(os.path.join(salida, nombre), encoding="utf-8").read().split("\n")
+                cuerpo += [x for x in lineas if not x.startswith("# ")]
+        # La marca de fin de capítulo (█) y la página de «Notas:» en blanco que la sigue no son texto.
+        while cuerpo and re.fullmatch(r"\s*(█\s*)?(Notas:)?\s*", cuerpo[-1]):
+            cuerpo.pop()
+        texto = "\n".join(cuerpo).strip("\n")
+        renombre = {}
+        for nombre in os.listdir(os.path.join(salida, "img")):
+            nuevo = re.sub(r"-p(\d+)(?=[-.])", lambda m: f"-c{int(m.group(1)) + a - 1}", nombre)
+            renombre[nombre] = nuevo
+            shutil.copyfile(os.path.join(salida, "img", nombre), os.path.join(carpeta, "img", nuevo))
+        texto = re.sub(r"\(img/([^)\s]+)\)", lambda m: f"(img/{renombre.get(m.group(1), m.group(1))})", texto)
+    ruta = os.path.join(carpeta, s["archivo"])
+    md = open(ruta, encoding="utf-8").read()
+    if s["tras"] not in md:
+        sys.exit(f"Suplemento de {letra}: no se encontró «{s['tras']}» en {s['archivo']}")
+    # El capítulo debe terminar en la sección donde se corta el PDF; el suplemento va al final.
+    if md.rstrip().split("\n### ")[-1].split("\n")[0] != s["tras"][4:]:
+        sys.exit(f"Suplemento de {letra}: {s['archivo']} ya no termina en «{s['tras']}»")
+    md = md.rstrip("\n") + "\n\n" + texto + "\n"
+    open(ruta, "w", encoding="utf-8", newline="\n").write(md)
+    print(f"Título {letra}: páginas {a}-{b} de {s['pdf']} insertadas en {s['archivo']}")
 
 
 def aplicar_correcciones(destino):
@@ -68,6 +117,8 @@ def main(fuentes):
                 shutil.rmtree(ruta)
         print(f"Título {letra}: extrayendo")
         extraer.procesar(os.path.join(fuentes, pdf), letra, carpeta)
+        if letra in SUPLEMENTOS:
+            suplir(fuentes, letra, carpeta)
     # Apéndices transcritos a mano (tablas de ecuaciones que no se pueden extraer celda por celda).
     for ruta in sorted(glob.glob(os.path.join(AQUI, "apendices", "*.md"))):
         nombre = os.path.basename(ruta)

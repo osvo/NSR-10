@@ -239,7 +239,7 @@ Se distinguen cuatro tipos principales de suelos colapsables, a saber:
 
 Se identifica la colapsabilidad de estos depósitos, cuando el volumen de vacíos iguala la cantidad de agua en el punto del límite líquido. Para mayor cantidad de agua o menor volumen de vacíos el depósito es inestable. La evaluación se puede hacer mediante la siguiente formulación:
 
-![Ecuación H.9.3-1](img/ec-H.9.3-1.png)
+$$ \gamma_{dcrit} = \dfrac{\gamma_w}{(1/G_s) + w_\ell} \tag{H.9.3-1} $$
 
 **H.9.3.3.1** — Criterio de evaluación — De esta manera, puede decirse que si: $\frac{γ_{d}}{γ_{dcirt}}>1$ el suelo es estable o expansivo, y si $γ_{d}$ $≤1$ el suelo es colapsable $γdcirt$
 
@@ -247,11 +247,11 @@ Se identifica la colapsabilidad de estos depósitos, cuando el volumen de vacío
 
 Se define la deformación del hidrocolapso potencial como dependiente del coeficiente de hidroconsolidación y de la relación de esfuerzos entre el presente y el umbral de colapso, así:
 
-![Ecuación H.9.3-2](img/ec-H.9.3-2.png)
+$$ \varepsilon_w = c_w \left( \log \sigma - \log \sigma_t \right) = c_w \log \left( \dfrac{\sigma}{\sigma_t} \right) \tag{H.9.3-2} $$
 
 donde:
 
-![Ecuación H.9.3-3](img/ec-H.9.3-3.png)
+$$ c_w = \dfrac{d\varepsilon_w}{d \left( \log \sigma \right)} \tag{H.9.3-3} $$
 
 De acuerdo con la anterior definición de términos, la clasificación se presenta en la tabla H.9.3-1.
 
@@ -271,7 +271,7 @@ Clasificación de colapsibilidad
 
 El cálculo de asentamientos por colapso de los suelos puede hacerse por medio de la siguiente formulación (Es posible utilizar otras expresiones de reconocida validez en la literatura):
 
-![Ecuación H.9.3-4](img/ec-H.9.3-4.png)
+$$ \delta_w = \sum \alpha\, c_w\, H_i \log \left( \dfrac{\sigma_v}{\sigma_t} \right) \tag{H.9.3-4} $$
 
 donde $α =\frac{S−S_{o}}{1−S_{o}}$ equivale a una saturación relativa o a un coeficiente de humedecimiento.
 
@@ -309,11 +309,11 @@ Las raíces propias de la vegetación tienen la capacidad de extraer agua del su
 
 La presión del agua dentro del suelo puede expresarse como:
 
-![Ecuación H.9.4-1](img/ec-H.9.4-1.png)
+$$ u = \alpha p - s \tag{H.9.4-1} $$
 
 donde la fracción de presión total $(αp)$ es siempre positiva, y la succión $( s)$ es siempre negativa. La succión puede expresarse en términos de la escala logarítmica $pF$ como función de la altura negativa del agua en cm, así:
 
-![Ecuación H.9.4-2](img/ec-H.9.4-2.png)
+$$ pF = \log_{10} \dfrac{h}{\gamma_w} \tag{H.9.4-2} $$
 
 #### H-9.4.2.1 — Equivalencias de la succión
 
@@ -379,7 +379,7 @@ Figura H.9.4-2 — El contenido de humedad como expresión de la succión para d
 
 **H.9.4.5.2** — Tipo de suelos — La humedad de equilibrio depende del tipo de suelo expresado en términos del límite líquido. Se calcula así:
 
-![Ecuación H.9.4-3](img/ec-H.9.4-3.png)
+$$ w_{eq} = B\,LL \tag{H.9.4-3} $$
 
 Para diferentes succiones, $B$ adopta diferentes valores, en concordancia con lo expresado en la ecuación H.2.4-1 (véase la figura H.9.4-3), así:
 

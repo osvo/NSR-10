@@ -110,7 +110,7 @@ La colocación de pilotes y pilas se ajustará al proyecto correspondiente, veri
 
 Los pilotes de diámetro menor de 40 cm deberán revisarse por pandeo verificando que la fuerza axial a la que se encontrarán sometidos, no rebasará la fuerza crítica $Pc$ definida por:
 
-![Ecuación H.8.4-1](img/ec-H.8.4-1.png)
+$$ P_c = \left( N^2 \pi^2 El / 4L^2 + 4KDL^2 \pi^2 \right) / F_S \tag{H.8.4-1} $$
 
 en donde, $K$ coeficiente de reacción horizontal del suelo; $D$ diámetro del pilote; $E$ módulo de elasticidad del pilote; $l$ momento de inercia del pilote; $N$ número entero, determinado por tanteo, que genere el menor valor de $P_{c}$ ; $L$ longitud del pilote; y $F_{S}$ se tomará igual a 3.0.
 

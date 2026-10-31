@@ -922,7 +922,7 @@ con perfiles laminados, armados y tubería estructural
 
 (a) El área mínima de refuerzo transversal Ash cumplirá con lo siguiente:
 
-![Ecuación F.3.4.1-8](img/ec-F.3.4.1-8.png)
+$$ A_{sh} = 0.09\,h_{cc} s \left(1 - \dfrac{F_y A_s}{P_n}\right) \left(\dfrac{f'_c}{F_{yh}}\right) \tag{F.3.4.1-8} $$
 
 donde:
 
@@ -1205,7 +1205,7 @@ F.3.5.6 — Sistemas de columnas en voladizo con capacidad de disipación de ene
 
 La resistencia requerida a cortante $V_{u}$ de la conexión debe basarse en las combinaciones de carga del Título B incluyendo la carga sísmica amplificada, en la cual el efecto de las fuerzas horizontales incluyendo la sobreresistencia deben ser tomadas como:
 
-![Ecuación F.3.5.1-1](img/ec-F.3.5.1-1.png)
+$$ E_{mh} = 2\left(1.1\,R_y M_p\right)/L_{cf} \tag{F.3.5.1-1} $$
 
 donde:
 
@@ -1312,7 +1312,7 @@ Deben realizarse al menos dos ensayos de la conexión y pueden basarse en una de
 
 **F.3.5.2.6.4** — Resistencia a cortante requerida — La resistencia requerida a cortante $V_{u}$ de la conexión debe basarse en las combinaciones de carga del Título B incluyendo la carga sísmica amplificada, en la cual el efecto de las fuerzas horizontales incluyendo la sobreresistencia deben ser calculadas como:
 
-![Ecuación F.3.5.2-1](img/ec-F.3.5.2-1.png)
+$$ E_{mh} = 2\left(1.1\,R_y M_p\right)/L_h \tag{F.3.5.2-1} $$
 
 donde:
 
@@ -1351,19 +1351,19 @@ ESPECIAL (PRM-DES)
 
 **F.3.5.3.4.1** — Relación de momentos — Deben satisfacerse las siguientes relaciones en las conexiones viga-columna:
 
-![Ecuación F.3.5.3-1](img/ec-F.3.5.3-1.png)
+$$ \dfrac{\sum M_{pc}^*}{\sum M_{pb}^*} > 1 \tag{F.3.5.3-1} $$
 
 donde:
 
 $∑M^{*}_{pc}$ = suma de las proyecciones al eje de la viga, de la resistencia nominal a flexión de las columnas (incluidas las ménsulas si estas se utilizan) arriba y abajo de la unión , con una reducción debida a la fuerza axial de la columna. Se puede calcular como:
 
-![Ecuación F.3.5.3-2](img/ec-F.3.5.3-2.png)
+$$ \sum M_{pc}^* = \sum Z_c \left(F_{yc} - P_{uc}/A_g\right) \tag{F.3.5.3-2} $$
 
 Cuando los ejes de vigas opuestas en la misma conexión no coincidan se debe utilizar la línea intermedia entre ejes.
 
 $∑M^{*}_{pb}$ = suma de las proyecciones al eje de la columna de las resistencias esperadas a flexión de las vigas en la rótula plástica. Se puede calcular como:
 
-![Ecuación F.3.5.3-3](img/ec-F.3.5.3-3.png)
+$$ \sum M_{pb}^* = \sum \left(1.1\,R_y F_{yb} Z_b + M_{uv}\right) \tag{F.3.5.3-3} $$
 
 Alternativamente, se puede determinar $∑M^{*}_{pb}$ consistentemente con el diseño de la conexión precalificada de acuerdo con ANSI/AISC 358, o como se determine en una precalificación de conexión de acuerdo con la sección F.3.11.1 o en un programa de ensayos de calificación de acuerdo con F.3.11.2.
 
@@ -1371,7 +1371,7 @@ Cuando se usen conexiones con vigas de sección reducida, se puede calcular como
 
 con perfiles laminados, armados y tubería estructural
 
-![Ecuación F.3.5.3-4](img/ec-F.3.5.3-4.png)
+$$ \sum M_{pb}^* = \sum \left(1.1\,R_y F_{yb} Z_{RBS} + M_{uv}\right) \tag{F.3.5.3-4} $$
 
 $A_{g}$ = área bruta de la columna, mm2.
 
@@ -1399,7 +1399,7 @@ Para efectos de esta excepción la resistencia de diseño de las columnas debe c
 
 donde:
 
-![Ecuación F.3.5.3-5](img/ec-F.3.5.3-5.png)
+$$ P_c = F_{yc} A_g \text{, N} \tag{F.3.5.3-5} $$
 
 $P_{uc}$ = resistencia requerida a la compresión, N (2) Las columnas en cualquier piso tienen una relación de resistencia de diseño a cortante a resistencia requerida a cortante 50% mayor que el piso inmediatamente superior.
 
@@ -1482,7 +1482,7 @@ Las zonas de rótulas plásticas en los extremos de vigas en PRM-DES deben trata
 
 con perfiles laminados, armados y tubería estructural
 
-![Ecuación F.3.5.3-6](img/ec-F.3.5.3-6.png)
+$$ E_{mh} = 2\left(1.1\,R_y M_p\right)/L_h \tag{F.3.5.3-6} $$
 
 donde:
 
@@ -1498,7 +1498,7 @@ En lugar de la ecuación F.3.5.2-1, la resistencia requerida a cortante de la co
 
 (2) Espesor de la zona de panel — Los espesores individuales, $t$ , de las almas de la columna y placas de enchape, en caso de utilizarse, deben cumplir el siguiente requisito:
 
-![Ecuación F.3.5.3-7](img/ec-F.3.5.3-7.png)
+$$ t \ge \left(d_z + w_z\right)/90 \tag{F.3.5.3-7} $$
 
 donde:
 
@@ -1530,9 +1530,9 @@ Cuando una placa de enchape interfiere con placas de continuidad conectadas dire
 
 (b) Cuando la aleta de la viga este soldada a la aleta de una columna laminada o armada con sección $I$ que tenga un espesor que satisfaga las ecuaciones F.3.5.3-8 y F.3.5.3-9 no se requieren placas de continuidad:
 
-![Ecuación F.3.5.3-8](img/ec-F.3.5.3-8.png)
+$$ t_{cf} \ge 0.4\sqrt{1.8\,b_{bf} t_{bf}\,\dfrac{F_{yb} R_{yb}}{F_{yc} R_{yc}}} \tag{F.3.5.3-8} $$
 
-![Ecuación F.3.5.3-9](img/ec-F.3.5.3-9.png)
+$$ t_{cf} \ge \dfrac{b_{bf}}{6} \tag{F.3.5.3-9} $$
 
 donde:
 
@@ -1550,9 +1550,9 @@ $R_{yc}$ = relación del esfuerzo de fluencia esperado del material de la column
 
 (c) Cuando la aleta de la viga esté soldada a la aleta de una columna formada por un perfil $I$ encajonado y que tenga un espesor que cumpla las ecuaciones F.3.5.3.10 y F.3.5.3.11 no necesita placas de continuidad.
 
-![Ecuación F.3.5.3-10](img/ec-F.3.5.3-10.png)
+$$ t_{cf} \ge 0.4\sqrt{\left[1 - \dfrac{b_{bf}}{b_{cf}^2} \left(b_{cf} - \dfrac{b_{bf}}{4}\right)\right] 1.8\,b_{bf} t_{bf}\,\dfrac{F_{yb} R_{yb}}{F_{yc} R_{yc}}} \tag{F.3.5.3-10} $$
 
-![Ecuación F.3.5.3-11](img/ec-F.3.5.3-11.png)
+$$ t_{cf} \ge \dfrac{b_f}{12} \tag{F.3.5.3-11} $$
 
 (d) Para conexiones pernadas, deben aplicarse las especificaciones ANSI/AISC 358.
 
@@ -1612,7 +1612,7 @@ Las resistencias axiales requeridas debidas a cargas vivas y muertas de los miem
 
 **F.3.5.4.4.2** — Arriostramiento para la estabilidad de la cercha — Cada aleta de las cuerdas superior e inferior de la cercha debe estar arriostrada lateralmente en los extremos del segmento especial. La resistencia requerida de la riostra lateral debe cumplir con:
 
-![Ecuación F.3.5.4-1](img/ec-F.3.5.4-1.png)
+$$ P_u = 0.06\,R_y F_y A_f \tag{F.3.5.4-1} $$
 
 donde:
 
@@ -1620,7 +1620,7 @@ $A_{f}$ es el área bruta de la aleta del miembro de la cuerda del segmento espe
 
 **F.3.5.4.4.3** — Arriostramiento para la estabilidad de las conexiones cercha-columna — La columna debe estar arriostrada lateralmente al nivel de las cuerdas superior e inferior de las cerchas conectadas a las columnas. Las riostras laterales deben tener una resistencia requerida de:
 
-![Ecuación F.3.5.4-2](img/ec-F.3.5.4-2.png)
+$$ P_u = 0.02\,R_y P_{nc} \tag{F.3.5.4-2} $$
 
 donde:
 
@@ -1628,7 +1628,7 @@ $P_{nc}$ es la resistencia nominal a compresión de los miembros de la cuerda en
 
 **F.3.5.4.4.4** — Rigidez del arriostramiento para la estabilidad — La rigidez requerida de la riostra debe cumplir los requisitos de F.2.20 donde:
 
-![Ecuación F.3.5.4-3](img/ec-F.3.5.4-3.png)
+$$ P_r = R_y P_{nc} \tag{F.3.5.4-3} $$
 
 **F.3.5.4.5** — Miembros
 
@@ -1638,11 +1638,11 @@ con perfiles laminados, armados y tubería estructural La resistencia de diseño
 
 donde:
 
-![Ecuación F.3.5.4-4](img/ec-F.3.5.4-4.png)
+$$ P_n = F_y A_g \tag{F.3.5.4-4} $$
 
 **F.3.5.4.5.2** — Resistencia vertical a cortante esperada del segmento especial — La resistencia vertical a cortante esperada del segmento especial $V_{ne}$ al centro de la luz está dada como:
 
-![Ecuación F.3.5.4-5](img/ec-F.3.5.4-5.png)
+$$ V_{ne} = \dfrac{3.60\,R_y M_{nc}}{L_s} + \dfrac{0.036\,EI(L - L_s)}{L_s^3} + R_y \left(P_{nt} + 0.3\,P_{nc}\right) \operatorname{sen}\alpha \tag{F.3.5.4-5} $$
 
 donde:
 
@@ -2030,33 +2030,33 @@ Los vínculos de secciones en cajón armadas deben tener un momento de inercia, 
 
 (a) Para fluencia por cortante:
 
-![Ecuación F.3.6.3-1](img/ec-F.3.6.3-1.png)
+$$ V_n = V_p \tag{F.3.6.3-1} $$
 
 donde:
 
-![Ecuación F.3.6.3-2](img/ec-F.3.6.3-2.png)
+$$ V_p = 0.6\,F_y A_{lw} \quad \text{para } P_u/P_y \le 0.15 \tag{F.3.6.3-2} $$
 
-![Ecuación F.3.6.3-3](img/ec-F.3.6.3-3.png)
+$$ V_p = 0.6\,F_y A_{lw} \sqrt{1 - \left(P_u/P_y\right)^2} \quad \text{para } P_u/P_y > 0.15 \tag{F.3.6.3-3} $$
 
-![Ecuación F.3.6.3-4](img/ec-F.3.6.3-4.png)
+$$ A_{lw} = \left(d - 2t_f\right) t_w \quad \text{para vínculos con sección } I \tag{F.3.6.3-4} $$
 
-![Ecuación F.3.6.3-5](img/ec-F.3.6.3-5.png)
+$$ A_{lw} = 2\left(d - 2t_f\right) t_w \quad \text{para vínculos sección cajón} \tag{F.3.6.3-5} $$
 
 $P_{u}$ = resistencia axial requerida, N
 
-![Ecuación F.3.6.3-6](img/ec-F.3.6.3-6.png)
+$$ P_y = \text{resistencia axial nominal a la fluencia} = F_y A_g \text{, N} \tag{F.3.6.3-6} $$
 
 con perfiles laminados, armados y tubería estructural
 
 (b) Para fluencia por flexión:
 
-![Ecuación F.3.6.3-7](img/ec-F.3.6.3-7.png)
+$$ V_n = 2M_p/e \tag{F.3.6.3-7} $$
 
 donde:
 
-![Ecuación F.3.6.3-8](img/ec-F.3.6.3-8.png)
+$$ M_p = F_y Z \quad \text{para } P_u/P_y \le 0.15 \tag{F.3.6.3-8} $$
 
-![Ecuación F.3.6.3-9](img/ec-F.3.6.3-9.png)
+$$ M_p = F_y Z \left[\dfrac{1 - P_u/P_y}{0.85}\right] \quad \text{para } P_u/P_y > 0.15 \tag{F.3.6.3-9} $$
 
 $e$ = longitud del vínculo definida como la distancia libre entre los extremos de dos riostras diagonales o entre la riostra diagonal y la cara de la columna, mm.
 
@@ -2064,15 +2064,15 @@ $e$ = longitud del vínculo definida como la distancia libre entre los extremos 
 
 Cuando $ρ ≤'0.5$
 
-![Ecuación F.3.6.3-10](img/ec-F.3.6.3-10.png)
+$$ e \le \dfrac{1.6\,M_p}{V_p} \tag{F.3.6.3-10} $$
 
 Cuando $ρ >0.5$
 
-![Ecuación F.3.6.3-11](img/ec-F.3.6.3-11.png)
+$$ e \le \dfrac{1.6\,M_p}{V_p} \left(1.15 - 0.3\,\rho'\right) \tag{F.3.6.3-11} $$
 
 donde:
 
-![Ecuación F.3.6.3-12](img/ec-F.3.6.3-12.png)
+$$ \rho' = \dfrac{P_u/P_y}{V_u/V_y} \tag{F.3.6.3-12} $$
 
 $V_{u}$ = resistencia a cortante requerida, N
 
@@ -2274,7 +2274,7 @@ No se permite empalmes en el núcleo de acero.
 
 La resistencia axial de diseño de la riostra, $φP_{ysc}$, a tensión y a compresión, de acuerdo con el estado limite de fluencia, se debe determinar de la siguiente manera:
 
-![Ecuación F.3.6.4-1](img/ec-F.3.6.4-1.png)
+$$ P_{ysc} = F_{ysc} A_{sc} \tag{F.3.6.4-1} $$
 
 $φ =0.9$ donde,
 
@@ -2379,7 +2379,7 @@ $L$ = distancia entre ejes de los EBV, mm.
 
 **F.3.6.5.5.2** — Almas — La resistencia de diseño a cortante del panel,$φV_{n}$, de acuerdo con el estado límite de fluencia a cortante, debe determinarse como sigue:
 
-![Ecuación F.3.6.5-1](img/ec-F.3.6.5-1.png)
+$$ V_n = 0.42\,F_y t_w L_{cf} \operatorname{sen} 2\alpha \tag{F.3.6.5-1} $$
 
 $φ =0.9$ donde:
 
@@ -2401,7 +2401,7 @@ $t_{w}$ = espesor del alma, mm.
 
 $α$ = ángulo de fluencia del alma en grados, medido con relación a la vertical. El ángulo de inclinación, $α$ puede tomarse como 40°, o calcularse como sigue:
 
-![Ecuación F.3.6.5-2](img/ec-F.3.6.5-2.png)
+$$ \tan^4 \alpha = \dfrac{1 + \dfrac{t_w L}{2A_c}}{1 + t_w h \left(\dfrac{1}{A_b} + \dfrac{h^3}{360\,I_c L}\right)} \tag{F.3.6.5-2} $$
 
 **F.3.6.5.5.3** — Zona protegida — La zona protegida de los MCA debe satisfacer la sección F.3.4.1.3, e incluye lo siguiente:
 
@@ -2452,7 +2452,7 @@ $H_{c}$ = altura libre de la columna entre conexiones de vigas, incluyendo la lo
 
 (1) Resistencia — La resistencia de diseño a cortante del panel, $φV_{n}$, de acuerdo con el estado límite de fluencia a cortante, debe determinarse como sigue para almas perforadas:
 
-![Ecuación F.3.6.5-3](img/ec-F.3.6.5-3.png)
+$$ V_n = 0.42\,F_y t_w L_{cf} \left(1 - 0.7\,D/S_{diag}\right) \tag{F.3.6.5-3} $$
 
 $φ =0.9$ donde:
 
@@ -2462,7 +2462,7 @@ $S_{diag}$ = distancia mínima centro a centro entre perforaciones, mm.
 
 (2) Espaciamiento — El espaciamiento $S_{diag}$ debe ser como mínimo $1.67D$ . La distancia entre las primeras perforaciones y las conexiones del alma a los EBH y los EBV, debe ser $D$ , como mínimo pero no mayor de $D+0.7S_{diag}$ (3) Rigidez — La rigidez de las placas regularmente perforadas debe calcularse utilizando un espesor efectivo de placa de alma, $t_{ef}$, dada por:
 
-![Ecuación F.3.6.5-4](img/ec-F.3.6.5-4.png)
+$$ t_{ef} = \dfrac{1 + \dfrac{\pi}{4} \left(\dfrac{D}{S_{diag}}\right)}{1 - \dfrac{\pi}{4} \left(\dfrac{D}{S_{diag}}\right) \left(1 - \dfrac{N_r D \operatorname{sen}\alpha}{H_c}\right)}\,t_w \tag{F.3.6.5-4} $$
 
 donde:
 
@@ -2480,23 +2480,23 @@ $α$ = ángulo con respecto a la vertical de la línea centro a centro más cort
 
 (1) Diseño a tensión — La platina curva debe tener una resistencia de diseño que desarrolle la fuerza de tensión axial resultante de la tensión de la placa del alma en ausencia de otras fuerzas.
 
-![Ecuación F.3.6.5-5](img/ec-F.3.6.5-5.png)
+$$ P_u = \dfrac{R_y F_y t_w R^2}{4e} \tag{F.3.6.5-5} $$
 
 donde:
 
 $R$ = radio de la perforación, mm.
 
-![Ecuación F.3.6.5-6](img/ec-F.3.6.5-6.png)
+$$ e = R\left(1 - \sqrt{2}/2\right) \text{, mm.} \tag{F.3.6.5-6} $$
 
 Los EBH y los EBV deben diseñarse para resistir las fuerzas axiales de tensión en el extremo del refuerzo curvo.
 
 (2) Diseño para las fuerzas de la conexión viga-columna — Las platinas curvas deben tener una resistencia de diseño capaz de desarrollar los efectos combinados de fuerza axial y momento en el plano del alma que resultan de la deformación de la conexión en ausencia de otras fuerzas. La fuerza es:
 
-![Ecuación F.3.6.5-7](img/ec-F.3.6.5-7.png)
+$$ P_u = \dfrac{15\,EI_y}{4e^2}\,\dfrac{\Delta}{H} \tag{F.3.6.5-7} $$
 
 El momento es:
 
-![Ecuación F.3.6.5-8](img/ec-F.3.6.5-8.png)
+$$ M_u = \dfrac{P_u R}{2} \tag{F.3.6.5-8} $$
 
 donde:
 
@@ -2570,7 +2570,7 @@ con perfiles laminados, armados y tubería estructural Las zonas de rótulas pl�
 
 **F.3.7.2.6.4** — Resistencia a cortante requerida — La resistencia requerida a cortante $V_{u}$ de la conexión debe basarse en las combinaciones de carga del Título B incluyendo la carga sísmica amplificada, en la que el efecto de las fuerzas horizontales, incluyendo la sobre resistencia, se debe tomar como:
 
-![Ecuación F.3.7.2-1](img/ec-F.3.7.2-1.png)
+$$ E_{mh} = 2\left(1.1\,R_y M_{p,esp}\right)/L_h \tag{F.3.7.2-1} $$
 
 donde $Mp, esp$ es la resistencia a la flexión plástica esperada de las vigas de acero, las embebidas o compuestas. Para vigas embebidas o compuestas, $Mp, esp$debe calcularse usando la distribución plástica de esfuerzos o el método de compatibilidad de deformaciones. Deben utilizarse factores $R_{y}$ apropiados para los diferentes elementos de la sección transversal estableciendo el equilibrio de fuerzas en la sección y calculando la resistencia a flexión. $L_{h}$ es la distancia entre rótulas plásticas en la viga, mm. Para vigas de acero, $Mp, esp$ en la ecuación F.3.7.2-1 puede tomarse como $R_{y} M_{p}$ de la viga.
 
@@ -2598,7 +2598,7 @@ Los diafragmas internos deberán tener aberturas circulares suficientes para la 
 
 **F.3.7.3.4.1** — Relaciones de momento — Deben satisfacerse las siguientes relaciones en las conexiones viga-columna:
 
-![Ecuación F.3.7.3-1](img/ec-F.3.7.3-1.png)
+$$ \dfrac{\sum M_{pcc}^*}{\sum M_{p,esp}^*} > 1 \tag{F.3.7.3-1} $$
 
 donde:
 
@@ -2622,7 +2622,7 @@ Excepción — Las vigas embebidas en concreto reforzado deben satisfacer los re
 
 Las vigas compuestas embebidas en concreto que sean parte del PRMC-DES deben satisfacer también el que la distancia desde la fibra de concreto de mayor compresión al eje neutro plástico no sea mayor que:
 
-![Ecuación F.3.7.3-2](img/ec-F.3.7.3-2.png)
+$$ Y_{PNA} = \dfrac{Y_{con} + d}{1 + \left(\dfrac{1\,700\,F_y}{E}\right)} \tag{F.3.7.3-2} $$
 
 donde:
 
@@ -2675,7 +2675,7 @@ Se permiten conexiones que puedan acomodar el ángulo de deriva de piso requerid
 
 **F.3.7.3.6.4** — Resistencia a cortante requerida — La resistencia requerida a cortante $V_{u}$ de la conexión debe basarse en las combinaciones de carga del Título B que incluya la carga sísmica amplificada, en la que el efecto de las fuerzas horizontales, incluyendo la sobre resistencia deben ser calculadas como:
 
-![Ecuación F.3.7.3-3](img/ec-F.3.7.3-3.png)
+$$ E_{mh} = 2\left(1.1\,R_y M_{p,esp}\right)/L_h \tag{F.3.7.3-3} $$
 
 donde $Mp,esp$ es la resistencia a la flexión esperada de las vigas de acero, embebidas o compuestas.
 
@@ -2895,7 +2895,7 @@ Los siguientes requisitos aplican para vigas en secciones $I$ .
 
 (b) La resistencia a cortante esperada, $V_{n}$ , para vigas de acople de acero debe calcularse con la ecuación F.3.8.4-1
 
-![Ecuación F.3.8.4-1](img/ec-F.3.8.4-1.png)
+$$ V_n = \dfrac{2R_y M_p}{g} \le R_y V_p \tag{F.3.8.4-1} $$
 
 donde:
 
@@ -2911,7 +2911,7 @@ $g$ = distancia libre de la viga de acople, mm.
 
 (c) La longitud de empotramiento, $L_{e}$ , debe calcularse con la ecuación F.3.8.4-2. La longitud de empotramiento debe considerarse que empieza por dentro de la primera capa de refuerzo de confinamiento del miembro de borde del muro.
 
-![Ecuación F.3.8.4-2](img/ec-F.3.8.4-2.png)
+$$ V_n = 0.004\sqrt{f'_c} \left(\dfrac{b_w}{b_f}\right)^{0.66} \beta_1 b_f L_e \left[\dfrac{0.58 - 0.22\,\beta_1}{0.88 + g/2L_e}\right] \tag{F.3.8.4-2} $$
 
 donde:
 
@@ -2933,7 +2933,7 @@ con perfiles laminados, armados y tubería estructural
 
 (a) Las vigas de acople deben tener una longitud de empotramiento dentro del muro de concreto reforzado que sea suficiente para desarrollar la resistencia a cortante esperada, $Vn,comp$, calculada con la ecuación F.3.8.4-3.
 
-![Ecuación F.3.8.4-3](img/ec-F.3.8.4-3.png)
+$$ V_{n,comp} = \dfrac{2M_{p,esp}}{g} \le V_{comp} \tag{F.3.8.4-3} $$
 
 donde:
 
@@ -2943,7 +2943,7 @@ Deben usarse factores $R_{y}$ apropiados para los diferentes elementos de la sec
 
 $V_{comp}$= resistencia a cortante límite esperada de la viga de acople compuesta embebida calculada con la ecuación F.3.8.4-4, N.
 
-![Ecuación F.3.8.4-4](img/ec-F.3.8.4-4.png)
+$$ V_{comp} = R_y V_p + \left(0.166\sqrt{f'_c}\,b_{wc} d_c + \dfrac{A_s F_{yt} d_c}{s}\right) \tag{F.3.8.4-4} $$
 
 donde:
 
@@ -3003,7 +3003,7 @@ con perfiles laminados, armados y tubería estructural El refuerzo vertical del 
 
 Los miembros de acero embebidos deben contar con dos regiones de refuerzo de transferencia vertical anclado a la aleta superior e inferior del miembro embebido. La primera región debe estar localizada de manera que coincida con la ubicación de las barras de refuerzo longitudinales del muro cercanas a la cara del muro. La segunda debe localizarse a una distancia no menor que $d /2$ desde donde se termina la longitud de empotramiento. Todas las barras de refuerzo de transferencia deben tener su longitud de desarrollo completa cuando envuelvan las aletas de la viga de acople. Se pueden usar anclajes rectos, con gancho o mecánicos para suministrar dicho desarrollo. Se pueden usar acoples metálicos soldados a las aletas para anclar las barras de transferencia verticales. El área de refuerzo de transferencia vertical requerido se calcula con la ecuación F.3.8.5-1:
 
-![Ecuación F.3.8.5-1](img/ec-F.3.8.5-1.png)
+$$ A_{tb} \ge 0.03\,f'_c L_e b_f/F_{ytf} \tag{F.3.8.5-1} $$
 
 donde:
 
@@ -3017,7 +3017,7 @@ $b_{f}$ = ancho de aleta de la viga, mm
 
 $f_{c}'$ = resistencia a compresión del concreto, MPa El área del refuerzo de transferencia vertical no debe exceder el calculado por la ecuación F.3.8.5-2:
 
-![Ecuación F.3.8.5-2](img/ec-F.3.8.5-2.png)
+$$ \sum A_{tb} < 0.08\,L_e b_w - A_s \tag{F.3.8.5-2} $$
 
 donde:
 
@@ -3031,7 +3031,7 @@ $b_{w}$ = ancho del muro, mm.
 
 Para todas las vigas de acople compuestas embebidas, la resistencia a cortante esperada, $V_{comp}$, es:
 
-![Ecuación F.3.8.5-3](img/ec-F.3.8.5-3.png)
+$$ V_{comp} = 1.1\,R_y V_p + 1.56 \left(0.166\sqrt{f'_c}\,b_{wc} d_c + \dfrac{A_s F_{yr} d_c}{s}\right) \tag{F.3.8.5-3} $$
 
 **F.3.8.5.6** — Conexiones
 
@@ -3080,7 +3080,7 @@ Para todas las vigas de acople compuestas embebidas, la resistencia a cortante e
 
 **F.3.8.6.5.2** — Almas — La resistencia de diseño a cortante del tablero, $φV_{n}$, para el estado límite de fluencia por cortante de una placa compuesta que cumpla con la sección F.3.8.6.5.3, debe determinarse como sigue:
 
-![Ecuación F.3.8.6-1](img/ec-F.3.8.6-1.png)
+$$ V_n = 0.6\,A_{sp} F_y \qquad \phi = 0.9 \tag{F.3.8.6-1} $$
 
 donde:
 

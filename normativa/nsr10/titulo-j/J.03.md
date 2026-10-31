@@ -656,7 +656,7 @@ Espesor mínimo equivalente, $e_{E}$ , de muros de mampostería de concreto, en 
 
 **J.3.5.3.1** — El espesor mínimo equivalente se calcula con base en la ecuación J.3.5-1.
 
-![Ecuación J.3.5-1](img/ec-J.3.5-1.png)
+$$ e_E = \dfrac{V}{LA} \tag{J.3.5-1} $$
 
 Donde:
 
@@ -692,7 +692,7 @@ Elementos de acero estructural sin ninguna protección no poseen resistencia con
 
 **J.3.5.4.2** — La resistencia contra el fuego de elementos de acero estructural también puede proveerse con recubrimiento de concreto vaciado en el sitio o con placas prefabricadas de concreto y puede calcularse mediante la ecuación J.3.5-2.
 
-![Ecuación J.3.5-2](img/ec-J.3.5-2.png)
+$$ R = R_0 \left( 1 + 0.03H \right) \tag{J.3.5-2} $$
 
 Donde:
 
@@ -704,7 +704,7 @@ $H$ = contenido de humedad, en porcentaje, de equilibrio del concreto, por volum
 
 **J.3.5.4.3** — La resistencia al fuego, en minutos, $R_{0}$ , cuando el acero se protege con concreto que no tiene contenido de humedad se calcula mediante la ecuación J.3.5-3.
 
-![Ecuación J.3.5-3](img/ec-J.3.5-3.png)
+$$ R_0 = 14.74 \left( \dfrac{W}{P} \right)^{0.7} + 0.552 \left( \dfrac{e^{1.6}}{k_c^{0.2}} \right) \left[ 1 + 6.085 \times 10^{-5} \left( \dfrac{T_a}{d_c} C_c e \left( L + e \right) \right)^{0.8} \right] \tag{J.3.5-3} $$
 
 Donde:
 

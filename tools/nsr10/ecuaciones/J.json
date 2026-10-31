@@ -1,0 +1,5 @@
+{
+  "J.3.5-1": "e_E = \\dfrac{V}{LA}",
+  "J.3.5-2": "R = R_0 \\left( 1 + 0.03H \\right)",
+  "J.3.5-3": "R_0 = 14.74 \\left( \\dfrac{W}{P} \\right)^{0.7} + 0.552 \\left( \\dfrac{e^{1.6}}{k_c^{0.2}} \\right) \\left[ 1 + 6.085 \\times 10^{-5} \\left( \\dfrac{T_a}{d_c} C_c e \\left( L + e \\right) \\right)^{0.8} \\right]"
+}

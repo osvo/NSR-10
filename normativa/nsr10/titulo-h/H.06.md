@@ -89,29 +89,29 @@ Movimientos horizontales en el muro de contención conducentes a los estados act
 
 Se define como la relación entre el esfuerzo efectivo horizontal y el esfuerzo efectivo vertical en cualquier punto dentro de la masa de suelo, así que:
 
-![Ecuación H.6.4-1](img/ec-H.6.4-1.png)
+$$ K_h = \dfrac{\sigma'_h}{\sigma'_v} \tag{H.6.4-1} $$
 
 #### H.6.4.2 — EMPUJE LATERAL DE TIERRAS
 
 Se define como la fuerza lateral ejercida por el suelo y se define como:
 
-![Ecuación H.6.4-2](img/ec-H.6.4-2.png)
+$$ P'_h = \sum K_h \sigma'_v \Delta h \tag{H.6.4-2} $$
 
 #### H.6.4.3 — ESTADO EN REPOSO
 
 El coeficiente de presión de tierras en reposo está definido como
 
-![Ecuación H.6.4-3](img/ec-H.6.4-3.png)
+$$ K_o = 1 - \sin \varphi' = \dfrac{\sigma'_3}{\sigma'_1} \tag{H.6.4-3} $$
 
 **H.6.4.3.1** — Suelo normalmente consolidado — En este caso $K_{oh}=K_{o}$, lo cual quiere decir que la presión horizontal de tierras es igual a la presión en reposo.
 
 **H.6.4.3.2** — Suelo preconsolidado — cuando el suelo está pre consolidado este coeficiente debe evaluarse como se indica a continuación:
 
-![Ecuación H.6.4-4](img/ec-H.6.4-4.png)
+$$ K_h = \left( 1 - \sin \varphi' \right) RSC^{\sin \varphi'} \tag{H.6.4-4} $$
 
 **H.6.4.3.3** — Terreno inclinado — Cuando el terreno por contener no es horizontal sino que posee una inclinación $β$ , este valor se convierte en
 
-![Ecuación H.6.4-5](img/ec-H.6.4-5.png)
+$$ K_h = \left( 1 - \sin \varphi' \right) RSC^{\sin \varphi'} \left( 1 + \operatorname{sen} \beta \right) \tag{H.6.4-5} $$
 
 en la cual $β$ debe tomarse con su signo (+ hacia arriba y - hacia abajo) y válida para $β ≤φ'$
 
@@ -129,15 +129,15 @@ Para este caso particular se ha verificado que la presión de tierras aparente a
 
 (a) Suelos Granulares
 
-![Ecuación H.6.4-6](img/ec-H.6.4-6.png)
+$$ p_h = 0.65 K_A \gamma_t H \tag{H.6.4-6} $$
 
 (b) Suelos Cohesivos para $s_{u}$ kPa (10.0 tonf/m2)
 
-![Ecuación H.6.4-7](img/ec-H.6.4-7.png)
+$$ p_h = 0.2\,\gamma_t\,H \qquad \text{para } s_u \ge 100\ \text{kPa (10.0 tonf/m}^2\text{)} \tag{H.6.4-7} $$
 
 $p_{h}=0.3γ_{t}H$ para 25 kPa (2.5 tonf/m2) $<s_{u}<100$ kPa (10.0 tonf/m2) (H.6.4-8)
 
-![Ecuación H.6.4-9](img/ec-H.6.4-9.png)
+$$ p_h = 0.4\,\gamma_t\,H \qquad \text{para } s_u \le 25\ \text{kPa (2.5 tonf/m}^2\text{)} \tag{H.6.4-9} $$
 
 para $s_{u}$ kPa (2.5 tonf/m2)
 

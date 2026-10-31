@@ -128,7 +128,7 @@ Los muros de mampostería confinada en ningún caso pueden tener una la relació
 
 El área mínima de muros confinados por nivel en cada dirección principal, esta limitada por la siguiente expresión:
 
-![Ecuación D.10.3-1](img/ec-D.10.3-1.png)
+$$ A_m \ge \dfrac{N A_a A_p}{20} \tag{D.10.3-1} $$
 
 ### D.10.4 — REQUISITOS GENERALES PARA LOS ELEMENTOS DE CONFINAMIENTO
 
@@ -274,19 +274,19 @@ Deben tenerse en cuenta las siguientes suposiciones, en el diseño de muros de m
 
 El muro, globalmente, debe verificarse para las cargas axiales de compresión, de acuerdo con lo indicado en D.5.5. El área de refuerzo a emplear allí, corresponde a la del acero longitudinal de las columnas de confinamiento. Cuando los procedimientos de diseño requieren que se verifiquen las resistencias axiales de los elementos de confinamiento, pueden emplearse las siguientes resistencias nominales a compresión axial, $P_{nc}$, y tracción axial, respectivamente, $P_{nt}$:
 
-![Ecuación D.10.7-1](img/ec-D.10.7-1.png)
+$$ P_{nc} = 0.80 \left[ 0.85f'_c \left( A_{ci} - A_{st} \right) + f_y A_{st} \right] \tag{D.10.7-1} $$
 
-![Ecuación D.10.7-2](img/ec-D.10.7-2.png)
+$$ P_{nt} = -f_y A_{st} \tag{D.10.7-2} $$
 
 La resistencia nominal a la compresión de la mampostería sola, $P_{nd}$, sin contribución de los elementos de confinamiento, está definida por:
 
-![Ecuación D.10.7-3](img/ec-D.10.7-3.png)
+$$ P_{nd} = 0.80 \left( 0.80f'_m A_{md} \right) R_e \tag{D.10.7-3} $$
 
 donde $A_{md}$ es el área de la sección de mampostería, y $R_{e}$ se obtiene por medio de:
 
-![Ecuación D.10.7-4](img/ec-D.10.7-4.png)
+$$ R_e = 1-\left[\dfrac{h'}{42t}\right]^2 \quad \text{para } h'/t \le 30 \tag{D.10.7-4} $$
 
-![Ecuación](img/ec-p68-328.png)
+$$ R_e = \left[\dfrac{21t}{h'}\right]^2 \quad \text{para } h'/t > 30 $$
 
 <!-- mod:2-decreto-340-2012-35 -->
 > **Modificación — Decreto 340 de 2012** · anexo, p. 7
@@ -317,41 +317,41 @@ Los requisitos de esta sección se emplean para el diseño a flexo-compresión p
 
 **D.10.7.6.1** — Resistencia a flexo-compresión despreciando la contribución de la mampostería — En este procedimiento se desprecia la contribución de la mampostería a la resistencia a flexo-compresión del muro. Deben calcularse las fuerzas axiales solicitadas máximas, de compresión $P_{uc}$ y de tracción $P_{ut}$ sobre cada una de las columnas de confinamiento, por medio de las ecuaciones D.10.7-5 y D.10.7-6 respectivamente.
 
-![Ecuación D.10.7-5](img/ec-D.10.7-5.png)
+$$ P_{uc} = \dfrac{A_{ci}}{A_{ct}} P_u + \Delta P_{ui} \tag{D.10.7-5} $$
 
-![Ecuación D.10.7-6](img/ec-D.10.7-6.png)
+$$ P_{ut} = \dfrac{A_{ci}}{A_{ct}} P_u - \Delta P_{ui} \le 0 \tag{D.10.7-6} $$
 
 Donde $P_{u}$ y $ΔP_{ui}$ son siempre positivas, y $ΔP_{ui}$ se obtiene por medio de la siguiente ecuación:
 
-![Ecuación D.10.7-7](img/ec-D.10.7-7.png)
+$$ \Delta P_{ui} = \left| \dfrac{M_u A_{ci} \left( x_i - \bar{x} \right)}{I_{ct}} \right| \tag{D.10.7-7} $$
 
 En las ecuaciones anteriores,
 
-![Ecuación D.10.7-8](img/ec-D.10.7-8.png)
+$$ A_{ct} = \sum_i A_{ci} \tag{D.10.7-8} $$
 
-![Ecuación D.10.7-9](img/ec-D.10.7-9.png)
+$$ \bar{x} = \dfrac{\sum_i A_{ci}\, x_i}{A_{ct}} \tag{D.10.7-9} $$
 
-![Ecuación D.10.7-10](img/ec-D.10.7-10.png)
+$$ I_{ct} = \sum_i A_{ci} \left( x_i - \bar{x} \right)^2 \tag{D.10.7-10} $$
 
 En cada una de las columnas de confinamiento del muro deben cumplirse las condiciones siguientes:
 
-![Ecuación D.10.7-11](img/ec-D.10.7-11.png)
+$$ P_{uc} \le \phi P_{nc} \tag{D.10.7-11} $$
 
-![Ecuación D.10.7-12](img/ec-D.10.7-12.png)
+$$ P_{ut} \ge \phi P_{nt} \tag{D.10.7-12} $$
 
 Cuando se trata de un muro confinado que únicamente tiene dos columnas de confinamiento iguales en sus bordes, las ecuaciones (D.10.7-5) a (D.10.7-7) se simplifican a:
 
-![Ecuación D.10.7-13](img/ec-D.10.7-13.png)
+$$ P_{uc} = \dfrac{P_u}{2} + \Delta P_u \tag{D.10.7-13} $$
 
-![Ecuación D.10.7-14](img/ec-D.10.7-14.png)
+$$ P_{ut} = \dfrac{P_u}{2} - \Delta P_u \le 0 \tag{D.10.7-14} $$
 
 Donde $P_{u}$ y $ΔP_{u}$ son siempre positivas, y $ΔP_{u}$ se obtiene por medio de la siguiente ecuación:
 
-![Ecuación D.10.7-15](img/ec-D.10.7-15.png)
+$$ \Delta P_u = \dfrac{M_u}{\ell_w} \tag{D.10.7-15} $$
 
 **D.10.7.6.2** — Resistencia a flexo-compresión teniendo en cuenta la contribución de la mampostería – El momento de diseño solicitado, $M_{u}$ , que acompaña la carga axial $P_{u}$ , debe cumplir la condición dada por la ecuación D.10.7-16, para el nivel de carga $P_{u}$ :
 
-![Ecuación D.10.7-16](img/ec-D.10.7-16.png)
+$$ M_u \le \phi M_n \tag{D.10.7-16} $$
 
 $M_{n}$ se obtiene teniendo en cuenta la interacción entre momento y carga axial, de acuerdo con los principios enunciados en D.5.1.6 y en D.10.7.3, los cuales permiten calcular un diagrama de interacción del muro, empleando el coeficiente de reducción de resistencia, $φ$ , apropiado de los dados en D.10.7.2.
 
@@ -359,11 +359,11 @@ $M_{n}$ se obtiene teniendo en cuenta la interacción entre momento y carga axia
 
 En la mampostería de muros confinados toda la fuerza cortante sobre el muro debe ser resistida por la mampostería, y se supone que no hay contribución a la resistencia a cortante por parte de los elementos de confinamiento. La resistencia de diseño solicitada, $V_{u}$ , debe cumplir la siguiente condición:
 
-![Ecuación D.10.7-17](img/ec-D.10.7-17.png)
+$$ V_u \le \phi V_n \tag{D.10.7-17} $$
 
 y la resistencia nominal a cortante por tracción diagonal, se obtiene de:
 
-![Ecuación D.10.7-18](img/ec-D.10.7-18.png)
+$$ V_n = \left( \dfrac{1}{12} \sqrt{f'_m} + \dfrac{P_u}{3A_e} \right) A_{mv} \le \dfrac{1}{6} \sqrt{f'_m} A_{mv} \tag{D.10.7-18} $$
 
 donde $P_{u}$ , en este caso, es la carga axial mayorada que actúa simultáneamente con la máxima fuerza cortante mayorada solicitada, $V_{u}$ , para la cual se realiza el diseño.
 
@@ -371,11 +371,11 @@ donde $P_{u}$ , en este caso, es la carga axial mayorada que actúa simultáneam
 
 Debe verificarse que el paño de muro enmarcado por las vigas y columnas de confinamiento, no falle por aplastamiento. Para el efecto se considera una biela de compresión en la diagonal del muro, la cual tiene un ancho efectivo igual a un quinto de la longitud de la diagonal. Debe cumplirse la condición:
 
-![Ecuación D.10.7-19](img/ec-D.10.7-19.png)
+$$ P_{ud} \le \phi P_{nd} \tag{D.10.7-19} $$
 
 La fuerza axial que actúa en la diagonal, $P_{ud}$, se obtiene por medio de:
 
-![Ecuación D.10.7-20](img/ec-D.10.7-20.png)
+$$ P_{ud} = \dfrac{h'}{\ell_w} V_u \tag{D.10.7-20} $$
 
 Donde $h'$ es la longitud de la diagonal del paño de muro entre elementos de confinamiento, $ℓ_{w}$ es la longitud total del muro sobre el cual actúa el cortante horizontal de diseño solicitado $V_{u}$ . La resistencia nominal al aplastamiento se obtiene por medio de la ecuación D.10.7-3. Allí hay que emplear una longitud para evaluación de pandeo $h'$ igual a la dimensión de la diagonal del muro en el paño en estudio, y un espesor efectivo para pandeo $t$ , igual al espesor del muro. El área de la biela de compresión $A_{md}$ es igual al ancho efectivo de la biela, $h '/5$, multiplicada por el espesor efectivo del muro, $b$ , para efectos en la dirección paralela al plano del muro, tal como se define en D.5.4.4.2.
 
@@ -385,15 +385,15 @@ Los elementos de confinamiento reciben la fuerza de la biela de compresión en l
 
 La fuerza cortante actuante, $V_{uc}$, sobre la columna de confinamiento es:
 
-![Ecuación D.10.7-21](img/ec-D.10.7-21.png)
+$$ V_{uc} = \dfrac{\ell_c}{2\ell_w} V_u \tag{D.10.7-21} $$
 
 y la fuerza cortante actuante, $V_{uc}$, sobre la viga de confinamiento es:
 
-![Ecuación D.10.7-22](img/ec-D.10.7-22.png)
+$$ V_{uc} = \dfrac{h_p}{2\ell_w} V_u \tag{D.10.7-22} $$
 
 En ambos casos debe cumplirse que:
 
-![Ecuación D.10.7-23](img/ec-D.10.7-23.png)
+$$ V_{uc} \le \phi V_{nc} \tag{D.10.7-23} $$
 
 donde $V_{nc}$ para el elemento de confinamiento debe calcularse de acuerdo con los requisitos del Título C del Reglamento, Capítulo C.11.
 
@@ -401,11 +401,11 @@ donde $V_{nc}$ para el elemento de confinamiento debe calcularse de acuerdo con 
 
 La componente horizontal de la biela de compresión que actúa en la diagonal del muro debe ser resistida como fuerza de tracción en la viga de confinamiento que llega a la misma esquina del paño del muro donde actúa la biela de compresión. Esta fuerza de tracción es igual a la fuerza cortante que lleva el paño de muro. Por lo tanto:
 
-![Ecuación D.10.7-24](img/ec-D.10.7-24.png)
+$$ P_{ut} = -\dfrac{\ell_c}{\ell_w} V_u \tag{D.10.7-24} $$
 
 La fuerza axial de tracción sobre la viga de confinamiento debe ser resistida en su totalidad por el acero de refuerzo longitudinal de la viga:
 
-![Ecuación D.10.7-25](img/ec-D.10.7-25.png)
+$$ -P_{ut} \le -\phi P_{nt} \tag{D.10.7-25} $$
 
 donde $P_{nt}$, se obtiene por medio de la ecuación D.10.7-2.
 

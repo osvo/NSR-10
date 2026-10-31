@@ -15,10 +15,13 @@ Instrumentos incluidos:
 
 [`normativa/nsr10`](normativa/nsr10/README.md) trae los once títulos (A a K) en Markdown,
 consolidados con los decretos 092/2011, 340/2012, 945/2017, 2113/2019, 1711/2021 y 1580/2023,
-incluido el Apéndice F.4-A. Hay un archivo por capítulo y un encabezado por artículo. Las ecuaciones
-numeradas de A, B y C están en LaTeX con su número; las de D a K van como recorte exacto del PDF
-mientras se cotejan una por una. Sirve para consultas rápidas, búsquedas con `grep` y lectura por
-asistentes de IA.
+incluido el Apéndice F.4-A. Hay un archivo por capítulo y un encabezado por artículo. Las
+1 368 ecuaciones numeradas están en LaTeX con su número, cotejadas una por una contra el PDF; solo
+14 expresiones de ejemplos resueltos y tablas mixtas quedan como recorte exacto. Sirve para
+consultas rápidas, búsquedas con `grep` y lectura por asistentes de IA.
+
+Nota: `Capitulos/Titulo-F-NSR-10.pdf` salta de la página F-396 a la F-439; las 42 páginas que le
+faltan (resto de F.4.6, F.4.7 y F.4.8) se toman de `NSR10-Completa.pdf`.
 
 Las herramientas para regenerarlo están en [`tools/nsr10`](tools/nsr10). El generador recibe una
 carpeta con los PDF nombrados `FORK-DOC-NNN.pdf` (títulos de `Capitulos/` y anexos de

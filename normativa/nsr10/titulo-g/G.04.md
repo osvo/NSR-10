@@ -10,7 +10,7 @@
 
 **G.4.2.1** — El esfuerzo $( f_{t})$ a carga axial de tensión $( T )$, no sobrepasará al esfuerzo admisible modificado a tensión paralela a la fibra $(F_{t}' )$, según la siguiente fórmula:
 
-![Ecuación G.4.2-1](img/ec-G.4.2-1.png)
+$$ f_t = \dfrac{T}{A_n} \le F'_t \tag{G.4.2-1} $$
 
 en donde:
 
@@ -46,7 +46,7 @@ El término COLUMNA, se refiere a los elementos sometidos a cargas de compresió
 
 La longitud efectiva de una columna puede calcularse con la fórmula:
 
-![Ecuación G.4.3-1](img/ec-G.4.3-1.png)
+$$ \ell_e = k_e \ell_u \tag{G.4.3-1} $$
 
 En donde:
 
@@ -86,7 +86,7 @@ $k_{e1}$ teórico $k_{e2}$recomendado cuando las condiciones ideales son aproxim
 
 En el diseño de columnas de madera, se considera como medida de esbeltez la definida por la fórmula:
 
-![Ecuación G.4.3-2](img/ec-G.4.3-2.png)
+$$ \lambda = \dfrac{\ell_e}{r\sqrt{12}} \tag{G.4.3-2} $$
 
 **Tabla G.4.3-2**
 
@@ -112,11 +112,11 @@ $D$ = diámetro de la sección circular, en mm El cálculo se hará para las dos
 
 El coeficiente de estabilidad para columnas, $C_{p}$ , debe ser calculado según la fórmula :
 
-![Ecuación G.4.3-3](img/ec-G.4.3-3.png)
+$$ C_p = \dfrac{1 + \left(F_{CE}/F_c^*\right)}{2C} - \sqrt{\left(\dfrac{1 + \left(F_{CE}/F_c^*\right)}{2C}\right)^2 - \dfrac{F_{CE}/F_c^*}{C}} \tag{G.4.3-3} $$
 
 $F_{c}^{*}$ = Esfuerzo admisible de compresión paralelo al grano, multiplicado por todos los factores de modificación, excepto $(C_{p})$
 
-![Ecuación G.4.3-4](img/ec-G.4.3-4.png)
+$$ F_{CE} \tag{G.4.3-4} $$
 
 = Esfuerzo crítico. Véase tabla G.4.3-3.
 
@@ -148,7 +148,7 @@ $E'y min$ = módulo de elasticidad mínimo modificado para madera laminada, en M
 
 La carga admisible de una columna, con carga axial centrada, será calculada con la siguiente fórmula:
 
-![Ecuación G.4.3-5](img/ec-G.4.3-5.png)
+$$ P_a = F'_c A_n \tag{G.4.3-5} $$
 
 En donde:
 
@@ -166,7 +166,7 @@ $A_{n}$= área neta de la columna en mm2 Si la columna no tiene perforaciones, e
 
 Para el diseño de una columna de sección rectangular adelgazada en uno o ambos extremos, la representativa dimensión (d), para cada cara de columna se calcula con la siguiente fórmula:
 
-![Ecuación G.4.3-6](img/ec-G.4.3-6.png)
+$$ d = d_{min} + \left(d_{max} - d_{min}\right) \left(a - 0.15 \left(1 - \dfrac{d_{min}}{d_{max}}\right)\right) \tag{G.4.3-6} $$
 
 En donde:
 
@@ -182,7 +182,7 @@ $a$ = Condición de soporte, es aplicable cuando $d_{min}/d_{max}≥1 /3$ Para e
 
 Figura G.4.3-2 — Columnas adelgazadas Para todas las otras condiciones
 
-![Ecuación G.4.3-7](img/ec-G.4.3-7.png)
+$$ d = d_{min} + \dfrac{\left(d_{max} - d_{min}\right)}{3} \tag{G.4.3-7} $$
 
 El cálculo de $C_{p}$, estará basado en la representativa dimensión $( d )$. Además, $(f_{c})$ en cualquier sección transversal de la columna rebajada, tomando la mínima dimensión de la columna, no excederá, el esfuerzo admisible modificado para compresión axial paralela a la fibra $(F_{c}' )$, multiplicado por todos los factores de modificación excepto el factor de estabilidad de columnas $(C_{p})$.
 
@@ -206,11 +206,11 @@ Especificaciones de construcción:
 
 **G.4.3.8.1** — Requisitos de diseño — Las columnas espaciadas con bloques separadores o tapas de unión se calcularán de acuerdo con G.4.3.3, pero en los elementos A, B, C, D, E de la figura G.4.3-3, el pandeo con respecto al eje principal, x - x, se verificará de acuerdo con la siguiente fórmula:
 
-![Ecuación G.4.3-8](img/ec-G.4.3-8.png)
+$$ F_{CE} = \dfrac{0.822\,E'_{min}}{\left(\dfrac{\lambda_{efx}}{\sqrt{12}}\right)^2} \tag{G.4.3-8} $$
 
 y
 
-![Ecuación G.4.3-9](img/ec-G.4.3-9.png)
+$$ \lambda_{efx} = \sqrt{\left(\dfrac{\ell_{ex}}{r_x}\right)^2 + 6nC_f\,\dfrac{\ell_{p1}^2}{t^2}} \tag{G.4.3-9} $$
 
 En donde:
 
@@ -249,11 +249,11 @@ $E_{min}'$ = módulo de elasticidad mínimo longitudinal modificado en MPa En el
 
 **G.4.3.8.3** — Capacidad cortante de conectores — Sobre los medios de unión transversal de estos elementos y conectores, clavos, tornillos, tirafondos, pernos, actúa una fuerza cortante, $V_{d}$ , que se debe calcular con la fórmula G.4.3-10 y que actúa de acuerdo con la figura G.4.3-4.
 
-![Ecuación G.4.3-10](img/ec-G.4.3-10.png)
+$$ V_d = \dfrac{P}{60\,C_p} \tag{G.4.3-10} $$
 
 Y sobre la correspondiente unión transversal de estos elementos, bloques, separadores o tapas de unión, actúa un flujo de corte $F_{vef}$ que se calcula con la fórmula G.4.3-11 y que actúa de acuerdo con la figura G.4.3-4.
 
-![Ecuación G.4.3-11](img/ec-G.4.3-11.png)
+$$ F_{vef} = \dfrac{C_n V_d \ell_{p1}}{a_1} \tag{G.4.3-11} $$
 
 **Tabla G.4.3.5**
 
@@ -318,7 +318,7 @@ Figura G.4.3-4 — Suposiciones relativas a los puntos de acción de las fuerzas
 
 $ℓ_{1}=K_{e1} ℓ_{u1}/d_{1}$, y $ℓ_{2}=K_{e2} ℓ_{u2}/d_{2}$, se calculará el factor de estabilidad de columnas $C_{p}$ de acuerdo a la fórmula G.4.3.9, tomándose el menor $C_{p}$ , para el cálculo de $F_{c}'$ . En la columna armada, $F_{c}'$ de la columna armada no será menor que $F_{c}'$ , para las laminaciones individuales, diseñadas como columnas sólidas individuales.
 
-![Ecuación G.4.3-13](img/ec-G.4.3-13.png)
+$$ C_p = K_f \left(\dfrac{1 + F_{CE}/F'_c}{2C}\right) - \sqrt{\left(\dfrac{1 + \left(F_{CE}/F'_c\right)}{2C}\right)^2 - \dfrac{F_{CE}/F'_c}{C}} \tag{G.4.3-13} $$
 
 En donde:
 
@@ -342,7 +342,7 @@ El $C_{p}$ se calculará con $ℓ_{e1}/d_{1}$ y $ℓ_{e2}/d_{2}$ y se utilizará
 
 **G.4.3.9.4.1** — CAPACIDAD DE CORTANTE DE LAS CONEXIONES — Las conexiones se deben diseñar suponiendo un esfuerzo de corte de magnitud constante a lo largo de la pieza y se calculará de acuerdo a la siguiente ecuación:
 
-![Ecuación G.4.3-14](img/ec-G.4.3-14.png)
+$$ V_d = \dfrac{P}{60\,C_p} \tag{G.4.3-14} $$
 
 En donde:
 
@@ -358,7 +358,7 @@ Figura G.4.3-6 — Sección trasversal de columna armada
 
 **G.4.3.9.4.2** — Cuando el pandeo alrededor del eje 1, gobierna el diseño, el flujo de cortante será calculado de acuerdo con la siguiente ecuación:
 
-![Ecuación G.4.3-15](img/ec-G.4.3-15.png)
+$$ F_{v,efi} = K_f\,\dfrac{Q_i V_d}{l_1 d_1} \tag{G.4.3-15} $$
 
 En donde:
 
@@ -447,7 +447,7 @@ Los esfuerzos de compresión actuantes paralelos al grano $(f_{c})$, que se desa
 
 Los elementos a compresión axial, están sujetos a sufrir un acortamiento en su sentido longitudinal el cual será calculado con la siguiente fórmula.
 
-![Ecuación G.4.5-1](img/ec-G.4.5-1.png)
+$$ \Delta dc = \dfrac{P \ell_u}{A_n E'_{0.5}} \tag{G.4.5-1} $$
 
 En donde:
 
@@ -553,7 +553,7 @@ El momento máximo para postes empotrados se deberá considerar así:
 
 **G.4.6.2.6** — Requisitos para esfuerzos de compresión paralela — se deberán cumplir las siguientes condiciones:
 
-![Ecuación G.4.6.2-1](img/ec-G.4.6.2-1.png)
+$$ f_c = \dfrac{P}{A_{ne}} \le F'_c \tag{G.4.6.2-1} $$
 
 a) En donde:
 
@@ -565,7 +565,7 @@ $A_{ne}$= área neta en el extremo superior del poste, en mm2.
 
 $F_{c}'$ = esfuerzo admisible modificado de compresión paralela a las fibras, sin incluir $C_{p}$ , en MPa
 
-![Ecuación G.4.6.2-2](img/ec-G.4.6.2-2.png)
+$$ f_c = \dfrac{P}{A_{CRIT}} \le F'_c \tag{G.4.6.2-2} $$
 
 (b) En donde:
 
@@ -588,7 +588,7 @@ Ubicación de la sección crítica
 
 Por forma $C_{F}$ — Cuando el elemento estructural, poste o pilote exceda en diámetro $D>34$ mm, el valor, $F_{b}$ , será multiplicado por el factor de altura $C_{d}$ , establecido según la siguiente fórmula:
 
-![Ecuación G.4.6.2-5](img/ec-G.4.6.2-5.png)
+$$ C_d = \left(\dfrac{340}{D}\right)^{1/9} \tag{G.4.6.2-5} $$
 
 En donde:
 

@@ -30,7 +30,7 @@ Para elementos sometidos a flexión que estén simplemente apoyados, o en voladi
 
 **G.3.2.1** — Siendo las deflexiones admisibles el parámetro principal en el establecimiento de las secciones requeridas para maderas “latifoliadas”, se establecerán requisitos de limitación de deflexiones admisibles, obtención de la sección requerida y cálculo de deflexiones inmediatas y diferidas. Las deflexiones en vigas se deberán calcular con las fórmulas corrientes de la teoría elástica, considerando la deflexión por flexión y si es el caso, con el módulo de elasticidad $E_{0.5}$, corregido por cortante. Para el caso de vigas de una luz simplemente apoyadas y con carga uniforme, la fórmula es:
 
-![Ecuación G.3.2-1](img/ec-G.3.2-1.png)
+$$ \Delta = \dfrac{5}{384}\,\dfrac{\omega \ell^4}{EI} \tag{G.3.2-1} $$
 
 **G.3.2.2** — Las deflexiones máximas admisibles de las vigas de madera, se limitarán a los valores de la tabla G.3.2-1.
 
@@ -160,7 +160,7 @@ Tabla G 3.3-2 Factor de ajuste por longitud, $Cℓ$ , para $F_{t}$ , $F_{c}$
 
 **G.3.3.2.2** — Para cualquier otro valor de $ℓ>10.000$ mm, se utilizará la siguiente fórmula:
 
-![Ecuación G.3.3-1](img/ec-G.3.3-1.png)
+$$ C\ell = \left(\dfrac{3.000}{\ell}\right)^b \tag{G.3.3-1} $$
 
 En donde:
 
@@ -170,7 +170,7 @@ $b$ = 0.2 para tensión y flexión y, 0.10 para compresión.
 
 **G.3.3.2.3** — Cuando la altura de un elemento rectangular sometido a flexión exceda 300 mm y tenga un espesor superior a 127 mm, el valor de diseño para flexión, $F_{b}$ será multiplicado por el resultado de la siguiente fórmula:
 
-![Ecuación G.3.3-2](img/ec-G.3.3-2.png)
+$$ C_d = \left(\dfrac{300}{d}\right)^{0.11} \tag{G.3.3-2} $$
 
 En donde:
 
@@ -178,7 +178,7 @@ $d$ = altura del elemento en mm Para vigas con sección circular de diámetro ma
 
 Estos dos factores conforman el factor $(C_{F})$ así:
 
-![Ecuación G.3.3-3](img/ec-G.3.3-3.png)
+$$ C_F = C_d C_\ell \tag{G.3.3-3} $$
 
 **G.3.3.2.4** — Para uso en cara ancha $( d )$, factor $C_{fu}$ — Cuando un elemento de madera aserrada clasificada visualmente y con espesor entre 50 mm y 100 mm, es cargada en la cara ancha, como se muestra en la gráfica G.3.3-1 el esfuerzo admisible a flexión $F$ deberá se multiplicado por los valores del coeficiente $C_{fu}$, indicados en la tabla G.3.3-3
 
@@ -266,7 +266,7 @@ ESTABILIDAD DE VIGAS $C_{L}=1$.
 
 **G.3.3.4.3** — Relación de esbeltez — El parámetro que mide la esbeltez de una viga rectangular, se calcula según la fórmula siguiente:
 
-![Ecuación G.3.3-4](img/ec-G.3.3-4.png)
+$$ R_B = \sqrt{\dfrac{\ell_e d}{b^2}} \tag{G.3.3-4} $$
 
 En donde:
 
@@ -280,7 +280,7 @@ $ℓ_{e}$ = longitud efectiva de la viga en mm El cálculo de $ℓ_{e}$ se efect
 
 G 3.3.4.4 — Coeficiente de estabilidad lateral $C_{L}$ — El coeficiente de estabilidad para vigas será calculado con la siguiente fórmula:
 
-![Ecuación G.3.3-5](img/ec-G.3.3-5.png)
+$$ C_L = \left(\dfrac{1 + F_{bE}/F_b^*}{1.9}\right) - \sqrt{\left(\dfrac{1 + F_{bE}/F_b^*}{1.9}\right)^2 - \left(\dfrac{F_{bE}/F_b^*}{0.95}\right)} \tag{G.3.3-5} $$
 
 En donde:
 
@@ -290,7 +290,7 @@ $F_{b}$*= esfuerzo admisible de flexión, multiplicado por todos los factores de
 
 $C_{L}$, $C_{v}$ en MPa. $F_{b}$*$=F_{b} C_{d}C_{m}C_{t} C_{F}C_{i} C_{r}$
 
-![Ecuación G.3.3-6](img/ec-G.3.3-6.png)
+$$ F_{bE} = \dfrac{1.20\,E'_{min}}{R_B^2} \tag{G.3.3-6} $$
 
 Donde:
 
@@ -304,7 +304,7 @@ $R_{B}$= relación de esbeltez de la viga
 
 El momento actuante sobre vigas rectangulares, no debe exceder el valor del momento resistente dado por la fórmula.
 
-![Ecuación G.3.3-7](img/ec-G.3.3-7.png)
+$$ M \le F'_b\,\dfrac{bd^2}{6} = F'_b S \tag{G.3.3-7} $$
 
 En donde:
 
@@ -318,7 +318,7 @@ $S$ = módulo de la sección en mm3
 
 **G.3.3.5.1** — Momento resistente sección circular — El momento actuante sobre secciones circulares, no debe exceder el valor del momento resistente dado por la fórmula:
 
-![Ecuación G.3.3-8](img/ec-G.3.3-8.png)
+$$ M \le F'_b \left(0.7854\,R^3\right) \tag{G.3.3-8} $$
 
 $R$ = radio medido en la sección de momento máximo, en mm.
 
@@ -336,11 +336,11 @@ ESFUERZO CORTANTE PARALELO A LAS FIBRAS $(f_{v})$ — En cualquier sección tran
 
 Sección Rectangular
 
-![Ecuación G.3.4-1](img/ec-G.3.4-1.png)
+$$ f_v = \dfrac{3v}{2bd} \le F'_v \tag{G.3.4-1} $$
 
 Sección Circular
 
-![Ecuación G.3.4-2](img/ec-G.3.4-2.png)
+$$ f_v = \dfrac{4v}{3\pi R^2} \le F'_v \tag{G.3.4-2} $$
 
 En donde
 
@@ -396,7 +396,7 @@ En general deberá evitarse practicar cajas, o adelgazamiento en la cara de tens
 
 **G.3.4.4.1** — Cajas en vigas a flexión de sección rectangular — En vigas a flexión de sección rectangular, que presenten cajas en la cara de tensión. La fuerza cortante ajustada para diseño $V_{r}'$ , se calculará con la siguiente fórmula:
 
-![Ecuación G.3.4-3](img/ec-G.3.4-3.png)
+$$ V'_r = \left[\dfrac{2}{3}\,F'_v bdn\right] \left[\dfrac{d_n}{d}\right]^2 \tag{G.3.4-3} $$
 
 En donde:
 
@@ -412,7 +412,7 @@ $d$ = altura total de la viga en mm
 
 **G.3.4.4.2** — Cajas en vigas a flexión sección circular — En vigas a flexión de sección circular que presenten cajas en la cara de tensión, la fuerza cortante ajustada, para diseño $V_{r}'$ debe ser calculada con siguiente fórmula:
 
-![Ecuación G.3.4-4](img/ec-G.3.4-4.png)
+$$ V'_r = \left[\dfrac{2}{3}\,F'_v A_n\right] \left[\dfrac{D_n}{D}\right]^2 \tag{G.3.4-4} $$
 
 Donde:
 
@@ -430,7 +430,7 @@ $D$ = diámetro de la sección circular sin tener en cuenta la caja, en mm
 
 **G.3.4.4.4** — Cajas o rebajes en el apoyo — En elementos a flexión de sección rectangular que tengan cajas o rebajamientos en el apoyo, en la cara de compresión, tal como en la figura G.3.4-3, la fuerza cortante ajustada $(V_{r}')$ debe ser calculada con la siguiente fórmula:
 
-![Ecuación G.3.4-5](img/ec-G.3.4-5.png)
+$$ V'_r = \dfrac{2}{3}\,F'_v b \left[d - \left(\dfrac{d - d_n}{d_n}\right) e'\right] \tag{G.3.4-5} $$
 
 Donde:
 
@@ -458,7 +458,7 @@ Figura G 3.4-4 — Altura efectiva de miembros de conexiones
 
 **G.3.4.4.6** — Cuando la conexión está a menos de cinco veces la altura, $5d$ , del miembro desde su extremo, el cortante de diseño ajustado, $V_{r}'$ , será calculado de acuerdo a la siguiente fórmula:
 
-![Ecuación G.3.4-6](img/ec-G.3.4-6.png)
+$$ V'_r = \left(\dfrac{2}{3}\,F'_v b d_e\right) \left(\dfrac{d_e}{d}\right)^2 \tag{G.3.4-6} $$
 
 Donde:
 
@@ -466,7 +466,7 @@ Para anillos partidos o conectores de placa para cortante, $(d_{e})$, será la a
 
 **G.3.4.4.7** — Cuando la conexión está a más de cinco veces la altura, $5d$ , del elemento, medida desde el extremo del mismo, la fuerza cortante ajustada, $V_{r}'$ , será calculado con la siguiente fórmula:
 
-![Ecuación G.3.4-7](img/ec-G.3.4-7.png)
+$$ V'_r = \dfrac{2}{3}\,F'_v b d_e \tag{G.3.4-7} $$
 
 **G.3.4.4.8** — Deben recibir especial atención en su diseño a cortante las vigas de luz corta fuertemente cargadas, donde los esfuerzos cortantes son especialmente críticos.
 
@@ -474,7 +474,7 @@ Para anillos partidos o conectores de placa para cortante, $(d_{e})$, será la a
 
 **G.3.5.1** — Los esfuerzos de compresión $(f_{p})$ en la dirección perpendicular a las fibras deberán verificarse en los apoyos y otros puntos donde se tengan cargas concentradas en áreas pequeñas. Tales esfuerzos no deberán exceder el esfuerzo admisible de compresión modificado, $(F_{p}')$, para el grupo de madera estructural especificado. El esfuerzo perpendicular al grano, $f_{p}$, en los apoyos o sitios de carga, se calculará con la fórmula:
 
-![Ecuación G.3.5-1](img/ec-G.3.5-1.png)
+$$ f_p = \dfrac{N}{A_n} \le F'_p \tag{G.3.5-1} $$
 
 En donde,
 
@@ -488,7 +488,7 @@ $A_{n}$= área neta de aplastamiento en mm2
 
 **G.3.5.1.1** — Coeficiente por área de apoyo $C_{b}$ — Para apoyos menores de 150 mm en longitud, que se encuentren a más de 75 mm del extremo del elemento, el esfuerzo admisible $(F_{p})$, puede incrementarse multiplicándolo por el factor:
 
-![Ecuación G.3.5-2](img/ec-G.3.5-2.png)
+$$ C_b = \dfrac{\ell_b + 9.53}{\ell_b} \tag{G.3.5-2} $$
 
 en donde $ℓ_{b}$ es la longitud del apoyo en mm, medida a lo largo de la fibra de la madera.
 
@@ -508,7 +508,7 @@ Factor de incremento para apoyos de longitudes pequeñas, como cargas sobre plat
 
 Cuando la dirección de la fuerza sea inclinada, respecto a la dirección de la fibra de la madera, (ángulo diferente a 0 ó 90 grados), el esfuerzo admisible de diseño será calculado con la siguiente fórmula de Hankinson:
 
-![Ecuación G.3.5-3](img/ec-G.3.5-3.png)
+$$ F'_\theta = \dfrac{F_c^* F'_p}{F'_c \operatorname{sen}^2 \theta + F'_p \cos^2 \theta} \tag{G.3.5-3} $$
 
 En donde:
 
@@ -528,7 +528,7 @@ Figura G.3.5-1 — Cargas inclinadas
 
 La deformabilidad perpendicular al grano, de un elemento sometido a carga uniforme, perpendicular a la fibra, y que se encuentre cargado y soportado en toda su área, debe ser calculada con la siguiente fórmula:
 
-![Ecuación G.3.5-4](img/ec-G.3.5-4.png)
+$$ \Delta_d = \dfrac{f_p d}{E'_{p0.5}} \tag{G.3.5-4} $$
 
 En donde:
 

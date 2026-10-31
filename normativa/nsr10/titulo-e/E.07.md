@@ -125,7 +125,7 @@ Para proveer un reparto uniforme de la responsabilidad para resistir las fuerzas
 
 La longitud de muros en cada dirección debe satisfacer la ecuación E.7.8-1
 
-![Ecuación E.7.8-1](img/ec-E.7.8-1.png)
+$$ L_i \ge C_B A_p \tag{E.7.8-1} $$
 
 En donde:
 
@@ -156,7 +156,7 @@ Valores del coeficiente de densidad de muros de bahareque encementado, $C_{B}$
 
 Los muros deben estar distribuidos de manera aproximadamente simétrica. Por lo tanto, debe cumplirse con la ecuación E.7.8-2, tomada en su valor absoluto:
 
-![Ecuación E.7.8-2](img/ec-E.7.8-2.png)
+$$ \left| \dfrac{\left[ \dfrac{\sum \left( L_{mi} b \right)}{\sum L_{mi}} - \dfrac{B}{2} \right]}{B} \right| \le 0.15 \tag{E.7.8-2} $$
 
 En donde:
 

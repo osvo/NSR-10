@@ -294,7 +294,7 @@ En esta sección se presentan algunas especificaciones sobre combinaciones de ca
 
 **K.4.2.5.1** — Vidrio Vertical — Puede considerarse que un sistema vidriado está instalado verticalmente si tiene una inclinación igual o menor de 15° con respecto a la vertical, en cuyo caso el diseño debe basarse en la siguiente ecuación:
 
-![Ecuación K.4.2-1](img/ec-K.4.2-1.png)
+$$ F_{gw} \le F_{ga} \tag{K.4.2-1} $$
 
 Donde:
 
@@ -304,17 +304,17 @@ $Fga$ = carga de corta duración sobre el vidrio, determinada de acuerdo con las
 
 **K.4.2.5.2** — Vidrio Inclinado — Un sistema vidriado debe considerarse inclinado cuando tiene una inclinación de más de 15° con respecto a la vertical, utilizado, como sucede en tragaluces o claraboyas, soláriums, techos inclinados u otras aplicaciones similares, en cuyo caso su diseño debe basarse en la siguiente ecuación:
 
-![Ecuación K.4.2-2](img/ec-K.4.2-2.png)
+$$ F_g \le F_{ga} \tag{K.4.2-2} $$
 
 Donde:
 
 $F g$ = carga total sobre el vidrio determinada como la más crítica de las combinaciones de carga especificadas con las ecuaciones K.4.2-3, K.4.2-4 y K.4.2-5.
 
-![Ecuación K.4.2-3](img/ec-K.4.2-3.png)
+$$ F_g = W_o - D \tag{K.4.2-3} $$
 
-![Ecuación K.4.2-4](img/ec-K.4.2-4.png)
+$$ F_g = W_i + D + 0.5P \tag{K.4.2-4} $$
 
-![Ecuación K.4.2-5](img/ec-K.4.2-5.png)
+$$ F_g = 0.5W_i + D + P \tag{K.4.2-5} $$
 
 Donde:
 
@@ -345,7 +345,7 @@ $Fga$ = carga máxima admisible de corta duración para el vidrio, determinada d
 
 **K.4.2.5.3.1** — Vidrio Impreso Vertical — Puede considerarse que un sistema vidriado impreso está instalado verticalmente si tiene una inclinación igual o menor de 15° con respecto a la vertical, en cuyo caso el diseño debe basarse en la siguiente ecuación:
 
-![Ecuación K.4.2-9](img/ec-K.4.2-9.png)
+$$ F_{gw} < F_{ge} \tag{K.4.2-9} $$
 
 Donde:
 
@@ -355,9 +355,9 @@ $Fge$ = carga no factorada de la norma ASTM E1300-09a. El valor para vidrio impr
 
 **K.4.2.5.3.2** — Vidrio Impreso Inclinado — Un sistema vidriado impreso debe considerarse inclinado cuando tiene una inclinación de más de 15° con respecto a la vertical, utilizado, como sucede en tragaluces o claraboyas, soláriums, techos inclinados u otras aplicaciones similares, en cuyo caso su diseño debe basarse en una de las siguiente ecuaciones, de acuerdo con la combinación de carga utilizada:
 
-![Ecuación K.4.2-10](img/ec-K.4.2-10.png)
+$$ F_{gw} < 0.5F_{ge} \tag{K.4.2-10} $$
 
-![Ecuación K.4.2-11](img/ec-K.4.2-11.png)
+$$ F_g \le 0.6F_{ge} \tag{K.4.2-11} $$
 
 Donde:
 
@@ -373,7 +373,7 @@ $Fge$ = carga no factorada de la norma ASTM E1300-09a. El valor para vidrio impr
 
 **K.4.2.5.4.1** — Vidrio Vertical Grabado con Chorro de Arena — Puede considerarse que un sistema vidriado grabado con chorro de arena está instalado verticalmente si tiene una inclinación igual o menor de 15° con respecto a la vertical, en cuyo caso el diseño debe basarse en la siguiente ecuación:
 
-![Ecuación K.4.2-12](img/ec-K.4.2-12.png)
+$$ F_g < 0.5F_{ge} \tag{K.4.2-12} $$
 
 Donde:
 
@@ -385,7 +385,7 @@ $Fge$ = carga no factorada de la norma ASTM E1300-09a. El valor para vidrio grab
 
 **K.4.2.5.5.1** — Unidades de Tragaluces o Claraboyas Clasificadas con el Mismo Grado de Desempeño para Presiones de Diseño Positiva y Negativa — El diseño de unidades de tragaluces o claraboyas clasificadas con el mismo grado de desempeño para presiones de diseño positiva y negativa debe basarse en la siguiente ecuación:
 
-![Ecuación K.4.2-13](img/ec-K.4.2-13.png)
+$$ F_g \le GD \tag{K.4.2-13} $$
 
 Donde:
 
@@ -395,9 +395,9 @@ $GD$ = clasificación del grado de desempeño de la claraboya o tragaluz (ver de
 
 **K.4.2.5.5.2** — Unidades de Tragaluces o Claraboyas Clasificadas con Grados de Desempeño Independientes para Presiones de Diseño Positiva y Negativa — El diseño de unidades de tragaluces o claraboyas clasificadas con grado de desempeño independientes para presiones de diseño positiva y negativa, debe basarse en las siguientes ecuaciones:
 
-![Ecuación K.4.2-14](img/ec-K.4.2-14.png)
+$$ F_{gi} \le GD_{Pos} \tag{K.4.2-14} $$
 
-![Ecuación K.4.2-15](img/ec-K.4.2-15.png)
+$$ F_{go} \le GD_{Neg} \tag{K.4.2-15} $$
 
 Donde:
 
@@ -432,11 +432,11 @@ $D$ = peso muerto del vidriado determinado como se indica en la sección K.4.2.5
 
 **K.4.2.5.6** — Sistemas de Vidriados para Pisos — Para el diseño de vidrios usados en pisos, descansos, escalones y lugares similares se debe considerar las cargas que produzcan mayores esfuerzos de acuerdo con las siguientes combinaciones de carga:
 
-![Ecuación K.4.2-16](img/ec-K.4.2-16.png)
+$$ F_g = 2F_u + D \tag{K.4.2-16} $$
 
-![Ecuación K.4.2-17](img/ec-K.4.2-17.png)
+$$ F_g = \left( 8F_c / A \right) + D \tag{K.4.2-17} $$
 
-![Ecuación K.4.2-18](img/ec-K.4.2-18.png)
+$$ F_g = F_a + D \tag{K.4.2-18} $$
 
 Donde:
 
@@ -672,7 +672,7 @@ Cuando los elementos que soportan el vidrio (marco) no cumplan los anteriores re
 
 **K.4.2.8.6** — Para los sistemas en muros cortina vidriados o fachadas flotantes, fachadas vidriadas, o particiones vidriadas debe verificarse que:
 
-![Ecuación K.4.2-19](img/ec-K.4.2-19.png)
+$$ \Delta_{\text{caída}} \ge 1.25ID_p \ge 13\,\mathrm{mm} \tag{K.4.2-19} $$
 
 Donde:
 
@@ -686,13 +686,13 @@ $I$ = coeficiente de Importancia para el Grupo de Uso.
 
 (a) Vidrios que tengan holguras perimetrales alrededor de su marco, calculadas de acuerdo con la Ecuación K.4.2-20, de tal forma que no ocurra contacto físico entre el vidrio y el marco cuando se aplique la deriva de diseño.
 
-![Ecuación K.4.2-20](img/ec-K.4.2-20.png)
+$$ D_{libre} \ge 1.25D_p \tag{K.4.2-20} $$
 
 Donde:
 
 $Dlibre$ = desplazamiento relativo horizontal, medido sobre la altura del panel de vidrio bajo consideración, que causa el contacto inicial entre el vidrio y su marco y que para paneles de vidrio rectangulares dentro de un marco rectangular tiene el valor dado por la Ecuación K.4.2-21.
 
-![Ecuación K.4.2-21](img/ec-K.4.2-21.png)
+$$ D_{libre} = 2c_1 \left( 1 + \dfrac{h_p c_2}{b_p c_1} \right) \tag{K.4.2-21} $$
 
 Donde:
 

@@ -100,17 +100,17 @@ Los estudios geotécnicos deberán analizar la existencia de agua libre, flujos 
 
 En Ingeniería Civil en general el Factor de Seguridad FS se define como la relación entre fuerzas resistentes FR y actuantes FA y también pueden usarse esfuerzos y se usa para evaluar el Estado Límite de Falla:
 
-![Ecuación H.2.4-1](img/ec-H.2.4-1.png)
+$$ F_S = F_R / F_A \tag{H.2.4-1} $$
 
-![Ecuación H.2.4-2](img/ec-H.2.4-2.png)
+$$ F_S = \tau_f / \tau_A \tag{H.2.4-2} $$
 
 En Ingeniería Geotécnica el Factor de Seguridad Básico o directo, $FSB$ , se define como la relación entre esfuerzo cortante último resistente o esfuerzo cortante a la falla $τ_{f}$ y esfuerzo cortante actuante $τ_{A}$
 
-![Ecuación H.2.4-3](img/ec-H.2.4-3.png)
+$$ F_{SB} = \tau_f / \tau_A \tag{H.2.4-3} $$
 
 Usualmente en Ingeniería Geotécnica el esfuerzo cortante a la falla $τ_{f}$ se expresa con el Criterio de Mohr-Coulomb:
 
-![Ecuación H.2.4-4](img/ec-H.2.4-4.png)
+$$ \tau_f = C' + \sigma' \tan \phi' \tag{H.2.4-4} $$
 
 en la cual
 
@@ -122,7 +122,7 @@ $'φ$ = ángulo de fricción efectivo
 
 $σ'$ = esfuerzo normal efectivo
 
-![Ecuación H.2.4-5](img/ec-H.2.4-5.png)
+$$ \sigma' - U_F \tag{H.2.4-5} $$
 
 $σ$ = esfuerzo normal total
 
@@ -134,7 +134,7 @@ $U_{a}$ = presión de gas (aire) para materiales secos Se advierte que los esfue
 
 También se define el esfuerzo cortante actuante $τ$A como esfuerzo cortante de trabajo o de diseño $τ$D y entonces:
 
-![Ecuación H.2.4-6](img/ec-H.2.4-6.png)
+$$ \tau_A = \left[ c' + \sigma' \tan \phi' \right] / F_{SB} \tag{H.2.4-6} $$
 
 #### H.2.4.2 — COMPORTAMIENTO APARENTE
 
@@ -144,7 +144,7 @@ $c$ = intercepto de cohesión total $=S_{U}$
 
 $φ$ = ángulo de fricción total $= φ =0.0$ y entonces $τ_{F} = S_{u}$ = resistencia no drenada
 
-![Ecuación H.2.4-7](img/ec-H.2.4-7.png)
+$$ \tau_A = S_u / F_{SBU} \tag{H.2.4-7} $$
 
 en la cual, generalmente, $F_{SBU}>F_{SB}$ Se permite emplear la resistencia no drenada SU para casos de análisis en materiales cohesivos saturados y no fisurados:
 

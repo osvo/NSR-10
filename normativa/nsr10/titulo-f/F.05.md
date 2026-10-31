@@ -1179,7 +1179,7 @@ Figura F.5.4.3-3 — Modos de pandeo de elementos planos reforzados
 
 • Modo 1, compresión uniforme (1) Refuerzo estándar — Se define como el refuerzo consistente en una costilla o pestaña unilateral con espesor igual al del elemento, $t$ , y localizado como se muestra en la figura F.5.4.3-4:
 
-![Ecuación F.5.4.3-1](img/ec-F.5.4.3-1.png)
+$$ \beta =hb/t \tag{F.5.4.3-1} $$
 
 Donde:
 
@@ -1191,7 +1191,7 @@ $h =$ se lee en la figura F.5.4.3-4 (a), (b) o (c) según sea apropiado En la fi
 
 (3) Método general — Para casos no cubiertos por (1) y (2), $β$ se debe tomar de acuerdo con:
 
-![Ecuación F.5.4.3-2](img/ec-F.5.4.3-2.png)
+$$ \beta =\left(\dfrac{b}{t}\right)\left(\dfrac{\sigma _{cro}}{\sigma _{cr}}\right)^{0.4} \tag{F.5.4.3-2} $$
 
 Donde:
 
@@ -1203,7 +1203,7 @@ Figura F.5.4.3-4 — Elementos reforzados, valor de $h$
 
 (c) Elementos curvos internos — En elementos curvos de poca altura sometidos a compresión uniforme, $β$ debe determinarse usando:
 
-![Ecuación F.5.4.3-3](img/ec-F.5.4.3-3.png)
+$$ \beta =\dfrac{b/t}{\left[1+\left(0.006b^{4}/R^{2}t^{2}\right)\right]^{1/2}} \tag{F.5.4.3-3} $$
 
 Donde:
 
@@ -1217,7 +1217,7 @@ El tratamiento anterior es válido siempre que $R /b$ no sea menor que $0.1b /t$
 
 (d) Tubos redondos $β$ se debe calcular de acuerdo con lo siguiente, sin hacer distinción entre compresión axial y flexión:
 
-![Ecuación F.5.4.3-4](img/ec-F.5.4.3-4.png)
+$$ \beta =3\left(D/t\right)^{1/2} \tag{F.5.4.3-4} $$
 
 Donde:
 
@@ -1270,7 +1270,7 @@ NOTA 3. En un elemento soldado, la clasificación es independiente de la extensi
 
 Se permite entonces, usando la tabla F.5.4.3-1, tomar un valor modificado de $ε$ según:
 
-![Ecuación F.5.4.3-5](img/ec-F.5.4.3-5.png)
+$$ \varepsilon =\left(\dfrac{25y_{1}}{p_{o}y_{2}}\right)^{1/2} \tag{F.5.4.3-5} $$
 
 donde $y_{1}$ y $y_{2}$ son, respectivamente, las distancias desde el eje neutro de la sección bruta hasta las fibras más severamente esforzadas y hasta el elemento. Deben ser, por lo general, medidas desde el eje neutro elástico; no obstante, en la revisión de si la sección es totalmente compacta se permite usar el eje neutro plástico.
 
@@ -1328,9 +1328,9 @@ Algunas veces es posible incrementar el valor (A) a una cifra superior a la de l
 
 • Aleaciones de la serie 6*** 3 días • Aleaciones de la serie 7*** 30 días Para determinar la resistencia de los componentes que deben ser cargados más tempranamente, pero nunca antes de 24 horas después de soldar, el valor de $k_{z}$ debe reducirse por un coeficiente $f$ calculado de acuerdo con lo siguiente:
 
-![Ecuación F.5.4.4-1](img/ec-F.5.4.4-1.png)
+$$ \bullet\quad\text{Aleaciones de la serie 6***}\qquad f=0.9+0.1\left[(n-1)/2\right]^{1/2} \tag{F.5.4.4-1} $$
 
-![Ecuación F.5.4.4-2](img/ec-F.5.4.4-2.png)
+$$ \bullet\quad\text{Aleaciones de la serie 7***}\qquad f=0.8+0.2\left[(n-1)/29\right]^{1/2} \tag{F.5.4.4-2} $$
 
 donde $n$ es el tiempo, en días, entre la soldadura y la carga.
 
@@ -1449,9 +1449,9 @@ $h =$ distancia al borde libre o la mitad de la distancia a una soldadura cercan
 
 Figura F.5.4.4-2 — Medición típica del camino de calor
 
-![Ecuación F.5.4.4-3](img/ec-F.5.4.4-3.png)
+$$ h_{1}=4.5\alpha z_{o}=\text{ para aleaciones de la serie 7***, o} \tag{F.5.4.4-3} $$
 
-![Ecuación F.5.4.4-4](img/ec-F.5.4.4-4.png)
+$$ h_{1}=3\alpha z_{o}=\text{ para otras aleaciones} \tag{F.5.4.4-4} $$
 
 (2) Para una unión desde la cual hay únicamente un camino de calor válido:
 
@@ -1487,13 +1487,13 @@ En el caso de un elemento saliente reforzado que forme parte o sea toda la aleta
 
 (b) Cálculo básico — La resistencia de diseño a momento $M_{RS}$ de una sección dada, en ausencia de cortante, debe encontrarse, por lo general, como se indica a continuación:
 
-![Ecuación F.5.4.5-1](img/ec-F.5.4.5-1.png)
+$$ \bullet\quad\text{No soldada, totalmente compacta}\qquad M_{RS}=p_{o}Z_{n}\phi \tag{F.5.4.5-1} $$
 
-![Ecuación F.5.4.5-2](img/ec-F.5.4.5-2.png)
+$$ \bullet\quad\text{No soldada, semi-compacta}\qquad M_{RS}=p_{o}S_{n}\phi \tag{F.5.4.5-2} $$
 
-![Ecuación F.5.4.5-3](img/ec-F.5.4.5-3.png)
+$$ \bullet\quad\text{Soldada, totalmente compacta}\qquad M_{RS}=p_{o}Z_{ne}\phi \tag{F.5.4.5-3} $$
 
-![Ecuación F.5.4.5-4](img/ec-F.5.4.5-4.png)
+$$ \bullet\quad\text{Soldada, semi-compacta}\qquad M_{RS}=p_{o}S_{ne}\phi \tag{F.5.4.5-4} $$
 
 • No soldada, esbelta $M_{RS}=p_{o} S_{e}φ$ o,
 
@@ -1531,7 +1531,7 @@ Nota 2 — En el caso de elementos reforzados, $k_{L}$ se debe aplicar al área 
 
 Nota 3 — Cuando se considera un elemento de aleta esbelto que se localiza más cerca del eje neutro que de la fibra extrema a tensión del material, se permite tomar un valor más favorable de $k_{L}$ . Esto se hace usando un valor modificado de $ε$ en la figura F.5.4.3-5 (en lugar del valor normal, véase el literal (a) de F.5.4.3.4) de acuerdo con:
 
-![Ecuación F.5.4.5-7](img/ec-F.5.4.5-7.png)
+$$ \varepsilon =\left(\dfrac{25y_{1}}{p_{o}y_{2}}\right) \tag{F.5.4.5-7} $$
 
 donde $y_{1}$ y $y_{2}$ son las distancias desde el eje neutro elástico de la sección bruta hasta las fibras extremas y hasta el elemento considerado, respectivamente. Esta relación se aplica sólo si el elemento es substancialmente paralelo al eje de flexión.
 
@@ -1543,7 +1543,7 @@ Nota 5 — Para un elemento soldado en una sección semi-compacta o esbelta, se 
 
 • Para el material de la zona afectada por el calor, a una distancia $y>k_{z} y_{1}$ del eje neutro, $k_{z}$ se puede reemplazar por un valor $k_{zy}$ determinado de acuerdo con:
 
-![Ecuación F.5.4.5-8](img/ec-F.5.4.5-8.png)
+$$ k_{zy}=k_{z}+1-\dfrac{y}{y_{1}} \tag{F.5.4.5-8} $$
 
 (d) Secciones híbridas — La capacidad a momento de una sección híbrida que contiene materiales de diferentes resistencias puede basarse, con seguridad, en el menor valor de $p_{o}$ dentro de la sección. Como alternativa puede usarse el siguiente procedimiento que es más ventajoso.
 
@@ -1551,7 +1551,7 @@ Nota 5 — Para un elemento soldado en una sección semi-compacta o esbelta, se 
 
 (e) Secciones semi-compactas — Para este tipo de secciones se permite, si se desea, tomar una valor mejorado de $M_{RS}$ que se obtiene por interpolación de acuerdo con lo siguiente:
 
-![Ecuación F.5.4.5-9](img/ec-F.5.4.5-9.png)
+$$ M_{RS}=M_{s}+\dfrac{\beta _{0}-\beta }{\beta _{0}-\beta _{1}}(M_{f}-M_{S}) \tag{F.5.4.5-9} $$
 
 Donde:
 
@@ -1581,7 +1581,7 @@ esfuerzos límite (en kgf/mm²) (véanse las tablas F.5.4.2-1 y F.5.4.2-2) (2) S
 
 (b) Secciones compactas — La resistencia de diseño a fuerza cortante $V_{RS}$ de una sección, en ausencia de momento, se puede calcular mediante la siguiente ecuación:
 
-![Ecuación F.5.4.5-10](img/ec-F.5.4.5-10.png)
+$$ V_{RS}=\phi p_{\nu }A_{\nu } \tag{F.5.4.5-10} $$
 
 Donde:
 
@@ -1593,7 +1593,7 @@ $φ$ = coeficiente de reducción de capacidad (véase la tabla F.5.3.3-1) El ár
 
 (1) Para secciones que contienen almas a cortante sin platinas de enchape que están libres de ablandamiento en la zona afectada por el calor, $Aν$ se determina usando:
 
-![Ecuación F.5.4.5-11](img/ec-F.5.4.5-11.png)
+$$ A_{\nu }=0.8NDt \tag{F.5.4.5-11} $$
 
 Donde:
 
@@ -1605,7 +1605,7 @@ $N =$ número de almas La presencia de pequeños agujeros se puede ignorar siemp
 
 (2) Para secciones como las de (a) pero con almas afectadas por ablandamiento en la zona afectada por el calor, $Aν$ se determina con la siguiente ecuación:
 
-![Ecuación F.5.4.5-12](img/ec-F.5.4.5-12.png)
+$$ A_{\nu }=N\left(0.8Dt-(1-k_{z})d_{z}t\right) \tag{F.5.4.5-12} $$
 
 Donde:
 
@@ -1615,11 +1615,11 @@ $k_{z}$= coeficiente de ablandamiento (véase F.5.4.4.2) Para un alma soldada en
 
 (3) Para una barra sólida:
 
-![Ecuación F.5.4.5-13](img/ec-F.5.4.5-13.png)
+$$ A_{v}=0.8A\text{ ó }0.8A_{e} \tag{F.5.4.5-13} $$
 
 (4) Para un tubo redondo compacto:
 
-![Ecuación F.5.4.5-14](img/ec-F.5.4.5-14.png)
+$$ A_{v}=0.6A\text{ ó }0.6A_{e} \tag{F.5.4.5-14} $$
 
 Donde:
 
@@ -1635,7 +1635,7 @@ En el caso de secciones que contienen almas a cortante, se pueden usar los méto
 
 (2) Revisión por pandeo — El valor de $V_{RS}$ en kgf se obtiene con la siguiente expresión:
 
-![Ecuación F.5.4.5-15](img/ec-F.5.4.5-15.png)
+$$ V_{RS}=\phi \dfrac{34\,000Nt^{3}}{d}\le \phi p_{v}A_{v} \tag{F.5.4.5-15} $$
 
 Donde:
 
@@ -1665,11 +1665,11 @@ $v_{tf} =$ coeficiente de campo tensionado, igual a cero Este tratamiento es vá
 
 (1) Para secciones con almas a cortante conectadas a aletas en ambos extremos longitudinales:
 
-![Ecuación F.5.4.5-16](img/ec-F.5.4.5-16.png)
+$$ M_{RSO}=M_{RS}\left(1+(1-\alpha )\left(0.6-\dfrac{1.2V}{V_{RS}}\right)\right) \tag{F.5.4.5-16} $$
 
 (2) Para otras secciones:
 
-![Ecuación F.5.4.5-17](img/ec-F.5.4.5-17.png)
+$$ M_{RSO}=M_{RS}\left(1.6-\dfrac{1.2V}{V_{RS}}\right) \tag{F.5.4.5-17} $$
 
 Donde:
 
@@ -1681,9 +1681,9 @@ $α$ = relación entre los esfuerzos cortantes mínimo y máximo en el alma supo
 
 (a) Alma no rigidizada — Cuando el alma, por sí sola, debe soportar la fuerza localizada, sin el suministro de un rigidizador de apoyo, como por ejemplo bajo una carga rodante, las dos condiciones siguientes deben cumplirse:
 
-![Ecuación F.5.4.5-18](img/ec-F.5.4.5-18.png)
+$$ p_{w1}\le \phi p_{a}\text{ o, }\dfrac{k_{z}p_{a}}{\phi } \tag{F.5.4.5-18} $$
 
-![Ecuación F.5.4.5-19](img/ec-F.5.4.5-19.png)
+$$ p_{w2}\le \phi p_{s} \tag{F.5.4.5-19} $$
 
 Donde:
 
@@ -1717,7 +1717,7 @@ $p_{o}$= esfuerzo límite (en kgf/mm2) del material de la aleta a compresión (v
 
 (a) Condición básica — La viga debe revisarse por posible pandeo torsional lateral en cada tramo no soportado entre puntos de apoyo lateral. En cada uno de ellos se debe satisfacer la siguiente condición:
 
-![Ecuación F.5.4.5-20](img/ec-F.5.4.5-20.png)
+$$ M\le M_{Rx} \tag{F.5.4.5-20} $$
 
 Donde:
 
@@ -1733,9 +1733,9 @@ $p_{s} =$ esfuerzo de pandeo (véase el literal (c) de F.5.4.5.6)
 
 (b) Margen para variación de momento — El valor de $M$ en el literal (a) puede ser, seguramente, tomado como el valor máximo en el tramo considerado. Como alternativa, se permite tomar $M$ como el momento uniforme equivalente $M$ . Para el caso de gradiente simple de momento en la longitud considerada (variación lineal) $M$ se puede tomar como se indica enseguida:
 
-![Ecuación F.5.4.5-21](img/ec-F.5.4.5-21.png)
+$$ \text{para}\quad 1.0>\dfrac{M_{2}}{M_{1}}\ge -0.5\qquad \bar{M}=0.6M_{1}+0.4M_{2} \tag{F.5.4.5-21} $$
 
-![Ecuación F.5.4.5-22](img/ec-F.5.4.5-22.png)
+$$ \text{para}\quad \dfrac{M_{2}}{M_{1}}<-0.5\qquad \bar{M}=0.4M_{1} \tag{F.5.4.5-22} $$
 
 donde $M_{1}$ y $M_{2}$ son, respectivamente, los momentos máximo y mínimo (véase la figura F.5.4.5-1). Para otros casos de variación de momento consulte el apéndice F.5.G.
 
@@ -1763,11 +1763,11 @@ Figura F.5.4.5-3(c) — Esfuerzo de pandeo como columna para miembros a compresi
 
 (1) Para secciones no soldadas totalmente compactas
 
-![Ecuación F.5.4.5-23](img/ec-F.5.4.5-23.png)
+$$ p_{1}=p_{o} \tag{F.5.4.5-23} $$
 
 (2) Para otras secciones incluyendo secciones híbridas
 
-![Ecuación F.5.4.5-24](img/ec-F.5.4.5-24.png)
+$$ p_{1}=\dfrac{M_{RS}}{\phi S} \tag{F.5.4.5-24} $$
 
 Donde:
 
@@ -1783,7 +1783,7 @@ Para vigas de gran esbeltez $(λ >130)$ es necesario consultar la curva adimensi
 
 (d) Parámetro de esbeltez — El parámetro de esbeltez de pandeo torsional lateral, $λ$ , necesario para la figura F.7.4.9, se puede obtener usando cualquiera de las siguientes expresiones F.5.4.5-25 a F.5.4.5-27.
 
-![Ecuación F.5.4.5-25](img/ec-F.5.4.5-25.png)
+$$ \text{Valor conservador:}\qquad \lambda =\lambda _{y}=\dfrac{l}{r_{y}} \tag{F.5.4.5-25} $$
 
 Donde:
 
@@ -1795,7 +1795,7 @@ $r_{y} =$ radio de giro del eje menor para la sección bruta Para los siguientes
 
 Para todos los otros tipos de soporte, $I$ , puede tomarse seguramente como la distancia entre puntos de soporte lateral. Alternativamente, se puede encontrar un valor más favorable para ciertas condiciones de restricción usando F.5.G.1.
 
-![Ecuación F.5.4.5-26](img/ec-F.5.4.5-26.png)
+$$ \text{Expresión general:}\qquad \lambda =\pi \left(\dfrac{ES}{M_{cr}}\right)^{1/2} \tag{F.5.4.5-26} $$
 
 Donde:
 
@@ -1805,7 +1805,7 @@ $S =$ módulo plástico de la sección bruta
 
 $M_{cr} =$ momento uniforme elástico crítico (véase F.5.G.2) Miembros con sección en $I$ o en canal cubiertos en la tabla F.5.4.5-1 — El parámetro $λ$ puede tomarse como se indica enseguida pero no debe exceder el valor dado por la ecuación F.5.4.5-25:
 
-![Ecuación F.5.4.5-27](img/ec-F.5.4.5-27.png)
+$$ \lambda =\dfrac{X\lambda _{y}}{\left[1+Y\left(\lambda _{y}/(D/t_{2})\right)^{2}\right]^{1/4}} \tag{F.5.4.5-27} $$
 
 Donde:
 
@@ -1839,11 +1839,11 @@ Pandeo torsional lateral de vigas, coeficientes $X$ y $Y$
 |---|---|
 | Nota Las expresiones para $X$ y $Y$ son válidas para $1.5≤D /B≤4.5$, $1≤t_{2}/t_{1}≤2$, $0≤C /B≤0.5$ |  |
 
-![Ecuación](img/ec-p472-145.png)
+$$ \begin{gathered}X=0.94-\dfrac{D}{B}\left(0.03-0.07\dfrac{C}{B}\right)-0.3\dfrac{C}{B} \\ Y=0.05-0.06\dfrac{C}{D}\end{gathered} $$
 
-![Ecuación](img/ec-p472-263.png)
+$$ \begin{gathered}X=0.95-0.03\dfrac{D}{B}+0.06\dfrac{t_{2}}{t_{1}} \\ Y=0.07+0.014\left\{\dfrac{D}{B}\left(\dfrac{t_{2}}{t_{1}}-1\right)\right\}^{1/2}\end{gathered} $$
 
-![Ecuación](img/ec-p472-392.png)
+$$ \begin{gathered}X=1.01-\dfrac{D}{B}\left(0.03-0.06\dfrac{C}{B}\right)-0.3\dfrac{C}{B} \\ Y=0.07-0.10\dfrac{C}{D}\end{gathered} $$
 
 #### F.5.4.6 — MIEMBROS A TENSION
 
@@ -1859,11 +1859,11 @@ Para miembros a tensión conectados excéntricamente en los extremos, es general
 
 Para un miembro libre de ablandamiento en la zona afectada por el calor o únicamente afectado en posiciones localizadas a lo largo de su longitud:
 
-![Ecuación F.5.4.6-1](img/ec-F.5.4.6-1.png)
+$$ P_{RS}=\phi P_{o}A \tag{F.5.4.6-1} $$
 
 Para un miembro en el cual la sección contiene material afectado por el calor generalmente a lo largo de su longitud, como con soldaduras longitudinales:
 
-![Ecuación F.5.4.6-2](img/ec-F.5.4.6-2.png)
+$$ P_{RS}=\phi P_{o}A_{e} \tag{F.5.4.6-2} $$
 
 Donde:
 
@@ -1879,11 +1879,11 @@ $φ =$ coeficiente de reducción de capacidad (véase la tabla F.5.3.3-1) El val
 
 Para una sección libre de ablandamiento en la zona afectada por el calor:
 
-![Ecuación F.5.4.6-3](img/ec-F.5.4.6-3.png)
+$$ P_{RS}=\phi P_{a}A_{n} \tag{F.5.4.6-3} $$
 
 Para una sección que contiene material afectado por el calor:
 
-![Ecuación F.5.4.6-4](img/ec-F.5.4.6-4.png)
+$$ P_{RS}=\phi P_{a}A_{ne} \tag{F.5.4.6-4} $$
 
 Donde:
 
@@ -1905,7 +1905,7 @@ $φ =$ coeficiente de reducción de capacidad (véase F.5.3.1) El valor de $A_{n
 
 $A_{n}=A−H$ o, $A_{ne}=A_{e}−H$ Donde:
 
-![Ecuación F.5.4.6-5](img/ec-F.5.4.6-5.png)
+$$ H=\sum A_{h}-\dfrac{\sum x^{2}t}{4y} \tag{F.5.4.6-5} $$
 
 $x , y =$ separación longitudinal y transversal, respectivamente, de los agujeros
 
@@ -1943,7 +1943,7 @@ Sin embargo, para puntales con conexiones excéntricas en los extremos, es permi
 
 **F.5.4.7.2** — Resistencia al pandeo general — Con las dos revisiones, (a) y (b), la fuerza axial $P$ bajo carga mayorada no debe exceder la resistencia axial de diseño $P_{R}$ basada en pandeo general y dada por la siguiente expresión:
 
-![Ecuación F.5.4.7-1](img/ec-F.5.4.7-1.png)
+$$ P_{R}=p_{s}A\phi \tag{F.5.4.7-1} $$
 
 Donde:
 
@@ -1961,7 +1961,7 @@ Para un miembro a compresión de gran esbeltez $(λ >130)$, es necesario consult
 
 (b) Parámetro de esbeltez — El parámetro de esbeltez $λ$ para pandeo como columna necesitado para la figura F.5.4.5-3, se define como sigue:
 
-![Ecuación F.5.4.7-2](img/ec-F.5.4.7-2.png)
+$$ \lambda =l/r \tag{F.5.4.7-2} $$
 
 Donde:
 
@@ -2000,7 +2000,7 @@ Debe siempre basarse en el área bruta de la sección.
 
 Fórmula general
 
-![Ecuación F.5.4.7-3](img/ec-F.5.4.7-3.png)
+$$ \lambda =\pi \left(\dfrac{EA}{P_{cr}}\right)^{1/2} \tag{F.5.4.7-3} $$
 
 Donde:
 
@@ -2008,7 +2008,7 @@ $A =$ área de la sección bruta, sin reducción por pandeo local, ablandamiento
 
 $E =$ módulo de elasticidad $P_{cr}$carga crítica elástica para pandeo torsional, teniendo en cuenta la interacción con el pandeo como columna cuando sea necesario Secciones como las dadas en la tabla F.5.4.7-2
 
-![Ecuación F.5.4.7-4](img/ec-F.5.4.7-4.png)
+$$ \lambda =k\lambda _{t} \tag{F.5.4.7-4} $$
 
 Donde:
 
@@ -2018,11 +2018,11 @@ $λ_{t} =$ se encuentra de acuerdo con:
 
 • para ángulos, secciones T, cruciformes
 
-![Ecuación F.5.4.7-5](img/ec-F.5.4.7-5.png)
+$$ \lambda _{t}=\lambda _{o} \tag{F.5.4.7-5} $$
 
 • para canales, sombreros
 
-![Ecuación F.5.4.7-6](img/ec-F.5.4.7-6.png)
+$$ \lambda _{t}=\dfrac{\lambda _{o}}{\left[1+(Y\lambda _{o}^{2}/\lambda _{x}^{2})\right]^{1/2}} \tag{F.5.4.7-6} $$
 
 La tabla F.5.4.7-2 contiene expresiones para $λ_{o}$ y $Y$ ; y también para $s$ y $X$ (necesarios para la figura F.5.4.7-1).
 
@@ -2098,11 +2098,11 @@ El valor de $p_{1}$ debe generalmente determinarse como se indica a continuació
 
 (1) Sección compacta, sin efectos de zona afectada por el calor
 
-![Ecuación F.5.4.7-7](img/ec-F.5.4.7-7.png)
+$$ p_{1}=p_{o} \tag{F.5.4.7-7} $$
 
 (2) Otras secciones, generalmente
 
-![Ecuación F.5.4.7-8](img/ec-F.5.4.7-8.png)
+$$ p_{1}=\left(A_{e}/A\right)p_{o} \tag{F.5.4.7-8} $$
 
 Donde:
 
@@ -2112,7 +2112,7 @@ $A_{e} =$ área de la sección efectiva (véase el literal (a) de este numeral)
 
 $p_{o} =$ esfuerzo límite para el material (véanse las tablas F.5.4.2-1 y F.5.4.2-2) La selección de la curva sobre esta base es válida siempre que el miembro cumpla las tolerancias de rectitud y torcedura establecidas para del material extruído. Cuando exista la posibilidad de que un miembro a compresión fabricado no cumpla estas tolerancias, $p_{1}$ debe tomarse como $s$ veces el valor dado por F.5.4.7-7 o F.5.4.7-8, donde:
 
-![Ecuación F.5.4.7-9](img/ec-F.5.4.7-9.png)
+$$ S=0.6+0.5^{(-0.02\lambda )}\le 1.0 \tag{F.5.4.7-9} $$
 
 (a) Sección efectiva — La sección efectiva se aplica a las siguientes secciones de miembros a compresión:
 
@@ -2144,11 +2144,11 @@ Sin embargo, cuando tal ablandamiento causado por el calor tiene una cierta loca
 
 (a) Sección compacta libre de efectos de zona afectada por el calor
 
-![Ecuación F.5.4.7-10](img/ec-F.5.4.7-10.png)
+$$ P_{RS}=p_{a}A_{n}\phi \tag{F.5.4.7-10} $$
 
 (b) Otras secciones, generalmente
 
-![Ecuación F.5.4.7-11](img/ec-F.5.4.7-11.png)
+$$ P_{RS}=p_{a}A_{ne}\phi \tag{F.5.4.7-11} $$
 
 Donde:
 
@@ -2184,13 +2184,13 @@ Para ser tratado como un miembro monolítico, un miembro a compresión con presi
 
 (c) Las presillas deben ir generalmente en pares. Sin embargo, si los componentes principales son secciones T o ángulos punta a punta, se permiten presillas simples.
 
-![Ecuación F.5.4.7-12](img/ec-F.5.4.7-12.png)
+$$ \text{(d)}\quad \lambda _{2}\le 0.8\lambda _{1} \tag{F.5.4.7-12} $$
 
 Donde:
 
 $λ_{1} , λ_{2}=$ parámetros de esbeltez para pandeo como columna del miembro completo respecto a los ejes paralelo y normal a las presillas respectivamente
 
-![Ecuación F.5.4.7-13](img/ec-F.5.4.7-13.png)
+$$ \text{(e)}\quad \lambda _{3}\le 0.7\lambda _{2} \tag{F.5.4.7-13} $$
 
 Donde:
 
@@ -2256,7 +2256,7 @@ $(g_{=}1)$. Mientras que para hallar la resistencia a momento, se toma un valor 
 
 (a) Fórmula general (caso D) — La sección transversal es adecuada si lo siguiente se satisface en cualquier posición a lo largo de la longitud, todas las seis cantidades se toman como positivas:
 
-![Ecuación F.5.4.8-1](img/ec-F.5.4.8-1.png)
+$$ \dfrac{P}{P_{RS}}+\dfrac{M_{x}}{M_{RSx}}+\dfrac{M_{y}}{M_{RSy}}\le 1.0 \tag{F.5.4.8-1} $$
 
 (b) Otros casos — Para los casos A, B o C (véase F.5.4.8.1) se debe usar la fórmula F.5.4.8-1, con la cantidad apropiada del numerador igualada a cero.
 
@@ -2270,11 +2270,11 @@ Todas las cantidades en las fórmulas de interacción se deben tomar positivas.
 
 (1.) Prevención del pandeo respecto al eje mayor:
 
-![Ecuación F.5.4.8-2](img/ec-F.5.4.8-2.png)
+$$ \dfrac{P}{P_{Rx}}+\dfrac{\bar{M}_{x}}{M_{RSx}}+\dfrac{P\bar{M}_{x}}{2P_{Rx}M_{RSx}}\le 1.0 \tag{F.5.4.8-2} $$
 
 (2.) Prevención del pandeo respecto al eje menor:
 
-![Ecuación F.5.4.8-3](img/ec-F.5.4.8-3.png)
+$$ \dfrac{P}{P_{Ry}}+\dfrac{\bar{M}_{x}}{M_{Rx}}\le 1.0 \tag{F.5.4.8-3} $$
 
 Donde:
 
@@ -2284,7 +2284,7 @@ $P_{Rx}, P_{Ry} =$ resistencias axiales de diseños a pandeo como columna genera
 
 (b) Caso B (flexión respecto al eje menor con compresión axial) — Para el caso B, se debe satisfacer la siguiente única condición (prevención del pandeo respecto al eje menor):
 
-![Ecuación F.5.4.8-4](img/ec-F.5.4.8-4.png)
+$$ \dfrac{P}{P_{Ry}}+\dfrac{\bar{M}_{y}}{M_{RSy}}+\dfrac{P\bar{M}_{y}}{2P_{Ry}M_{RSy}}\le 1.0 \tag{F.5.4.8-4} $$
 
 Donde:
 
@@ -2292,11 +2292,11 @@ $M_{y} =$ momento uniforme equivalente respecto al menor eje obtenido como en el
 
 (c) Caso C (flexión biaxial) — Para el caso C se debe satisfacer la siguiente única condición (prevención del pandeo respecto al eje menor):
 
-![Ecuación F.5.4.8-5](img/ec-F.5.4.8-5.png)
+$$ \dfrac{\bar{M}_{x}}{M_{Rx}}+\dfrac{\bar{M}_{y}}{M_{RSy}}\le 1.0 \tag{F.5.4.8-5} $$
 
 (d) Caso D (flexión biaxial con fuerza axial) — Para el caso D se debe satisfacer la siguiente condición:
 
-![Ecuación F.5.4.8-6](img/ec-F.5.4.8-6.png)
+$$ \dfrac{\bar{M}_{x}}{M_{RPx}}+\dfrac{\bar{M}_{y}}{M_{RPy}}\le 1.0 \tag{F.5.4.8-6} $$
 
 Donde:
 
@@ -2360,15 +2360,15 @@ El espesor de la lámina se denominará $t$ para todos los casos.
 
 $β ≤β_{1}$ totalmente compacta $β_{1} < β ≤β_{o}$ semi-compacta $β > β_{o}$ esbelta Donde:
 
-![Ecuación F.5.5.2-1](img/ec-F.5.5.2-1.png)
+$$ \beta =d/t \tag{F.5.5.2-1} $$
 
 $β_{o}$ y $β_{1}$ dadas en la tabla F.5.4.3
 
 (b) Láminas totalmente compactas y semi-compactas — La resistencia axial de diseño $P_{RS}$ a compresión uniforme debe basarse en la sección transversal menos favorable como se indica a continuación:
 
-![Ecuación F.5.5.2-2](img/ec-F.5.5.2-2.png)
+$$ \text{totalmente compacta}\qquad P_{RS}=p_{a}A_{ne}\phi \tag{F.5.5.2-2} $$
 
-![Ecuación F.5.5.2-3](img/ec-F.5.5.2-3.png)
+$$ \text{semi-compacta}\qquad P_{RS}=p_{o}A_{ne}\phi \tag{F.5.5.2-3} $$
 
 Donde:
 
@@ -2394,7 +2394,7 @@ El factor $k_{L}$ puede determinarse mediante el más favorable de los siguiente
 
 • Tratamiento como lámina $k_{L}$ se lee en la curva C o D de la figura F.5.4.3-5 tomando:
 
-![Ecuación F.5.5.2-4](img/ec-F.5.5.2-4.png)
+$$ \beta =\dfrac{d}{t}\qquad \text{y}\qquad \varepsilon =\left(\dfrac{25}{p_{o}}\right)^{1/2} \tag{F.5.5.2-4} $$
 
 • Tratamiento como columna $k_{L}$ se toma igual a la relación $p_{s}/p_{o}$ , en la que $p_{s}$ es el esfuerzo de pandeo como columna leído en la figura F.5.4.5-3 (a). La curva apropiada es la que intersecta el eje de esfuerzos en un valor $p_{o}$ . El parámetro de esbeltez $λ$ debe ser normalmente tomado como:
 
@@ -2406,7 +2406,7 @@ $λ =3.5a$ $t$ éste valor corresponde a apoyo simple, aunque se puede tomar un 
 
 $β ≤β_{1}$ totalmente compacta $β_{1} < β ≤β_{o}$ semi-compacta $β > β_{o}$ esbelta Donde:
 
-![Ecuación F.5.5.2-6](img/ec-F.5.5.2-6.png)
+$$ \beta =\dfrac{0.35d}{t} \tag{F.5.5.2-6} $$
 
 $β_{o}$ y $β_{1}$ están dados en la tabla F.5.4.3
 
@@ -2418,7 +2418,7 @@ $β_{o}$ y $β_{1}$ están dados en la tabla F.5.4.3
 
 (2) Revisión por pandeo — Se determina $M_{RS}$ tal como se indica a continuación:
 
-![Ecuación F.5.5.2-7](img/ec-F.5.5.2-7.png)
+$$ M_{RS}=\phi p_{o}Z_{e} \tag{F.5.5.2-7} $$
 
 Donde:
 
@@ -2426,7 +2426,7 @@ $Z_{e} =$ módulo elástico de la sección efectiva El cálculo de F.5.5.2-7 deb
 
 El factor $k_{L}$ debe ser leído en la curva C o D de la figura F.5.4.3-5 tomando:
 
-![Ecuación F.5.5.2-8](img/ec-F.5.5.2-8.png)
+$$ \beta =\dfrac{0.35d}{t}\qquad \text{y}\qquad \varepsilon =\left(\dfrac{25}{p_{o}}\right)^{1/2} \tag{F.5.5.2-8} $$
 
 **F.5.5.2.3** — Gradiente de esfuerzo longitudinal en láminas no rigidizadas — Los casos en que la acción aplicada $P$ o $M$ sobre una lámina no rigidizada varía longitudinalmente en la dirección mostrada en la figura F.5.5.1-1, se presentan en los siguientes literales.
 
@@ -2440,7 +2440,7 @@ La presencia de agujeros pequeños puede ignorarse en el cálculo de la resisten
 
 (a) Alma a cortante compacta — La resistencia de diseño a fuerza cortante $V_{RS}$ debe encontrarse usando lo siguiente:
 
-![Ecuación F.5.5.2-9](img/ec-F.5.5.2-9.png)
+$$ V_{RS}=\phi p_{\nu }A_{\nu } \tag{F.5.5.2-9} $$
 
 Donde:
 
@@ -2462,11 +2462,11 @@ Para láminas totalmente soldadas a lo largo de uno o más bordes $A_{v}=k_{z} d
 
 Alternativamente, la siguiente expresión puede usarse y es más favorable cuando $a$ es menor que $2.5d$ .
 
-![Ecuación F.5.5.2-10](img/ec-F.5.5.2-10.png)
+$$ V_{RS}=\phi v_{1}p_{v}dt \tag{F.5.5.2-10} $$
 
 donde $v_{1}$ es el coeficiente de pandeo por cortante elástico leído en la figura F.5.5.3-1 tomando
 
-![Ecuación F.5.5.2-11](img/ec-F.5.5.2-11.png)
+$$ \varepsilon =\left(\dfrac{15}{p_{v}}\right)^{1/2} \tag{F.5.5.2-11} $$
 
 La expresión del literal (c) de F.5.4.5.3 no tiene en cuenta la acción de campo tensionado. Si se cree que las condiciones de borde son tales que se tiene un campo tensionado, el diseñador debe referirse a un tratamiento aún más favorable disponible para paneles tipo 1 en almas de vigas ensambladas (véase el literal (c) de F.5.5.4.2).
 
@@ -2476,7 +2476,7 @@ Cuando la lámina se clasifica como esbelta, cada resistencia individual ($P_{RS
 
 (a) Fuerza axial con momento — La siguiente condición debe satisfacerse para una lámina sujeta a fuerza axial con momento:
 
-![Ecuación F.5.5.2-12](img/ec-F.5.5.2-12.png)
+$$ \dfrac{P}{P_{RS}}+\dfrac{M}{M_{RS}}\le 1.0 \tag{F.5.5.2-12} $$
 
 Donde:
 
@@ -2488,7 +2488,7 @@ $P_{RS}$ y $M_{RS}=$ resistencias de diseño a fuerza axial y momento en el plan
 
 (c) Esfuerzo directo con cortante elevado — Si $V$ excede $0.5V_{RS}$, la resistencia longitudinal (fuerza axial, momento) se debe reducir por un coeficiente $k_{v}$ donde:
 
-![Ecuación F.5.5.2-13](img/ec-F.5.5.2-13.png)
+$$ k_{v}=1.6-\dfrac{1.2V}{V_{RS}} \tag{F.5.5.2-13} $$
 
 #### F.5.5.3 — LAMINAS MULTI-RIGIDIZADAS
 
@@ -2508,7 +2508,7 @@ No se permiten elementos esbeltos salientes.
 
 (b) Revisión como columna — La lámina se trata como un ensamblaje de subunidades idénticas de columna, cada una conteniendo un rigidizador o una corrugación centralmente cargado y con un ancho igual a la separación $w$ . La resistencia axial de diseño $P_{RS}$ se toma como:
 
-![Ecuación F.5.5.3-1](img/ec-F.5.5.3-1.png)
+$$ P_{RS}=\phi p_{s}A \tag{F.5.5.3-1} $$
 
 Donde:
 
@@ -2536,7 +2536,7 @@ Para el propósito de clasificar elementos individuales, y también para determi
 
 (c) Revisión como columna — La lámina se considera como un ensamblaje de subunidades de columna en la misma manera general que para compresión axial (véase el literal (b) de F.5.5.3.1), la resistencia a momento de diseño $M_{RS}$ se toma de acuerdo con:
 
-![Ecuación F.5.5.3-2](img/ec-F.5.5.3-2.png)
+$$ M_{RS}=\phi \dfrac{p_{s}ZB}{2y} \tag{F.5.5.3-2} $$
 
 Donde:
 
@@ -2572,7 +2572,7 @@ $φ$ = coeficiente de reducción de capacidad (véase tabla F.5.3.3-1) El esfuer
 
 (b) Revisión por pandeo — La resistencia de diseño a fuerza cortante se encuentra usando la siguiente expresión:
 
-![Ecuación F.5.5.3-3](img/ec-F.5.5.3-3.png)
+$$ V_{RS}=\phi \nu _{1}p_{v}Bt \tag{F.5.5.3-3} $$
 
 Donde:
 
@@ -2590,7 +2590,7 @@ $v_{1}$ = coeficiente de pandeo crítico al corte en el rango elástico (véase 
 
 Figura F.5.5.3-1 — Coeficiente de pandeo crítico al corte en el rango elástico, $ν_{1}$ Para calcular $ν_{1}$ deben usarse los siguientes valores:
 
-![Ecuación F.5.5.3-4](img/ec-F.5.5.3-4.png)
+$$ \begin{aligned} a&=B \\ d&=0.61\left(\dfrac{wt^{3}}{I_{SU}}\right)^{0.375}\end{aligned} \tag{F.5.5.3-4} $$
 
 $l =$ longitud efectiva de la lámina
 
@@ -2598,7 +2598,7 @@ $w =$ separación entre rigidizadores o corrugaciones
 
 $I_{SU}=$ segundo momento del área de una sub-unidad de lámina (como se define en el literal (b) de F.5.5.3.1) respecto al eje centroidal paralelo al plano de la lámina
 
-![Ecuación](img/ec-p495-600.png)
+$$ \varepsilon =\left(\dfrac{15}{p_{v}}\right)^{1/2} $$
 
 La longitud efectiva $l$ puede tomarse seguramente como la longitud no soportada $L$ (véase la figura F.5.5.1-2). Cuando $L$ excede ampliamente a $B$ , se puede obtener un resultado más favorable haciendo $l$ igual a la mitad de la longitud de onda del pandeo por cortante elástico ortotrópico. En la revisión por pandeo no es necesario tener en cuenta el ablandamiento en la zona afectada por el calor.
 
@@ -2646,9 +2646,9 @@ $k_{L}=1.0$
 
 (a) Revisión por fluencia — La fuerza cortante $V$ generada bajo carga mayorada en cualquier sección transversal, no debe exceder el valor de $V_{RS}$ encontrado como se indica enseguida:
 
-![Ecuación F.5.5.4-1](img/ec-F.5.5.4-1.png)
+$$ \text{sin platina de enchape}\quad V_{RS}=\phi P_{vw}A_{we} \tag{F.5.5.4-1} $$
 
-![Ecuación F.5.5.4-2](img/ec-F.5.5.4-2.png)
+$$ \text{con platina o platinas de enchape}\quad V_{RS}=\phi \left(P_{vw}A_{we}+p_{vt}A_{te}\right) \tag{F.5.5.4-2} $$
 
 Donde:
 
@@ -2662,7 +2662,7 @@ $φ$ = coeficiente de reducción de capacidad (véase la tabla F.5.3.3-1) Las á
 
 (b) Revisión por pandeo — En cualquier vano entre rigidizadores transversales, la fuerza cortante $V$ generada bajo carga mayorada no debe exceder el valor límite $V_{RS}$ para ese vano, basado en la falla última por pandeo. El valor de $V_{RS}$ debe encontrarse usando la expresión apropiada de las siguientes, en las que se saca ventaja del comportamiento posterior al pandeo:
 
-![Ecuación F.5.5.4-3](img/ec-F.5.5.4-3.png)
+$$ \text{sin platina de enchape}\quad V_{RS}=\phi \left(v_{1}+v_{tf}\right)p_{vw}dt \tag{F.5.5.4-3} $$
 
 con platina o platinas de enchape
 
@@ -2682,9 +2682,9 @@ un panel interno, un panel en un tramo final con un poste extremo que cumple con
 
 Los paneles tipo 1 son generalmente capaces de desarrollar resistencia a cortante adicional después de la aparición inicial de pandeo, debido a la acción de campo tensionado. En este caso $v_{tf}$debe tomarse de acuerdo con lo siguiente:
 
-![Ecuación F.5.5.4-5](img/ec-F.5.5.4-5.png)
+$$ \text{(i)}\quad \text{Panel no soldado}\quad v_{tf}=v_{2}+mv_{3} \tag{F.5.5.4-5} $$
 
-![Ecuación F.5.5.4-6](img/ec-F.5.5.4-6.png)
+$$ \text{(ii)}\quad \text{Panel con soldaduras en los extremos}\quad v_{tf}=k_{z}\left(v_{2}+mv_{3}\right) \tag{F.5.5.4-6} $$
 
 ![Figura F.5.5.4-1 — Coeficiente básico de pandeo al corte considerando campo tensionado,](img/figF.5.5.4-1.png)
 
@@ -2714,7 +2714,7 @@ Figura F.5.5.4-3 — Coeficiente de pandeo por cortante $m_{1}$ Para determinar 
 
 (d) Revisión por zona afectada por el calor — En almas con soldaduras longitudinales, la fuerza cortante $V$ , generada bajo carga mayorada, no debe sobrepasar la resistencia de diseño a fuerza cortante $V_{RS}$ en cualquiera de tales soldaduras. $V_{RS}$ está dado por:
 
-![Ecuación F.5.5.4-7](img/ec-F.5.5.4-7.png)
+$$ V_{RS}=\phi \dfrac{k_{z}p_{vw}It}{A_{e}\bar{y}} \tag{F.5.5.4-7} $$
 
 Donde:
 
@@ -2766,7 +2766,7 @@ $b_{1}$ = el menor de $a_{o}$ y $7 εt$ donde $a_{o}$ es la distancia desde el r
 
 $b_{1}$ = el menor de $0.13d_{av}$ y $15ε t$ Donde:
 
-![Ecuación F.5.5.4-8](img/ec-F.5.5.4-8.png)
+$$ \varepsilon =\left(15/p_{v}\right)^{1/2} \tag{F.5.5.4-8} $$
 
 $p_{v} =$ esfuerzo límite del material del alma (véanse las tablas F.5.4.2-1 y F.5.4.2-2)
 
@@ -2776,11 +2776,11 @@ $d_{av} =$ altura promedio de los dos sub-paneles situados a cada lado del rigid
 
 (1) Para un rigidizador transversal
 
-![Ecuación F.5.5.4-9](img/ec-F.5.5.4-9.png)
+$$ \dfrac{a}{d}\le 2.5\qquad I_{s}\ge dt^{3}\left(2d/a-0.7\right) \tag{F.5.5.4-9} $$
 
 (2) Para un rigidizador longitudinal
 
-![Ecuación F.5.5.4-10](img/ec-F.5.5.4-10.png)
+$$ \dfrac{d_{av}}{a}\le 2.5\qquad I_{s}\ge at^{3}\left(2a/d_{av}-0.7\right) \tag{F.5.5.4-10} $$
 
 La condición de rigidez puede obviarse cuando las proporciones del panel están por fuera del rango indicado.
 
@@ -2788,11 +2788,11 @@ La condición de rigidez puede obviarse cuando las proporciones del panel están
 
 (1) Para un rigidizador intermedio
 
-![Ecuación F.5.5.4-11](img/ec-F.5.5.4-11.png)
+$$ P=\dfrac{V}{3} \tag{F.5.5.4-11} $$
 
 (2) Para un rigidizador de apoyo
 
-![Ecuación F.5.5.4-12](img/ec-F.5.5.4-12.png)
+$$ P=p_{1}+\dfrac{V}{3} \tag{F.5.5.4-12} $$
 
 Donde:
 
@@ -2800,9 +2800,9 @@ $V =$ valor promedio de la fuerza cortante generada en los paneles del alma a ca
 
 $P_{1} =$ carga concentrada o reacción que actúa en el rigidizador El valor de $P$ no debe exceder la resistencia axial de diseño del miembro a compresión, determinada de acuerdo con F.5.4.7 tomando en cuenta el pandeo como columna (fuera del plano del alma) y el aplastamiento local pero ignorando el pandeo torsional. Para considerar el pandeo como columna, se debe tomar una longitud efectiva de miembro a compresión $l$ de acuerdo con:
 
-![Ecuación F.5.5.4-13](img/ec-F.5.5.4-13.png)
+$$ \text{para}\qquad \dfrac{a}{d}\ge 1.5\qquad I=d \tag{F.5.5.4-13} $$
 
-![Ecuación F.5.5.4-14](img/ec-F.5.5.4-14.png)
+$$ \text{para}\qquad \dfrac{a}{d}<1.5\qquad I=\dfrac{d}{\left[1.6-(0.4a/d)\right]^{1/2}} \tag{F.5.5.4-14} $$
 
 Cuando la dimensión $a$ del panel es diferente en los lados opuestos de un rigidizador, se debe tomar un valor promedio para ella en las expresiones F.5.5.4-13 y F.5.5.4-14. Para cualquier rigidizador extremo, $I=d$.
 
@@ -2816,9 +2816,9 @@ Es importante tener en cuenta los efectos de flexión que se introducen si hay e
 
 • Puede ser en la forma de material insertado conectado al extremo de la lámina del alma Para llevar a cabo la segunda función, el poste de extremo tiene que resistir una fuerza cortante $V_{ep}$ conjuntamente con un momento $M_{ep}$ actuando en el plano de la lámina del alma (bajo carga mayorada), dados por las siguientes expresiones:
 
-![Ecuación F.5.5.4-15](img/ec-F.5.5.4-15.png)
+$$ V_{ep}=0.6p_{v}dt\left[1-v_{1}\left(\dfrac{q/\left(P_{v}-v_{1}\right)}{v_{2}}\right)\right]^{1/2} \tag{F.5.5.4-15} $$
 
-![Ecuación F.5.5.4-16](img/ec-F.5.5.4-16.png)
+$$ M_{ep}=0.1dV_{ep} \tag{F.5.5.4-16} $$
 
 Donde:
 
@@ -2830,7 +2830,7 @@ $v_{1}$ y $v_{2}=$ coeficientes relacionados con los paneles extremos, encontrad
 
 (f) Postes extremos requeridos para resistir torsión — Si un poste de extremo es el único medio de suministro de resistencia contra el retorcimiento en el extremo de una viga, se debe cumplir lo siguiente:
 
-![Ecuación F.5.5.4-17](img/ec-F.5.5.4-17.png)
+$$ I_{ep}\ge \dfrac{d^{3}t_{f}R}{250W} \tag{F.5.5.4-17} $$
 
 Donde:
 
@@ -2964,7 +2964,7 @@ Esfuerzo límite para sujetadores de aluminio $p_{f}$
 
 **F.5.6.4.2** — Cortante — La resistencia de diseño $(V_{RS})$ de un solo remache o perno sometido a cortante simple se toma como:
 
-![Ecuación F.5.6.4-1](img/ec-F.5.6.4-1.png)
+$$ V_{RS}=\phi \alpha _{S}p_{f}A_{es}K_{1} \tag{F.5.6.4-1} $$
 
 Donde:
 
@@ -2990,7 +2990,7 @@ $K_{1}=0.85$ para pernos de holgura normal
 
 **F.5.6.4.3** — Tensión axial — La resistencia de diseño, $P_{RT}$, de un solo sujetador sometido a tensión axial se toma como
 
-![Ecuación F.5.6.4-2](img/ec-F.5.6.4-2.png)
+$$ P_{RT}=\phi \alpha p_{f}A_{tb} \tag{F.5.6.4-2} $$
 
 Donde:
 
@@ -3002,7 +3002,7 @@ $a=0.6$para pernos de aluminio No se recomienda el uso de remaches de aluminio a
 
 **F.5.6.4.4** — Aplastamiento — La resistencia efectiva de diseño al aplastamiento para un único remache o perno es igual al menor valor entre la resistencia de diseño al aplastamiento de un solo sujetador $B_{RF}$ y la capacidad por aplastamiento de la capa conectada $B_{RP}.$ La resistencia de diseño al aplastamiento, $B_{RF}$, para un sujetador único se toma como
 
-![Ecuación F.5.6.4-3](img/ec-F.5.6.4-3.png)
+$$ B_{RF}=\phi d_{f}t\,2p_{f} \tag{F.5.6.4-3} $$
 
 Donde:
 
@@ -3014,9 +3014,9 @@ $p_{f}$ = se define en F.5.6.4.1 para sujetadores de acero y aluminio
 
 $φ$ = coeficiente de reducción de capacidad (véase la tabla F.5.3.3-1) La capacidad por aplastamiento de la capa conectada está dada por el menor valor de los siguientes:
 
-![Ecuación F.5.6.4-4](img/ec-F.5.6.4-4.png)
+$$ B_{RP}=\phi cd_{f}tp_{a} \tag{F.5.6.4-4} $$
 
-![Ecuación F.5.6.4-5](img/ec-F.5.6.4-5.png)
+$$ B_{RP}=\phi etp_{a} \tag{F.5.6.4-5} $$
 
 Donde:
 
@@ -3028,7 +3028,7 @@ $p_{a}$ = el menor valor entre $0.5 (f_{0.2}+f_{u})$ y $1.2f_{0.2}$ para el mate
 
 **F.5.6.4.5** — Cortante y tensión combinados — Cuando los pernos o remaches (excepto remaches de aluminio, véase F.5.6.4.3) están sujetos a cortante y tensión, se debe satisfacer la siguiente condición (adicionalmente a F.5.6.4.2 y F.5.6.4.3):
 
-![Ecuación F.5.6.4-6](img/ec-F.5.6.4-6.png)
+$$ \left(\dfrac{P}{P_{RT}}\right)^{2}+\left(\dfrac{V}{V_{RS}}\right)^{2}\le 1 \tag{F.5.6.4-6} $$
 
 Donde:
 
@@ -3056,7 +3056,7 @@ $γ_{s} =1.2$.
 
 **F.5.6.5.3** — Capacidad por fricción — La resistencia de diseño al cortante depende de la capacidad por fricción del perno de alta resistencia, dicha capacidad por fricción $(F_{c})$ está dada por lo siguiente:
 
-![Ecuación F.5.6.5-1](img/ec-F.5.6.5-1.png)
+$$ F_{c}=\dfrac{P_{p}\mu _{s}N_{F}}{\gamma _{s}} \tag{F.5.6.5-1} $$
 
 Donde:
 
@@ -3072,7 +3072,7 @@ $N_{F}$ = número de interfaces de fricción
 
 **F.5.6.5.4** — Preesfuerzo — La carga de preesfuerzo para un perno de alta resistencia a fricción se debe tomar como se indica enseguida:
 
-![Ecuación F.5.6.5-2](img/ec-F.5.6.5-2.png)
+$$ P_{p}=P_{o}-0.9S_{tb} \tag{F.5.6.5-2} $$
 
 Donde:
 
@@ -3092,9 +3092,9 @@ En una unión con pasador, las partes están conectadas por un solo pasador que 
 
 Si el pasador debe ser removido para desmantelar la estructura y reinsertado para reensamblarla, la sección transversal del pasador debe revisarse para un límite de servicio asociado con el límite de comportamiento elástico. Los siguientes esfuerzos no deben ser excedidos bajo carga mayorada:
 
-![Ecuación F.5.6.6-1](img/ec-F.5.6.6-1.png)
+$$ \text{(a)}\quad \text{Esfuerzo cortante promedio en el pasador}\qquad \phi 0.6p_{a} \tag{F.5.6.6-1} $$
 
-![Ecuación F.5.6.6-2](img/ec-F.5.6.6-2.png)
+$$ \text{(b)}\quad \text{Esfuerzo de flexión en el pasador}\qquad \phi 1.2p_{a} \tag{F.5.6.6-2} $$
 
 Donde:
 
@@ -3269,7 +3269,7 @@ NOTA 2. Refiérase al literal (b) de F.5.4.4.2 para ver la aplicabilidad de los 
 
 **F.5.6.9.1** — Metal de soldadura a tope — Una soldadura a tope de penetración parcial o completa solo se usaran para piezas resistentes cuando se verifique mediante ensayos que no se manifiestan defectos de soldadura. Para una soldadura a tope sometida a cortante y carga axial debe proporcionarse de modo que:
 
-![Ecuación F.5.6.9-1](img/ec-F.5.6.9-1.png)
+$$ \left(\sigma _{1}^{2}+3\tau _{2}^{2}\right)^{1/2}\le \phi p_{w} \tag{F.5.6.9-1} $$
 
 Donde:
 
@@ -3281,7 +3281,7 @@ $p_{w}$= esfuerzo límite del metal de aporte (véase F.5.6.8.2)
 
 $φ$ = coeficiente de reducción de capacidad para el metal de aporte (véase la tabla F.5.3.3-1) Para una soldadura a tope con una carga de tensión oblicua (véase la figura F.5.6.9-1), la resistencia de diseño $P_{RB}$ está dada por:
 
-![Ecuación F.5.6.9-2](img/ec-F.5.6.9-2.png)
+$$ P_{RB}=\phi p_{w}l_{e}t_{e}\left(1+2\cos ^{2}\theta \right)^{-1/2} \tag{F.5.6.9-2} $$
 
 Donde:
 
@@ -3297,11 +3297,11 @@ Cuando la soldadura está sometida a flexión en su plano, la resistencia de dis
 
 Para una unión sin fuerzas de cortante externas y con la línea de la soldadura a tope perpendicular a la línea de acción de la carga externa, $θ =90^{\circ}$ , $τ_{2} =0$ y la resistencia de diseño será:
 
-![Ecuación F.5.6.9-3](img/ec-F.5.6.9-3.png)
+$$ P_{RB}=\phi p_{w}l_{e}t_{e} \tag{F.5.6.9-3} $$
 
 Para una fuerza cortante externa paralela a la línea de la soldadura a tope, la resistencia de diseño será:
 
-![Ecuación F.5.6.9-4](img/ec-F.5.6.9-4.png)
+$$ P_{RB}=\phi \dfrac{p_{w}l_{e}t_{e}}{\sqrt{3}} \tag{F.5.6.9-4} $$
 
 ![Figura F.5.6.9-1 — Diseño de soldadura a tope](img/figF.5.6.9-1.png)
 
@@ -3317,7 +3317,7 @@ Figura F.5.6.6.9-3 — Longitud efectiva de soldaduras de filete longitudinales
 
 **F.5.6.9.2** — Metal de soldadura de filete — Para el cálculo de una soldadura de filete, la sección de la garganta deberá ser tomado en base al espesor dominante de las partes a unir, dado que la resistencia real de una soldadura de filete queda definida por la garganta y las fuerzas actuantes en dicha sección. Una soldadura de filete debe proporcionarse de modo que se satisfaga la siguiente expresión:
 
-![Ecuación F.5.6.9-5](img/ec-F.5.6.9-5.png)
+$$ \left[\sigma _{1}^{2}+3\left(\tau _{1}^{2}+\tau _{2}^{2}\right)\right]^{1/2}\le \phi 0.85p_{w} \tag{F.5.6.9-5} $$
 
 Donde:
 
@@ -3327,7 +3327,7 @@ $τ_{1}$= esfuerzo cortante que actúa sobre la sección de garganta perpendicul
 
 Para una soldadura de filete transversal simple (carga aplicada perpendicularmente a la longitud de la soldadura), $σ_{1} = τ_{1} , τ_{2} =0$ y la resistencia de diseño se obtiene como sigue:
 
-![Ecuación F.5.6.9-6](img/ec-F.5.6.9-6.png)
+$$ P_{RF}=\phi \dfrac{0.85p_{w}l_{e}g_{t}}{\sqrt{2}} \tag{F.5.6.9-6} $$
 
 Donde: $l_{e}$ es la longitud efectiva de la soldadura (igual que en soldaduras a tope).
 
@@ -3335,7 +3335,7 @@ Para una soldadura de filete longitudinal simple (carga aplicada paralelamente a
 
 $σ_{1} = τ_{1} =0$ y la resistencia de diseño depende sólo de $γ_{2} :$
 
-![Ecuación F.5.6.9-7](img/ec-F.5.6.9-7.png)
+$$ P_{RF}=\phi \dfrac{0.85p_{w}l_{f}g_{t}}{\sqrt{3}} \tag{F.5.6.9-7} $$
 
 Donde: $l_{f}$ es la longitud efectiva de la soldadura de filete.
 
@@ -3349,13 +3349,11 @@ Cuando la distribución de esfuerzos a lo largo de la soldadura corresponde a la
 
 (1) Soldadura a tope:
 
-![Ecuación F.5.6.9-8](img/ec-F.5.6.9-8.png)
+$$ P_{RFB}=\phi p_{az}Lt_{e}\quad \text{(en la frontera de fusión)} \tag{F.5.6.9-8} $$
 
-$P_{RTB}= φp_{az} Lt$ (en el borde de la soldadura,
+$$ P_{RTB}=\phi p_{az}Lt\quad \text{(en el borde de la soldadura, véase la figura F.5.6.7-3)} \tag{F.5.6.9-9} $$
 
-![Ecuación F.5.6.9-9](img/ec-F.5.6.9-9.png)
-
-véase la figura F.5.6.7-3) Donde:
+Donde:
 
 $P_{RFB}$ y $P_{RTB}$= resistencias directas de diseño de la zona afectada por el calor adyacente a una soldadura a tope
 
@@ -3363,13 +3361,11 @@ $p_{az}$= esfuerzo directo límite en la zona afectada por el calor
 
 $L$ = longitud total de la soldadura (2) Soldadura de filete:
 
-![Ecuación F.5.6.9-10](img/ec-F.5.6.9-10.png)
+$$ P_{RFF}=\phi p_{az}Lg_{1}\quad \text{(en la frontera de fusión)} \tag{F.5.6.9-10} $$
 
-$P_{RTF}= φp_{az} Lt$ (en el borde de la soldadura,
+$$ P_{RTF}=\phi p_{az}Lt\quad \text{(en el borde de la soldadura, véase la figura F.5.6.7-3 y F.5.6.9.3 (d))} \tag{F.5.6.9-11} $$
 
-![Ecuación F.5.6.9-11](img/ec-F.5.6.9-11.png)
-
-véase la figura F.5.6.7-3 y F.5.6.9.3 (d)) Donde:
+Donde:
 
 $P_{RFF}$, $P_{RTF}=$ resistencias directas de diseño de la zona afectada por el calor adyacente a una soldadura de filete
 
@@ -3377,29 +3373,25 @@ $P_{RFF}$, $P_{RTF}=$ resistencias directas de diseño de la zona afectada por e
 
 (1) Soldadura a tope:
 
-![Ecuación F.5.6.9-12](img/ec-F.5.6.9-12.png)
+$$ V_{RFB}=\phi p_{vz}Lt\quad \text{(en la frontera de fusión)} \tag{F.5.6.9-12} $$
 
-$V_{RTB}= φp_{vz}Lt$ (en el borde de la soldadura,
+$$ V_{RTB}=\phi p_{vz}Lt\quad \text{(en el borde de la soldadura, véase la figura F.5.6.7-3)} \tag{F.5.6.9-13} $$
 
-![Ecuación F.5.6.9-13](img/ec-F.5.6.9-13.png)
-
-véase la figura F.5.6.7-3) Donde:
+Donde:
 
 $V_{RFB}$, $V_{RTB}=$ resistencias de diseño a cortante de la zona afectada por el calor adyacente a una soldadura a tope (2) Soldadura de filete:
 
-![Ecuación F.5.6.9-14](img/ec-F.5.6.9-14.png)
+$$ V_{RFF}=\phi p_{vz}Lg_{1}\quad \text{(en la frontera de fusión)} \tag{F.5.6.9-14} $$
 
-$V_{RTF}= φp_{vz}Lt$ (en el borde de la soldadura,
+$$ V_{RTF}=\phi p_{vz}Lt\quad \text{(en el borde de la soldadura, véase la figura F.5.6.7-3 y F.5.6.9.3 (d))} \tag{F.5.6.9-15} $$
 
-![Ecuación F.5.6.9-15](img/ec-F.5.6.9-15.png)
-
-véase la figura F.5.6.7-3 y F.5.6.9.3 (d)) Donde:
+Donde:
 
 $V_{RFF}$, $V_{RTF}=$ resistencias de diseño a cortante de la zona afectada por el calor adyacente a una soldadura de filete
 
 (c) Cuando hay una combinación de cortante y fuerza directa sobre la zona afectada por el calor, estas fuerzas deben limitarse de acuerdo con la siguiente ecuación:
 
-![Ecuación F.5.6.9-16](img/ec-F.5.6.9-16.png)
+$$ \left(\dfrac{S_{a}}{P_{RZ}}\right)^{2}+\left(\dfrac{S_{b}}{V_{RZ}}\right)^{2}\le 1 \tag{F.5.6.9-16} $$
 
 Donde:
 
@@ -3447,7 +3439,7 @@ La especificación de un sistema de unión debe comprender la preparación de la
 
 (g) La vida de diseño A menos que se disponga de datos de ensayos válidos, la resistencia de la unión debe establecerse experimentalmente. Generalmente, se deben hacer uniones de muestra a escala natural usando los mismos procedimientos de fabricación empleados en las uniones reales. La prueba debe realizarse con una construcción similar de la unión y con una carga como la que soporta la estructura real. Se deben hacer, como mínimo, cinco ensayos para establecer la media y la desviación estándar de las cargas de falla. La resistencia de diseño de una unión pegada, $P_{RG}$, está entonces dada por:
 
-![Ecuación F.5.6.10-1](img/ec-F.5.6.10-1.png)
+$$ P_{RG}=\phi \left(R_{m}-2S_{d}\right) \tag{F.5.6.10-1} $$
 
 Donde:
 
@@ -3521,7 +3513,7 @@ Puede haber circunstancias en las que la severidad de la carga, el grado de redu
 
 **F.5.7.2.1** — Criterio de falla por fatiga — La base del diseño por fatiga usada aquí es que la vida requerida será alcanzada siempre que
 
-![Ecuación F.5.7.2-1](img/ec-F.5.7.2-1.png)
+$$ f_{r}^{m}N\le K_{2} \tag{F.5.7.2-1} $$
 
 Donde:
 
@@ -3581,7 +3573,7 @@ Un miembro estructural puede contener varios sitios potenciales de iniciación d
 
 (f) Sumar el daño total para todos los ciclos usando el gran total de Miner:
 
-![Ecuación F.5.7.3-1](img/ec-F.5.7.3-1.png)
+$$ \text{vida estimada}=\dfrac{\text{vida de diseño mayorada}}{\sum n/N} \tag{F.5.7.3-1} $$
 
 Si la $∑n /N$ excede la unidad entonces se deben reducir los rangos de esfuerzo en ese punto o se debe cambiar el detalle por uno de clase más alta (véase F.5.7.7).
 
@@ -3982,7 +3974,7 @@ El número de aplicaciones de carga, o cargas, de prueba para la falla debe ser 
 
 Para aceptación, la vida hasta la falla determinada mediante ensayo y ajustada para tener en cuenta el número de resultados de ensayos disponible, no debe ser menor que la vida de diseño mayorada como se define en F.5.3.6.2.
 
-![Ecuación F.5.8.4-1](img/ec-F.5.8.4-1.png)
+$$ \dfrac{N_{a}}{F}\ge \text{vida de diseño mayorada} \tag{F.5.8.4-1} $$
 
 Donde:
 

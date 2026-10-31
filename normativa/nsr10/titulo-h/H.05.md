@@ -66,7 +66,7 @@ Los elementos de soporte deberán diseñarse estructuralmente para resistir las 
 
 Cuando una excavación se realice en una capa impermeable, la cual a su vez descanse sobre un estrato permeable, deberá considerarse que la presión del agua en este estrato puede levantar el fondo de la excavación, no obstante el bombeo superficial. El espesor mínimo (hi) del estrato impermeable que debe tenerse para evitar inestabilidad de fondo se considerará igual a:
 
-![Ecuación H.5.1-1](img/ec-H.5.1-1.png)
+$$ h_i > \left( Y_w / Y_m \right) h_w \tag{H.5.1-1} $$
 
 donde $h_{w}$ es la altura piezométrica en el lecho inferior de la capa impermeable; $γ_{w}$ es el peso unitario del agua; y $γ_{Y}$ es el peso unitario total del suelo entre el fondo de la excavación y el estrato permeable.
 
@@ -76,7 +76,7 @@ En caso de usar elementos estructurales como tablestacas o muros colados en el l
 
 La revisión de la estabilidad general se realizará por un método de análisis límite. Se evaluará el empotramiento y el momento resistente mínimo de los elementos estructurales requeridos para garantizar la estabilidad de acuerdo con las condiciones previstas. La posibilidad de falla de fondo por cortante en arcillas blandas a firmes se analizará verificando que:
 
-![Ecuación H.5.1-2](img/ec-H.5.1-2.png)
+$$ P_V + \sum q < S_u N_c / F_{SBM} \tag{H.5.1-2} $$
 
 donde $S_{u}$ resistencia no drenada (cohesión aparente) del material bajo el fondo de la excavación, en condiciones no–consolidadas no– drenadas (UU); $N_{c}$ coeficiente de capacidad de carga que depende de la geometría de la excavación. Se tomará en cuenta además que este coeficiente puede ser afectado por el procedimiento constructivo; $P_{V}$ presión vertical total actuante en el suelo, a la profundidad de excavación; $∑q$ sobrecargas superficiales $F_{SBM}$ factores de seguridad mínimos de la tabla H.2.4-1
 

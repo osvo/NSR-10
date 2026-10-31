@@ -306,7 +306,7 @@ Para el análisis de elementos estructurales se debe utilizar $E_{0.5}$, como mo
 
 Los valores de esfuerzos admisibles se determinan a partir del valor característico, el cual se obtiene con la siguiente ecuación:
 
-![Ecuación G.12.7-1](img/ec-G.12.7-1.png)
+$$ f_{ki} = f_{0.05i} \left[1 - \dfrac{2.7\,\dfrac{s}{m}}{\sqrt{n}}\right] \tag{G.12.7-1} $$
 
 Donde:
 
@@ -324,7 +324,7 @@ $i$ = subíndice que depende del tipo de solicitación ($b$ para flexión, $t$ p
 
 Una vez determinado el valor característico para cada solicitación, se procede con el cálculo de los esfuerzos admisibles con la siguiente formula.
 
-![Ecuación G.12.7-2](img/ec-G.12.7-2.png)
+$$ F_i = \dfrac{FC}{F_s \cdot FDC}\,f_{ki} \tag{G.12.7-2} $$
 
 Donde:
 
@@ -354,7 +354,7 @@ Factores de reducción
 
 Con base en los valores de esfuerzos admisibles de la tabla G.12.7-1 y los módulos de elasticidad de la tabla G.12.7-2, afectados por los coeficientes de modificación a que haya lugar por razón del tamaño, nudos, grietas, contenido de humedad, duración de carga, esbeltez y cualquier otra condición modificatoria, se determinan las solicitaciones admisibles de todo miembro estructural, según las prescripciones de los numerales siguientes, con los esfuerzos admisibles modificados de acuerdo con la formula general:
 
-![Ecuación G.12.7-3](img/ec-G.12.7-3.png)
+$$ F'_i = F_i C_D C_m C_t C_L C_F C_r C_p C_c \tag{G.12.7-3} $$
 
 Donde
 
@@ -486,7 +486,7 @@ Debe evitarse practicar perforaciones en las vigas; de requerirse, deben encontr
 
 El área de la sección transversal constituida por un (1) solo culmo será calculada con la siguiente ecuación:
 
-![Ecuación G.12.8-1](img/ec-G.12.8-1.png)
+$$ A = \dfrac{\pi}{4} \left(D_e^2 - \left(D_e - 2t\right)^2\right) \tag{G.12.8-1} $$
 
 Donde:
 
@@ -625,7 +625,7 @@ Coeficientes $C_{L}$ para diferentes relaciones $d /b$
 
 **G.12.8.10.8** — MOMENTO RESISTENTE — El esfuerzo a flexión actuante $(f_{b})$ sobre cualquier sección de guadua rolliza, no debe exceder el valor del esfuerzo a flexión admisible $(F_{b}')$ modificado por los coeficientes correspondientes, de acuerdo a la formula G.12.8-4
 
-![Ecuación G.12.8-4](img/ec-G.12.8-4.png)
+$$ f_b = \dfrac{M}{S} \le F'_b \tag{G.12.8-4} $$
 
 En donde:
 
@@ -637,7 +637,7 @@ $F_{b}'$ = esfuerzo admisible modificado, en MPa
 
 $S$ = modulo de sección en mm3 El modulo de sección $S$ , para una guadua se expresa con la siguiente ecuación:
 
-![Ecuación G.12.8-5](img/ec-G.12.8-5.png)
+$$ S = \dfrac{\pi \left(D_e^4 - \left[D_e - 2t\right]^4\right)}{32\,D_e} \tag{G.12.8-5} $$
 
 En donde:
 
@@ -657,7 +657,7 @@ Módulos de sección para algunas vigas compuestas
 
 **G.12.8.10.10** — Cuando se empleen varios culmos para conformar un elemento a flexión, la inercia del conjunto se calcula como la suma las inercias individuales de cada uno de los culmos $(I= ∑I_{i})$. Si el constructor garantiza un trabajo en conjunto la inercia podrá ser calculada con el teorema de los ejes paralelos:
 
-![Ecuación G.12.8-8](img/ec-G.12.8-8.png)
+$$ I = \sum \left(A_i d_i^2\right) + \sum I_i \tag{G.12.8-8} $$
 
 Donde:
 
@@ -675,7 +675,7 @@ $I_{i} =$ la inercia individual de cada culmo referida a su propio centroide, en
 
 **G.12.8.11.2** — Esfuerzo cortante paralelo a las fibras – El esfuerzo cortante paralelo a las fibras actuante $(f_{v}')$ sobre cualquier sección de guadua rolliza, no debe exceder el valor del esfuerzo cortante paralelo a las fibras admisible $(F_{v}' )$, modificado por los coeficientes correspondientes, de acuerdo a la formula G.12-.8-9.
 
-![Ecuación G.12.8-9](img/ec-G.12.8-9.png)
+$$ f_v = \dfrac{2V}{3A} \left(\dfrac{3D_e^2 - 4D_e t + 4t^2}{D_e^2 - 2D_e t + 2t^2}\right) \le F'_v \tag{G.12.8-9} $$
 
 Donde:
 
@@ -693,7 +693,7 @@ $v$ = fuerza cortante en la sección considerada, en N
 
 **G.12.8.11.3** — DISTRIBUCIÓN DE CONECTORES EN VIGAS DE SECCIÓN COMPUESTA — Cuando se construyen vigas con dos o más culmos de guadua se debe garantizar su estabilidad por medio de conectores transversales de acero, que garanticen el trabajo en conjunto. El máximo espaciamiento de los conectores no puede exceder el menor valor de 3 veces el alto de la viga $(3h )$, un cuarto de la luz $(l /4)$ o el resultado de la formula G.12.8-10
 
-![Ecuación G.12.8-10](img/ec-G.12.8-10.png)
+$$ j = \dfrac{7 \cdot \ell}{V} \tag{G.12.8-10} $$
 
 Donde:
 
@@ -713,7 +713,7 @@ Figura G.12.8-2 - Detalle conectores secciones compuestas
 
 **G.12.8.12.2** — El esfuerzo a compresión perpendicular a la fibra actuante se calcula con la formula G.12.8-11
 
-![Ecuación G.12.8-11](img/ec-G.12.8-11.png)
+$$ f_p = \dfrac{3RD_e}{2t^2 l} \le F'_p \tag{G.12.8-11} $$
 
 En donde:
 
@@ -739,7 +739,7 @@ Los elementos que serán diseñados por fuerza axial son aquellos solicitados en
 
 **G.12.9.1.1** — Elementos solicitados a tensión axial — El esfuerzo de tensión axial actuante $( f_{t})$ para cualquier sección de guadua rolliza, no debe exceder el valor del esfuerzo admisible a tensión axial $(F_{t}')$ modificado por los coeficientes de modificación correspondientes, de acuerdo a la formula G.12.9-1
 
-![Ecuación G.12.9-1](img/ec-G.12.9-1.png)
+$$ f_t = \dfrac{T}{A_n} \le F'_t \tag{G.12.9-1} $$
 
 En donde:
 
@@ -759,7 +759,7 @@ $A_{n}$ = área neta del elemento, en mm2
 
 **G.12.9.2.1** — Longitud efectiva — La longitud efectiva es la longitud teórica de una columna equivalente con articulaciones en sus extremos. La longitud efectiva de una columna puede calcularse con la formula G.12.9-2.
 
-![Ecuación G.12.9-2](img/ec-G.12.9-2.png)
+$$ \ell_e = \ell_u k \tag{G.12.9-2} $$
 
 Donde:
 
@@ -778,7 +778,7 @@ $ℓ_{e}$= longitud efectiva, en mm Tabla G. 12.9-1 Coeficiente de longitud efec
 
 **G.12.9.2.2** — Esbeltez — En columnas constituidas por un culmo de guadua, la medida de esbeltez está dada por la formula G.12-9-3
 
-![Ecuación G.12.9-3](img/ec-G.12.9-3.png)
+$$ \lambda = \dfrac{l_e}{r} \tag{G.12.9-3} $$
 
 En donde:
 
@@ -790,7 +790,7 @@ $r$ = radio de giro de la sección, en mm
 
 **G.12.9.2.3** — El radio de giro de la sección constituido por un (1) solo culmo será calculado con la siguiente ecuación:
 
-![Ecuación G.12.9-4](img/ec-G.12.9-4.png)
+$$ r = \dfrac{\sqrt{\left(D_e^2 + \left(D_e - 2t\right)^2\right)}}{4} \tag{G.12.9-4} $$
 
 En donde:
 
@@ -802,7 +802,7 @@ $r$ = radio de giro de la sección
 
 **G.12.9.2.4** — Elementos constituidos por dos (2) o más culmos — En el diseño de elementos solicitados a compresión constituidos por dos (2) o más culmos la medida de esbeltez será calculada usando la ecuación G.12-9-3, con el radio de giro r calculado con la siguiente expresión:
 
-![Ecuación G.12.9-5](img/ec-G.12.9-5.png)
+$$ r = \sqrt{\dfrac{I}{A}} \tag{G.12.9-5} $$
 
 En donde:
 
@@ -834,7 +834,7 @@ Clasificación de Columnas por esbeltez
 
 La esbeltez $C_{k}$ es el límite entre las columnas intermedias y las columnas largas y esta dado por la siguiente formula.
 
-![Ecuación G.12.9-6](img/ec-G.12.9-6.png)
+$$ C_k = 2.565 \sqrt{\dfrac{E_{0.05}}{F'_c}} \tag{G.12.9-6} $$
 
 Donde
 
@@ -846,7 +846,7 @@ $E_{0.05}$ = módulo de elasticidad percentil 5, en MPa Bajo ninguna circunstanc
 
 **G.12.9.2.7.1** — Columnas cortas $(λ <30)$ — El esfuerzo máximo de compresión paralela a la fibra actuante $( f_{c})$ sobre cualquier sección de guadua rolliza en columnas cortas, no debe exceder el valor del esfuerzo de compresión paralela a las fibras admisibles $(F_{c}')$ modificado por los factores correspondientes, de acuerdo a la ecuación G.12.9-7
 
-![Ecuación G.12.9-7](img/ec-G.12.9-7.png)
+$$ f_c = \dfrac{N}{A_n} \le F'_c \tag{G.12.9-7} $$
 
 Donde
 
@@ -860,7 +860,7 @@ $F_{c}'$ = esfuerzo de compresión paralela al fibra admisible, modificado, en M
 
 **G.12.9.2.7.2** — Columnas intermedias $(30< λ <C_{k})$ — El esfuerzo máximo de compresión paralela a la fibra actuante $( f_{c})$ sobre cualquier sección de guadua rolliza en columnas intermedias, no debe exceder el valor del esfuerzo de compresión paralela a las fibras admisibles $(F_{c}')$ modificado por los factores correspondientes, de acuerdo a la ecuación G.12.9-8
 
-![Ecuación G.12.9-8](img/ec-G.12.9-8.png)
+$$ f_c = \dfrac{N}{A_n \left(1 - \dfrac{2}{5} \left[\dfrac{\lambda}{C_K}\right]^3\right)} \le F'_c \tag{G.12.9-8} $$
 
 Donde:
 
@@ -878,7 +878,7 @@ $C_{k}$ = esbeltez que marca el límite entre columnas intermedias y largas, for
 
 **G.12.9.2.7.3** — Columnas largas $(C_{k}< λ <150)$ — El esfuerzo máximo de compresión paralela a la fibra actuante $( f_{c})$ sobre cualquier sección de guadua rolliza en columnas largas, no debe exceder el valor del esfuerzo de compresión paralela a las fibras admisibles $(F_{c}')$ modificado por los factores correspondientes, de acuerdo a la ecuación G.12.9-9
 
-![Ecuación G.12.9-9](img/ec-G.12.9-9.png)
+$$ f_c = 3.3\,\dfrac{E_{0.05}}{\lambda^2} \le F'_c \tag{G.12.9-9} $$
 
 Donde:
 
@@ -898,7 +898,7 @@ $E_{0.05}$ = módulo de elasticidad del percentil 5, en MPa No se permiten colum
 
 Los elementos de la estructura que se encuentren sometidos simultáneamente a fuerzas de tensión axial y flexión deben ser diseñados para cumplir la siguiente ecuación:
 
-![Ecuación G.12.10-1](img/ec-G.12.10-1.png)
+$$ \dfrac{f_t}{F'_t} + \dfrac{f_b}{F'_b} \le 1.0 \tag{G.12.10-1} $$
 
 Donde:
 
@@ -914,7 +914,7 @@ $F_{b}'$ = esfuerzo a flexión admisible modificado, en MPa
 
 Los elementos de la estructura que se encuentren sometidos simultáneamente a fuerzas de compresión y flexión deben ser diseñados para cumplir la siguiente ecuación:
 
-![Ecuación G.12.10-2](img/ec-G.12.10-2.png)
+$$ \dfrac{f_c}{F'_c} + \dfrac{k_m f_b}{F'_b} \le 1.0 \tag{G.12.10-2} $$
 
 Donde:
 
@@ -928,7 +928,7 @@ $F_{b}'$ = esfuerzo a flexión admisible modificado, en MPa
 
 $K_{m}$ = coeficiente de magnificación de momentos, calculado con la formula G.12.10-3:
 
-![Ecuación G.12.10-3](img/ec-G.12.10-3.png)
+$$ k_m = \dfrac{1}{1 - 1.5 \left(N_a/N_{cr}\right)} \tag{G.12.10-3} $$
 
 Donde:
 
@@ -938,7 +938,7 @@ $N_{a}$ = carga de compresión actuante, en N
 
 $N_{cr}$ = carga critica de Euler, calculada con la formula G.12.10-4
 
-![Ecuación G.12.10-4](img/ec-G.12.10-4.png)
+$$ N_{cr} = \dfrac{\pi^2 E_{0.05} I}{\ell_e^2} \tag{G.12.10-4} $$
 
 Donde:
 
@@ -1021,7 +1021,7 @@ $Q/2$ $Q/2$ Figura 12.11-6 - Carga $Q$ Las cargas admisibles cuando la fuerza es
 
 Figura G.12.11-7 - Carga T Las cargas admisibles $P$ y $Q$ corresponden a dos situaciones límites. Si la fuerza en la unión sigue la dirección del elemento central pero forma un ángulo a con la dirección de las fibras de los elementos laterales, o viceversa, la carga admisible se determinará mediante la ecuación de Hankison:
 
-![Ecuación G.12.11-1](img/ec-G.12.11-1.png)
+$$ N = \dfrac{PQ}{P \operatorname{sen}^2 \alpha + Q \cos^2 \alpha} \tag{G.12.11-1} $$
 
 <!-- mod:3-decreto-945-2017-75 -->
 > *Texto vigente según el Decreto 945 de 2017 (anexo, p. 35).*

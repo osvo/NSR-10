@@ -1,0 +1,20 @@
+{
+  "K.4.2-1": "F_{gw} \\le F_{ga}",
+  "K.4.2-2": "F_g \\le F_{ga}",
+  "K.4.2-3": "F_g = W_o - D",
+  "K.4.2-4": "F_g = W_i + D + 0.5P",
+  "K.4.2-5": "F_g = 0.5W_i + D + P",
+  "K.4.2-9": "F_{gw} < F_{ge}",
+  "K.4.2-10": "F_{gw} < 0.5F_{ge}",
+  "K.4.2-11": "F_g \\le 0.6F_{ge}",
+  "K.4.2-12": "F_g < 0.5F_{ge}",
+  "K.4.2-13": "F_g \\le GD",
+  "K.4.2-14": "F_{gi} \\le GD_{Pos}",
+  "K.4.2-15": "F_{go} \\le GD_{Neg}",
+  "K.4.2-16": "F_g = 2F_u + D",
+  "K.4.2-17": "F_g = \\left( 8F_c / A \\right) + D",
+  "K.4.2-18": "F_g = F_a + D",
+  "K.4.2-19": "\\Delta_{\\text{caída}} \\ge 1.25ID_p \\ge 13\\,\\mathrm{mm}",
+  "K.4.2-20": "D_{libre} \\ge 1.25D_p",
+  "K.4.2-21": "D_{libre} = 2c_1 \\left( 1 + \\dfrac{h_p c_2}{b_p c_1} \\right)"
+}

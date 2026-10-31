@@ -124,7 +124,7 @@ La resistencia requerida para los elementos de mampostería estructural se obtie
 
 La resistencia de diseño que tiene un elemento, sus conexiones con otros elementos y cualquier parte o sección de él, en términos de momentos flectores, carga axial, cortantes y torsión, debe ser igual a su resistencia nominal calculada de acuerdo con los requisitos y suposiciones del presente capítulo, multiplicada por un coeficiente de reducción de resistencia, $φ$ . Por lo tanto:
 
-![Ecuación D.5.1-1](img/ec-D.5.1-1.png)
+$$ \text{Resistencia de Diseño} = \phi \times \text{Resistencia Nominal} \ge \text{Resistencia Requerida} = U \tag{D.5.1-1} $$
 
 Resistencia de Diseñox Resistencia Nominal Resistencia Requerida =
 
@@ -144,7 +144,7 @@ Los coeficientes de reducción de resistencia deben ser los siguientes:
 
 (b) Compresión y flexo-compresión..........................................................$φ =0.60$ Para muros con refuerzo simétrico en los cuales $f_{y}$ no excede 420 MPa, el valor de $φ$ puede incrementarse linealmente hasta $φ =0.85$ en la medida que $φ_{P}$ disminuye desde $0.10f_{m}'A_{e}$ ó $0.25P_{b}$ hasta cero. Para muros con todas sus celdas inyectadas, $P_{b}$ puede calcularse utilizando la ecuación (D.5.1-2).
 
-![Ecuación D.5.1-2](img/ec-D.5.1-2.png)
+$$ P_b = 0.80f'_m b a_b \qquad a_b = 0.85d \dfrac{\varepsilon_{mu}}{\varepsilon_{mu} + \dfrac{f_y}{E_s}} \tag{D.5.1-2} $$
 
 y
 
@@ -180,7 +180,7 @@ Para los módulos de elasticidad se deben tomar los siguientes valores:
 
 **D.5.2.1.1** — Acero de refuerzo — El valor para el módulo de elasticidad del acero de refuerzo debe tomarse como:
 
-![Ecuación D.5.2-1](img/ec-D.5.2-1.png)
+$$ E_s = 200\,000 \tag{D.5.2-1} $$
 
 MPa
 
@@ -188,11 +188,11 @@ MPa
 
 Para mampostería en concreto
 
-![Ecuación D.5.2-2](img/ec-D.5.2-2.png)
+$$ E_m = 900f'_m \le 20\,000 \tag{D.5.2-2} $$
 
 MPa Para mampostería en arcilla
 
-![Ecuación D.5.2-3](img/ec-D.5.2-3.png)
+$$ E_m = 750f'_m \le 20\,000 \tag{D.5.2-3} $$
 
 MPa
 
@@ -200,7 +200,7 @@ MPa
 
 En ausencia de valores experimentales, puede emplearse el siguiente:
 
-![Ecuación D.5.2-4](img/ec-D.5.2-4.png)
+$$ E_r = 2500\sqrt{f'_{cr}} \le 20\,000 \tag{D.5.2-4} $$
 
 MPa
 
@@ -208,11 +208,11 @@ MPa
 
 Para los módulos de cortante se deben tomar los siguientes valores: Mampostería
 
-![Ecuación D.5.2-5](img/ec-D.5.2-5.png)
+$$ G_m = 0.4E_m \tag{D.5.2-5} $$
 
 Mortero de relleno
 
-![Ecuación D.5.2-6](img/ec-D.5.2-6.png)
+$$ G_r = 0.5E_r \tag{D.5.2-6} $$
 
 ### D.5.3 — CARGAS
 
@@ -337,27 +337,27 @@ Las vigas que tengan relaciones de longitud/altura menores de 1.25 en luces simp
 
 La máxima resistencia axial teórica del muro sometido a carga axial sin excentricidad, $P_{o}$ , se obtiene por medio de la siguiente expresión:
 
-![Ecuación D.5.5-1](img/ec-D.5.5-1.png)
+$$ P_o = 0.80f'_m \left( A_e - A_{st} \right) + A_{st} f_y \le f'_m A_e \tag{D.5.5-1} $$
 
 #### D.5.5.2 — REDUCCIÓN DE RESISTENCIA AXIAL POR ESBELTEZ
 
 El efecto de la esbeltez del muro en la resistencia nominal para carga axial se obtiene por medio del parámetro $R_{e}$ :
 
-![Ecuación D.5.5-2](img/ec-D.5.5-2.png)
+$$ R_e = 1-\left[\dfrac{h'}{42t}\right]^2 \quad \text{para } h'/t \le 30 \tag{D.5.5-2} $$
 
-![Ecuación](img/ec-p47-531.png)
+$$ R_e = \left[\dfrac{21t}{h'}\right]^2 \quad \text{para } h'/t > 30 $$
 
 #### D.5.5.3 — RESISTENCIA NOMINAL PARA CARGA AXIAL
 
 La resistencia nominal para carga axial de compresión $P_{n}$ , sin excentricidad y teniendo en cuenta los efectos de esbeltez, no puede ser mayor que el valor dado a continuación:
 
-![Ecuación D.5.5-3](img/ec-D.5.5-3.png)
+$$ P_n = 0.80P_o R_e \tag{D.5.5-3} $$
 
 #### D.5.5.4 — MÁXIMA RESISTENCIA DE DISEÑO PARA CARGA AXIAL
 
 La máxima resistencia de diseño para carga axial de compresión $P_{u}$ , sin excentricidad y teniendo en cuenta los efectos de esbeltez, está dada por la siguiente expresión
 
-![Ecuación D.5.5-4](img/ec-D.5.5-4.png)
+$$ P_u \le \phi P_n = \phi 0.80P_o R_e \tag{D.5.5-4} $$
 
 ### D.5.6 — RESISTENCIA A FLEXIÓN SIN CARGA AXIAL
 
@@ -365,23 +365,23 @@ La máxima resistencia de diseño para carga axial de compresión $P_{u}$ , sin 
 
 Cuando la sección del muro esta sometida a momento flector sin la presencia de carga axial, se debe cumplir la siguiente condición:
 
-![Ecuación D.5.6-1](img/ec-D.5.6-1.png)
+$$ M_u \le \phi M_n \tag{D.5.6-1} $$
 
 #### D.5.6.2 — SECCIONES SOLO CON REFUERZO A TRACCIÓN
 
 Cuando la sección del muro esta simplemente reforzada, y su cuantía es menor del 75% de la cuantía para condiciones balanceadas, la resistencia nominal a flexión $M_{n}$ , se puede obtener por medio de la ecuación (D.5.6-2).
 
-![Ecuación D.5.6-2](img/ec-D.5.6-2.png)
+$$ M_n = A_s f_y \left( d - \dfrac{a}{2} \right) \tag{D.5.6-2} $$
 
 y
 
-![Ecuación D.5.6-3](img/ec-D.5.6-3.png)
+$$ a = \dfrac{A_s f_y}{0.80f'_m b} \tag{D.5.6-3} $$
 
 #### D.5.6.3 — SECCIONES CON REFUERZO A COMPRESIÓN
 
 Cuando la sección del muro tiene refuerzo que trabaja a compresión, y se puede probar que el refuerzo a compresión está en fluencia, la resistencia nominal a flexión $M_{n}$ , se puede obtener por medio de la ecuación D.5.6-4.
 
-![Ecuación D.5.6-4](img/ec-D.5.6-4.png)
+$$ M_n = A_{s1} f_y \left( d - \dfrac{a}{2} \right) + A_{s2} f_y \left( d - d' \right) \tag{D.5.6-4} $$
 
 ### D.5.7 — DISEÑO DE MUROS EN LA DIRECCIÓN PERPENDICULAR A SU PLANO
 
@@ -393,17 +393,17 @@ Los requisitos de esta sección se emplean para el diseño por el método del es
 
 Cuando la carga axial que actúa sobre el muro $P_{u}$ en la sección bajo estudio es menor que $0.10f_{m} 'A_{e}$, el momento de diseño solicitado, $M_{u}$ , debe cumplir la condición dada por la ecuación D.5.7-1:
 
-![Ecuación D.5.7-1](img/ec-D.5.7-1.png)
+$$ M_u \le \phi R_e M_n \tag{D.5.7-1} $$
 
 donde $R_{e}$ está dado por la ecuación D.5.5-2, y $M_{n}$ se obtiene por medio de:
 
-![Ecuación D.5.7-2](img/ec-D.5.7-2.png)
+$$ M_n = A_{se} f_y \left( d - \dfrac{a}{2} \right) \tag{D.5.7-2} $$
 
-![Ecuación D.5.7-3](img/ec-D.5.7-3.png)
+$$ A_{se} = \dfrac{A_s f_y + P_u}{f_y} \tag{D.5.7-3} $$
 
 y
 
-![Ecuación D.5.7-4](img/ec-D.5.7-4.png)
+$$ a = \dfrac{A_s f_y + P_u}{0.80f'_m b} \tag{D.5.7-4} $$
 
 y la cuantía de refuerzo a flexión, $ρ =A_{s}/(bd)$ no debe exceder $0.5ρ_{b}$ .
 
@@ -411,7 +411,7 @@ y la cuantía de refuerzo a flexión, $ρ =A_{s}/(bd)$ no debe exceder $0.5ρ_{b
 
 Cuando la carga axial que actúa sobre el muro $P_{u}$ en la sección bajo estudio es mayor que $0.10f_{m} 'A_{e}$, la relación de esbeltez del muro $h '/t$ no debe ser mayor que 30, y el momento de diseño solicitado, $M_{u}$ , que acompaña la carga axial $P_{u}$ , debe cumplir la condición dada por la ecuación D.5.7-5:
 
-![Ecuación D.5.7-5](img/ec-D.5.7-5.png)
+$$ M_u \le \phi R_e M_n \tag{D.5.7-5} $$
 
 donde $R_{e}$ está dado por la ecuación D.5.5-2, y $M_{n}$ se obtiene teniendo en cuenta la interacción entre momento y carga axial, de acuerdo con los principios enunciados en D.5.1.6 y empleando el coeficiente de reducción de resistencia, $φ$ , apropiado de los dados en D.5.1.5.1.
 
@@ -419,11 +419,11 @@ donde $R_{e}$ está dado por la ecuación D.5.5-2, y $M_{n}$ se obtiene teniendo
 
 Se debe cumplir la siguiente condición con respecto a la fuerza cortante que actúa en la dirección perpendicular al plano del muro:
 
-![Ecuación D.5.7-6](img/ec-D.5.7-6.png)
+$$ V_u \le \phi V_n \tag{D.5.7-6} $$
 
 donde:
 
-![Ecuación D.5.7-7](img/ec-D.5.7-7.png)
+$$ V_n = \dfrac{1}{6} A_{mv} \sqrt{f'_m} \tag{D.5.7-7} $$
 
 donde $A_{mv}$ está definido en D.5.4.5.1 y el valor del coeficiente de reducción de resistencia, $φ$ , está dado en D.5.1.5.1.
 
@@ -437,13 +437,13 @@ Los requisitos de esta sección se emplean para el diseño por el método del es
 
 Cuando el modo de falla dominante del muro es la flexión, la resistencia nominal a flexión del muro $M_{n}$ , debe cumplir la siguiente relación:
 
-![Ecuación D.5.8-1](img/ec-D.5.8-1.png)
+$$ M_n \ge \alpha M_{cr} \tag{D.5.8-1} $$
 
 donde $α =1.8$ para mampostería con todas sus celdas inyectadas con mortero de relleno, $α =3.0$ para mampostería donde solo están inyectadas las celdas que contienen refuerzo y $α =3.0$ para mampostería de cavidad reforzada.
 
 $M_{cr}$es el momento de agrietamiento, el cual se obtiene por medio de la ecuación D.5.8-2.
 
-![Ecuación D.5.8-2](img/ec-D.5.8-2.png)
+$$ M_{cr} = \dfrac{b\ell_w^2}{6} f_r \tag{D.5.8-2} $$
 
 El módulo de ruptura de la mampostería, $f_{r}$, se obtiene de la tabla D.5.8-1:
 
@@ -469,7 +469,7 @@ Módulo de ruptura, $f_{r}$ (MPa)
 
 El momento de diseño solicitado, $M_{u}$ , que acompaña la carga axial $P_{u}$ , debe cumplir la condición dada por la ecuación D.5.8-2, para el nivel de carga $P_{u}$ :
 
-![Ecuación D.5.8-3](img/ec-D.5.8-3.png)
+$$ M_u \le \phi M_n \tag{D.5.8-3} $$
 
 $M_{n}$ se obtiene teniendo en cuenta la interacción entre momento y carga axial, de acuerdo con los principios enunciados en D.5.1.6, los cuales permiten calcular un diagrama de interacción del muro, empleando el coeficiente de reducción de resistencia, $φ$ , apropiado de los dados en D.5.1.5.2, el cual, a su vez, depende del nivel de carga axial.
 
@@ -482,11 +482,11 @@ $M_{n}$ se obtiene teniendo en cuenta la interacción entre momento y carga axia
 
 Se debe cumplir la siguiente condición con respecto a la fuerza cortante que actúa en la dirección paralela al plano del muro:
 
-![Ecuación D.5.8-4](img/ec-D.5.8-4.png)
+$$ V_u \le \phi V_n \tag{D.5.8-4} $$
 
 y
 
-![Ecuación D.5.8-5](img/ec-D.5.8-5.png)
+$$ V_n = V_m + V_s \tag{D.5.8-5} $$
 
 Si $V_{u}≥φV_{m}$, el refuerzo debe tomar todo el esfuerzo cortante, y entonces:
 
@@ -496,7 +496,7 @@ Además, el cortante nominal total, $V_{n}$ dado por la ecuación D.5.8-5 no pue
 
 **D.5.8.4.1** — Verificación de articulación plástica — Si el cortante nominal del muro, $V_{n}$ , excede el cortante que se produce con la resistencia nominal a flexión del muro, $M_{n}$ , existe la posibilidad de que se desarrolle una articulación plástica en la base del muro y deben adoptarse precauciones especiales dentro de una región que va desde la base del muro hasta una altura igual a $ℓ_{w}$. Todas las secciones dentro de esta región deben tener una resistencia nominal al cortante igual a:
 
-![Ecuación D.5.8-6](img/ec-D.5.8-6.png)
+$$ V_n = V_s \tag{D.5.8-6} $$
 
 La resistencia al corte requerida, $V_{u}$ , para esta región puede determinarse con base en el momento resistente $M_{n}$ en una sección localizada a una altura igual a $ℓ_{w} /2$, pero no más de medio piso, por encima de la base del muro. La separación, $s$ , del refuerzo horizontal de cortante dentro de esta región comprendida entre la base y una altura igual a $ℓ_{w}$, no puede exceder tres veces el ancho nominal del muro, $t$ , ni 600 mm.
 
@@ -513,15 +513,15 @@ Valor del cortante nominal resistido por la mampostería, $V_{m}$
 | $M_{u}$ $V_{u} d ≤0.25$ | $V_{m}=0.30A_{mv}\sqrt{f_{m}'}+0.25P_{u}$ |
 | $M_{u}$ $V_{u} d ≥1.00$ | $V_{m}=0.20A_{mv}\sqrt{f_{m}'}+0.25P_{u}$ |
 
-![Ecuación](img/ec-p51-326.png)
+$$ 0.25 < \dfrac{M_u}{V_u d} < 1.00 \qquad V_m = \left[ 0.33 - 0.13 \left( \dfrac{M_u}{V_u d} \right) \right] A_{mv} \sqrt{f'_m} + 0.25P_u $$
 
 **D.5.8.4.3** — Valor de $V_{s}$ — El cortante nominal resistido por el refuerzo horizontal de cortante, $V_{s}$ , se calcula utilizando la ecuación D.5.8-7:
 
-![Ecuación D.5.8-7](img/ec-D.5.8-7.png)
+$$ V_s = \rho_n f_y A_{mv} \tag{D.5.8-7} $$
 
 donde $f_{y}$ es la resistencia a la fluencia del refuerzo de cortante, y $ρ_{n}$ es la cuantía del refuerzo que contribuye a resistir la fuerza cortante, calculada de acuerdo con la ecuación D.5-8-8:
 
-![Ecuación D.5.8-8](img/ec-D.5.8-8.png)
+$$ \rho_n = \dfrac{A_v}{sb} \eta \tag{D.5.8-8} $$
 
 $η$ = Factor de eficiencia del refuerzo horizontal.
 
@@ -540,7 +540,7 @@ Valores máximos para el cortante nominal $V_{n}$
 | $M_{u}$ $V_{u} d ≤0.25$ | $0.50A_{mv}\sqrt{f_{m}'}$ |
 | $M_{u}$ $V_{u} d ≥1.00$ | $0.33A_{mv}\sqrt{f_{m}'}$ |
 
-![Ecuación](img/ec-p52-161.png)
+$$ 0.25 < \dfrac{M_u}{V_u d} < 1.00 \qquad \left[ 0.56 - 0.23 \left( \dfrac{M_u}{V_u d} \right) \right] A_{mv} \sqrt{f'_m} $$
 
 #### D.5.8.5 — ELEMENTOS DE BORDE
 
